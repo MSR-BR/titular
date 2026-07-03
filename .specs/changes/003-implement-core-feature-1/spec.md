@@ -42,10 +42,10 @@ Extract and organize the supplied memorial material into a verified evidence reg
 
 ## Completion Checklist
 
-- [ ] User approval received.
-- [ ] Memorial PDF extracted.
-- [ ] Example presentation extracted.
-- [ ] Evidence registry created.
-- [ ] Narrative outline created.
-- [ ] Assumptions documented.
-- [ ] Review summary provided.
+- [x] User approval received.
+- [x] Memorial PDF extracted.
+- [x] Example presentation extracted.
+- [x] Evidence registry created.
+- [x] Narrative outline created.
+- [x] Assumptions documented.
+- [x] Review summary provided.

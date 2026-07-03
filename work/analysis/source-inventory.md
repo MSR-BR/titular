@@ -8,9 +8,9 @@ Scope: initial inventory for Change 001. No files were moved, extracted, summari
 
 | ID | Path | Type | Size | Status |
 | --- | --- | --- | --- | --- |
-| MEM-local | `memorial.pdf` | Primary memorial PDF | 51,438,419 bytes | Present; not extracted |
-| EXPDF-local | `Defesa_de_Memorial_para_Professor_Titular.pdf` | Example presentation PDF | 3,439,203 bytes | Present; not extracted |
-| EXHTML-local | `Defesa_de_Memorial_para_Professor_Titular/` | Example presentation HTML export | 20 HTML pages | Present; not extracted |
+| MEM-local | `memorial.pdf` | Primary memorial PDF | 51,438,419 bytes | Present; extracted in Change 003 |
+| EXPDF-local | `Defesa_de_Memorial_para_Professor_Titular.pdf` | Example presentation PDF | 3,439,203 bytes | Present; extracted in Change 003 |
+| EXHTML-local | `Defesa_de_Memorial_para_Professor_Titular/` | Example presentation HTML export | 20 HTML pages | Present; extracted in Change 003 |
 
 ## External Material Mentioned By User
 

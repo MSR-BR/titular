@@ -10,6 +10,8 @@
 
 # Dependencies and build caches
 node_modules/
+__pycache__/
+*.pyc
 .cache/
 .parcel-cache/
 .vite/

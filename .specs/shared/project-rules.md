@@ -11,7 +11,8 @@
 
 - Change 001 was approved by the user on 2026-07-03.
 - Change 002 was approved by the user on 2026-07-03.
-- After Change 002, each later change requires user approval before implementation.
+- Change 003 was approved by the user on 2026-07-03.
+- After Change 003, each later change requires user approval before implementation.
 - Public deployment, external data use, and source-file restructuring require explicit approval.
 
 ## Source Rules

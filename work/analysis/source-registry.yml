@@ -1,0 +1,48 @@
+version: 1
+updated: "2026-07-03"
+status: "draft"
+sources:
+  - id: "MEM-local"
+    label: "Memorial e Anexos"
+    path: "memorial.pdf"
+    extracted_text: "work/extracted/memorial-text.md"
+    type: "primary_memorial_pdf"
+    page_count: 416
+    role: "authoritative factual source"
+    status: "extracted"
+    notes:
+      - "PDF metadata identifies author as Mario de Souza Reis Junior."
+      - "Text extraction is page based and should be checked visually for high-risk claims."
+
+  - id: "EXPDF-local"
+    label: "Defesa de Memorial para Professor Titular - example PDF"
+    path: "Defesa_de_Memorial_para_Professor_Titular.pdf"
+    extracted_text: "work/extracted/example-presentation-text.md"
+    type: "example_presentation_pdf"
+    page_count: 20
+    role: "structural reference only"
+    status: "extracted"
+    notes:
+      - "Use for presentation rhythm and section ideas."
+      - "Do not use as the final authority for quantitative claims without checking MEM-local."
+
+  - id: "EXHTML-local"
+    label: "Example presentation HTML export"
+    path: "Defesa_de_Memorial_para_Professor_Titular/"
+    extracted_text: "work/extracted/example-presentation-text.md"
+    type: "example_presentation_html_export"
+    page_count: 20
+    role: "structural reference only"
+    status: "extracted"
+    notes:
+      - "HTML export contains text that is often cleaner than the PDF text extraction."
+
+  - id: "DROPBOX-user-link"
+    label: "Dropbox folder from project blueprint"
+    path: "https://www.dropbox.com/scl/fo/znzyhwublqsuvcku61sii/AK3Zkgk-1teRaymzssCjXTk?rlkey=5isjwngz07p4qg5pdnjw2lhz0&dl=0"
+    type: "external_user_material"
+    role: "potential additional source"
+    status: "not_ingested"
+    notes:
+      - "Not downloaded or read during Change 003."
+      - "Requires explicit approval if additional ingestion is needed."

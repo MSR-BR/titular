@@ -1,0 +1,186 @@
+version: 1
+updated: "2026-07-03"
+status_values:
+  - "verified"
+  - "needs_review"
+  - "rejected"
+evidence:
+  - id: "E001"
+    status: "verified"
+    source_refs: ["MEM-p001", "MEM-p008"]
+    claim: "The memorial identifies Mario de Souza Reis Junior as the candidate for Professor Titular at Instituto de Física, UFF, with the memorial dated 3 July 2026."
+    use: "opening_identity"
+
+  - id: "E002"
+    status: "verified"
+    source_refs: ["MEM-p008"]
+    claim: "The memorial is organized as a synthesis of academic and scientific trajectory in condensed matter physics, covering formation, professional trajectory, scientific and literary production, teaching, supervision, extension, internationalization, editorial work, administration, and future perspectives."
+    use: "opening_thesis"
+
+  - id: "E003"
+    status: "verified"
+    source_refs: ["MEM-p009", "MEM-p012", "MEM-p013"]
+    claim: "The formation arc begins with Physics at UFRJ from 1993 to 1997 and initiation in magnetism at CBPF from 1996 to 1997."
+    use: "formation_timeline"
+
+  - id: "E004"
+    status: "verified"
+    source_refs: ["MEM-p010", "MEM-p011", "MEM-p012", "MEM-p013"]
+    claim: "The master's and doctorate at CBPF built an experimental and theoretical magnetism profile, including RCo3 intermetallics, manganites, and Tsallis-based models."
+    use: "formation_timeline"
+
+  - id: "E005"
+    status: "verified"
+    source_refs: ["MEM-p011", "MEM-p013"]
+    claim: "The international formation arc includes doctoral work at Universidade de Aveiro, postdoctoral work there from 2003 to 2005, and a Pesquisador Auxiliar period at CICECO from 2005 to 2009."
+    use: "international_formation"
+
+  - id: "E006"
+    status: "verified"
+    source_refs: ["MEM-p014", "MEM-p023"]
+    claim: "The candidate joined UFF in December 2009 after public competition, marking a transition into an integrated academic career in teaching, research, supervision, extension, and institutional life."
+    use: "uff_transition"
+
+  - id: "E007"
+    status: "verified"
+    source_refs: ["MEM-p014", "MEM-p015", "MEM-p050", "MEM-p051", "MEM-p052"]
+    claim: "Teaching at UFF spans undergraduate and graduate courses, including experimental physics, modern physics, quantum mechanics, thermodynamics, magnetism, and automation/robotics."
+    use: "teaching"
+
+  - id: "E008"
+    status: "verified"
+    source_refs: ["MEM-p015", "MEM-p039", "MEM-p040", "MEM-p041", "MEM-p042"]
+    claim: "The didactic production cycle links research, classroom practice, and books: Magnetismo Molecular (2010), Fundamentals of Magnetism (2013), Quantum Mechanics (2025), and a thermodynamics book in preparation."
+    use: "books_and_teaching"
+
+  - id: "E009"
+    status: "verified"
+    source_refs: ["MEM-p015", "MEM-p016", "MEM-p017", "MEM-p023", "MEM-p099"]
+    claim: "Human resources formation includes 25 initiation/extension students, 5 monographs, 4 master's supervisions, 5 doctoral supervisions as advisor, and 1 doctoral co-supervision documented for scoring."
+    use: "mentoring"
+
+  - id: "E010"
+    status: "verified"
+    source_refs: ["MEM-p017", "MEM-p023"]
+    claim: "Postdoctoral supervision at UFF includes PNPD/CAPES and FAPERJ-linked researchers, with the chapter summary reporting 10 postdoctoral supervisions."
+    use: "mentoring"
+
+  - id: "E011"
+    status: "verified"
+    source_refs: ["MEM-p017", "MEM-p018"]
+    claim: "Former students and supervised researchers occupy positions in universities, research centers, and public institutions, including UFRJ, UFOB, USP, UFRB, UERJ, IF Sudeste de Minas Gerais, PUC-Rio, UFF Petrópolis, Caixa Econômica Federal, and CBPF."
+    use: "mentoring_outcomes"
+
+  - id: "E012"
+    status: "verified"
+    source_refs: ["MEM-p018", "MEM-p019", "MEM-p023"]
+    claim: "The Laboratório de Magnetismo at UFF was consolidated with infrastructure including PPMS and helium liquefier, supported by financed projects and institutional infrastructure."
+    use: "infrastructure"
+
+  - id: "E013"
+    status: "verified"
+    source_refs: ["MEM-p019", "MEM-p020", "MEM-p048"]
+    claim: "The Laboratório de Robótica e Automação (L3D) was created in 2018 to integrate physics, automation, instrumentation, Arduino-based systems, sensors, 3D printing, teaching, extension, and educational cooperation."
+    use: "infrastructure_and_extension"
+
+  - id: "E014"
+    status: "verified"
+    source_refs: ["MEM-p020", "MEM-p021", "MEM-p022", "MEM-p101"]
+    claim: "Sample for Science is a mobile-first scientific sample-sharing innovation project available in app stores, with documented intellectual-production scoring alongside CARDAMOMO."
+    use: "innovation"
+
+  - id: "E015"
+    status: "verified"
+    source_refs: ["MEM-p022"]
+    claim: "Research projects coordinated or joined through CNPq, FAPERJ, CAPES, and FCT supported infrastructure, human resources, missions, congress participation, and international visits."
+    use: "research_projects"
+
+  - id: "E016"
+    status: "verified"
+    source_refs: ["MEM-p022", "MEM-p023", "MEM-p099"]
+    claim: "Institutional administration includes postgraduate program collegiate work, Núcleo Docente Estruturante, departmental commission work, infrastructure coordination, and research project management."
+    use: "institutional_service"
+
+  - id: "E017"
+    status: "verified"
+    source_refs: ["MEM-p024", "MEM-p025", "MEM-p026", "MEM-p027", "MEM-p028", "MEM-p029", "MEM-p030", "MEM-p031", "MEM-p032", "MEM-p033"]
+    claim: "The research program is organized around Tsallis statistics applied to magnetism, magnetocaloric effects, molecular metal complexes, quantum information in magnetic materials, caloric effects in relativistic materials, and quantum thermodynamics applied to new materials."
+    use: "research_architecture"
+
+  - id: "E018"
+    status: "verified"
+    source_refs: ["MEM-p024", "MEM-p025"]
+    claim: "The Tsallis line generalizes magnetic models to describe non-homogeneous magnetic systems and connects the entropic parameter q to magnetic inhomogeneity in manganites."
+    use: "research_line_tsallis"
+
+  - id: "E019"
+    status: "verified"
+    source_refs: ["MEM-p025", "MEM-p026", "MEM-p027"]
+    claim: "The magnetocaloric line combines experimental and theoretical work across manganites, intermetallics, anisotropic systems, molecular complexes, multiferroic composites, and solid-state refrigeration themes."
+    use: "research_line_mce"
+
+  - id: "E020"
+    status: "verified"
+    source_refs: ["MEM-p027", "MEM-p028", "MEM-p029", "MEM-p101"]
+    claim: "The molecular-complex line connects magnetic modeling, thermodynamics, exact diagonalization, susceptibility fitting, and the CARDAMOMO computational package."
+    use: "research_line_complexes"
+
+  - id: "E021"
+    status: "verified"
+    source_refs: ["MEM-p029", "MEM-p030", "MEM-p031"]
+    claim: "The quantum-information line studies entanglement and quantum correlations in real magnetic systems using magnetic susceptibility as an experimental witness."
+    use: "research_line_quantum_information"
+
+  - id: "E022"
+    status: "verified"
+    source_refs: ["MEM-p031", "MEM-p032"]
+    claim: "The relativistic-materials line predicts and studies caloric effects in graphene and related low-dimensional relativistic systems."
+    use: "research_line_relativistic"
+
+  - id: "E023"
+    status: "verified"
+    source_refs: ["MEM-p032", "MEM-p033"]
+    claim: "The quantum-thermodynamics line investigates quantum thermal machines, quantum batteries, and generalized caloric effects in magnetic and spin systems."
+    use: "research_line_quantum_thermo"
+
+  - id: "E024"
+    status: "verified"
+    source_refs: ["MEM-p034", "MEM-p035", "MEM-p036", "MEM-p037", "MEM-p038", "MEM-p100", "MEM-p101"]
+    claim: "The memorial reports 3625 Google Scholar citations, h-index 33, i10-index 88, 130 periodical articles in the scoring table, 20.4% of 2015-2024 publications among the global top 25% most cited, 70.2% in top 25% CiteScore journals, and 67% international collaboration in the last ten years."
+    use: "scientific_impact"
+
+  - id: "E025"
+    status: "needs_review"
+    source_refs: ["MEM-p043", "MEM-p044", "MEM-p046", "MEM-p095"]
+    claim: "Editorial leadership includes Physica B: Condensed Matter editor work from 2016 and Editor-in-Chief role, but source pages differ between 2024-2025 and 2025 for the start of Editor-in-Chief responsibility."
+    use: "editorial_leadership"
+
+  - id: "E026"
+    status: "verified"
+    source_refs: ["MEM-p045", "MEM-p046"]
+    claim: "Internationalization includes Aveiro, CICECO, visiting research in Aveiro, Distinguished Researcher at Universidad de Sevilla through María Zambrano, collaborations with Portugal, Spain, United States, Chile, Russia, China, LAFMAT, and international student formation."
+    use: "internationalization"
+
+  - id: "E027"
+    status: "verified"
+    source_refs: ["MEM-p047", "MEM-p048"]
+    claim: "Future perspectives emphasize integrated action across university, national scientific community, and international community, with teaching modernization, L3D extension, South Global scientific integration, quantum thermodynamics, and Sample for Science."
+    use: "future_vision"
+
+  - id: "E028"
+    status: "needs_review"
+    source_refs: ["MEM-p097", "MEM-p098", "MEM-p099", "MEM-p100", "MEM-p101"]
+    claim: "The scoring tables report total score 5465 and detailed subtotals, but the table labels one Grupo C subtotal as 'Subtotal Grupo B'; use total scoring only after visual confirmation."
+    use: "appendix_or_optional_score"
+
+  - id: "E029"
+    status: "needs_review"
+    source_refs: ["EXPDF-p020", "EXHTML-p020", "MEM-p099"]
+    claim: "The example presentation reports approximate counts for master's and doctoral supervisions that differ from the memorial scoring table; final deck should use MEM-local counts unless the user confirms otherwise."
+    use: "source_conflict_note"
+
+  - id: "E030"
+    status: "verified"
+    source_refs: ["MEM-p010", "MEM-p011", "MEM-p012", "MEM-p013", "MEM-p045", "MEM-p046"]
+    claim: "Before joining UFF, the candidate had a substantial international phase centered on Aveiro: doctoral sandwich at Universidade de Aveiro, postdoctoral work there from 2003 to 2005, and Pesquisador Auxiliar at CICECO from 2005 to 2009."
+    use: "pre_uff_international_phase"

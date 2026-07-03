@@ -4,9 +4,9 @@ Project for preparing the memorial presentation for the professor titular examin
 
 ## Current Phase
 
-Change 002 has been executed: MVP presentation foundation.
+Change 003 has been executed: source extraction and narrative architecture.
 
-No source extraction or factual memorial slide drafting has started yet.
+No final factual memorial slides have been drafted yet.
 
 ## Specification System
 
@@ -35,6 +35,20 @@ Preview options:
 - Or serve the repository root with `python3 -m http.server 8000` and open `http://127.0.0.1:8000/src/deck/`.
 
 The current deck contains placeholder slides only. Factual memorial content begins in later approved changes after source extraction and evidence mapping.
+
+## Source Analysis
+
+Change 003 extracted the local memorial and example presentation into `work/extracted/`, then created source, evidence, assumption, and narrative outline files under `work/analysis/`.
+
+The extracted text files are private/generated working artifacts and remain ignored by Git. The evidence and outline files are intended to guide the next approved implementation phase.
+
+Current presentation direction:
+
+- Target duration: 50 minutes.
+- Include a clear pre-UFF Aveiro phase: doutorado sanduiche, pos-doc, and CICECO.
+- Make the physics/results section the most technically detailed part of the talk.
+- Show main equations on technical physics slides.
+- Include compact references in technical slide footers, without a final reference-list slide.
 
 ## Git Status
 
