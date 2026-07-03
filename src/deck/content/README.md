@@ -1,5 +1,5 @@
 # Deck Content
 
-Structured slide content, outline files, and speaker notes will live here.
+Structured slide content, outline files, and speaker notes live here.
 
-No final slide content is created in Change 001.
+Change 002 includes `slides.js`, a placeholder-only slide source used by the static deck shell.

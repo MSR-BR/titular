@@ -1,5 +1,5 @@
 # Deck Scripts
 
-Small presentation scripts will live here if the chosen renderer requires them.
+Small presentation scripts live here.
 
-No presentation script is implemented in Change 001.
+Change 002 includes `main.js` for placeholder slide rendering and keyboard/button navigation.

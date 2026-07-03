@@ -41,9 +41,9 @@ Create the minimal technical foundation for a reproducible presentation build, w
 
 ## Completion Checklist
 
-- [ ] User approval received.
-- [ ] Rendering stack documented.
-- [ ] Deck shell created.
-- [ ] Placeholder slides marked.
-- [ ] Local preview verified.
-- [ ] No factual content added.
+- [x] User approval received.
+- [x] Rendering stack documented.
+- [x] Deck shell created.
+- [x] Placeholder slides marked.
+- [x] Local preview verified.
+- [x] No factual content added.

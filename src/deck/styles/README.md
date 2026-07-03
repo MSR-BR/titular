@@ -1,5 +1,5 @@
 # Deck Styles
 
-Presentation CSS and print/export styles will live here in later changes.
+Presentation CSS and print/export styles live here.
 
-No visual theme is implemented in Change 001.
+Change 002 includes base, theme, and layout CSS for the placeholder deck foundation.
