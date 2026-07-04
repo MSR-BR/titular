@@ -38,9 +38,16 @@ Render technical equations as compiled LaTeX-quality equations, not plain text o
 
 ## Completion Checklist
 
-- [ ] User approval received for Change 011.
-- [ ] Rendering approach selected.
-- [ ] Equation source model created.
-- [ ] Main technical equations rendered.
-- [ ] Raw-code scan passed.
+- [x] User approval received for Change 011.
+- [x] Rendering approach selected.
+- [x] Equation source model created.
+- [x] Main technical equations rendered.
+- [x] Raw-code scan passed.
 - [ ] User approves equation appearance.
+
+## Implementation Notes
+
+- Implemented with local `pdflatex` plus `pdftocairo`.
+- Equation sources live in `src/deck/equations/equations.mjs`.
+- Rendered SVG assets live in `src/deck/assets/equations/`.
+- Validation report: `tests/reports/c11-validation.md`.

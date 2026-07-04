@@ -52,11 +52,18 @@ Rebuild the full memorial deck one approved section at a time, using the approve
 
 ## Completion Checklist
 
-- [ ] User approval received for Change 012.
+- [x] User approval received for Change 012.
 - [ ] Formacao rebuilt and approved.
 - [ ] UFF rebuilt and approved.
 - [ ] Resultados rebuilt and approved.
 - [ ] Impacto rebuilt and approved.
 - [ ] Internacionalizacao rebuilt and approved.
 - [ ] Futuro/fechamento rebuilt and approved.
-- [ ] Full deck review package prepared.
+- [x] Full deck review package prepared.
+
+## Implementation Notes
+
+- First full visual pass implemented on 2026-07-04.
+- Section approvals remain pending because this change is intended to be reviewed section by section.
+- Review package: `work/reviews/section-review-c12-pass-1.md`.
+- Validation report: `tests/reports/c12-validation.md`.

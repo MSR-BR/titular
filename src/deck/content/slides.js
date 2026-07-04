@@ -1,7 +1,16 @@
+function equationAsset(id, alt, caption) {
+  return {
+    src: `assets/equations/${id}.svg`,
+    alt,
+    caption,
+  };
+}
+
 window.MemorialDeckSlides = [
   {
     id: "s01-title",
     layout: "title",
+    section: "Abertura",
     eyebrow: "Memorial academico",
     title: "Mario Reis",
     subtitle: "Memorial para Professor Titular | Instituto de Fisica | Universidade Federal Fluminense",
@@ -12,6 +21,7 @@ window.MemorialDeckSlides = [
   {
     id: "s02-thesis",
     layout: "content",
+    section: "Abertura",
     eyebrow: "Tese do memorial",
     title: "Uma trajetoria de integracao",
     lead: "O memorial organiza uma carreira em que pesquisa, ensino, orientacao, infraestrutura, internacionalizacao e lideranca editorial se reforcam mutuamente.",
@@ -27,6 +37,7 @@ window.MemorialDeckSlides = [
   {
     id: "s03-map",
     layout: "cards",
+    section: "Abertura",
     eyebrow: "Indice",
     title: "Estrutura do memorial",
     cards: [
@@ -41,6 +52,7 @@ window.MemorialDeckSlides = [
   {
     id: "s04-first-steps",
     layout: "timeline",
+    section: "Formacao",
     eyebrow: "Formacao | trajetoria inicial",
     title: "Do interesse por exatas ao primeiro laboratorio",
     milestones: [
@@ -54,7 +66,8 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s05-master",
-    layout: "technical",
+    layout: "content",
+    section: "Formacao",
     eyebrow: "Formacao | CBPF | Mestrado",
     title: "Magnetismo experimental como base",
     lead: "O mestrado consolidou a formacao experimental em compostos intermetalicos RCo3, combinando magnetizacao, RMN e modelos de magnetismo.",
@@ -64,15 +77,13 @@ window.MemorialDeckSlides = [
       "Problema fisico: instabilidade dos momentos eletronicos 3d.",
       "Resultado formativo: seis publicacoes internacionais a partir do mestrado."
     ],
-    equations: [
-      { html: "medidas <strong>M(H,T)</strong> + <strong>RMN</strong> &rarr; interpretacao de momentos eletronicos <strong>3d</strong>" }
-    ],
     footerRefs: "MEM pp.8-9",
     sourceRefs: ["E004"]
   },
   {
     id: "s06-doctorate",
     layout: "technical",
+    section: "Formacao",
     eyebrow: "Formacao | CBPF | Doutorado",
     title: "Manganitas, separacao de fases e estatistica de Tsallis",
     lead: "No doutorado, a pesquisa passou a integrar fabricacao de amostras, caracterizacao magnetica e modelagem teorica nao extensiva.",
@@ -83,7 +94,9 @@ window.MemorialDeckSlides = [
       "Conclusao em 2003, em 3,5 anos, com 12 artigos publicados."
     ],
     equations: [
-      { html: "experimento + modelo &rarr; parametro <strong>q</strong> como medida de nao homogeneidade" }
+      equationAsset("tsallis-entropy", "Entropia de Tsallis", "formalismo nao extensivo"),
+      equationAsset("q-exponential", "q-exponencial", "limite q -> 1 recupera Boltzmann-Gibbs"),
+      equationAsset("tsallis-magnetization", "Magnetizacao q", "q como medida efetiva de nao homogeneidade")
     ],
     footerRefs: "MEM pp.8-11; refs. [3-8]",
     sourceRefs: ["E004", "E018"]
@@ -91,12 +104,13 @@ window.MemorialDeckSlides = [
   {
     id: "s07-aveiro-sandwich",
     layout: "content",
+    section: "Formacao",
     eyebrow: "Formacao internacional | Aveiro I",
     title: "Doutorado sanduiche: manganitas, RMN e modelo",
     lead: "A ida a Aveiro nao foi apenas mobilidade: foi a etapa em que a tese conectou amostras de manganitas, medidas magneticas, RMN e analise teorica.",
     items: [
       "No CBPF, a tese ja articulava fabricacao de amostras, magnetizacao, RMN e estatistica nao extensiva.",
-      "Na Universidade de Aveiro, o trabalho seguiu no grupo do Prof. Vitor Amaral, com manganitas de valencia mista.",
+      "Na Universidade de Aveiro, em 2001-2002, o trabalho seguiu no grupo do Prof. Vitor Amaral, com manganitas de valencia mista.",
       "A visita ao laboratorio do Prof. Pierre Panissod, em Estrasburgo, ampliou o conjunto experimental com medidas de RMN.",
       "A experiencia criou a primeira rede internacional estruturada, que continuou apos o doutorado.",
       "O resultado formativo foi um modo de trabalho permanente: experimento quantitativo mais modelo microscopico."
@@ -108,6 +122,7 @@ window.MemorialDeckSlides = [
   {
     id: "s08-aveiro-postdoc",
     layout: "content",
+    section: "Formacao",
     eyebrow: "Formacao internacional | Aveiro II",
     title: "Pos-doutorado: Tsallis em sistemas magneticos reais",
     lead: "Entre 2003 e 2005, o pos-doutorado manteve o foco em manganitas, mas com maior autonomia na interpretacao fisica da nao homogeneidade magnetica.",
@@ -125,6 +140,7 @@ window.MemorialDeckSlides = [
   {
     id: "s09-ciceco",
     layout: "content",
+    section: "Formacao",
     eyebrow: "Formacao internacional | Aveiro III",
     title: "CICECO: laboratorio, VSM e complexos metalicos",
     lead: "De 2005 a 2009, o CICECO transformou a experiencia internacional em posicao institucional, responsabilidade experimental e nova agenda de pesquisa.",
@@ -142,6 +158,7 @@ window.MemorialDeckSlides = [
   {
     id: "s10-uff-entry",
     layout: "section",
+    section: "UFF",
     eyebrow: "UFF | desde 2009",
     title: "Da trajetoria individual a construcao institucional",
     subtitle: "O ingresso na UFF em dezembro de 2009 reorganiza a carreira em torno de ensino, pesquisa, orientacao, extensao, infraestrutura e vida institucional.",
@@ -151,6 +168,7 @@ window.MemorialDeckSlides = [
   {
     id: "s11-teaching",
     layout: "cards",
+    section: "UFF",
     eyebrow: "Ensino",
     title: "Um portfolio entre teoria, experimento e aplicacao",
     cards: [
@@ -165,6 +183,7 @@ window.MemorialDeckSlides = [
   {
     id: "s12-books",
     layout: "cards",
+    section: "UFF",
     eyebrow: "Livros",
     title: "Pesquisa, sala de aula e livro-texto",
     lead: "A producao editorial segue uma mesma logica no memorial: pesquisa acumulada alimenta disciplinas, as disciplinas geram material sistematizado, e esse material vira livro.",
@@ -175,7 +194,7 @@ window.MemorialDeckSlides = [
       { label: "em redacao", text: "Termodinamica para Estudantes de Fisica, a partir de notas de aula de 2024-2026." }
     ],
     figure: {
-      src: "assets/figures/book-covers-memorial.png",
+      src: "assets/figures/books-academic-covers.png",
       alt: "Capas dos livros academicos publicados",
       caption: "Capas extraidas da Figura 6.1 do memorial."
     },
@@ -186,6 +205,7 @@ window.MemorialDeckSlides = [
   {
     id: "s13-people",
     layout: "metrics",
+    section: "UFF",
     eyebrow: "Formacao de pessoas",
     title: "Orientacao como multiplicacao academica",
     metrics: [
@@ -202,6 +222,7 @@ window.MemorialDeckSlides = [
   {
     id: "s14-former-students",
     layout: "content",
+    section: "UFF",
     eyebrow: "Egressos",
     title: "Formacao que se distribui em instituicoes",
     lead: "Ex-orientandos e supervisionados ocupam posicoes em universidades, centros de pesquisa e instituicoes publicas.",
@@ -216,6 +237,7 @@ window.MemorialDeckSlides = [
   {
     id: "s15-lab-magnetism",
     layout: "cards",
+    section: "UFF",
     eyebrow: "Infraestrutura",
     title: "Laboratorio de Magnetismo da UFF",
     cards: [
@@ -236,6 +258,7 @@ window.MemorialDeckSlides = [
   {
     id: "s16-l3d",
     layout: "cards",
+    section: "UFF",
     eyebrow: "Infraestrutura e extensao",
     title: "L3D: robotica, automacao e ensino por projeto",
     cards: [
@@ -256,6 +279,7 @@ window.MemorialDeckSlides = [
   {
     id: "s17-program-map",
     layout: "cards",
+    section: "Resultados",
     eyebrow: "Programa cientifico",
     title: "Um mapa coerente de pesquisa",
     cards: [
@@ -270,6 +294,7 @@ window.MemorialDeckSlides = [
   {
     id: "s18-physics-bridge",
     layout: "section",
+    section: "Resultados",
     eyebrow: "Resultados em fisica",
     title: "Da entropia aos materiais quanticos",
     subtitle: "A parte tecnica do memorial organiza resultados em torno de uma pergunta comum: como propriedades microscopicas de spins, orbitais, redes e espectros geram respostas termodinamicas mensuraveis?",
@@ -279,6 +304,7 @@ window.MemorialDeckSlides = [
   {
     id: "s19-tsallis-problem",
     layout: "technical",
+    section: "Resultados",
     eyebrow: "Linha 1 | Tsallis e magnetismo",
     title: "O problema fisico: magnetismo nao homogeneo",
     lead: "Manganitas CMR exibem desvios sistematicos em M(H) e susceptibilidade que nao sao descritos adequadamente por modelos tradicionais de campo medio.",
@@ -288,8 +314,8 @@ window.MemorialDeckSlides = [
       "Aplicacao de estatistica nao extensiva a sistemas magneticos reais."
     ],
     equations: [
-      { html: "<strong>q</strong> &rarr; grau de nao extensividade" },
-      { html: "<strong>q = 1</strong> &rarr; Boltzmann-Gibbs" }
+      equationAsset("tsallis-entropy", "Entropia de Tsallis", "entropia q"),
+      equationAsset("q-exponential", "q-exponencial", "distribuicao generalizada")
     ],
     footerRefs: "MEM pp.22-23; refs. [2-8]",
     sourceRefs: ["E018"]
@@ -297,13 +323,14 @@ window.MemorialDeckSlides = [
   {
     id: "s20-tsallis-equations",
     layout: "technical",
+    section: "Resultados",
     eyebrow: "Linha 1 | Formalismo",
     title: "Entropia q e distribuicao generalizada",
     lead: "A reformulacao estatistica altera a funcao particao e, portanto, as propriedades magneticas calculadas.",
     equations: [
-      { html: "S<sub>q</sub> = k<sub>B</sub> (1 - &sum;<sub>i</sub> p<sub>i</sub><sup>q</sup>) / (q - 1)" },
-      { html: "e<sub>q</sub>(x) = [1 + (1 - q)x]<sup>1/(1 - q)</sup>" },
-      { html: "M<sub>q</sub> = N g &mu;<sub>B</sub> &lang;S<sub>z</sub>&rang;<sub>q</sub>" }
+      equationAsset("tsallis-entropy", "Entropia q", "S_q"),
+      equationAsset("q-exponential", "q-exponencial", "peso estatistico"),
+      equationAsset("tsallis-magnetization", "Magnetizacao q", "observavel magnetico")
     ],
     items: [
       "A abordagem recupera Boltzmann-Gibbs no limite q = 1.",
@@ -315,6 +342,7 @@ window.MemorialDeckSlides = [
   {
     id: "s21-tsallis-result",
     layout: "technical",
+    section: "Resultados",
     eyebrow: "Linha 1 | Resultado",
     title: "M(H) em manganitas: teoria e experimento",
     lead: "A funcao de Langevin generalizada ajusta isotermas de magnetizacao em manganitas acima da temperatura de Curie.",
@@ -325,14 +353,20 @@ window.MemorialDeckSlides = [
       "Sem introduzir distribuicoes artificiais de campo."
     ],
     equations: [
-      { html: "M(H,T) &rarr; ajuste por funcoes de Langevin/Brillouin generalizadas" }
+      equationAsset("tsallis-magnetization", "Magnetizacao no formalismo q", "M(H,T) ajustado por funcoes generalizadas")
     ],
+    figure: {
+      src: "assets/figures/tsallis-manganite-mh.png",
+      alt: "Curvas de magnetizacao em manganita ajustadas por funcao de Langevin generalizada",
+      caption: "La0.60Y0.07Ca0.33MnO3: M(H) acima de Tc = 150 K; ajuste por abordagem nao extensiva."
+    },
     footerRefs: "MEM pp.22-23; refs. [3-8]",
     sourceRefs: ["E018"]
   },
   {
     id: "s22-tsallis-contribution",
     layout: "content",
+    section: "Resultados",
     eyebrow: "Linha 1 | Contribuicao",
     title: "O parametro q como observavel fisico",
     lead: "A contribuicao nao e apenas ajustar curvas: e estabelecer uma ponte entre nao homogeneidade, separacao de fases e medidas macroscopicas.",
@@ -348,13 +382,14 @@ window.MemorialDeckSlides = [
   {
     id: "s23-mce-foundation",
     layout: "technical",
+    section: "Resultados",
     eyebrow: "Linha 2 | Efeito magnetocalorico",
     title: "O efeito como resposta termodinamica",
     lead: "A variacao de campo magnetico permite observar mudancas de entropia em processo isotermico e mudancas de temperatura em processo adiabatico.",
     equations: [
-      { html: "&Delta;S<sub>mag</sub>(T,&Delta;B) = &int;<sub>B<sub>i</sub></sub><sup>B<sub>f</sub></sup> (&part;M/&part;T)<sub>B</sub> dB" },
-      { html: "&Delta;T<sub>ad</sub>(T,&Delta;B) = - &int;<sub>B<sub>i</sub></sub><sup>B<sub>f</sub></sup> [T/c<sub>tot</sub>(T,B)] (&part;M/&part;T)<sub>B</sub> dB" },
-      { html: "c<sub>tot</sub> = c<sub>mag</sub> + c<sub>lat</sub>" }
+      equationAsset("mce-entropy", "Variacao isotermica de entropia magnetica", "Delta S_mag"),
+      equationAsset("mce-temperature", "Variacao adiabatica de temperatura", "Delta T_ad"),
+      equationAsset("heat-capacity-split", "Capacidade termica total", "termos magnetico, rede e eletronico")
     ],
     items: [
       "Base conceitual para refrigeracao magnetica em estado solido.",
@@ -366,6 +401,7 @@ window.MemorialDeckSlides = [
   {
     id: "s24-mce-materials",
     layout: "cards",
+    section: "Resultados",
     eyebrow: "Linha 2 | Materiais",
     title: "Classes de materiais e mecanismos",
     cards: [
@@ -380,6 +416,7 @@ window.MemorialDeckSlides = [
   {
     id: "s25-mce-synthesis",
     layout: "content",
+    section: "Resultados",
     eyebrow: "Linha 2 | Sintese",
     title: "Do mecanismo microscopico a refrigeracao em estado solido",
     lead: "A linha magnetocalorica combina caracterizacao experimental detalhada e modelagem para otimizar capacidade refrigerante.",
@@ -395,14 +432,13 @@ window.MemorialDeckSlides = [
   {
     id: "s26-complexes-hamiltonian",
     layout: "technical",
+    section: "Resultados",
     eyebrow: "Linha 3 | Complexos metalicos",
     title: "Do Hamiltoniano ao ajuste termodinamico",
     lead: "Complexos metalicos permitem conectar estrutura de spins, interacoes de troca, anisotropia e observaveis magneticas.",
     equations: [
-      { html: "H = H<sub>ex</sub> + H<sub>ani</sub> + H<sub>Z</sub>" },
-      { html: "H<sub>ex</sub> = - &sum;<sub>&lt;i,j&gt;</sub> J<sub>ij</sub> S<sub>i</sub> &middot; S<sub>j</sub>" },
-      { html: "H<sub>ani</sub> = D &sum;<sub>i</sub> S<sub>i,z</sub><sup>2</sup>" },
-      { html: "H<sub>Z</sub> = - &mu;<sub>B</sub> &sum;<sub>i</sub> g<sub>i</sub> S<sub>i</sub> &middot; B" }
+      equationAsset("spin-hamiltonian", "Hamiltoniano efetivo de spins", "troca, anisotropia e Zeeman"),
+      equationAsset("partition-observables", "Funcao de particao e observaveis", "Z, F, M e chi")
     ],
     items: [
       "Diagonalizacao fornece o espectro de energias E_n.",
@@ -414,13 +450,19 @@ window.MemorialDeckSlides = [
   {
     id: "s27-complexes-result",
     layout: "technical",
+    section: "Resultados",
     eyebrow: "Linha 3 | Resultado representativo",
     title: "Na2Cu5Si4O14: cadeia dimero-trimero",
     lead: "Um exemplo mostra a metodologia: estrutura cristalina, Hamiltoniano efetivo, parametros de troca e interpretacao fisica.",
     equations: [
-      { html: "H = -J<sub>1</sub>(S<sub>1</sub>&middot;S<sub>2</sub> + S<sub>2</sub>&middot;S<sub>3</sub>) - J<sub>2</sub>S<sub>A</sub>&middot;S<sub>B</sub> - J<sub>3</sub>S<sub>4</sub>&middot;S<sub>5</sub> - g&mu;<sub>B</sub>B&middot;S" },
-      { html: "J<sub>1</sub> = -224,9 K; J<sub>3</sub> = 40,22 K; J<sub>2</sub> = -8,01 K" }
+      equationAsset("cu5-hamiltonian", "Hamiltoniano dimero-trimero", "Na2Cu5Si4O14"),
+      equationAsset("cu5-parameters", "Parametros de troca", "ajuste de susceptibilidade")
     ],
+    figure: {
+      src: "assets/figures/molecular-chain-na2cu5si4o14.png",
+      alt: "Cadeia magnetica em zigue-zague do composto Na2Cu5Si4O14",
+      caption: "Estrutura dimero-trimero em cadeia Cu2/Cu3; ponte entre geometria e Hamiltoniano efetivo."
+    },
     items: [
       "Cadeia em zigue-zague com unidades Cu2 e Cu3.",
       "Momento liquido ao longo da cadeia: ferrimagnetismo homometalico.",
@@ -432,6 +474,12 @@ window.MemorialDeckSlides = [
   {
     id: "s28-cardamomo",
     layout: "content",
+    section: "Resultados",
+    figure: {
+      src: "assets/figures/molecular-chit-fit-na2cu5si4o14.png",
+      alt: "Ajuste de chi T para Na2Cu5Si4O14 e esquema de interacoes de troca",
+      caption: "CARDAMOMO: ajuste quantitativo de chi T e interacoes J1, J2, J3 no exemplo Na2Cu5Si4O14."
+    },
     eyebrow: "Linha 3 | Ferramenta computacional",
     title: "CARDAMOMO como infraestrutura teorica",
     lead: "O pacote automatiza o ajuste de modelos quanticos e classicos a dados experimentais de susceptibilidade magnetica.",
@@ -447,13 +495,18 @@ window.MemorialDeckSlides = [
   {
     id: "s29-quantum-info-concept",
     layout: "technical",
+    section: "Resultados",
     eyebrow: "Linha 4 | Informacao quantica",
     title: "Susceptibilidade como testemunha de emaranhamento",
     lead: "A linha conecta materia condensada e informacao quantica usando medidas magneticas macroscopicas para inferir correlacoes quanticas.",
     equations: [
-      { html: "&chi;(T) &rarr; testemunha de emaranhamento em sistemas de spins" },
-      { html: "W(T) &lt; 0 &rarr; estado emaranhado" }
+      equationAsset("entanglement-witness", "Testemunha de emaranhamento por susceptibilidade", "W(T) < 0 indica emaranhamento")
     ],
+    figure: {
+      src: "assets/figures/entanglement-witness.png",
+      alt: "Testemunho de emaranhamento em funcao da temperatura",
+      caption: "Valores negativos do witness indicam emaranhamento em sistema magnetico molecular."
+    },
     items: [
       "Clusters de spin e magnetos moleculares como sistemas reais.",
       "Acesso experimental por tecnicas tradicionais de caracterizacao magnetica.",
@@ -465,6 +518,12 @@ window.MemorialDeckSlides = [
   {
     id: "s30-quantum-info-result",
     layout: "content",
+    section: "Resultados",
+    figure: {
+      src: "assets/figures/entanglement-witness.png",
+      alt: "Curva de witness de emaranhamento",
+      caption: "Figura 4.4 do memorial: emaranhamento termico lido por observavel magnetico macroscopico."
+    },
     eyebrow: "Linha 4 | Resultado",
     title: "Correlacoes quanticas em temperaturas elevadas",
     lead: "O memorial destaca resultados de emaranhamento termico, violacao de desigualdades de Bell e persistencia de correlacoes quanticas em sistemas moleculares.",
@@ -480,14 +539,19 @@ window.MemorialDeckSlides = [
   {
     id: "s31-graphene-concept",
     layout: "technical",
+    section: "Resultados",
     eyebrow: "Linha 5 | Materiais relativisticos",
     title: "Grafeno e efeitos caloricos oscilatorios",
     lead: "Em materiais relativisticos, a quantizacao de Landau e o espectro de Dirac alteram a resposta termodinamica a campos externos.",
     equations: [
-      { html: "m = N<sub>0</sub>&Phi;<sub>0</sub> / B" },
-      { html: "&Delta;S<sub>mag</sub> oscila com B por quantizacao de Landau" },
-      { html: "regime normal &harr; regime inverso com pequenas variacoes de campo" }
+      equationAsset("graphene-landau", "Quantizacao de Landau em grafeno", "escala m e niveis relativisticos"),
+      equationAsset("graphene-caloric", "Entropia magnetica oscilatoria", "alternancia normal/inverso")
     ],
+    figure: {
+      src: "assets/figures/graphene-entropy-oscillation.png",
+      alt: "Variacao da entropia magnetica em grafeno bidimensional",
+      caption: "Entropia magnetica em grafeno bidimensional em funcao de m = N0 Phi0/B."
+    },
     items: [
       "Efeito magnetocalorico oscilatorio em grafeno.",
       "Temperaturas caracteristicas da ordem de 100 K, superiores a materiais diamagneticos 3D convencionais.",
@@ -499,6 +563,12 @@ window.MemorialDeckSlides = [
   {
     id: "s32-graphene-result",
     layout: "content",
+    section: "Resultados",
+    figure: {
+      src: "assets/figures/graphene-entropy-oscillation.png",
+      alt: "Oscilacoes de entropia magnetica em grafeno",
+      caption: "Oscilacoes por quantizacao de Landau conectam fermions de Dirac a resposta calorica."
+    },
     eyebrow: "Linha 5 | Resultado",
     title: "Da fisica de Dirac a uma resposta calorica mensuravel",
     lead: "A contribuicao esta em conectar os fermions de Dirac em sistemas bidimensionais a fenomenos termodinamicos macroscopicos.",
@@ -514,12 +584,12 @@ window.MemorialDeckSlides = [
   {
     id: "s33-quantum-thermo-batteries",
     layout: "technical",
+    section: "Resultados",
     eyebrow: "Linha 6 | Termodinamica quantica",
     title: "Energia, trabalho e calor em materiais quanticos",
     lead: "Materiais moleculares e sistemas de spin permitem estudar armazenamento e conversao de energia em plataformas fisicas reais.",
     equations: [
-      { html: "correlacoes quanticas &rarr; trabalho extraivel" },
-      { html: "termalizacao &rarr; recuperacao de energia armazenada" }
+      equationAsset("quantum-battery", "Trabalho extraivel em bateria quantica", "ergotropia / energia extraivel")
     ],
     items: [
       "Bateria quantica baseada em correlacoes em complexos metalicos.",
@@ -532,12 +602,12 @@ window.MemorialDeckSlides = [
   {
     id: "s34-quantum-thermo-caloric",
     layout: "technical",
+    section: "Resultados",
     eyebrow: "Linha 6 | Maquinas e potenciais caloricos",
     title: "Ciclos quanticos e respostas caloricas gerais",
     lead: "A formulacao recente expressa potenciais caloricos diretamente em termos do Hamiltoniano do sistema.",
     equations: [
-      { html: "&Delta;T<sub>ad</sub> = -k<sub>B</sub>T<sup>3</sup> &int; [1/var(H)] d&lang;&part;H/&part;&lambda;&rang;/dT d&lambda;" },
-      { html: "&Delta;S<sub>iso</sub> = - &int; d&lang;&part;H/&part;&lambda;&rang;/dT d&lambda;" }
+      equationAsset("quantum-caloric-potentials", "Potenciais caloricos quanticos", "Delta S_iso e Delta T_ad a partir do Hamiltoniano")
     ],
     items: [
       "Ciclo de Stirling quantico em complexos metalicos dinucleares.",
@@ -550,6 +620,7 @@ window.MemorialDeckSlides = [
   {
     id: "s35-synthesis",
     layout: "cards",
+    section: "Resultados",
     eyebrow: "Sintese cientifica",
     title: "Um programa, varias interfaces",
     cards: [
@@ -563,7 +634,8 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s36-impact",
-    layout: "metrics",
+    layout: "dashboard",
+    section: "Impacto",
     eyebrow: "Impacto cientifico",
     title: "Regularidade, qualidade e lideranca",
     metrics: [
@@ -574,17 +646,29 @@ window.MemorialDeckSlides = [
       { value: "70,2%", label: "artigos em periodicos top 25% CiteScore" }
     ],
     lead: "Os indicadores sao tratados como fotografia documentada no memorial, nao como metricas ao vivo.",
+    cards: [
+      { label: "Crescimento", text: "A serie temporal mostra crescimento acentuado de citacoes apos a consolidacao das linhas UFF." },
+      { label: "Qualidade", text: "20,4% dos artigos entre os 25% mais citados mundialmente e 70,2% em periodicos top 25% CiteScore." },
+      { label: "Rede", text: "A colaboracao internacional de 67% no periodo 2015-2024 conecta impacto a redes estruturais." },
+      { label: "Leitura", text: "A fisica apresentada antes explica estes indicadores; os numeros nao substituem os resultados." }
+    ],
+    figure: {
+      src: "assets/figures/impact-citations-trends.png",
+      alt: "Evolucao anual das citacoes segundo Google Scholar e Scopus",
+      caption: "Figura 5.1: evolucao anual das citacoes em bases documentadas no memorial."
+    },
     footerRefs: "MEM pp.32-36,98-99",
     sourceRefs: ["E024"]
   },
   {
     id: "s37-internationalization",
     layout: "timeline",
+    section: "Internacionalizacao",
     eyebrow: "Internacionalizacao",
     title: "Internacionalizacao como estrutura",
     milestones: [
-      { label: "2001-2003", text: "Doutorado sanduiche em Aveiro." },
-      { label: "2003-2009", text: "Pos-doc e Pesquisador Auxiliar no CICECO." },
+      { label: "2001-2002", text: "Doutorado sanduiche em Aveiro; retorno ao Brasil e defesa no CBPF em 2003." },
+      { label: "2003-2009", text: "Pos-doc em Aveiro e Pesquisador Auxiliar no CICECO." },
       { label: "2017-2018", text: "Pesquisador visitante na Universidade de Aveiro." },
       { label: "2022-2023", text: "Distinguished Researcher na Universidad de Sevilla." },
       { label: "Redes", text: "Portugal, Espanha, EUA, Chile, Russia, China e LAFMAT." }
@@ -595,21 +679,28 @@ window.MemorialDeckSlides = [
   {
     id: "s38-editorial",
     layout: "content",
+    section: "Internacionalizacao",
     eyebrow: "Lideranca editorial",
     title: "Physica B e responsabilidade cientifica global",
     lead: "A atuacao editorial amplia a dimensao de lideranca para alem do grupo de pesquisa e da universidade.",
     items: [
       "Editor da Physica B: Condensed Matter desde 2016.",
-      "Editor-in-Chief: usar redacao final apos confirmacao da data preferida.",
+      "Editor-in-Chief registrado no material de 2026 da revista.",
       "Coordenacao de corpo editorial, politica editorial, escopo cientifico e padroes eticos.",
       "Iniciativas como Physica B Award e aproximacao com conferencias e redes cientificas."
     ],
-    footerRefs: "MEM pp.41-42,93 | data EIC: needs review",
+    figure: {
+      src: "assets/figures/physica-b-cover-2026.png",
+      alt: "Capa da revista Physica B Condensed Matter",
+      caption: "Physica B: Condensed Matter, volume de 2026 com Mario Reis como Editor-in-Chief."
+    },
+    footerRefs: "MEM pp.41-42,93; Fig. 7.1",
     sourceRefs: ["E025"]
   },
   {
     id: "s39-innovation",
     layout: "cards",
+    section: "Futuro",
     eyebrow: "Inovacao e extensao",
     title: "Da infraestrutura local a circulacao de conhecimento",
     cards: [
@@ -618,12 +709,18 @@ window.MemorialDeckSlides = [
       { label: "Aplicativo", text: "Projeto mobile-first disponibilizado em lojas digitais." },
       { label: "Formacao", text: "Equipe multidisciplinar com fisica, matematica, computacao, marketing e comunicacao audiovisual." }
     ],
+    figure: {
+      src: "assets/figures/sample-for-science-app.png",
+      alt: "Telas do aplicativo Sample for Science",
+      caption: "Sample for Science: compartilhamento de amostras com registro de material, resultados previos e contato entre grupos."
+    },
     footerRefs: "MEM pp.18-20,46,99",
     sourceRefs: ["E013", "E014", "E027"]
   },
   {
     id: "s40-future",
     layout: "cards",
+    section: "Futuro",
     eyebrow: "Perspectivas como titular",
     title: "Agenda futura",
     cards: [
@@ -638,6 +735,7 @@ window.MemorialDeckSlides = [
   {
     id: "s41-closing",
     layout: "closing",
+    section: "Futuro",
     eyebrow: "Fechamento",
     title: "Titularidade como responsabilidade ampliada",
     subtitle: "A trajetoria apresentada sustenta uma atuacao futura que combina densidade cientifica, formacao de pessoas, construcao institucional e cooperacao internacional.",

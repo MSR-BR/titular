@@ -34,6 +34,7 @@ Defesa_de_Memorial_para_Professor_Titular/
 
 # Generated and intermediate work
 tmp/
+work/c11-equations/
 work/extracted/*
 work/reviews/*
 outputs/html/*
@@ -44,6 +45,7 @@ outputs/pptx/*
 !work/extracted/README.md
 !work/reviews/README.md
 !work/reviews/content-review.md
+!work/reviews/section-review-*.md
 !outputs/html/README.md
 !outputs/pdf/README.md
 !outputs/pptx/README.md

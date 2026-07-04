@@ -74,6 +74,18 @@
 
     return `<div class="equation-stack">${equations
       .map((equation) => {
+        if (equation && typeof equation === "object" && equation.src) {
+          const caption = equation.caption
+            ? `<figcaption class="equation-caption">${escapeHtml(equation.caption)}</figcaption>`
+            : "";
+          return `
+            <figure class="equation-line equation-asset-frame">
+              <img class="equation-asset" src="${escapeAttribute(equation.src)}" alt="${escapeAttribute(equation.alt || "")}" />
+              ${caption}
+            </figure>
+          `;
+        }
+
         if (equation && typeof equation === "object" && equation.html) {
           return `<div class="equation-line">${equation.html}</div>`;
         }
@@ -103,13 +115,18 @@
     }
 
     const compactClass = options.compact || cards.length > 4 ? " compact" : "";
-    return `<div class="card-grid${compactClass}">${cards
+    const countClass = ` count-${Math.min(cards.length, 6)}`;
+    return `<div class="card-grid${compactClass}${countClass}">${cards
       .map((card) => {
-        const meta = card.meta ? `<p class="info-card-meta">${escapeHtml(card.meta)}</p>` : "";
-        const text = card.html ? card.html : escapeHtml(card.text || "");
+        const normalizedCard = typeof card === "string" ? { text: card } : card;
+        const label = normalizedCard.label
+          ? `<p class="info-card-label">${escapeHtml(normalizedCard.label)}</p>`
+          : "";
+        const meta = normalizedCard.meta ? `<p class="info-card-meta">${escapeHtml(normalizedCard.meta)}</p>` : "";
+        const text = normalizedCard.html ? normalizedCard.html : escapeHtml(normalizedCard.text || "");
         return `
           <article class="info-card">
-            <p class="info-card-label">${escapeHtml(card.label)}</p>
+            ${label}
             ${meta}
             <p class="info-card-text">${text}</p>
           </article>
@@ -225,6 +242,8 @@
     const className = slideClass(slide);
 
     if (slide.layout === "technical") {
+      const hasSecondary = Array.isArray(slide.cards) && slide.cards.length > 0;
+      const evidenceClass = hasSecondary ? "technical-evidence" : "technical-evidence no-secondary";
       return `
         <section class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
@@ -232,15 +251,19 @@
             <div class="technical-summary">
               ${renderCards(slide.items, { compact: true })}
             </div>
-            <div class="technical-evidence">
+            <div class="${evidenceClass}">
               <div class="technical-primary">
                 ${renderEquations(slide.equations)}
                 ${renderFigure(slide.figure)}
                 ${renderMetrics(slide.metrics)}
               </div>
-              <div class="technical-secondary">
-                ${renderCards(slide.cards)}
-              </div>
+              ${
+                hasSecondary
+                  ? `<div class="technical-secondary">
+                      ${renderCards(slide.cards)}
+                    </div>`
+                  : ""
+              }
             </div>
           </div>
           ${footer}

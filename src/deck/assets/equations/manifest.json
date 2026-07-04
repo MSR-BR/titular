@@ -1,0 +1,155 @@
+{
+  "generatedAt": "2026-07-04T14:50:59.650Z",
+  "equations": [
+    {
+      "id": "tsallis-entropy",
+      "title": "Entropia nao extensiva de Tsallis",
+      "sourceRefs": [
+        "MEM 4.1",
+        "refs. [2-4]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/tsallis-entropy.svg"
+    },
+    {
+      "id": "q-exponential",
+      "title": "Distribuicao q-exponencial",
+      "sourceRefs": [
+        "MEM 4.1",
+        "refs. [2-4]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/q-exponential.svg"
+    },
+    {
+      "id": "tsallis-magnetization",
+      "title": "Magnetizacao no formalismo q",
+      "sourceRefs": [
+        "MEM 4.1",
+        "refs. [3-8]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/tsallis-magnetization.svg"
+    },
+    {
+      "id": "mce-entropy",
+      "title": "Variacao isotermica de entropia magnetica",
+      "sourceRefs": [
+        "MEM 4.2",
+        "refs. [9-11]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/mce-entropy.svg"
+    },
+    {
+      "id": "mce-temperature",
+      "title": "Variacao adiabatica de temperatura",
+      "sourceRefs": [
+        "MEM 4.2",
+        "refs. [9-11]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/mce-temperature.svg"
+    },
+    {
+      "id": "heat-capacity-split",
+      "title": "Capacidade termica total",
+      "sourceRefs": [
+        "MEM 4.2",
+        "refs. [9-11]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/heat-capacity-split.svg"
+    },
+    {
+      "id": "spin-hamiltonian",
+      "title": "Hamiltoniano efetivo para complexos metalicos",
+      "sourceRefs": [
+        "MEM 4.3",
+        "refs. [24-36]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/spin-hamiltonian.svg"
+    },
+    {
+      "id": "partition-observables",
+      "title": "Do espectro aos observaveis magneticos",
+      "sourceRefs": [
+        "MEM 4.3",
+        "refs. [24-36]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/partition-observables.svg"
+    },
+    {
+      "id": "cu5-hamiltonian",
+      "title": "Modelo dimero-trimero para Na2Cu5Si4O14",
+      "sourceRefs": [
+        "MEM 4.3",
+        "ref. [35]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/cu5-hamiltonian.svg"
+    },
+    {
+      "id": "cu5-parameters",
+      "title": "Parametros de troca do composto Na2Cu5Si4O14",
+      "sourceRefs": [
+        "MEM 4.3",
+        "ref. [35]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/cu5-parameters.svg"
+    },
+    {
+      "id": "entanglement-witness",
+      "title": "Testemunha de emaranhamento",
+      "sourceRefs": [
+        "MEM 4.4",
+        "refs. [37-42]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/entanglement-witness.svg"
+    },
+    {
+      "id": "graphene-landau",
+      "title": "Escala de quantizacao em grafeno",
+      "sourceRefs": [
+        "MEM 4.5",
+        "refs. [43-51]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/graphene-landau.svg"
+    },
+    {
+      "id": "graphene-caloric",
+      "title": "Entropia oscilatoria em materiais relativisticos",
+      "sourceRefs": [
+        "MEM 4.5",
+        "refs. [43-51]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/graphene-caloric.svg"
+    },
+    {
+      "id": "quantum-battery",
+      "title": "Energia extraivel em bateria quantica",
+      "sourceRefs": [
+        "MEM 4.6",
+        "ref. [52]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/quantum-battery.svg"
+    },
+    {
+      "id": "quantum-caloric-potentials",
+      "title": "Potenciais caloricos quanticos",
+      "sourceRefs": [
+        "MEM 4.6",
+        "refs. [53-56]"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/quantum-caloric-potentials.svg"
+    }
+  ]
+}
