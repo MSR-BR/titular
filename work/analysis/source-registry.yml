@@ -1,6 +1,6 @@
 version: 1
 updated: "2026-07-03"
-status: "draft"
+status: "draft_with_c10_figure_registry"
 sources:
   - id: "MEM-local"
     label: "Memorial e Anexos"
@@ -13,6 +13,7 @@ sources:
     notes:
       - "PDF metadata identifies author as Mario de Souza Reis Junior."
       - "Text extraction is page based and should be checked visually for high-risk claims."
+      - "Change 010 figure assets are registered in work/analysis/figure-registry.yml."
 
   - id: "EXPDF-local"
     label: "Defesa de Memorial para Professor Titular - example PDF"

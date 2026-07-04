@@ -1,5 +1,11 @@
 # Change 004 - Implement Core Feature 2: Polished Memorial Deck
 
+## Status
+
+Superseded after user review.
+
+The Change 004 prototype was useful as a first rendered deck, but the user rejected the content direction on 2026-07-03. It must not be treated as the final memorial structure. The rebuild path is now defined by Changes 007-013.
+
 ## Objective
 
 Build the actual memorial presentation from the verified narrative outline and evidence registry.
@@ -32,15 +38,18 @@ Build the actual memorial presentation from the verified narrative outline and e
 - The final deck does not contain placeholder text.
 - Any remaining uncertainties are clearly listed for user review.
 
-## Files To Modify
+## Files Modified
 
-- `src/deck/content/slides.yml` or equivalent.
-- `src/deck/content/speaker-notes.md`
-- `src/deck/assets/`
+- `src/deck/content/slides.js`
+- `src/deck/assets/figures/`
+- `src/deck/scripts/main.js`
 - `src/deck/styles/theme.css`
 - `src/deck/styles/layouts.css`
-- `work/analysis/evidence-registry.yml`
+- `src/deck/styles/base.css`
+- `src/tools/validate-c4-deck.mjs`
+- `.gitignore`
 - `work/reviews/content-review.md`
+- `tests/reports/c4-validation.md`
 
 ## Tests To Run
 
@@ -52,10 +61,10 @@ Build the actual memorial presentation from the verified narrative outline and e
 
 ## Completion Checklist
 
-- [ ] User approval received.
-- [ ] Slide sequence drafted.
-- [ ] Claims linked to sources.
-- [ ] Visual system applied.
-- [ ] Speaker notes added where useful.
-- [ ] Placeholder text removed.
-- [ ] User review package prepared.
+- [x] User approval received.
+- [x] Slide sequence drafted.
+- [x] Claims linked to sources.
+- [x] Visual system applied.
+- [x] Speaker notes added where useful.
+- [x] Placeholder text removed.
+- [x] User review package prepared.

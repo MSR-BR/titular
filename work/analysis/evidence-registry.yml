@@ -184,3 +184,39 @@ evidence:
     source_refs: ["MEM-p010", "MEM-p011", "MEM-p012", "MEM-p013", "MEM-p045", "MEM-p046"]
     claim: "Before joining UFF, the candidate had a substantial international phase centered on Aveiro: doctoral sandwich at Universidade de Aveiro, postdoctoral work there from 2003 to 2005, and Pesquisador Auxiliar at CICECO from 2005 to 2009."
     use: "pre_uff_international_phase"
+
+  - id: "E031"
+    status: "verified"
+    source_refs: ["MEM-p039", "MEM-p040", "MEM-p060", "MEM-p414"]
+    claim: "The academic books documented in the memorial are Magnetismo Molecular (2010, Editora Livraria da Fisica, 192 pages, ISBN 978-85-7861-079-1), Fundamentals of Magnetism (2013, Elsevier, 297 pages, ISBN 978-0-12-405545-2), and Quantum Mechanics: Theory and Applications (2025, Elsevier, 506 pages, ISBN 9780443328268), with a thermodynamics manuscript in preparation."
+    use: "books_isbn_and_covers"
+
+  - id: "E032"
+    status: "verified"
+    source_refs: ["MEM-p020", "MEM-p021", "MEM-p085", "MEM-p102"]
+    claim: "Sample for Science is described as a mobile-first sample-sharing platform with app-store availability, sample registration, prior results/DOI metadata, risk information, material search, direct communication between provider and requester, multidisciplinary development, and a currently paused commercial expansion."
+    use: "sample_for_science"
+
+  - id: "E033"
+    status: "verified"
+    source_refs: ["MEM-p050", "MEM-p051", "MEM-p052", "MEM-p053", "MEM-p054"]
+    claim: "The detailed teaching and supervision catalog documents semester-level teaching from 2010 to 2025 and named monograph, master's, doctoral, and co-supervision records, including automation/robotics, quantum mechanics, thermodynamics, and topical condensed matter courses."
+    use: "teaching_and_supervision_detail"
+
+  - id: "E034"
+    status: "verified"
+    source_refs: ["MEM-p012", "MEM-p015", "MEM-p018", "MEM-p019", "MEM-p021", "MEM-p025", "MEM-p028", "MEM-p029", "MEM-p030", "MEM-p032", "MEM-p035", "MEM-p036", "MEM-p037", "MEM-p038", "MEM-p039", "MEM-p041", "MEM-p043"]
+    claim: "The memorial contains usable figure candidates for the rebuilt deck: international formation, robotics/L3D, student formation, Magnetism Lab, Sample for Science, Tsallis/manganite magnetization, molecular-complex structure and fitting, entanglement witness, graphene entropy oscillations, impact metrics, book covers, literary book cover, and Physica B cover."
+    use: "figure_evidence_library"
+
+  - id: "E035"
+    status: "needs_review"
+    source_refs: ["MEM-p024", "MEM-p026", "MEM-p027", "MEM-p028", "MEM-p029", "MEM-p033"]
+    claim: "The main technical equation families for the rebuilt deck are Tsallis entropy and q-exponential, magnetocaloric Maxwell relations, molecular-magnet Hamiltonians, the Na2Cu5Si4O14 dimer-trimer Hamiltonian, and quantum caloric potential formulas; equation extraction must be visually checked before final compilation."
+    use: "compiled_equation_library"
+
+  - id: "E036"
+    status: "verified"
+    source_refs: ["MEM-p047", "MEM-p048"]
+    claim: "The future agenda is organized around university work, national scientific community, and international community, including Automacao para Fisicos, L3D extension and teacher formation, South Global networks, quantum thermodynamics, and the possible resumption of Sample for Science."
+    use: "future_agenda_detail"

@@ -12,6 +12,7 @@ A polished memorial presentation for the professor titular examination at Instit
 ## Optional Output
 
 - PPTX export if the user needs editable PowerPoint.
+- GitHub Pages deployment if the user wants a public URL.
 
 ## Suggested Narrative Sections
 
@@ -47,3 +48,9 @@ Each slide should have:
 ## Delivery Quality Bar
 
 The final deck should feel like a titular memorial presentation, not a converted CV. It should present a coherent argument about trajectory, contribution, maturity, and future institutional value.
+
+## Deployment Preference
+
+- Preferred hosted output: GitHub Pages.
+- Source repository may include public source material, deck source, images, LaTeX equation sources, rendered SVG/PNG assets, HTML, CSS, JS, and PDFs when file sizes are practical.
+- Use Git LFS only for large files that exceed practical GitHub limits.

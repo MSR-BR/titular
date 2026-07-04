@@ -1,5 +1,11 @@
 # Change 005 - Testing And Validation
 
+## Status
+
+Deferred.
+
+This original validation change is superseded by the rebuild path. Final validation should happen through Change 013 after Changes 007-012 are approved and completed.
+
 ## Objective
 
 Validate the memorial deck for accuracy, coherence, visual quality, and export readiness.

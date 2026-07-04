@@ -2,4 +2,4 @@
 
 Small presentation scripts live here.
 
-Change 002 includes `main.js` for placeholder slide rendering and keyboard/button navigation.
+`main.js` renders the memorial deck, source/reference footers, technical equations, and keyboard/button navigation.

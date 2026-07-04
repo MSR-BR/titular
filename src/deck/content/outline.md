@@ -221,7 +221,7 @@ Target duration: 50 minutes.
 
 ## Change 004 Guidance
 
-- Replace placeholders in `slides.js` only after the user approves Change 004.
+- Keep `slides.js` aligned with this outline as the real deck evolves.
 - Preserve source mapping in speaker notes or internal metadata.
 - The physics section should include technical mechanisms, visible equations on key slides, representative figures, and compact reference footers.
 - Do not add a final reference-list slide.

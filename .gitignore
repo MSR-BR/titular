@@ -33,6 +33,7 @@ pnpm-debug.log*
 Defesa_de_Memorial_para_Professor_Titular/
 
 # Generated and intermediate work
+tmp/
 work/extracted/*
 work/reviews/*
 outputs/html/*
@@ -42,6 +43,7 @@ outputs/pptx/*
 # Keep documentation inside generated folders trackable
 !work/extracted/README.md
 !work/reviews/README.md
+!work/reviews/content-review.md
 !outputs/html/README.md
 !outputs/pdf/README.md
 !outputs/pptx/README.md

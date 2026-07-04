@@ -6,7 +6,7 @@ Prepare a high-level memorial presentation for the professor titular examination
 
 ## Current Status
 
-This repository is in specification mode. The `.specs` system exists to define the work before implementation. Change 001 was approved and executed on 2026-07-03. Later changes require user approval before implementation.
+This repository is in a controlled rebuild mode. Changes 001-003 created the project foundation, MVP renderer, and source analysis. Change 004 produced a first prototype, but the user rejected its content direction on 2026-07-03. The final deck must now follow the rebuild path in Changes 007-013.
 
 ## Local Source Material Currently Visible
 
@@ -22,7 +22,7 @@ This repository is in specification mode. The `.specs` system exists to define t
 - The presentation language is Portuguese unless the user asks otherwise.
 - The audience is the banca named in the blueprint. No claims about individual banca members may be added unless sourced or approved.
 - The source memorial and example presentation are authoritative inputs. Any extracted claim must remain traceable.
-- No public deployment should happen without user approval.
+- The user confirmed the material can be public and may live in Git.
 
 ## Proposed Folder Structure
 
@@ -76,6 +76,8 @@ The project uses a source-first presentation pipeline:
 - Build tools: Node.js scripts kept small and local to `src/tools/`.
 - Export: browser-based HTML to PDF export. PPTX export remains optional.
 - Visual QA: browser screenshot checks where available.
+- Equation rendering: LaTeX sources committed to Git, rendered either with local KaTeX/MathJax or generated SVG assets.
+- Repository hosting: Git/GitHub should contain source files, public source materials, figures, equation sources, and rendered static deck assets.
 
 This stack keeps the project reproducible and flexible while avoiding a heavyweight app that is not needed for the MVP.
 
@@ -95,9 +97,30 @@ Each factual content item should be represented by:
 1. Change 001 - Create project structure.
 2. Change 002 - Implement MVP foundation.
 3. Change 003 - Implement source extraction and narrative architecture.
-4. Change 004 - Implement the polished memorial deck.
-5. Change 005 - Run testing and validation.
-6. Change 006 - Export or deploy final presentation artifacts.
+4. Change 004 - First rendered prototype. Superseded after user review.
+5. Change 005 - Original testing and validation. Deferred until rebuild.
+6. Change 006 - Original export or deployment. Deferred until rebuild.
+7. Change 007 - Audit memorial content.
+8. Change 008 - Rebuild slide architecture.
+9. Change 009 - Redesign template system.
+10. Change 010 - Build figure and evidence library.
+11. Change 011 - Implement compiled LaTeX equations.
+12. Change 012 - Rebuild deck section by section.
+13. Change 013 - Final validation and export.
+
+## Rebuild Architecture
+
+The rebuild path adds a stricter editorial pipeline before implementation:
+
+1. Content audit: convert the memorial into dense, slide-ready content units.
+2. Architecture: define every slide and transition before visual implementation.
+3. Template system: approve a denser and more attractive visual language.
+4. Figure library: extract and register figures from approved sources.
+5. Equation system: render equations as compiled LaTeX-quality output.
+6. Section rebuild: implement and review one section at a time.
+7. Final validation: validate and export only after user approval.
+
+The C4 prototype may be mined for reusable renderer code, but it is not the final content model.
 
 ## Testing Strategy
 
@@ -106,21 +129,35 @@ Each factual content item should be represented by:
 - Citation checks: every factual slide claim maps to a source.
 - Anti-hallucination checks: unsourced claims are flagged before delivery.
 - Visual checks: title, charts, images, and text fit at desktop and presentation aspect ratios.
+- Density checks: slides contain enough memorial information to support the oral presentation.
+- Section checks: major section changes are visually and narratively explicit.
+- Equation checks: equations are compiled/rendered, not shown as raw LaTeX source.
+- Figure checks: every figure has provenance and a documented intended use.
 - Export checks: generated PDF opens, has the expected slide count, and preserves layout.
 - Review checks: final deck is checked against the target audience and memorial objective.
 
 ## Deployment Strategy
 
-Default delivery is local artifact delivery:
+Default delivery is Git-backed local artifact delivery:
 
 - `outputs/html/`: static presentation.
 - `outputs/pdf/`: final PDF.
 - `outputs/pptx/`: optional editable export if requested.
 
-Optional deployment:
+Preferred deployment:
 
-- Static hosting can be used only after approval.
-- Any hosted version must avoid exposing private source material unless explicitly approved.
+- GitHub Pages, served from the repository after final user approval.
+- GitHub Actions may be used only if a build/export step becomes necessary.
+- If all files are static and buildless, GitHub Pages should serve the static HTML directly.
+
+Fallback deployment:
+
+- Vercel can be used only if GitHub Pages cannot meet the project need.
+
+Repository size policy:
+
+- Keep ordinary HTML, CSS, JS, Markdown, YAML, LaTeX, SVG, PNG/JPG/WebP, and normal PDFs in Git.
+- Use Git LFS or exclude only files that exceed practical GitHub limits, especially assets near or above 100 MB.
 
 ## Open Questions
 
@@ -129,3 +166,5 @@ Optional deployment:
 - Whether the final deck should include speaker notes.
 - Whether external biographical or publication metadata may be used beyond the supplied memorial.
 - Whether the presentation should follow a UFF or IF-UFF visual identity.
+- Whether article figures beyond the memorial may be extracted from external/online sources.
+- Whether the final public URL should be GitHub Pages only or also mirrored elsewhere.

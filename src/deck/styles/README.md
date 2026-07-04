@@ -2,4 +2,4 @@
 
 Presentation CSS and print/export styles live here.
 
-Change 002 includes base, theme, and layout CSS for the placeholder deck foundation.
+The styles support title, section, content, card, metric, timeline, technical, image, and closing slides.

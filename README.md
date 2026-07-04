@@ -4,9 +4,9 @@ Project for preparing the memorial presentation for the professor titular examin
 
 ## Current Phase
 
-Change 003 has been executed: source extraction and narrative architecture.
+The project is being restructured for a full deck rebuild. The Change 004 prototype was reviewed and rejected for insufficient content density and weak memorial structure.
 
-No final factual memorial slides have been drafted yet.
+The rebuild path is now Changes 007-013. The next phase is Change 007: audit memorial content.
 
 ## Specification System
 
@@ -15,6 +15,7 @@ The project follows Specification-Driven Development.
 - Shared rules live in `.specs/shared/`.
 - Approved implementation phases live in `.specs/changes/`.
 - Only the currently approved change should be implemented.
+- The rebuild protocol lives in `.specs/shared/rebuild-protocol.md`.
 
 ## Directory Map
 
@@ -34,28 +35,28 @@ Preview options:
 - Open `src/deck/index.html` directly in a browser.
 - Or serve the repository root with `python3 -m http.server 8000` and open `http://127.0.0.1:8000/src/deck/`.
 
-The current deck contains placeholder slides only. Factual memorial content begins in later approved changes after source extraction and evidence mapping.
+The current deck is a superseded prototype. It may be useful for renderer code, but it is not the final content direction.
 
 ## Source Analysis
 
 Change 003 extracted the local memorial and example presentation into `work/extracted/`, then created source, evidence, assumption, and narrative outline files under `work/analysis/`.
 
-The extracted text files are private/generated working artifacts and remain ignored by Git. The evidence and outline files are intended to guide the next approved implementation phase.
+The extracted text files are generated working artifacts and remain ignored by Git unless later needed for review. The evidence and outline files are intended to guide the next approved implementation phase.
 
 Current presentation direction:
 
-- Target duration: 50 minutes.
-- Include a clear pre-UFF Aveiro phase: doutorado sanduiche, pos-doc, and CICECO.
-- Make the physics/results section the most technically detailed part of the talk.
-- Show main equations on technical physics slides.
-- Include compact references in technical slide footers, without a final reference-list slide.
+- Much denser slides with telegraphic information organized in attractive cards.
+- Clear section changes: Formacao, UFF, Resultados, Impacto, Internacionalizacao, Futuro.
+- More figures from the memorial and approved article/source material.
+- Compiled LaTeX-quality equations, not raw equation code.
+- Step-by-step rebuild with user approval after each phase.
 
 ## Git Status
 
 This folder was initialized as a local Git repository in Change 001.
 
-Remote linking is pending. Do not add a GitHub or other remote until the user provides or approves the remote URL.
+Remote linking is pending. GitHub Pages is now the preferred deployment target once the rebuilt deck is approved and a remote repository exists.
 
 ## Privacy Note
 
-Treat the memorial source files as private by default. Do not upload, publish, or deploy source material without explicit approval.
+The user confirmed the project material can be public and can live in Git. Use Git LFS or exclusion only for files that exceed practical GitHub size limits.

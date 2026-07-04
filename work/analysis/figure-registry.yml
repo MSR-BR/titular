@@ -1,0 +1,198 @@
+version: 1
+updated: "2026-07-03"
+status: "draft_for_user_review"
+source_policy:
+  - "Use only local public material in this repository unless the user approves external ingestion."
+  - "Keep PDF captions and source references in the registry; do not bake long captions into the slide images."
+  - "Raw rendered PDF pages remain under tmp/ and are not final deck assets."
+assets:
+  - id: "FIG-FORM-ERICE-2004"
+    path: "src/deck/assets/figures/formation-erice-2004.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 12
+    source_figure: "Figura 2.1"
+    caption: "Apresentacao oral no 31st International Workshop on Complexity, Metastability and Nonextensivity, 2004, Erice, Italia."
+    intended_use: "Formacao internacional; ponte doutorado/Aveiro/Tsallis."
+    priority: "optional"
+    quality: "usable but dark"
+
+  - id: "FIG-UFF-L3D-2019"
+    path: "src/deck/assets/figures/l3d-robotica-projeto-2019.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 15
+    source_figure: "Figura 3.1"
+    caption: "Exemplo de projeto final do curso de Automacao e Robotica, 2019.2."
+    intended_use: "Ensino, L3D, automacao e projetos praticos."
+    priority: "primary"
+    quality: "good"
+
+  - id: "FIG-UFF-LAB-MAGNETISMO-2014"
+    path: "src/deck/assets/figures/lab-magnetismo-uff-2014.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 19
+    source_figure: "Figura 3.3"
+    caption: "Equipe do Laboratorio de Magnetismo da UFF durante a fase de consolidacao experimental, fevereiro de 2014."
+    intended_use: "Infraestrutura, laboratorio, formacao de equipe."
+    priority: "primary"
+    quality: "good"
+
+  - id: "FIG-UFF-SAMPLE-FOR-SCIENCE"
+    path: "src/deck/assets/figures/sample-for-science-app.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 21
+    source_figure: "Figura 3.4"
+    caption: "Telas representativas do aplicativo Sample for Science."
+    intended_use: "Inovacao, propriedade intelectual, infraestrutura digital para amostras."
+    priority: "primary"
+    quality: "good"
+
+  - id: "FIG-RES-TSALLIS-MANGANITE"
+    path: "src/deck/assets/figures/tsallis-manganite-mh.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 25
+    source_figure: "Figura 4.1"
+    caption: "Curvas de magnetizacao M(H) da manganita La0.60Y0.07Ca0.33MnO3 acima de Tc = 150 K; ajuste com funcao de Langevin generalizada."
+    intended_use: "Resultado tecnico Tsallis; slide de nao homogeneidade magnetica."
+    priority: "primary"
+    quality: "good"
+
+  - id: "FIG-RES-MOLECULAR-CHAIN"
+    path: "src/deck/assets/figures/molecular-chain-na2cu5si4o14.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 28
+    source_figure: "Figura 4.2"
+    caption: "Cadeia magnetica em zigue-zague do composto Na2Cu5Si4O14, com alternancia entre unidades dimero e trimero."
+    intended_use: "Complexos metalicos; conexao estrutura-Hamiltoniano-parametros."
+    priority: "primary"
+    quality: "good"
+
+  - id: "FIG-RES-MOLECULAR-CHIT"
+    path: "src/deck/assets/figures/molecular-chit-fit-na2cu5si4o14.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 29
+    source_figure: "Figura 4.3"
+    caption: "Comportamento experimental de chi T para Na2Cu5Si4O14 e esquema das interacoes de troca J1, J2 e J3."
+    intended_use: "Complexos metalicos; ajuste de susceptibilidade; CARDAMOMO/modelagem."
+    priority: "primary"
+    quality: "good"
+
+  - id: "FIG-RES-ENTANGLEMENT-WITNESS"
+    path: "src/deck/assets/figures/entanglement-witness.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 30
+    source_figure: "Figura 4.4"
+    caption: "Testemunho de emaranhamento em funcao da temperatura para sistema magnetico molecular."
+    intended_use: "Informacao quantica em materiais magneticos."
+    priority: "primary"
+    quality: "good"
+
+  - id: "FIG-RES-GRAPHENE-ENTROPY"
+    path: "src/deck/assets/figures/graphene-entropy-oscillation.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 32
+    source_figure: "Figura 4.5"
+    caption: "Variacao da entropia magnetica em grafeno bidimensional em funcao do parametro adimensional m."
+    intended_use: "Materiais relativisticos; efeito magnetocalorico oscilatorio em grafeno."
+    priority: "primary"
+    quality: "good"
+
+  - id: "FIG-IMPACT-CITATIONS"
+    path: "src/deck/assets/figures/impact-citations-trends.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 35
+    source_figure: "Figura 5.1"
+    caption: "Evolucao anual das citacoes segundo Google Scholar e Scopus."
+    intended_use: "Impacto cientifico; dashboard de citacoes e producao."
+    priority: "primary"
+    quality: "good"
+
+  - id: "FIG-IMPACT-SCIVAL"
+    path: "src/deck/assets/figures/impact-scival-percentiles.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 36
+    source_figure: "Figura 5.2"
+    caption: "Indicadores qualitativos de producao cientifica 2015-2024 segundo Scopus/SciVal."
+    intended_use: "Impacto; top 25% citados e top 25% CiteScore."
+    priority: "primary"
+    quality: "good"
+
+  - id: "FIG-IMPACT-SCOPUS-SUBJECTS"
+    path: "src/deck/assets/figures/impact-scopus-subjects.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 38
+    source_figure: "Figura 5.5"
+    caption: "Distribuicao das publicacoes por area do conhecimento segundo classificacao Scopus."
+    intended_use: "Impacto; interdisciplinaridade e area de conhecimento."
+    priority: "secondary"
+    quality: "good"
+
+  - id: "FIG-IMPACT-SUMMARY-BOX"
+    path: "src/deck/assets/figures/impact-summary-box.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 38
+    source_figure: "Resumo do capitulo 5"
+    caption: "Quadro-resumo de lideranca cientifica, interdisciplinaridade e reconhecimento institucional."
+    intended_use: "Backup ou slide de sintese de impacto."
+    priority: "secondary"
+    quality: "good"
+
+  - id: "FIG-BOOKS-COVERS"
+    path: "src/deck/assets/figures/books-academic-covers.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 39
+    source_figure: "Figura 6.1"
+    caption: "Capas dos livros academicos publicados: Magnetismo Molecular, Fundamentals of Magnetism, Quantum Mechanics."
+    intended_use: "Livros, ensino, material didatico e formacao academica."
+    priority: "primary"
+    quality: "good"
+
+  - id: "FIG-BOOKS-COVERS-OLD"
+    path: "src/deck/assets/figures/book-covers-memorial.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 39
+    source_figure: "Figura 6.1"
+    caption: "Versao anterior das capas dos livros academicos, mantida por compatibilidade com prototipos."
+    intended_use: "Fallback; preferir FIG-BOOKS-COVERS."
+    priority: "fallback"
+    quality: "good"
+
+  - id: "FIG-BOOKS-IBN-HAKIM"
+    path: "src/deck/assets/figures/ibn-hakim-cover.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 41
+    source_figure: "Figura 6.2"
+    caption: "Capa do livro As Viagens de ibn Hakim, obra literaria publicada em 2025."
+    intended_use: "Opcional; manter temporariamente conforme orientacao do usuario."
+    priority: "optional"
+    quality: "good"
+
+  - id: "FIG-EDITORIAL-PHYSICA-B"
+    path: "src/deck/assets/figures/physica-b-cover-2026.png"
+    source_id: "MEM-local"
+    source_path: "memorial.pdf"
+    page: 43
+    source_figure: "Figura 7.1"
+    caption: "Capa da revista Physica B: Condensed Matter, Volume 728, 15 April 2026; Editor-in-Chief Mario Reis."
+    intended_use: "Atividade editorial; lideranca cientifica internacional."
+    priority: "primary"
+    quality: "good"
+
+review_outputs:
+  contact_sheet: "tests/reports/c10-figure-contact-sheet.png"
+  rendered_pages_dir: "tmp/c10-pages"

@@ -14,3 +14,7 @@ Preview options:
 ## Export Plan
 
 PDF export will be implemented later, after real sourced slides exist. The expected path is browser print/export from the HTML deck into `outputs/pdf/`.
+
+## Change 004 Validation
+
+Run `node src/tools/validate-c4-deck.mjs` to check that the real deck has no placeholders, includes explicit source mappings, includes technical equations, and follows the compact-reference decision.
