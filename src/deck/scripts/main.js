@@ -715,6 +715,9 @@
       const scrubElements = [];
       animatedElements.forEach((element, order) => {
         element.classList.add("story-reveal");
+        if (element.matches(".info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure")) {
+          element.classList.add("content-scroll-card");
+        }
         element.style.setProperty("--reveal-order", Math.min(order, 10));
         if (usesScrollTemplate) {
           element.classList.add("scroll-scrub-reveal");
@@ -761,6 +764,10 @@
           element.style.setProperty("--scrub-opacity", progress.toFixed(4));
           element.style.setProperty("--scrub-y", `${((1 - progress) * 42).toFixed(2)}px`);
           element.style.setProperty("--scrub-blur", `${((1 - progress) * 5).toFixed(2)}px`);
+          const scale = element.classList.contains("content-scroll-card")
+            ? .88 + progress * .12
+            : 1;
+          element.style.setProperty("--scrub-scale", scale.toFixed(4));
         });
       });
       deck.querySelectorAll(".section-scroll-card").forEach((sectionCard) => {

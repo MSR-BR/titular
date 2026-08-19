@@ -1141,8 +1141,9 @@
 .deck-shell .story-reveal.scroll-scrub-reveal,
 .deck-shell .story-reveal.scroll-scrub-reveal.is-visible {
   opacity: var(--scrub-opacity, 0);
-  transform: translateY(var(--scrub-y, 42px));
+  transform: translateY(var(--scrub-y, 42px)) scale(var(--scrub-scale, 1));
   filter: blur(var(--scrub-blur, 5px));
+  transform-origin: 50% 50%;
   transition: none;
   will-change: opacity, transform, filter;
 }
