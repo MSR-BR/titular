@@ -70,26 +70,6 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E003", "E004", "E005"]
   },
   {
-    id: "s05-formation-timeline",
-    layout: "timeline",
-    section: "Formação",
-    eyebrow: "Linha do tempo | capítulo 2",
-    title: "Da UFRJ ao CICECO",
-    milestones: [
-      { label: "1993-1997", text: "Bacharelado em Física na UFRJ." },
-      { label: "1996-1997", text: "Iniciação científica no CBPF; magnetismo e instrumentação." },
-      { label: "1998-2000", text: "Mestrado no CBPF; RCo3, magnetização e RMN." },
-      { label: "1999", text: "MMM 99; contato com manganitas e Vitor Amaral." },
-      { label: "2000-2001", text: "Início do doutorado no CBPF. Início dos modelos utilizando a Estatística de Tsallis." },
-      { label: "2001-2002", text: "Doutorado sanduíche em Aveiro; colaboração com Vitor Amaral. Início da parte experimental." },
-      { label: "2003-2005", text: "Pós-doutoramento na Universidade de Aveiro. Continuação do tema de doutorado." },
-      { label: "2005-2009", text: "Pesquisador Auxiliar no CICECO; laboratório, VSM e complexos metálicos." }
-    ],
-    footerRefs: "MEM pp.7-13; resumo cap. 2",
-    sourceRefs: ["E003", "E004", "E005"],
-    notes: "O memorial registra 2001-2002 no texto narrativo para o período em Aveiro, com defesa no CBPF em 2003."
-  },
-  {
     id: "s05-master",
     layout: "cards",
     section: "Formação",
@@ -296,6 +276,26 @@ window.MemorialDeckSlides = [
     notes: "Usar este slide para explicar a passagem de formação para autonomia científica."
   },
   {
+    id: "s05-formation-timeline",
+    layout: "timeline",
+    section: "Formação",
+    eyebrow: "Linha do tempo | capítulo 2",
+    title: "Da UFRJ ao CICECO",
+    milestones: [
+      { label: "1993-1997", text: "Bacharelado em Física na UFRJ." },
+      { label: "1996-1997", text: "Iniciação científica no CBPF; magnetismo e instrumentação." },
+      { label: "1998-2000", text: "Mestrado no CBPF; RCo3, magnetização e RMN." },
+      { label: "1999", text: "MMM 99; contato com manganitas e Vitor Amaral." },
+      { label: "2000-2001", text: "Início do doutorado no CBPF. Início dos modelos utilizando a Estatística de Tsallis." },
+      { label: "2001-2002", text: "Doutorado sanduíche em Aveiro; colaboração com Vitor Amaral. Início da parte experimental." },
+      { label: "2003-2005", text: "Pós-doutoramento na Universidade de Aveiro. Continuação do tema de doutorado." },
+      { label: "2005-2009", text: "Pesquisador Auxiliar no CICECO; laboratório, VSM e complexos metálicos." }
+    ],
+    footerRefs: "MEM pp.7-13; resumo cap. 2",
+    sourceRefs: ["E003", "E004", "E005"],
+    notes: "O memorial registra 2001-2002 no texto narrativo para o período em Aveiro, com defesa no CBPF em 2003."
+  },
+  {
     id: "s10-uff-entry",
     layout: "section",
     section: "UFF",
@@ -310,37 +310,17 @@ window.MemorialDeckSlides = [
     section: "UFF",
     eyebrow: "UFF | Atividades docentes",
     title: "Atividades docentes",
-    lead: "Desde 2009, uma atuação contínua na graduação e na pós-graduação articula formação teórica, prática experimental e aplicações contemporâneas da Física.",
+    lead: "Atuação contínua e abrangente, distribuída por praticamente todo o curso de Física e articulando graduação, pós-graduação, teoria, experimento e aplicações.",
     cards: [
-      { label: "Graduação", text: "Física Moderna, Introdução à Mecânica Quântica, Mecânica Quântica, Termodinâmica e disciplinas experimentais." },
-      { label: "Experimento", text: "Física Experimental e disciplinas de laboratório ao longo da graduação." },
+      { label: "Percurso docente", text: "Início nas disciplinas experimentais e básicas, avançando progressivamente para componentes teóricos centrais e disciplinas da pós-graduação." },
+      { label: "Graduação", text: "Física Experimental, Física Moderna, Introdução à Mecânica Quântica, Mecânica Quântica e Termodinâmica." },
       { label: "Pós-graduação", text: "Mecânica Quântica I, magnetismo, matéria condensada e tópicos avançados conectados às linhas de pesquisa." },
-      { label: "Aplicação", text: "Robótica e Automação aplicadas à Física, com Arduino, roteiros próprios e aprendizagem orientada por projetos." }
+      { label: "Ensino e pesquisa", text: "Conteúdos formais associados a exemplos de matéria condensada, magnetismo e termodinâmica, aproximando currículo e Física contemporânea." },
+      { label: "Robótica e automação", text: "Curso para graduação e pós-graduação com Arduino, sistemas de automação, roteiros próprios e projetos que integram conceitos e prática experimental." },
+      { label: "Material didático e livros", text: "A experiência docente originou materiais próprios e os livros Magnetismo Molecular (2010), Fundamentals of Magnetism (2013) e Quantum Mechanics (2025)." }
     ],
     footerRefs: "MEM pp.12-13,48-50",
-    sourceRefs: ["E007"]
-  },
-  {
-    id: "s12-books",
-    layout: "cards",
-    section: "UFF",
-    eyebrow: "UFF | Atividades docentes",
-    title: "Da sala de aula ao material didático",
-    lead: "A produção editorial segue uma mesma lógica no memorial: pesquisa acumulada alimenta disciplinas, as disciplinas geram material sistematizado, e esse material vira livro.",
-    cards: [
-      { label: "2010 | ISBN 978-85-7861-079-1", text: "Magnetismo Molecular, Editora Livraria da Física, com Antonio Moreira dos Santos; magnetos moleculares, spins, troca e termodinâmica." },
-      { label: "2013 | ISBN 978-0-12-405545-2", text: "Fundamentals of Magnetism, Elsevier; fundamentos teóricos, magnetismo não cooperativo, cooperativo e molecular." },
-      { label: "2025 | ISBN 978-0-443-32826-8", text: "Quantum Mechanics: Theory and Applications, Elsevier; resultado de 10 anos de material de mecânica quântica." },
-      { label: "em redação", text: "Termodinâmica para Estudantes de Física, a partir de notas de aula de 2024-2026." }
-    ],
-    figure: {
-      src: "assets/figures/books-academic-covers.png",
-      alt: "Capas dos livros acadêmicos publicados",
-      caption: "Capas extraídas da Figura 6.1 do memorial."
-    },
-    footerRefs: "MEM pp.13,37-40; refs. [36,57-59]",
-    sourceRefs: ["E008"],
-    notes: "Mostrar que os livros não são item lateral: eles conectam pesquisa, pós-graduação e graduação."
+    sourceRefs: ["E007", "E008"]
   },
   {
     id: "s13-people",
