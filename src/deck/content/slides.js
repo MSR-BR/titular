@@ -11,7 +11,7 @@ window.MemorialDeckSlides = [
     id: "s01-title",
     layout: "title",
     eyebrow: "MEMORIAL ACADÊMICO",
-    title: "Mário Reis",
+    title: "Mario Reis",
     affiliations: [
       "Instituto de Física",
       "Universidade Federal Fluminense"
@@ -99,16 +99,19 @@ window.MemorialDeckSlides = [
       {
         meta: "Ensino fundamental e médio",
         label: "Colégio Marista São José - Tijuca",
+        logo: { src: "assets/logos/marista.png", alt: "Marista" },
         html: "<ul><li>Formação escolar em colégios de ordem religiosa.</li><li>Interesse crescente pela área de exatas: matemática e física.</li><li>Vestibulares para Física nas universidades do Rio de Janeiro.</li></ul>"
       },
       {
         meta: "1993-1997",
         label: "Bacharelado em Física - UFRJ",
+        logo: { src: "assets/logos/ufrj.png", alt: "UFRJ" },
         html: "<ul><li>Ingresso em 1993, aos 17 anos, no campus da Ilha do Fundão.</li><li>Formação fundamental em Física.</li><li>Aproximação progressiva com a matéria condensada e a prática científica.</li></ul>"
       },
       {
         meta: "1996-1997",
         label: "Iniciação científica - CBPF",
+        logo: { src: "assets/logos/cbpf.png", alt: "CBPF" },
         html: "<ul><li>Laboratório de Magnetismo, com o Prof. Armando Takeuchi.</li><li>Construção, calibração e uso de um magnetômetro reed.</li><li>Instrumentação, eletrônica, aquisição de dados e cultura experimental.</li><li>Disciplinas de pós-graduação cursadas ainda durante o bacharelado.</li></ul>"
       }
     ],
@@ -268,23 +271,24 @@ window.MemorialDeckSlides = [
       {
         meta: "2004",
         label: "Circulação internacional",
-        text: "Participação em conferências na França, Grecia e Itália; apresentação oral em Erice sobre complexidade, metaestabilidade e não extensividade."
+        text: "Participação em conferências na França, Grécia e Itália. Na figura ao lado, apresentação oral em Erice, Itália, sobre complexidade, metaestabilidade e não extensividade."
       },
       {
         meta: "2005-2009",
         label: "Pesquisador Auxiliar | CICECO",
+        logo: { src: "assets/logos/ciceco.png", alt: "CICECO - Aveiro Institute of Materials" },
         text: "Implantação, organização e manutenção de laboratório de magnetismo associado a novo VSM."
       },
       {
         meta: "2005-2009",
         label: "Nova agenda",
-        text: "Transição gradual para complexos metálicos, modelagem termodinâmica e primeiras atividades formais de orientação."
+        html: "<ul><li>Transição gradual para complexos metálicos.</li><li>Modelagem termodinâmica.</li><li>Primeiras atividades formais de orientação.</li></ul>"
       }
     ],
     figure: {
-      src: "assets/figures/formation-erice-2004.png",
+      src: "assets/figures/erice-presentation-2004.jpg",
       alt: "Apresentação oral em Erice, Itália, 2004",
-      caption: "Erice, 2004: circulação internacional dos resultados sobre não extensividade e sistemas magnéticos."
+      caption: "Erice, Itália, 2004 — apresentação oral sobre complexidade, metaestabilidade e não extensividade."
     },
     footerRefs: "MEM pp.11-13",
     sourceRefs: ["E005", "E030"],
@@ -827,7 +831,7 @@ window.MemorialDeckSlides = [
     figure: {
       src: "assets/figures/physica-b-cover-2026.png",
       alt: "Capa da revista Physica B Condensed Matter",
-      caption: "Physica B: Condensed Matter, volume de 2026 com Mário Reis como Editor-in-Chief."
+      caption: "Physica B: Condensed Matter, volume de 2026 com Mario Reis como Editor-in-Chief."
     },
     footerRefs: "MEM pp.41-42,93; Fig. 7.1",
     sourceRefs: ["E025"]

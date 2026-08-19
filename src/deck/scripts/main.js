@@ -132,12 +132,17 @@
         const tag = normalizedCard.href ? "a" : "article";
         const href = normalizedCard.href ? ` href="${escapeAttribute(normalizedCard.href)}"` : "";
         const linkedClass = normalizedCard.href ? " index-section-card" : "";
+        const logoClass = normalizedCard.logo?.src ? " has-institutional-logo" : "";
+        const logo = normalizedCard.logo?.src
+          ? `<img class="institutional-logo" src="${escapeAttribute(normalizedCard.logo.src)}" alt="${escapeAttribute(normalizedCard.logo.alt || "")}" loading="lazy" />`
+          : "";
         const number = normalizedCard.number
           ? `<span class="section-number" aria-hidden="true">${escapeHtml(normalizedCard.number)}</span>`
           : "";
         return `
-          <${tag} class="info-card${linkedClass}"${href}>
+          <${tag} class="info-card${linkedClass}${logoClass}"${href}>
             ${number}
+            ${logo}
             ${label}
             ${meta}
             ${text}
@@ -622,6 +627,8 @@
     masterSlide?.classList.add("formation-master");
     const doctorateSlide = deck.querySelector("#slide-6");
     doctorateSlide?.classList.add("formation-doctorate");
+    const postdocSlide = deck.querySelector("#slide-8");
+    postdocSlide?.classList.add("postdoc-erice");
 
     sections.slice(1).forEach((section) => {
       const target = deck.querySelector(`#slide-${section.targetSlide}`);

@@ -62,7 +62,7 @@ window.MemorialDeckTemplatePrototypes = [
       { label: "1999-2000", text: "MMM 99; manganitas CMR; contato com Vitor Amaral; projeto CBPF-Aveiro." },
       { label: "2001-2002", text: "Doutorado sanduiche em Aveiro; manganitas; RMN em Estrasburgo; retorno ao Brasil." },
       { label: "2003", text: "Defesa da tese no CBPF; 3,5 anos; 12 artigos; metodo experimento + modelo." },
-      { label: "2003-2005", text: "Pos-doc em Aveiro; Tsallis em sistemas reais; conferencias Franca, Grecia e Italia." },
+      { label: "2003-2005", text: "Pós-doc em Aveiro; Tsallis em sistemas reais; conferências na França, Grécia e Itália." },
       { label: "2005-2009", text: "Pesquisador Auxiliar CICECO; VSM; laboratorio; complexos metalicos; orientacoes." },
       { label: "2009", text: "Retorno ao Brasil e entrada na UFF; mudanca de escala para ensino e instituicao." },
       { label: "Ponte", text: "A experiencia pre-UFF vira laboratorio, estudantes e programa de pesquisa na UFF." }
