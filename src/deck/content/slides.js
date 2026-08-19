@@ -296,15 +296,6 @@ window.MemorialDeckSlides = [
     notes: "Usar este slide para explicar a passagem de formação para autonomia científica."
   },
   {
-    id: "s10-uff-entry",
-    layout: "section",
-    section: "UFF",
-    eyebrow: "Seção 2",
-    title: "Desenvolvimento acadêmico e consolidação na UFF",
-    footerRefs: "MEM pp.12,20-21",
-    sourceRefs: ["E006", "E016"]
-  },
-  {
     id: "s11-teaching",
     layout: "cards",
     section: "UFF",
