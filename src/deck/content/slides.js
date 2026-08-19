@@ -80,9 +80,9 @@ window.MemorialDeckSlides = [
       { label: "1996-1997", text: "Iniciação científica no CBPF; magnetismo e instrumentação." },
       { label: "1998-2000", text: "Mestrado no CBPF; RCo3, magnetização e RMN." },
       { label: "1999", text: "MMM 99; contato com manganitas e Vitor Amaral." },
-      { label: "2000-2001", text: "Início do doutorado no CBPF; amostras, M(H) e RMN." },
-      { label: "2001-2002", text: "Doutorado sanduíche em Aveiro; colaboração com Vitor Amaral." },
-      { label: "2003-2005", text: "Pós-doutoramento na Universidade de Aveiro." },
+      { label: "2000-2001", text: "Início do doutorado no CBPF. Início dos modelos utilizando a Estatística de Tsallis." },
+      { label: "2001-2002", text: "Doutorado sanduíche em Aveiro; colaboração com Vitor Amaral. Início da parte experimental." },
+      { label: "2003-2005", text: "Pós-doutoramento na Universidade de Aveiro. Continuação do tema de doutorado." },
       { label: "2005-2009", text: "Pesquisador Auxiliar no CICECO; laboratório, VSM e complexos metálicos." }
     ],
     footerRefs: "MEM pp.7-13; resumo cap. 2",
@@ -140,7 +140,7 @@ window.MemorialDeckSlides = [
       },
       {
         label: "Resultados",
-        html: "<ul><li>Descrição conjunta de momentos 3d itinerantes e localizados.</li><li>Caracterização da instabilidade magnética nos sistemas RCo3.</li><li>Dissertação concluída em 2000.</li></ul>"
+        html: "<ul><li>Descrição conjunta de momentos 3d itinerantes e localizados.</li><li>Caracterização da instabilidade magnética nos sistemas RCo3.</li><li>Dissertação concluída em 2000.</li><li>Participação na 44th Annual Conference on Magnetism and Magnetic Materials (MMM 99), em San Jose, Califórnia: encontro com o Prof. Vitor Amaral que nucleou o tema do doutorado e linhas de pesquisa desenvolvidas nos anos seguintes.</li></ul>"
       },
       {
         label: "Produção científica",
