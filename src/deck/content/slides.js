@@ -312,12 +312,10 @@ window.MemorialDeckSlides = [
     title: "Atividades docentes",
     lead: "Atuação contínua e abrangente, distribuída por praticamente todo o curso de Física e articulando graduação, pós-graduação, teoria, experimento e aplicações.",
     cards: [
-      { label: "Percurso docente", text: "Início nas disciplinas experimentais e básicas, avançando progressivamente para componentes teóricos centrais e disciplinas da pós-graduação." },
-      { label: "Graduação", text: "Física Experimental, Física Moderna, Introdução à Mecânica Quântica, Mecânica Quântica e Termodinâmica." },
-      { label: "Pós-graduação", text: "Mecânica Quântica I, magnetismo, matéria condensada e tópicos avançados conectados às linhas de pesquisa." },
-      { label: "Ensino e pesquisa", text: "Conteúdos formais associados a exemplos de matéria condensada, magnetismo e termodinâmica, aproximando currículo e Física contemporânea." },
-      { label: "Robótica e automação", text: "Curso para graduação e pós-graduação com Arduino, sistemas de automação, roteiros próprios e projetos que integram conceitos e prática experimental." },
-      { label: "Material didático e livros", text: "A experiência docente originou materiais próprios e os livros Magnetismo Molecular (2010), Fundamentals of Magnetism (2013) e Quantum Mechanics (2025)." }
+      { label: "Graduação", html: "<ul><li>Física Experimental I e IV</li><li>Física Moderna</li><li>Introdução à Mecânica Quântica</li><li>Mecânica Quântica II</li><li>Termodinâmica</li></ul>" },
+      { label: "Pós-graduação", html: "<ul><li>Mecânica Quântica I</li><li>Introdução ao magnetismo</li><li>Magnetismo Molecular</li></ul>" },
+      { label: "Robótica e automação", text: "Curso para graduação e pós-graduação com Arduino, sistemas de automação e projetos que integram conceitos e prática experimental. Roteiro próprio. Laboratório montado para este propósito." },
+      { label: "Material didático e livros", html: "<p>A experiência docente originou materiais próprios e os livros:</p><ol><li>Magnetismo Molecular (2010)</li><li>Fundamentals of Magnetism (2013)</li><li>Quantum Mechanics (2025)</li></ol><p>Serão detalhados mais à frente nesta apresentação.</p>" }
     ],
     footerRefs: "MEM pp.12-13,48-50",
     sourceRefs: ["E007", "E008"]

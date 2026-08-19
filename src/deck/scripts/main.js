@@ -611,15 +611,21 @@
 
     sections.forEach((section) => {
       section.targetSlide = slides.findIndex((slide) => slide.id === section.targetId) + 1;
-      section.anchor = section.number === 1 ? `slide-${section.targetSlide}` : `section-${section.number}`;
+      section.anchor = `slide-${section.targetSlide}`;
     });
 
     const indexSlide = deck.querySelector("#slide-2");
     indexSlide?.classList.add("standard-section-cover", "index-cover");
 
-    const firstCover = deck.querySelector("#slide-3");
-    firstCover?.classList.add("standard-section-cover", "section-scroll-card");
-    if (firstCover) firstCover.dataset.sectionNumber = "1";
+    sections.forEach((section) => {
+      const target = deck.querySelector(`#slide-${section.targetSlide}`);
+      target?.classList.add("standard-section-cover", "section-scroll-card", `section-${section.key}`);
+      if (target) {
+        target.dataset.sectionNumber = String(section.number);
+        target.dataset.sectionName = section.label;
+        target.dataset.sectionTitle = section.title;
+      }
+    });
 
     const formationOpening = deck.querySelector("#slide-4");
     formationOpening?.classList.add("formation-opening-content");
@@ -629,20 +635,6 @@
     doctorateSlide?.classList.add("formation-doctorate");
     const postdocSlide = deck.querySelector("#slide-8");
     postdocSlide?.classList.add("postdoc-erice");
-
-    sections.slice(1).forEach((section) => {
-      const target = deck.querySelector(`#slide-${section.targetSlide}`);
-      target?.insertAdjacentHTML("beforebegin", `
-        <section id="${section.anchor}" class="slide standard-section-cover generated-section-cover section-scroll-card section-${section.key}"
-          data-slide-index="${section.targetSlide - 1}" data-section-name="${escapeAttribute(section.label)}"
-          data-section-title="${escapeAttribute(section.title)}" aria-label="${escapeAttribute(section.title)}">
-          <header class="slide-header">
-            <p class="eyebrow">Seção ${section.number}</p>
-            <h1 class="slide-title">${escapeHtml(section.title)}</h1>
-          </header>
-        </section>
-      `);
-    });
 
     deck.querySelectorAll("#slide-2 .index-section-card").forEach((card, index) => {
       if (sections[index]) card.setAttribute("href", `#${sections[index].anchor}`);
