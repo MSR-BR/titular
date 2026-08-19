@@ -14,8 +14,11 @@
 
   const deck = document.getElementById("deck");
   const counter = document.getElementById("slide-counter");
-  const previousButton = document.querySelector('[data-action="previous"]');
-  const nextButton = document.querySelector('[data-action="next"]');
+  const storyIndex = document.getElementById("story-index");
+  const progressBar = document.getElementById("story-progress-bar");
+  const currentSectionLabel = document.getElementById("current-section");
+  const currentTopicLabel = document.getElementById("current-topic");
+  let navigationLockUntil = 0;
   let currentIndex = Number.parseInt(params.get("slide") || "1", 10) - 1;
 
   function escapeHtml(value) {
@@ -123,13 +126,22 @@
           ? `<p class="info-card-label">${escapeHtml(normalizedCard.label)}</p>`
           : "";
         const meta = normalizedCard.meta ? `<p class="info-card-meta">${escapeHtml(normalizedCard.meta)}</p>` : "";
-        const text = normalizedCard.html ? normalizedCard.html : escapeHtml(normalizedCard.text || "");
+        const text = normalizedCard.html
+          ? `<div class="info-card-text">${normalizedCard.html}</div>`
+          : `<p class="info-card-text">${escapeHtml(normalizedCard.text || "")}</p>`;
+        const tag = normalizedCard.href ? "a" : "article";
+        const href = normalizedCard.href ? ` href="${escapeAttribute(normalizedCard.href)}"` : "";
+        const linkedClass = normalizedCard.href ? " index-section-card" : "";
+        const number = normalizedCard.number
+          ? `<span class="section-number" aria-hidden="true">${escapeHtml(normalizedCard.number)}</span>`
+          : "";
         return `
-          <article class="info-card">
+          <${tag} class="info-card${linkedClass}"${href}>
+            ${number}
             ${label}
             ${meta}
-            <p class="info-card-text">${text}</p>
-          </article>
+            ${text}
+          </${tag}>
         `;
       })
       .join("")}</div>`;
@@ -170,6 +182,27 @@
       .join("")}</div>`;
   }
 
+  function renderFlow(steps) {
+    if (!Array.isArray(steps) || steps.length === 0) {
+      return "";
+    }
+
+    return `<div class="flow-grid">${steps
+      .map((step) => {
+        const meta = step.meta ? `<p class="flow-step-meta">${escapeHtml(step.meta)}</p>` : "";
+        const items = renderList(step.items);
+        return `
+          <article class="flow-step">
+            ${meta}
+            <p class="flow-step-label">${escapeHtml(step.label || "")}</p>
+            <p class="flow-step-text">${escapeHtml(step.text || "")}</p>
+            ${items}
+          </article>
+        `;
+      })
+      .join("")}</div>`;
+  }
+
   function renderComparison(columns) {
     if (!Array.isArray(columns) || columns.length === 0) {
       return "";
@@ -189,17 +222,7 @@
   }
 
   function renderFooter(slide, index) {
-    const refs = slide.footerRefs ? `<span class="footer-refs">${escapeHtml(slide.footerRefs)}</span>` : "<span></span>";
-    const sources = Array.isArray(slide.sourceRefs) && slide.sourceRefs.length
-      ? `<span class="footer-sources">${slide.sourceRefs.map(escapeHtml).join(", ")}</span>`
-      : "<span></span>";
-    return `
-      <footer class="slide-footer">
-        ${refs}
-        ${sources}
-        <span>${index + 1} / ${slides.length}</span>
-      </footer>
-    `;
+    return "";
   }
 
   function renderNotes(slide) {
@@ -215,6 +238,11 @@
     const kicker = section ? `<p class="section-kicker">${escapeHtml(section)}</p>` : "";
     const eyebrow = slide.eyebrow ? `<p class="eyebrow">${escapeHtml(slide.eyebrow)}</p>` : "";
     const subtitle = slide.subtitle ? `<p class="slide-subtitle">${escapeHtml(slide.subtitle)}</p>` : "";
+    const affiliations = Array.isArray(slide.affiliations) && slide.affiliations.length
+      ? `<div class="slide-affiliations">${slide.affiliations
+          .map((affiliation) => `<p>${escapeHtml(affiliation)}</p>`)
+          .join("")}</div>`
+      : "";
     const lead = slide.lead && !options.omitLead ? `<p class="slide-lead">${escapeHtml(slide.lead)}</p>` : "";
 
     return `
@@ -223,6 +251,7 @@
         ${eyebrow}
         <h1 class="slide-title">${title}</h1>
         ${subtitle}
+        ${affiliations}
         ${lead}
         ${renderTags(slide.tags)}
       </header>
@@ -232,7 +261,7 @@
   function slideClass(slide) {
     const layout = slug(slide.layout || "section");
     const section = slug(slide.section || slide.sectionName || slide.eyebrow?.split("|")[0] || "geral");
-    return `slide layout-${layout} section-${section}`;
+    return `slide reveal layout-${layout} section-${section}`;
   }
 
   function renderSlide(slide, index) {
@@ -245,7 +274,7 @@
       const hasSecondary = Array.isArray(slide.cards) && slide.cards.length > 0;
       const evidenceClass = hasSecondary ? "technical-evidence" : "technical-evidence no-secondary";
       return `
-        <section class="${className}" aria-label="${title}">
+        <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
           <div class="technical-body">
             <div class="technical-summary">
@@ -275,7 +304,7 @@
     if (slide.layout === "cards") {
       const bodyClass = slide.figure ? "slide-body cards-with-figure" : "slide-body";
       return `
-        <section class="${className}" aria-label="${title}">
+        <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
           <div class="${bodyClass}">
             <div class="cards-panel">
@@ -291,7 +320,7 @@
 
     if (slide.layout === "figure-board") {
       return `
-        <section class="${className}" aria-label="${title}">
+        <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
           <div class="slide-body figure-board">
             ${renderFigure(slide.figure)}
@@ -308,7 +337,7 @@
 
     if (slide.layout === "metrics") {
       return `
-        <section class="${className}" aria-label="${title}">
+        <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
           <div class="slide-body">
             ${renderMetrics(slide.metrics)}
@@ -322,7 +351,7 @@
 
     if (slide.layout === "dashboard") {
       return `
-        <section class="${className}" aria-label="${title}">
+        <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
           <div class="slide-body dashboard-body">
             <div>
@@ -341,7 +370,7 @@
 
     if (slide.layout === "comparison") {
       return `
-        <section class="${className}" aria-label="${title}">
+        <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
           <div class="slide-body">
             ${renderComparison(slide.columns)}
@@ -354,7 +383,7 @@
 
     if (slide.layout === "image") {
       return `
-        <section class="${className}" aria-label="${title}">
+        <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
           <figure class="visual-panel">
             <span>${escapeHtml(slide.imageLabel || "visual panel")}</span>
@@ -368,7 +397,7 @@
 
     if (slide.layout === "timeline") {
       return `
-        <section class="${className}" aria-label="${title}">
+        <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
           <div class="slide-body">
             ${renderTimeline(slide.milestones)}
@@ -379,10 +408,36 @@
       `;
     }
 
+    if (slide.layout === "section") {
+      return `
+        <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
+          ${renderHeader(slide, title)}
+          <div class="slide-body section-cover-body">
+            ${slide.question ? `<p class="section-question">${escapeHtml(slide.question)}</p>` : ""}
+          </div>
+          ${footer}
+          ${notes}
+        </section>
+      `;
+    }
+
+    if (slide.layout === "flow") {
+      return `
+        <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
+          ${renderHeader(slide, title)}
+          <div class="slide-body flow-body">
+            ${renderFlow(slide.steps)}
+          </div>
+          ${footer}
+          ${notes}
+        </section>
+      `;
+    }
+
     if (slide.layout === "content") {
       const bodyClass = slide.figure ? "slide-body content-with-figure" : "slide-body";
       return `
-        <section class="${className}" aria-label="${title}">
+        <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title, { omitLead: true })}
           <div class="${bodyClass}">
             <div class="content-panel">
@@ -402,7 +457,7 @@
 
     if (slide.layout === "title") {
       return `
-        <section class="${className}" aria-label="${title}">
+        <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
           <div class="slide-body title-board">
             ${renderCards(slide.cards, { compact: true })}
@@ -415,7 +470,7 @@
 
     if (slide.layout === "closing") {
       return `
-        <section class="${className}" aria-label="${title}">
+        <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
           <div class="slide-body">
             ${renderCards(slide.cards, { compact: true })}
@@ -428,7 +483,7 @@
     }
 
     return `
-      <section class="${className}" aria-label="${title}">
+      <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
         ${renderHeader(slide, title)}
         <p class="section-question">${escapeHtml(slide.question || slide.subtitle || "")}</p>
         ${footer}
@@ -438,10 +493,27 @@
   }
 
   function updateControls() {
-    previousButton.disabled = currentIndex === 0;
-    nextButton.disabled = currentIndex === slides.length - 1;
-    counter.value = `${currentIndex + 1} / ${slides.length}`;
+    counter.value = `${String(currentIndex + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
     counter.textContent = counter.value;
+    if (progressBar) {
+      progressBar.style.width = `${((currentIndex + 1) / slides.length) * 100}%`;
+    }
+
+    const activeSlide = slides[currentIndex];
+    const rawActiveSection = slug(activeSlide?.section || (currentIndex === 0 ? "inicio" : "geral"));
+    const activeSection = rawActiveSection === "internacionalizacao" ? "impacto" : rawActiveSection;
+    if (currentSectionLabel) {
+      currentSectionLabel.textContent = activeSlide?.section || (currentIndex === 0 ? "Inicio" : "Geral");
+    }
+    if (currentTopicLabel) {
+      currentTopicLabel.textContent = activeSlide?.title || "";
+    }
+    storyIndex?.querySelectorAll("a").forEach((link) => {
+      const active = link.dataset.section === activeSection;
+      link.classList.toggle("is-active", active);
+      if (active) link.setAttribute("aria-current", "true");
+      else link.removeAttribute("aria-current");
+    });
   }
 
   function showSlide(index) {
@@ -451,15 +523,12 @@
     }
 
     currentIndex = Math.max(0, Math.min(index, slides.length - 1));
-    deck.innerHTML = renderSlide(slides[currentIndex], currentIndex);
+    document.getElementById(`slide-${currentIndex + 1}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
     updateControls();
   }
 
-  previousButton.addEventListener("click", () => showSlide(currentIndex - 1));
-  nextButton.addEventListener("click", () => showSlide(currentIndex + 1));
-
   document.addEventListener("keydown", (event) => {
-    if (["ArrowRight", "PageDown", " "].includes(event.key)) {
+    if (["ArrowRight", "PageDown"].includes(event.key)) {
       event.preventDefault();
       showSlide(currentIndex + 1);
     }
@@ -480,5 +549,260 @@
     }
   });
 
-  showSlide(currentIndex);
+  function buildStory() {
+    if (slides.length === 0) {
+      deck.innerHTML = '<section class="slide layout-section"><h1 class="slide-title">Sem conteudo</h1></section>';
+      return;
+    }
+
+    if (!useTemplatePrototype) {
+      const timelineIndex = slides.findIndex((slide) => slide.id === "s05-formation-timeline");
+      const uffIndex = slides.findIndex((slide) => slide.id === "s10-uff-entry");
+      if (timelineIndex >= 0 && uffIndex >= 0 && timelineIndex !== uffIndex - 1) {
+        const [timeline] = slides.splice(timelineIndex, 1);
+        const updatedUffIndex = slides.findIndex((slide) => slide.id === "s10-uff-entry");
+        slides.splice(updatedUffIndex, 0, timeline);
+      }
+    }
+
+    deck.innerHTML = slides.map(renderSlide).join("");
+    const sections = [
+      {
+        number: 1,
+        key: "formacao",
+        label: "Formação",
+        title: "Formação acadêmica e inserção internacional",
+        targetId: "s04-first-steps"
+      },
+      {
+        number: 2,
+        key: "uff",
+        label: "UFF",
+        title: "Desenvolvimento acadêmico e consolidação na UFF",
+        targetId: "s10-uff-entry"
+      },
+      {
+        number: 3,
+        key: "resultados",
+        label: "Pesquisa",
+        title: "Linhas de pesquisa",
+        targetId: "s17-program-map"
+      },
+      {
+        number: 4,
+        key: "impacto",
+        label: "Impacto",
+        title: "Impacto e internacionalização",
+        targetId: "s36-impact"
+      },
+      {
+        number: 5,
+        key: "futuro",
+        label: "Futuro",
+        title: "Perspectivas futuras",
+        targetId: "s39-innovation"
+      }
+    ];
+
+    sections.forEach((section) => {
+      section.targetSlide = slides.findIndex((slide) => slide.id === section.targetId) + 1;
+      section.anchor = section.number === 1 ? `slide-${section.targetSlide}` : `section-${section.number}`;
+    });
+
+    const indexSlide = deck.querySelector("#slide-2");
+    indexSlide?.classList.add("standard-section-cover", "index-cover");
+
+    const firstCover = deck.querySelector("#slide-3");
+    firstCover?.classList.add("standard-section-cover", "section-scroll-card");
+    if (firstCover) firstCover.dataset.sectionNumber = "1";
+
+    const formationOpening = deck.querySelector("#slide-4");
+    formationOpening?.classList.add("formation-opening-content");
+    const masterSlide = deck.querySelector("#slide-5");
+    masterSlide?.classList.add("formation-master");
+    const doctorateSlide = deck.querySelector("#slide-6");
+    doctorateSlide?.classList.add("formation-doctorate");
+
+    sections.slice(1).forEach((section) => {
+      const target = deck.querySelector(`#slide-${section.targetSlide}`);
+      target?.insertAdjacentHTML("beforebegin", `
+        <section id="${section.anchor}" class="slide standard-section-cover generated-section-cover section-scroll-card section-${section.key}"
+          data-slide-index="${section.targetSlide - 1}" data-section-name="${escapeAttribute(section.label)}"
+          data-section-title="${escapeAttribute(section.title)}" aria-label="${escapeAttribute(section.title)}">
+          <header class="slide-header">
+            <p class="eyebrow">Seção ${section.number}</p>
+            <h1 class="slide-title">${escapeHtml(section.title)}</h1>
+          </header>
+        </section>
+      `);
+    });
+
+    deck.querySelectorAll("#slide-2 .index-section-card").forEach((card, index) => {
+      if (sections[index]) card.setAttribute("href", `#${sections[index].anchor}`);
+    });
+
+    deck.querySelectorAll(".slide").forEach((slide) => {
+      if (
+        slide.id !== "slide-1" &&
+        !slide.classList.contains("standard-section-cover") &&
+        !slide.classList.contains("layout-closing")
+      ) {
+        slide.classList.add("subsection-slide");
+      }
+    });
+
+    deck.querySelectorAll("[data-publications-open]").forEach((trigger) => {
+      const dialog = document.getElementById(trigger.dataset.publicationsOpen);
+      if (!(dialog instanceof HTMLDialogElement)) return;
+      trigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        dialog.showModal();
+      });
+      dialog.querySelector(".publications-close")?.addEventListener("click", () => dialog.close());
+      dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) dialog.close();
+      });
+    });
+
+    storyIndex.innerHTML = sections
+      .map((section) => `<a href="#${section.anchor}" data-section="${section.key}"><span>${section.number}</span>${escapeHtml(section.label)}</a>`)
+      .join("");
+
+    function announceSection(section) {
+      navigationLockUntil = Date.now() + 1800;
+      currentIndex = section.targetSlide - 1;
+      updateControls();
+      if (currentSectionLabel) currentSectionLabel.textContent = section.label;
+      if (currentTopicLabel) currentTopicLabel.textContent = section.title;
+    }
+
+    sections.forEach((section, index) => {
+      storyIndex.querySelector(`[href="#${section.anchor}"]`)?.addEventListener("click", () => announceSection(section));
+      deck.querySelectorAll("#slide-2 .index-section-card")[index]?.addEventListener("click", () => announceSection(section));
+    });
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!visible) return;
+      if (Date.now() < navigationLockUntil) return;
+      currentIndex = Number(visible.target.dataset.slideIndex || 0);
+      updateControls();
+      if (visible.target.dataset.sectionName && currentSectionLabel && currentTopicLabel) {
+        currentSectionLabel.textContent = visible.target.dataset.sectionName;
+        currentTopicLabel.textContent = visible.target.dataset.sectionTitle || "";
+      }
+    }, { rootMargin: "-22% 0px -48%", threshold: [0.05, 0.35, 0.65] });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -30% 0px", threshold: 0.1 });
+
+    const scrollRevealGroups = [];
+    deck.querySelectorAll(".slide").forEach((slide) => {
+      const animatedElements = slide.querySelectorAll(
+        ".section-kicker, .eyebrow, .slide-title, .slide-subtitle, .slide-affiliations, .slide-lead, .info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure, .section-question"
+      );
+      const usesScrollTemplate =
+        slide.classList.contains("subsection-slide") ||
+        slide.classList.contains("section-scroll-card");
+      const scrubElements = [];
+      animatedElements.forEach((element, order) => {
+        element.classList.add("story-reveal");
+        element.style.setProperty("--reveal-order", Math.min(order, 10));
+        if (usesScrollTemplate) {
+          element.classList.add("scroll-scrub-reveal");
+          scrubElements.push(element);
+        } else {
+          revealObserver.observe(element);
+        }
+      });
+      if (scrubElements.length) scrollRevealGroups.push({ slide, elements: scrubElements });
+      sectionObserver.observe(slide);
+    });
+
+    const turningCards = [
+      "#slide-6 .info-card:nth-child(3)",
+      "#slide-15 .info-card:nth-child(2)",
+      "#slide-20 .info-card:nth-child(2)",
+      "#slide-30 .info-card:nth-child(1)",
+      "#slide-35 .info-card:nth-child(3)",
+      "#slide-39 .info-card:nth-child(2)"
+    ].map((selector) => deck.querySelector(selector)).filter(Boolean);
+
+    turningCards.forEach((card) => card.classList.add("strategic-turn"));
+
+    let turnFrame = 0;
+    function updateCardTurns() {
+      turnFrame = 0;
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      scrollRevealGroups.forEach(({ slide, elements }) => {
+        const slideRect = slide.getBoundingClientRect();
+        const isFarBelow = slideRect.top > window.innerHeight * 1.2;
+        const isFarAbove = slideRect.bottom < -window.innerHeight * .25;
+        elements.forEach((element, index) => {
+          let progress;
+          if (reduceMotion || isFarAbove) {
+            progress = 1;
+          } else if (isFarBelow) {
+            progress = 0;
+          } else {
+            const rect = element.getBoundingClientRect();
+            const start = window.innerHeight * .84 + Math.min(index, 7) * 18;
+            const finish = window.innerHeight * .48 + Math.min(index, 7) * 8;
+            progress = Math.max(0, Math.min(1, (start - rect.top) / Math.max(1, start - finish)));
+          }
+          element.style.setProperty("--scrub-opacity", progress.toFixed(4));
+          element.style.setProperty("--scrub-y", `${((1 - progress) * 42).toFixed(2)}px`);
+          element.style.setProperty("--scrub-blur", `${((1 - progress) * 5).toFixed(2)}px`);
+        });
+      });
+      deck.querySelectorAll(".section-scroll-card").forEach((sectionCard) => {
+        if (reduceMotion) {
+          sectionCard.style.setProperty("--section-card-rotate-x", "0deg");
+          sectionCard.style.setProperty("--section-card-rotate-y", "0deg");
+          sectionCard.style.setProperty("--section-card-scale", "1");
+          sectionCard.style.setProperty("--section-card-opacity", "1");
+        } else {
+          const rect = sectionCard.getBoundingClientRect();
+          const finishLine = 66;
+          const travel = Math.max(1, window.innerHeight - finishLine);
+          const progress = Math.max(0, Math.min(1, (window.innerHeight - rect.top) / travel));
+          const remaining = 1 - progress;
+          sectionCard.style.setProperty("--section-card-rotate-x", `${(remaining * 9).toFixed(3)}deg`);
+          sectionCard.style.setProperty("--section-card-rotate-y", `${(remaining * -15).toFixed(3)}deg`);
+          sectionCard.style.setProperty("--section-card-scale", (.88 + progress * .12).toFixed(4));
+          sectionCard.style.setProperty("--section-card-opacity", (.45 + progress * .55).toFixed(4));
+        }
+      });
+      if (reduceMotion) return;
+      const viewportCenter = window.innerHeight / 2;
+      turningCards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        const cardCenter = rect.top + rect.height / 2;
+        const progress = Math.max(-1, Math.min(1, (cardCenter - viewportCenter) / window.innerHeight));
+        card.style.setProperty("--card-turn", `${(progress * -9).toFixed(2)}deg`);
+      });
+    }
+
+    window.addEventListener("scroll", () => {
+      if (!turnFrame) turnFrame = requestAnimationFrame(updateCardTurns);
+    }, { passive: true });
+    window.addEventListener("resize", updateCardTurns);
+    updateCardTurns();
+
+    currentIndex = Math.max(0, Math.min(currentIndex, slides.length - 1));
+    updateControls();
+    if (params.has("slide")) {
+      requestAnimationFrame(() => document.getElementById(`slide-${currentIndex + 1}`)?.scrollIntoView());
+    }
+  }
+
+  buildStory();
 })();
