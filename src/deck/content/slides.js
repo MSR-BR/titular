@@ -266,6 +266,7 @@ window.MemorialDeckSlides = [
       {
         meta: "2003-2005",
         label: "Pós-doutoramento",
+        logo: { src: "assets/logos/universidade-aveiro.png", alt: "Universidade de Aveiro" },
         text: "Continuidade do estudo de manganitas e estatística de Tsallis no grupo do Prof. Vitor Amaral."
       },
       {
