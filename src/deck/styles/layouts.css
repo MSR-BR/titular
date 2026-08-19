@@ -341,18 +341,18 @@
   line-height: 1.3;
 }
 
-.deck-shell .teaching-robotics .cards-with-figure {
+.deck-shell .side-media-slide .cards-with-figure {
   grid-template-columns: minmax(0, 1.12fr) minmax(19rem, .88fr);
   gap: clamp(1.1rem, 2.4vw, 2rem);
   align-items: center;
 }
 
-.deck-shell .teaching-robotics .cards-panel .card-grid {
+.deck-shell .side-media-slide .cards-panel .card-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-auto-rows: auto;
 }
 
-.deck-shell .teaching-robotics .deck-figure {
+.deck-shell .side-media-slide .deck-figure {
   align-self: center;
   padding: clamp(.55rem, 1vw, .8rem);
   border-radius: 1.75rem;
@@ -361,7 +361,7 @@
   transform-origin: 50% 100%;
 }
 
-.deck-shell .teaching-robotics .deck-figure img {
+.deck-shell .side-media-slide .deck-figure img {
   height: auto;
   aspect-ratio: 1.88 / 1;
   object-fit: cover;
@@ -370,10 +370,20 @@
   box-shadow: none;
 }
 
-.deck-shell .teaching-robotics .deck-figure figcaption {
+.deck-shell .side-media-slide .deck-figure figcaption {
   padding: .55rem .35rem .15rem;
   font-size: clamp(.68rem, .85vw, .78rem);
   line-height: 1.35;
+}
+
+.deck-shell .professional-primary .card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: auto;
+}
+
+.deck-shell .professional-secondary .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: auto;
 }
 
 .metric-grid {
@@ -1575,8 +1585,13 @@
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .deck-shell .teaching-robotics .cards-with-figure,
-  .deck-shell .teaching-robotics .cards-panel .card-grid {
+  .deck-shell .side-media-slide .cards-with-figure,
+  .deck-shell .side-media-slide .cards-panel .card-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .deck-shell .professional-primary .card-grid,
+  .deck-shell .professional-secondary .card-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 

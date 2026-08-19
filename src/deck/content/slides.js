@@ -327,32 +327,73 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s13-people",
-    layout: "metrics",
+    layout: "cards",
     section: "UFF",
     eyebrow: "UFF | Formação de alunos",
     title: "Formação de alunos",
-    metrics: [
-      { value: "25", label: "IC e extensão" },
-      { value: "5", label: "monografias" },
-      { value: "4", label: "mestrados" },
-      { value: "5 + 1", label: "doutorados orientados + coorientação" },
-      { value: "10", label: "pós-doutorados supervisionados" }
+    lead: "A orientação insere estudantes no ambiente real de pesquisa, articulando problemas abertos, formação teórica e experimental, discussão bibliográfica e produção de resultados.",
+    cards: [
+      { label: "25 IC e extensão | 2010–2025", text: "Estudantes de Física, Engenharia e, em casos específicos, de outras áreas, como Cinema, integrados a projetos experimentais e teóricos de acordo com seus interesses e perfis." },
+      { label: "Pesquisa desde a graduação", text: "Contato direto com métodos de investigação, problemas em aberto e produção científica como base para o mestrado ou para atuação qualificada no mercado de trabalho." },
+      { label: "5 monografias", text: "Cinco estudantes transformaram o projeto de iniciação científica em tema da monografia de final de curso." },
+      { label: "Bolsas e continuidade", text: "FAPERJ, CNPq, CAPES e programas institucionais apoiaram a dedicação aos projetos. Muitos estudantes seguiram para programas de mestrado na UFF e em outras instituições." }
     ],
-    lead: "Os números visíveis usam o memorial como fonte principal, evitando as aproximações divergentes da apresentação exemplo.",
-    footerRefs: "MEM pp.13-16,21,97",
+    figure: {
+      src: "assets/figures/formacao-alunos-2013.jpg",
+      alt: "Almoço de final de ano com estudantes do grupo em dezembro de 2013",
+      caption: "Almoço de final de ano com estudantes do grupo, dezembro de 2013."
+    },
+    footerRefs: "MEM pp.13-14; Tabelas 10.2 e 10.3",
     sourceRefs: ["E009", "E010", "E029"]
   },
   {
-    id: "s14-former-students",
-    layout: "content",
+    id: "s13b-advanced-training",
+    layout: "cards",
     section: "UFF",
     eyebrow: "UFF | Formação de alunos",
-    title: "Trajetórias que multiplicam a formação",
-    lead: "Ex-orientandos e supervisionados ocupam posições em universidades, centros de pesquisa e instituições públicas.",
-    items: [
-      "Universidades: UFRJ, UFOB, USP, UFRB, UERJ, PUC-Rio e UFF Petrópolis.",
-      "Institutos e setor público: IF Sudeste de Minas Gerais, Caixa Econômica Federal e CBPF.",
-      "A formação atua também como interiorização e expansão da pesquisa e do ensino superior."
+    title: "Mestrado, doutorado e pós-doutorado",
+    lead: "A formação avançada combina autonomia científica, integração entre teoria e experimento e inserção em redes nacionais e internacionais.",
+    cards: [
+      { label: "4 mestrados", text: "Pesquisas em complexos metálicos, ligas Heusler, grafeno e sistemas correlacionados, com ênfase em efeitos magnetocalóricos e barocalóricos. Bruno Pimentel concluiu o mestrado em um ano e recebeu o prêmio de melhor dissertação da UFF em 2018." },
+      { label: "5 doutorados + 2 em curso", text: "Teses organizadas em dois eixos: informação quântica e correlações em complexos metálicos; síntese e caracterização de novos materiais magnéticos para efeitos calóricos." },
+      { label: "1 coorientação internacional", text: "Coorientação da tese de Vivian Andrade na Universidade do Porto, dedicada à redução de escala em compostos Gd-Si-Ge e seus efeitos magnetocalóricos." },
+      { label: "Experiência internacional", text: "Estágios de doutorado na França e no Oak Ridge National Laboratory ampliaram a formação dos estudantes e fortaleceram a integração internacional das linhas de pesquisa." },
+      { label: "10 pós-doutorados", text: "Supervisões com bolsas PNPD/CAPES, PPG-Física/UFF, FAPERJ e CNPq, com liberdade acadêmica e foco predominante na fabricação e caracterização de materiais para efeitos calóricos." },
+      { label: "PNPD/CAPES", text: "Durante aproximadamente cinco anos, as cotas do programa viabilizaram a incorporação de pesquisadores e de novas agendas ao Programa de Pós-Graduação em Física da UFF." }
+    ],
+    footerRefs: "MEM pp.14-15; Tabelas 10.2 e 10.4",
+    sourceRefs: ["E009", "E010"]
+  },
+  {
+    id: "s14-former-students",
+    layout: "cards",
+    section: "UFF",
+    eyebrow: "UFF | Inserção profissional",
+    title: "Egressos que multiplicam a formação",
+    lead: "Ex-orientandos e pós-doutorandos ocupam posições docentes em universidades e institutos federais de diferentes regiões do país.",
+    cards: [
+      { label: "Richard Javier Caraballo-Vivas", meta: "Professor | UFRJ, Campus Macaé", logo: { src: "assets/logos/ufrj.png", alt: "UFRJ" }, text: "Formação e pesquisa em materiais magnéticos e efeitos calóricos." },
+      { label: "Clebson dos Santos Cruz", meta: "Professor | UFOB, Campus Barreiras", logo: { src: "assets/logos/ufob.png", alt: "UFOB" }, text: "Atuação docente no oeste da Bahia e expansão regional do ensino superior." },
+      { label: "Diogo Pinto", meta: "Professor | USP, Campus São Carlos", logo: { src: "assets/logos/usp.png", alt: "USP" }, text: "Inserção acadêmica em uma das principais universidades de pesquisa do país." },
+      { label: "Cleidson Santos de Castro", meta: "Professor | UFRB", logo: { src: "assets/logos/ufrb.png", alt: "UFRB" }, text: "Trajetória em informação quântica aplicada a complexos metálicos." },
+      { label: "Sandra Pedro e Julio Tedesco", meta: "Professores | UERJ", logo: { src: "assets/logos/uerj.svg", alt: "UERJ" }, text: "Dois pós-doutorandos supervisionados incorporados à docência universitária no Rio de Janeiro." },
+      { label: "Thales Costa Soares", meta: "Professor | IF Sudeste de Minas Gerais", logo: { src: "assets/logos/if-sudeste-mg.png", alt: "IF Sudeste MG" }, text: "Atuação na rede federal de educação profissional, científica e tecnológica." }
+    ],
+    footerRefs: "MEM pp.15-16",
+    sourceRefs: ["E011"]
+  },
+  {
+    id: "s14b-former-students",
+    layout: "cards",
+    section: "UFF",
+    eyebrow: "UFF | Inserção profissional",
+    title: "Universidade, ciência e setor público",
+    lead: "As trajetórias alcançam docência, pesquisa e instituições estratégicas, evidenciando a contribuição para o ensino superior e para a ciência no país.",
+    cards: [
+      { label: "Livia Batista Lopes Escobar", meta: "Professora | PUC-Rio", logo: { src: "assets/logos/puc-rio.png", alt: "PUC-Rio" }, text: "Pós-doutoranda supervisionada entre 2018 e 2020, hoje integrada à docência universitária." },
+      { label: "Vinicius Gomes", meta: "Professor | UFF, Campus Petrópolis", logo: { src: "assets/logos/uff.svg", alt: "UFF" }, text: "Atuação docente em outro campus da própria universidade, ampliando a capilaridade institucional." },
+      { label: "Lucas Soares de Oliveira Paixão", meta: "Caixa Econômica Federal", logo: { src: "assets/logos/caixa.svg", alt: "Caixa Econômica Federal" }, text: "Inserção profissional em instituição estratégica do setor público." },
+      { label: "Vivian Andrade", meta: "Pós-doutoranda | CBPF", logo: { src: "assets/logos/cbpf.png", alt: "CBPF" }, text: "Continuidade da trajetória científica em centro nacional de referência em pesquisa física." }
     ],
     footerRefs: "MEM pp.15-16",
     sourceRefs: ["E011"]

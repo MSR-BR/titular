@@ -636,8 +636,15 @@
     const postdocSlide = deck.querySelector("#slide-8");
     postdocSlide?.classList.add("postdoc-erice");
     const teachingSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s11-teaching") + 1}`);
-    teachingSlide?.classList.add("teaching-robotics");
+    teachingSlide?.classList.add("side-media-slide", "teaching-robotics");
     teachingSlide?.querySelector(".deck-figure")?.classList.add("apple-product-rise");
+    const studentSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s13-people") + 1}`);
+    studentSlide?.classList.add("side-media-slide", "student-training");
+    studentSlide?.querySelector(".deck-figure")?.classList.add("apple-product-rise");
+    const professionalPrimary = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s14-former-students") + 1}`);
+    professionalPrimary?.classList.add("professional-outcomes", "professional-primary");
+    const professionalSecondary = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s14b-former-students") + 1}`);
+    professionalSecondary?.classList.add("professional-outcomes", "professional-secondary");
 
     deck.querySelectorAll("#slide-2 .index-section-card").forEach((card, index) => {
       if (sections[index]) card.setAttribute("href", `#${sections[index].anchor}`);
