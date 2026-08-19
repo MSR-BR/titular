@@ -299,9 +299,8 @@ window.MemorialDeckSlides = [
     id: "s10-uff-entry",
     layout: "section",
     section: "UFF",
-    eyebrow: "UFF | desde 2009",
-    title: "Da trajetória individual a construção institucional",
-    subtitle: "O ingresso na UFF em dezembro de 2009 reorganiza a carreira em torno de ensino, pesquisa, orientação, extensão, infraestrutura e vida institucional.",
+    eyebrow: "Seção 2",
+    title: "Desenvolvimento acadêmico e consolidação na UFF",
     footerRefs: "MEM pp.12,20-21",
     sourceRefs: ["E006", "E016"]
   },
@@ -309,13 +308,14 @@ window.MemorialDeckSlides = [
     id: "s11-teaching",
     layout: "cards",
     section: "UFF",
-    eyebrow: "Ensino",
-    title: "Um portfolio entre teoria, experimento e aplicação",
+    eyebrow: "UFF | Atividades docentes",
+    title: "Atividades docentes",
+    lead: "Desde 2009, uma atuação contínua na graduação e na pós-graduação articula formação teórica, prática experimental e aplicações contemporâneas da Física.",
     cards: [
-      { label: "Teoria", text: "Física Moderna, Introdução a Mecânica Quântica, Mecânica Quântica e Termodinâmica." },
+      { label: "Graduação", text: "Física Moderna, Introdução à Mecânica Quântica, Mecânica Quântica, Termodinâmica e disciplinas experimentais." },
       { label: "Experimento", text: "Física Experimental e disciplinas de laboratório ao longo da graduação." },
-      { label: "Pós", text: "Tópicos de matéria condensada, magnetismo e disciplinas avançadas." },
-      { label: "Aplicação", text: "Automação e Robótica aplicada a Física, com roteiros e projetos próprios." }
+      { label: "Pós-graduação", text: "Mecânica Quântica I, magnetismo, matéria condensada e tópicos avançados conectados às linhas de pesquisa." },
+      { label: "Aplicação", text: "Robótica e Automação aplicadas à Física, com Arduino, roteiros próprios e aprendizagem orientada por projetos." }
     ],
     footerRefs: "MEM pp.12-13,48-50",
     sourceRefs: ["E007"]
@@ -324,8 +324,8 @@ window.MemorialDeckSlides = [
     id: "s12-books",
     layout: "cards",
     section: "UFF",
-    eyebrow: "Livros",
-    title: "Pesquisa, sala de aula e livro-texto",
+    eyebrow: "UFF | Atividades docentes",
+    title: "Da sala de aula ao material didático",
     lead: "A produção editorial segue uma mesma lógica no memorial: pesquisa acumulada alimenta disciplinas, as disciplinas geram material sistematizado, e esse material vira livro.",
     cards: [
       { label: "2010 | ISBN 978-85-7861-079-1", text: "Magnetismo Molecular, Editora Livraria da Física, com Antonio Moreira dos Santos; magnetos moleculares, spins, troca e termodinâmica." },
@@ -346,14 +346,14 @@ window.MemorialDeckSlides = [
     id: "s13-people",
     layout: "metrics",
     section: "UFF",
-    eyebrow: "Formação de pessoas",
-    title: "Orientação como multiplicação acadêmica",
+    eyebrow: "UFF | Formação de alunos",
+    title: "Formação de alunos",
     metrics: [
       { value: "25", label: "IC e extensão" },
       { value: "5", label: "monografias" },
       { value: "4", label: "mestrados" },
       { value: "5 + 1", label: "doutorados orientados + coorientação" },
-      { value: "10", label: "pos-doutorados supervisionados" }
+      { value: "10", label: "pós-doutorados supervisionados" }
     ],
     lead: "Os números visíveis usam o memorial como fonte principal, evitando as aproximações divergentes da apresentação exemplo.",
     footerRefs: "MEM pp.13-16,21,97",
@@ -363,13 +363,13 @@ window.MemorialDeckSlides = [
     id: "s14-former-students",
     layout: "content",
     section: "UFF",
-    eyebrow: "Egressos",
-    title: "Formação que se distribui em instituições",
+    eyebrow: "UFF | Formação de alunos",
+    title: "Trajetórias que multiplicam a formação",
     lead: "Ex-orientandos e supervisionados ocupam posições em universidades, centros de pesquisa e instituições públicas.",
     items: [
-      "Universidades: UFRJ, UFOB, USP, UFRB, UERJ, PUC-Rio e UFF Petropolis.",
+      "Universidades: UFRJ, UFOB, USP, UFRB, UERJ, PUC-Rio e UFF Petrópolis.",
       "Institutos e setor público: IF Sudeste de Minas Gerais, Caixa Econômica Federal e CBPF.",
-      "A formação atua tambem como interiorização e expansão da pesquisa e do ensino superior."
+      "A formação atua também como interiorização e expansão da pesquisa e do ensino superior."
     ],
     footerRefs: "MEM pp.15-16",
     sourceRefs: ["E011"]
@@ -378,13 +378,13 @@ window.MemorialDeckSlides = [
     id: "s15-lab-magnetism",
     layout: "cards",
     section: "UFF",
-    eyebrow: "Infraestrutura",
+    eyebrow: "UFF | Montagem de laboratórios",
     title: "Laboratório de Magnetismo da UFF",
     cards: [
       { label: "Contexto UFF", text: "Ingresso em um movimento de renovação experimental do IF, com foco em matéria condensada e novas frentes de pesquisa." },
       { label: "Equipamentos", text: "PPMS com acessórios para medidas magnéticas e de transporte, liquefatora de hélio e operação em altos campos/baixas temperaturas." },
       { label: "Construção", text: "Projetos de fomento, apoio institucional, espaço físico, instalação, protocolos e manutenção experimental." },
-      { label: "Formação", text: "Equipe com docentes, pos-doutorandos e estudantes; laboratório destacado em reportagem institucional da FAPERJ." }
+      { label: "Formação", text: "Equipe com docentes, pós-doutorandos e estudantes; laboratório destacado em reportagem institucional da FAPERJ." }
     ],
     figure: {
       src: "assets/figures/lab-magnetismo-uff-2014.png",
@@ -399,12 +399,12 @@ window.MemorialDeckSlides = [
     id: "s16-l3d",
     layout: "cards",
     section: "UFF",
-    eyebrow: "Infraestrutura e extensão",
+    eyebrow: "UFF | Montagem de laboratórios",
     title: "L3D: robótica, automação e ensino por projeto",
     cards: [
       { label: "2018", text: "Criação do laboratório como interface entre ensino, infraestrutura experimental, automação e desenvolvimento em didática." },
-      { label: "Ferramentas", text: "Arduino, sensores físicos, estáções de montagem, impressoras 3D e instrumentação personalizada." },
-      { label: "Curso", text: "Robótica aplicada a Física para graduação e pós-graduação, com aprendizagem orientada por projetos." },
+      { label: "Ferramentas", text: "Arduino, sensores físicos, estações de montagem, impressoras 3D e instrumentação personalizada." },
+      { label: "Curso", text: "Robótica aplicada à Física para graduação e pós-graduação, com aprendizagem orientada por projetos." },
       { label: "Extensão", text: "Oficinas com o Coluni, cooperação educacional e desdobramentos com escolas em Portugal." }
     ],
     figure: {
@@ -415,6 +415,60 @@ window.MemorialDeckSlides = [
     footerRefs: "MEM pp.17-18,46",
     sourceRefs: ["E013"],
     notes: "Usar o carro com sensores como exemplo concreto: o aluno projeta, monta, mede, controla e explica o fenômeno."
+  },
+  {
+    id: "s16b-innovation",
+    layout: "cards",
+    section: "UFF",
+    eyebrow: "UFF | Projetos de inovação e pesquisa",
+    title: "Sample for Science: inovação aplicada à ciência",
+    lead: "O projeto transforma amostras científicas subutilizadas em recursos compartilháveis por meio de uma plataforma digital de intercâmbio entre grupos de pesquisa.",
+    cards: [
+      { label: "Problema", text: "Amostras produzidas com alto custo permanecem armazenadas após os estudos iniciais, enquanto outros grupos repetem esforços de síntese." },
+      { label: "Solução", text: "Aplicativo mobile-first para cadastro, busca e solicitação de amostras, com DOI, riscos, visibilidade e comunicação entre pesquisadores." },
+      { label: "Equipe", text: "Projeto multidisciplinar reunindo Física, Matemática, Computação, Marketing e Comunicação Audiovisual." },
+      { label: "Alcance", text: "Aplicativo publicado nas lojas Apple e Google; proposta madura para retomada quando houver financiamento dedicado." }
+    ],
+    figure: {
+      src: "assets/figures/sample-for-science-app.png",
+      alt: "Telas do aplicativo Sample for Science",
+      caption: "Sample for Science: circulação estruturada de amostras científicas entre grupos de pesquisa."
+    },
+    footerRefs: "MEM pp.18-20; ref. [1]",
+    sourceRefs: ["E014"]
+  },
+  {
+    id: "s16c-research-projects",
+    layout: "cards",
+    section: "UFF",
+    eyebrow: "UFF | Projetos de inovação e pesquisa",
+    title: "Projetos que sustentam pesquisa e formação",
+    lead: "Projetos financiados por CNPq, FAPERJ, CAPES e FCT conectam produção científica, infraestrutura, formação de pessoas e cooperação internacional.",
+    cards: [
+      { label: "Infraestrutura", text: "Recursos para o Laboratório de Magnetismo, o L3D, equipamentos, manutenção e condições experimentais." },
+      { label: "Formação", text: "Bolsas de iniciação científica e pós-doutorado integradas às linhas de pesquisa e aos laboratórios." },
+      { label: "Redes", text: "Missões científicas, congressos e visitas a centros nacionais e internacionais ampliam as colaborações do grupo." },
+      { label: "Gestão", text: "Elaboração de propostas, execução financeira, aquisição de equipamentos, relatórios técnicos e prestação de contas." }
+    ],
+    footerRefs: "MEM p.20; Tabela 12.3",
+    sourceRefs: ["E015"]
+  },
+  {
+    id: "s16d-administration",
+    layout: "cards",
+    section: "UFF",
+    eyebrow: "UFF | Administração",
+    title: "Administração acadêmica e científica",
+    lead: "A atuação administrativa acompanha a construção institucional: colegiados, laboratórios, projetos, editoração e organização científica.",
+    cards: [
+      { label: "Colegiados", text: "Colegiado da Pós-Graduação em Física (2012-2016), Núcleo Docente Estruturante (2011) e comissão departamental (2013)." },
+      { label: "Laboratórios", text: "Participação na coordenação do Laboratório de Magnetismo e concepção, montagem e coordenação do L3D." },
+      { label: "Projetos", text: "Gestão de recursos, bolsas, equipamentos, missões científicas, relatórios e prestações de contas." },
+      { label: "Editoração", text: "Editor-chefe da Physica B: gestão de submissões, editores, revisores e política editorial." },
+      { label: "Comunidade científica", text: "Organização de conferências e eventos para circulação do conhecimento e fortalecimento das redes de colaboração." }
+    ],
+    footerRefs: "MEM pp.20-21",
+    sourceRefs: ["E016"]
   },
   {
     id: "s17-program-map",
