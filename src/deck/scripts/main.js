@@ -635,6 +635,9 @@
     doctorateSlide?.classList.add("formation-doctorate");
     const postdocSlide = deck.querySelector("#slide-8");
     postdocSlide?.classList.add("postdoc-erice");
+    const teachingSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s11-teaching") + 1}`);
+    teachingSlide?.classList.add("teaching-robotics");
+    teachingSlide?.querySelector(".deck-figure")?.classList.add("apple-product-rise");
 
     deck.querySelectorAll("#slide-2 .index-section-card").forEach((card, index) => {
       if (sections[index]) card.setAttribute("href", `#${sections[index].anchor}`);
@@ -761,10 +764,12 @@
             progress = Math.max(0, Math.min(1, (start - rect.top) / Math.max(1, start - finish)));
           }
           element.style.setProperty("--scrub-opacity", progress.toFixed(4));
-          element.style.setProperty("--scrub-y", `${((1 - progress) * 42).toFixed(2)}px`);
+          const riseDistance = element.classList.contains("apple-product-rise") ? 180 : 42;
+          element.style.setProperty("--scrub-y", `${((1 - progress) * riseDistance).toFixed(2)}px`);
           element.style.setProperty("--scrub-blur", `${((1 - progress) * 5).toFixed(2)}px`);
+          const initialScale = element.classList.contains("apple-product-rise") ? .82 : .88;
           const scale = element.classList.contains("content-scroll-card")
-            ? .88 + progress * .12
+            ? initialScale + progress * (1 - initialScale)
             : 1;
           element.style.setProperty("--scrub-scale", scale.toFixed(4));
         });

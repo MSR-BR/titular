@@ -162,6 +162,15 @@
   list-style: none;
 }
 
+.info-card-text ol {
+  display: grid;
+  gap: 0.22rem;
+  margin: 0.45rem 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: card-list;
+}
+
 .info-card-text li {
   display: grid;
   grid-template-columns: 0.32rem 1fr;
@@ -174,6 +183,21 @@
   height: 0.24rem;
   margin-top: 0.23rem;
   background: var(--section-accent, var(--accent));
+}
+
+.info-card-text ol li {
+  grid-template-columns: 1.2rem 1fr;
+  counter-increment: card-list;
+}
+
+.info-card-text ol li::before {
+  content: counter(card-list) ".";
+  width: auto;
+  height: auto;
+  margin-top: 0;
+  background: transparent;
+  color: var(--section-accent, var(--accent));
+  font-weight: 800;
 }
 
 .section-indice.layout-cards .slide-title {
@@ -315,6 +339,41 @@
   color: var(--muted);
   font-size: clamp(.66rem, .85vw, .76rem);
   line-height: 1.3;
+}
+
+.deck-shell .teaching-robotics .cards-with-figure {
+  grid-template-columns: minmax(0, 1.12fr) minmax(19rem, .88fr);
+  gap: clamp(1.1rem, 2.4vw, 2rem);
+  align-items: center;
+}
+
+.deck-shell .teaching-robotics .cards-panel .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: auto;
+}
+
+.deck-shell .teaching-robotics .deck-figure {
+  align-self: center;
+  padding: clamp(.55rem, 1vw, .8rem);
+  border-radius: 1.75rem;
+  background: rgba(255, 255, 255, .92);
+  box-shadow: 0 24px 70px rgba(18, 25, 29, .08);
+  transform-origin: 50% 100%;
+}
+
+.deck-shell .teaching-robotics .deck-figure img {
+  height: auto;
+  aspect-ratio: 1.88 / 1;
+  object-fit: cover;
+  border: 0;
+  border-radius: 1.25rem;
+  box-shadow: none;
+}
+
+.deck-shell .teaching-robotics .deck-figure figcaption {
+  padding: .55rem .35rem .15rem;
+  font-size: clamp(.68rem, .85vw, .78rem);
+  line-height: 1.35;
 }
 
 .metric-grid {
@@ -753,11 +812,11 @@
 
 /* Continuous memorial story */
 .deck-shell > .slide {
-  width: min(1180px, calc(100vw - 3rem));
+  width: min(1080px, calc(100vw - 3rem));
   height: auto;
   min-height: auto;
   margin: 0 auto;
-  padding: clamp(2.3rem, 4.5vh, 3.8rem) clamp(2rem, 6vw, 5.2rem);
+  padding: clamp(3.8rem, 8vh, 6.5rem) clamp(1rem, 3vw, 2rem);
   scroll-margin-top: 4.15rem;
   background: transparent;
 }
@@ -829,9 +888,9 @@
 .deck-shell .slide-title {
   max-width: 18ch;
   margin-top: 0.5rem;
-  font-size: clamp(2.5rem, 5.2vw, 5.1rem);
-  line-height: 0.96;
-  letter-spacing: -0.045em;
+  font-size: clamp(2.7rem, 5.4vw, 5.4rem);
+  line-height: 0.94;
+  letter-spacing: -0.055em;
 }
 
 .deck-shell .layout-title .slide-title { font-size: clamp(4rem, 9vw, 8rem); }
@@ -843,6 +902,7 @@
 }
 
 .deck-shell .slide-body { margin-top: clamp(2rem, 5vh, 4rem); }
+.deck-shell .card-grid { gap: clamp(.8rem, 1.5vw, 1.15rem); }
 .deck-shell .section-kicker {
   padding: 0;
   border: 0;
@@ -926,7 +986,7 @@
 }
 
 .deck-shell .subsection-slide .slide-header {
-  max-width: 66rem;
+  max-width: 61rem;
 }
 
 .deck-shell .subsection-slide :is(.slide-subtitle, .slide-lead) {
@@ -1033,13 +1093,13 @@
 .deck-shell .flow-step,
 .deck-shell .comparison-column,
 .deck-shell .equation-stack {
-  padding: clamp(1rem, 2vw, 1.5rem);
+  padding: clamp(1.25rem, 2.4vw, 1.8rem);
   border-color: rgba(18, 23, 26, 0.055);
   border-top-width: 1px;
-  border-radius: 1.35rem;
-  background-color: rgba(255, 255, 255, 0.58);
-  box-shadow: 0 24px 70px rgba(18, 25, 29, 0.045);
-  backdrop-filter: blur(12px);
+  border-radius: 1.75rem;
+  background-color: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 55px rgba(18, 25, 29, 0.055);
+  backdrop-filter: blur(18px);
   transition:
     transform 520ms cubic-bezier(.2,.75,.2,1),
     box-shadow 650ms cubic-bezier(.2,.7,.2,1),
@@ -1078,6 +1138,11 @@
 .deck-shell .flow-step:hover .content-list li::before,
 .deck-shell .comparison-column:hover .content-list li::before {
   background: rgba(255,255,255,.88);
+}
+
+.deck-shell .info-card:hover .info-card-text ol li::before {
+  background: transparent;
+  color: #fff;
 }
 
 /* Card color is revealed as a dissolving layer. This avoids the abrupt jump
@@ -1507,6 +1572,11 @@
   }
 
   .deck-shell .postdoc-erice .cards-with-figure {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .deck-shell .teaching-robotics .cards-with-figure,
+  .deck-shell .teaching-robotics .cards-panel .card-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 

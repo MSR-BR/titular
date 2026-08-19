@@ -315,8 +315,13 @@ window.MemorialDeckSlides = [
       { label: "Graduação", html: "<ul><li>Física Experimental I e IV</li><li>Física Moderna</li><li>Introdução à Mecânica Quântica</li><li>Mecânica Quântica II</li><li>Termodinâmica</li></ul>" },
       { label: "Pós-graduação", html: "<ul><li>Mecânica Quântica I</li><li>Introdução ao magnetismo</li><li>Magnetismo Molecular</li></ul>" },
       { label: "Robótica e automação", text: "Curso para graduação e pós-graduação com Arduino, sistemas de automação e projetos que integram conceitos e prática experimental. Roteiro próprio. Laboratório montado para este propósito." },
-      { label: "Material didático e livros", html: "<p>A experiência docente originou materiais próprios e os livros:</p><ol><li>Magnetismo Molecular (2010)</li><li>Fundamentals of Magnetism (2013)</li><li>Quantum Mechanics (2025)</li></ol><p>Serão detalhados mais à frente nesta apresentação.</p>" }
+      { label: "Material didático e livros", html: "<p>A experiência docente originou materiais próprios e os livros:</p><ol><li>Magnetismo Molecular (2010)</li><li>Fundamentals of Magnetism (2013)</li><li>Quantum Mechanics (2025)</li><li>Termodinâmica (em redação)</li></ol><p>Serão detalhados mais à frente nesta apresentação.</p>" }
     ],
+    figure: {
+      src: "assets/figures/robotica-uff-2019.png",
+      alt: "Robô desenvolvido no curso de Robótica e Automação da UFF",
+      caption: "Resultado de projeto desenvolvido no curso de Robótica e Automação, UFF, 2019."
+    },
     footerRefs: "MEM pp.12-13,48-50",
     sourceRefs: ["E007", "E008"]
   },
