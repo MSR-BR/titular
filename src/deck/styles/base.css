@@ -116,13 +116,16 @@ html {
 }
 
 .story-orientation strong {
+  max-width: 17ch;
+  overflow: hidden;
   color: var(--ink);
+  text-overflow: ellipsis;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
 #current-topic {
-  max-width: 44ch;
+  max-width: 58ch;
   overflow: hidden;
   text-overflow: ellipsis;
 }

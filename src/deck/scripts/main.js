@@ -10,6 +10,7 @@
     ? window.MemorialDeckTemplatePrototypes
     : [];
   const slides = useTemplatePrototype && prototypeSlides.length ? prototypeSlides : defaultSlides;
+  const hierarchyTemplate = window.MemorialDeckHierarchy || { sections: [], slideMap: new Map() };
   document.body.classList.toggle("template-mode", useTemplatePrototype);
 
   const deck = document.getElementById("deck");
@@ -41,6 +42,26 @@
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "") || "geral";
+  }
+
+  function applyHierarchy(slide) {
+    const entry = hierarchyTemplate.slideMap?.get(slide.id);
+    if (!entry) return slide;
+    const { section, subsection, topic, topicNumber, isSectionCover, isSectionIntro, isSubsectionStart } = entry;
+    slide.hierarchy = {
+      sectionNumber: section.number,
+      sectionKey: section.key,
+      sectionLabel: section.label,
+      sectionTitle: section.title,
+      subsectionNumber: subsection?.number || "",
+      subsectionTitle: subsection?.title || "",
+      topicNumber: topicNumber || "",
+      topicTitle: topic || "",
+      isSectionCover: Boolean(isSectionCover),
+      isSectionIntro: Boolean(isSectionIntro),
+      isSubsectionStart: Boolean(isSubsectionStart)
+    };
+    return slide;
   }
 
   function renderTags(tags) {
@@ -239,9 +260,19 @@
   }
 
   function renderHeader(slide, title, options = {}) {
+    const hierarchy = slide.hierarchy;
     const section = slide.sectionName || slide.section;
-    const kicker = section ? `<p class="section-kicker">${escapeHtml(section)}</p>` : "";
-    const eyebrow = slide.eyebrow ? `<p class="eyebrow">${escapeHtml(slide.eyebrow)}</p>` : "";
+    const hierarchyLabel = hierarchy?.subsectionNumber
+      ? `${hierarchy.subsectionNumber} · ${hierarchy.subsectionTitle}`
+      : hierarchy?.sectionNumber
+        ? `Seção ${hierarchy.sectionNumber}`
+        : section;
+    const topicLabel = hierarchy?.topicTitle
+      ? `${hierarchy.topicNumber ? `${hierarchy.topicNumber} · ` : ""}${hierarchy.topicTitle}`
+      : "";
+    const kicker = hierarchyLabel ? `<p class="section-kicker">${escapeHtml(hierarchyLabel)}</p>` : "";
+    const eyebrowText = topicLabel || slide.eyebrow;
+    const eyebrow = eyebrowText ? `<p class="eyebrow">${escapeHtml(eyebrowText)}</p>` : "";
     const subtitle = slide.subtitle ? `<p class="slide-subtitle">${escapeHtml(slide.subtitle)}</p>` : "";
     const affiliations = Array.isArray(slide.affiliations) && slide.affiliations.length
       ? `<div class="slide-affiliations">${slide.affiliations
@@ -265,8 +296,17 @@
 
   function slideClass(slide) {
     const layout = slug(slide.layout || "section");
-    const section = slug(slide.section || slide.sectionName || slide.eyebrow?.split("|")[0] || "geral");
-    return `slide reveal layout-${layout} section-${section}`;
+    const section = slug(slide.hierarchy?.sectionKey || slide.section || slide.sectionName || slide.eyebrow?.split("|")[0] || "geral");
+    const hierarchyClasses = slide.hierarchy
+      ? [
+          "hierarchy-slide",
+          slide.hierarchy.isSectionCover ? "hierarchy-section-cover" : "hierarchy-content",
+          slide.hierarchy.isSubsectionStart ? "hierarchy-subsection-start" : "",
+          slide.hierarchy.subsectionNumber && !slide.hierarchy.isSubsectionStart ? "hierarchy-subsubsection" : "",
+          slide.hierarchy.isSectionIntro ? "hierarchy-section-intro" : ""
+        ].filter(Boolean).join(" ")
+      : "";
+    return `slide reveal layout-${layout} section-${section} ${hierarchyClasses}`.trim();
   }
 
   function renderSlide(slide, index) {
@@ -517,13 +557,18 @@
     }
 
     const activeSlide = slides[currentIndex];
-    const rawActiveSection = slug(activeSlide?.section || (currentIndex === 0 ? "inicio" : "geral"));
+    const hierarchy = activeSlide?.hierarchy;
+    const rawActiveSection = slug(hierarchy?.sectionKey || activeSlide?.section || (currentIndex === 0 ? "inicio" : "geral"));
     const activeSection = rawActiveSection === "internacionalizacao" ? "impacto" : rawActiveSection;
     if (currentSectionLabel) {
-      currentSectionLabel.textContent = activeSlide?.section || (currentIndex === 0 ? "Inicio" : "Geral");
+      currentSectionLabel.textContent = hierarchy?.sectionNumber
+        ? `Seção ${hierarchy.sectionNumber} · ${hierarchy.sectionLabel}`
+        : activeSlide?.section || (currentIndex === 0 ? "Inicio" : "Geral");
     }
     if (currentTopicLabel) {
-      currentTopicLabel.textContent = activeSlide?.title || "";
+      currentTopicLabel.textContent = hierarchy?.subsectionNumber
+        ? `${hierarchy.subsectionNumber} ${hierarchy.subsectionTitle}${hierarchy.topicTitle ? ` · ${hierarchy.topicNumber} ${hierarchy.topicTitle}` : ""}`
+        : hierarchy?.topicTitle || activeSlide?.title || "";
     }
     storyIndex?.querySelectorAll("a").forEach((link) => {
       const active = link.dataset.section === activeSection;
@@ -582,47 +627,18 @@
       }
     }
 
+    slides.forEach(applyHierarchy);
     deck.innerHTML = slides.map(renderSlide).join("");
-    const sections = [
-      {
-        number: 1,
-        key: "formacao",
-        label: "Formação",
-        title: "Formação acadêmica e inserção internacional",
-        targetId: "s04-first-steps"
-      },
-      {
-        number: 2,
-        key: "uff",
-        label: "UFF",
-        title: "Desenvolvimento acadêmico e consolidação na UFF",
-        targetId: "s10-uff-entry"
-      },
-      {
-        number: 3,
-        key: "resultados",
-        label: "Pesquisa",
-        title: "Linhas de pesquisa",
-        targetId: "s17-program-map"
-      },
-      {
-        number: 4,
-        key: "impacto",
-        label: "Impacto",
-        title: "Impacto e internacionalização",
-        targetId: "s36-impact"
-      },
-      {
-        number: 5,
-        key: "futuro",
-        label: "Futuro",
-        title: "Perspectivas futuras",
-        targetId: "s39-innovation"
-      }
-    ];
+    const sections = hierarchyTemplate.sections
+      .map((section) => {
+        const exactTarget = slides.findIndex((slide) => slide.id === section.targetId);
+        const hierarchyTarget = slides.findIndex((slide) => slide.hierarchy?.sectionNumber === section.number);
+        const targetIndex = exactTarget >= 0 ? exactTarget : hierarchyTarget;
+        return targetIndex >= 0 ? { ...section, targetSlide: targetIndex + 1 } : null;
+      })
+      .filter(Boolean);
 
     sections.forEach((section) => {
-      section.targetSlide = slides.findIndex((slide) => slide.id === section.targetId) + 1;
       section.anchor = `slide-${section.targetSlide}`;
     });
 
@@ -637,6 +653,20 @@
         target.dataset.sectionName = section.label;
         target.dataset.sectionTitle = section.title;
       }
+    });
+
+    slides.forEach((slide, index) => {
+      const element = deck.querySelector(`#slide-${index + 1}`);
+      const hierarchy = slide.hierarchy;
+      if (!element || !hierarchy) return;
+      element.dataset.sectionNumber = String(hierarchy.sectionNumber);
+      element.dataset.sectionKey = hierarchy.sectionKey;
+      element.dataset.sectionName = hierarchy.sectionLabel;
+      element.dataset.sectionTitle = hierarchy.sectionTitle;
+      element.dataset.subsectionNumber = hierarchy.subsectionNumber;
+      element.dataset.subsectionTitle = hierarchy.subsectionTitle;
+      element.dataset.topicNumber = hierarchy.topicNumber;
+      element.dataset.topicTitle = hierarchy.topicTitle;
     });
 
     const formationOpening = deck.querySelector("#slide-4");
@@ -694,8 +724,8 @@
       navigationLockUntil = Date.now() + 1800;
       currentIndex = section.targetSlide - 1;
       updateControls();
-      if (currentSectionLabel) currentSectionLabel.textContent = section.label;
-      if (currentTopicLabel) currentTopicLabel.textContent = section.title;
+      if (currentSectionLabel) currentSectionLabel.textContent = `Seção ${section.number} · ${section.label}`;
+      if (currentTopicLabel) currentTopicLabel.textContent = "";
     }
 
     sections.forEach((section, index) => {
@@ -712,8 +742,12 @@
       currentIndex = Number(visible.target.dataset.slideIndex || 0);
       updateControls();
       if (visible.target.dataset.sectionName && currentSectionLabel && currentTopicLabel) {
-        currentSectionLabel.textContent = visible.target.dataset.sectionName;
-        currentTopicLabel.textContent = visible.target.dataset.sectionTitle || "";
+        currentSectionLabel.textContent = visible.target.dataset.sectionNumber
+          ? `Seção ${visible.target.dataset.sectionNumber} · ${visible.target.dataset.sectionName}`
+          : visible.target.dataset.sectionName;
+        currentTopicLabel.textContent = visible.target.dataset.subsectionNumber
+          ? `${visible.target.dataset.subsectionNumber} ${visible.target.dataset.subsectionTitle}${visible.target.dataset.topicTitle ? ` · ${visible.target.dataset.topicNumber} ${visible.target.dataset.topicTitle}` : ""}`
+          : visible.target.dataset.sectionTitle || "";
       }
     }, { rootMargin: "-22% 0px -48%", threshold: [0.05, 0.35, 0.65] });
 

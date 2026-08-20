@@ -1084,6 +1084,51 @@
   max-width: 61rem;
 }
 
+.deck-shell .hierarchy-subsection-start:not(.standard-section-cover) .section-kicker {
+  width: fit-content;
+  padding: .42rem .72rem;
+  border: 1px solid color-mix(in srgb, var(--section-accent) 24%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--section-accent) 10%, white);
+  color: var(--section-accent);
+  font-size: clamp(.7rem, .9vw, .82rem);
+  font-weight: 820;
+  letter-spacing: .07em;
+}
+
+.deck-shell .hierarchy-subsection-start:not(.standard-section-cover) .eyebrow {
+  margin-top: .85rem;
+  color: var(--muted-2);
+  font-size: clamp(.68rem, .82vw, .78rem);
+  letter-spacing: .09em;
+}
+
+.deck-shell .hierarchy-subsubsection .section-kicker,
+.deck-shell .hierarchy-section-intro .section-kicker {
+  width: fit-content;
+  padding: .32rem .62rem;
+  border: 1px solid color-mix(in srgb, var(--section-accent) 20%, var(--line-soft));
+  border-radius: 999px;
+  color: var(--muted-2);
+  font-size: clamp(.66rem, .78vw, .75rem);
+  font-weight: 760;
+  letter-spacing: .065em;
+}
+
+.deck-shell .hierarchy-subsubsection .eyebrow,
+.deck-shell .hierarchy-section-intro .eyebrow {
+  margin-top: .72rem;
+  color: var(--section-accent);
+  font-size: clamp(.72rem, .9vw, .84rem);
+  font-weight: 820;
+  letter-spacing: .075em;
+}
+
+.deck-shell .hierarchy-subsubsection .slide-title {
+  max-width: 24ch;
+  font-size: clamp(2.15rem, 3.35vw, 3.3rem);
+}
+
 .deck-shell .subsection-slide :is(.slide-subtitle, .slide-lead) {
   max-width: 58rem;
   font-size: clamp(.92rem, 1.25vw, 1.08rem);
