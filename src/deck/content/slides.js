@@ -471,14 +471,27 @@ window.MemorialDeckSlides = [
       { label: "Problema", text: "Amostras produzidas com alto custo permanecem armazenadas após os estudos iniciais, enquanto outros grupos repetem esforços de síntese." },
       { label: "Solução", text: "Aplicativo mobile-first para cadastro, busca e solicitação de amostras, com DOI, riscos, visibilidade e comunicação entre pesquisadores." },
       { label: "Equipe", text: "Projeto multidisciplinar reunindo Física, Matemática, Computação, Marketing e Comunicação Audiovisual." },
-      { label: "Alcance", text: "Aplicativo publicado nas lojas Apple e Google; proposta madura para retomada quando houver financiamento dedicado." }
+      { label: "Alcance", html: `<p>Aplicativo publicado nas lojas Apple e Google; proposta madura para retomada quando houver financiamento dedicado.</p>
+        <div class="store-links" aria-label="Baixar Sample for Science">
+          <a class="store-link" href="https://apps.apple.com/br/app/sample-for-science/id6470819452?l=en-GB" target="_blank" rel="noopener noreferrer"><span class="store-symbol store-symbol-apple" aria-hidden="true"></span><span><small>Disponível na</small>App Store</span></a>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=br.uff.sample&amp;hl=en_SG" target="_blank" rel="noopener noreferrer"><span class="store-symbol store-symbol-play" aria-hidden="true">▶</span><span><small>Disponível no</small>Google Play</span></a>
+        </div>` }
     ],
-    figure: {
-      src: "assets/figures/sample-for-science-app.png",
-      alt: "Telas do aplicativo Sample for Science",
-      caption: "Sample for Science: circulação estruturada de amostras científicas entre grupos de pesquisa."
-    },
     footerRefs: "MEM pp.18-20; ref. [1]",
+    sourceRefs: ["E014"]
+  },
+  {
+    id: "s16ba-sample-gallery",
+    layout: "photo",
+    section: "UFF",
+    eyebrow: "",
+    title: "",
+    figures: [
+      { src: "assets/figures/sample-for-science-store.jpg", alt: "Página do Sample for Science na loja de aplicativos", caption: "Aplicativo publicado nas lojas oficiais." },
+      { src: "assets/figures/sample-for-science-login.jpg", alt: "Tela de entrada do aplicativo Sample for Science", caption: "Acesso ao Sample for Science." },
+      { src: "assets/figures/sample-for-science-dashboard.png", alt: "Menu e painel do aplicativo Sample for Science", caption: "Navegação e busca de amostras." }
+    ],
+    footerRefs: "MEM pp.18-20; Figura 3.4; ref. [1]",
     sourceRefs: ["E014"]
   },
   {

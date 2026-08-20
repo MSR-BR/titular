@@ -570,6 +570,102 @@
   text-decoration: none;
 }
 
+.store-links {
+  margin-top: .8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.store-link {
+  min-width: 8.5rem;
+  padding: .5rem .7rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  border-radius: .7rem;
+  background: #111417;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(17, 20, 23, .15);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.store-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(17, 20, 23, .22);
+}
+
+.store-link small,
+.store-link span:last-child {
+  display: block;
+  color: inherit;
+  font-size: .68rem;
+  font-weight: 780;
+  line-height: 1.05;
+}
+
+.store-link small {
+  margin-bottom: .12rem;
+  font-size: .48rem;
+  font-weight: 520;
+}
+
+.store-symbol {
+  min-width: 1.35rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.store-symbol-play {
+  color: #72d6a3;
+  font-size: 1.05rem;
+}
+
+.deck-shell > .sample-gallery-slide {
+  padding-top: 0;
+}
+
+.deck-shell .sample-gallery-slide .photo-stage {
+  width: min(100%, 72rem);
+}
+
+.deck-shell .sample-gallery-slide .figure-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.75rem, 1.5vw, 1.1rem);
+  align-items: stretch;
+}
+
+.deck-shell .sample-gallery-slide .deck-figure {
+  min-width: 0;
+  margin: 0;
+  padding: .55rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, .94);
+  box-shadow: 0 24px 70px rgba(18, 25, 29, .09);
+  transform-origin: 50% 100%;
+}
+
+.deck-shell .sample-gallery-slide .deck-figure img {
+  width: 100%;
+  height: clamp(28rem, 62vh, 46rem);
+  aspect-ratio: auto;
+  object-fit: contain;
+  border: 0;
+  border-radius: 1rem;
+  background: #11151a;
+  box-shadow: none;
+}
+
+.deck-shell .sample-gallery-slide .deck-figure figcaption {
+  min-height: 2.3rem;
+  padding: .5rem .3rem .1rem;
+  font-size: .7rem;
+  line-height: 1.25;
+}
+
 .deck-shell .lab-magnetism-gallery .slide-title {
   max-width: 24ch;
 }
@@ -1899,6 +1995,15 @@
 
   .deck-shell .l3d-overview .info-card:nth-child(5) {
     grid-column: auto;
+  }
+
+  .deck-shell .sample-gallery-slide .figure-gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .deck-shell .sample-gallery-slide .deck-figure img {
+    height: auto;
+    max-height: 80vh;
   }
 
   .deck-shell .lab-magnetism-gallery .cards-with-figure.has-figure-gallery,

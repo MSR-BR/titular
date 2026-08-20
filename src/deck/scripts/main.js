@@ -374,6 +374,7 @@
         <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           <div class="slide-body photo-stage">
             ${renderFigure(slide.figure)}
+            ${renderFigureGallery(slide.figures)}
           </div>
           ${footer}
           ${notes}
@@ -693,6 +694,9 @@
     const l3dPhotoSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s16a-l3d-photo") + 1}`);
     l3dPhotoSlide?.classList.add("student-photo-slide", "l3d-photo-slide");
     l3dPhotoSlide?.querySelector(".deck-figure")?.classList.add("apple-product-rise", "early-product-rise");
+    const sampleGallerySlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s16ba-sample-gallery") + 1}`);
+    sampleGallerySlide?.classList.add("student-photo-slide", "sample-gallery-slide");
+    sampleGallerySlide?.querySelectorAll(".deck-figure").forEach((figure) => figure.classList.add("apple-product-rise", "early-product-rise"));
     const studentLevelsSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s13-people") + 1}`);
     studentLevelsSlide?.classList.add("student-levels");
     const studentPhotoSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s13b-student-photo") + 1}`);
