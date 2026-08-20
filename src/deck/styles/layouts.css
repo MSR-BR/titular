@@ -399,26 +399,6 @@
   line-height: 1.32;
 }
 
-.deck-shell .info-card-action {
-  width: fit-content;
-  margin-top: .85rem;
-  padding: .48rem .78rem;
-  display: inline-flex;
-  align-items: center;
-  border-radius: 999px;
-  background: var(--section-accent);
-  color: #fff;
-  font-size: .72rem;
-  font-weight: 820;
-  text-decoration: none;
-  transition: transform 180ms ease, box-shadow 180ms ease;
-}
-
-.deck-shell .info-card-action:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 9px 20px color-mix(in srgb, var(--section-accent) 24%, transparent);
-}
-
 .deck-shell .side-media-slide .deck-figure figcaption {
   padding: .55rem .35rem .15rem;
   font-size: clamp(.68rem, .85vw, .78rem);

@@ -420,7 +420,19 @@ window.MemorialDeckSlides = [
       { label: "Contexto", text: "Criação do laboratório com foco em ensino." },
       { label: "Equipamentos adquiridos", html: "<ul><li>Arduinos e placas de controle</li><li>Sensores</li><li>Impressoras 3D</li><li>Outros itens para instrumentação</li></ul>" },
       { label: "Curso", text: "Robótica aplicada à Física para graduação e pós-graduação, com aprendizagem orientada por projetos." },
-      { label: "Atividades de Extensão", text: "Oficinas com o Coluni, cooperação educacional e desdobramentos com escolas em Portugal.", action: { label: "Ver produtos", targetId: "s16a-l3d-products" } },
+      { label: "Atividades de Extensão", html: `
+        <p>Oficinas com o Coluni, cooperação educacional e desdobramentos com escolas em Portugal.</p>
+        <button class="publications-trigger" type="button" data-publications-open="l3d-products">2 produtos · abrir lista</button>
+        <dialog class="publications-dialog" id="l3d-products" aria-labelledby="l3d-products-title">
+          <div class="publications-dialog-head">
+            <div><p class="publications-kicker">L3D · 2018–presente</p><h2 id="l3d-products-title">Produtos acadêmicos</h2></div>
+            <button class="publications-close" type="button" aria-label="Fechar produtos acadêmicos">×</button>
+          </div>
+          <ol class="publications-list">
+            <li><span>2021 · MONOGRAFIA</span><strong>Reflexões e perspectivas acerca do uso da automação e robótica no ensino de Ciências Exatas.</strong><small>Patrick Ribeiro Rodrigues.</small><em>Universidade Federal Fluminense, 2021.</em></li>
+            <li><span>2026 · ARTIGO</span><strong>Ensino por investigação e robótica educativa no contexto do Perfil dos Alunos à Saída da Escolaridade Obrigatória em Portugal.</strong><small>P. R. Rodrigues, T. M. C. Reis, D. F. M. de Castro Ferreira, M. Reis e P. H. D. Menezes.</small><em>APEDuC Revista — Investigação e Práticas em Educação em Ciências, Matemática e Tecnologia 7(1), 194–209, 2026.</em></li>
+          </ol>
+        </dialog>` },
       { label: "Uso atual", html: "<ul><li><a href=\"https://edu.ieee.org/br-uff/lufft/\" target=\"_blank\" rel=\"noopener noreferrer\">Equipe de foguetes LUFFT/UFF</a></li><li>Meninas na Ciência e Casa da Descoberta</li><li>Alunos de monografia</li></ul>" }
     ],
     figure: {
@@ -431,19 +443,6 @@ window.MemorialDeckSlides = [
     footerRefs: "MEM pp.17-18,46",
     sourceRefs: ["E013"],
     notes: "Usar o carro com sensores como exemplo concreto: o aluno projeta, monta, mede, controla e explica o fenômeno."
-  },
-  {
-    id: "s16a-l3d-products",
-    layout: "cards",
-    section: "UFF",
-    eyebrow: "UFF | Montagem de laboratórios",
-    title: "Produtos acadêmicos do L3D",
-    cards: [
-      { label: "1 monografia", meta: "Patrick Ribeiro Rodrigues | UFF | 2021", text: "Reflexões e perspectivas acerca do uso da automação e robótica no ensino de Ciências Exatas." },
-      { label: "1 artigo", meta: "APEDuC | v. 7, n. 1, p. 194–209 | 2026", text: "Ensino por investigação e robótica educativa no contexto do Perfil dos Alunos à Saída da Escolaridade Obrigatória em Portugal." }
-    ],
-    footerRefs: "Monografia UFF 2021; APEDuC 7(1), 194–209, 2026",
-    sourceRefs: ["E013"]
   },
   {
     id: "s16b-innovation",

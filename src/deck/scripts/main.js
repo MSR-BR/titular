@@ -165,9 +165,6 @@
         const number = normalizedCard.number
           ? `<span class="section-number" aria-hidden="true">${escapeHtml(normalizedCard.number)}</span>`
           : "";
-        const action = normalizedCard.action?.label && normalizedCard.action?.targetId
-          ? `<a class="info-card-action" href="#" data-slide-target="${escapeAttribute(normalizedCard.action.targetId)}">${escapeHtml(normalizedCard.action.label)}</a>`
-          : "";
         return `
           <${tag} class="info-card${linkedClass}${logoClass}"${href}>
             ${number}
@@ -175,7 +172,6 @@
             ${label}
             ${meta}
             ${text}
-            ${action}
           </${tag}>
         `;
       })
@@ -704,11 +700,6 @@
     labReportSlide?.querySelector(".deck-figure")?.classList.add("apple-product-rise");
     const professionalPrimary = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s14-former-students") + 1}`);
     professionalPrimary?.classList.add("professional-outcomes", "professional-primary", "professional-highlight");
-
-    deck.querySelectorAll("[data-slide-target]").forEach((link) => {
-      const targetIndex = slides.findIndex((slide) => slide.id === link.dataset.slideTarget);
-      if (targetIndex >= 0) link.setAttribute("href", `#slide-${targetIndex + 1}`);
-    });
 
     deck.querySelectorAll("#slide-2 .index-section-card").forEach((card, index) => {
       if (sections[index]) card.setAttribute("href", `#${sections[index].anchor}`);
