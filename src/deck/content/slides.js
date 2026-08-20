@@ -386,11 +386,6 @@ window.MemorialDeckSlides = [
       { label: "Construção", html: "<ul><li>Projetos de fomento</li><li>Apoio institucional</li><li>Espaço físico</li></ul>" },
       { label: "Destaque", text: "Laboratório destacado em reportagem institucional da FAPERJ." }
     ],
-    figure: {
-      src: "assets/figures/lab-magnetismo-uff-2014.png",
-      alt: "Equipe do Laboratório de Magnetismo da UFF em 2014",
-      caption: "Equipe do Laboratório de Magnetismo da UFF durante a consolidação da infraestrutura experimental, fevereiro de 2014."
-    },
     footerRefs: "MEM pp.16-17,21",
     sourceRefs: ["E012", "E015"],
     notes: "Ligar com CICECO: experiência anterior com VSM e protocolos experimentais aparece aqui como capacidade institucional."
@@ -402,7 +397,7 @@ window.MemorialDeckSlides = [
     eyebrow: "",
     title: "",
     figure: {
-      src: "assets/figures/faperj-nanomagnetismo-reportagem-2014.png",
+      src: "assets/figures/faperj-nanomagnetismo-reportagem-2014-v2.png",
       alt: "Reportagem da FAPERJ sobre o Laboratório de Magnetismo da UFF",
       caption: "Reportagem institucional da FAPERJ, publicada em 13 de fevereiro de 2014."
     },
