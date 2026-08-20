@@ -159,6 +159,7 @@
         const href = normalizedCard.href ? ` href="${escapeAttribute(normalizedCard.href)}"` : "";
         const linkedClass = normalizedCard.href ? " index-section-card" : "";
         const logoClass = normalizedCard.logo?.src ? " has-institutional-logo" : "";
+        const customClass = normalizedCard.className ? ` ${escapeAttribute(normalizedCard.className)}` : "";
         const logo = normalizedCard.logo?.src
           ? `<img class="institutional-logo" src="${escapeAttribute(normalizedCard.logo.src)}" alt="${escapeAttribute(normalizedCard.logo.alt || "")}" loading="lazy" />`
           : "";
@@ -166,7 +167,7 @@
           ? `<span class="section-number" aria-hidden="true">${escapeHtml(normalizedCard.number)}</span>`
           : "";
         return `
-          <${tag} class="info-card${linkedClass}${logoClass}"${href}>
+          <${tag} class="info-card${linkedClass}${logoClass}${customClass}"${href}>
             ${number}
             ${logo}
             ${label}
