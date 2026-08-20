@@ -176,6 +176,27 @@
   border-top: 1px solid var(--line-soft);
 }
 
+/* Preserve readable dark copy inside the light agency cells when the parent
+   card reveals its accent color on hover. */
+.deck-shell .agency-summary-card:hover .agency-breakdown p,
+.deck-shell .agency-summary-card:hover .agency-breakdown span {
+  color: var(--ink, #182025);
+}
+
+.deck-shell .agency-summary-card:hover .agency-breakdown strong {
+  color: var(--section-accent, var(--accent));
+}
+
+.deck-shell .agency-summary-card:hover .agency-breakdown small {
+  color: var(--muted, #56616a);
+}
+
+.deck-shell .agency-summary-card:hover .agency-total,
+.deck-shell .agency-summary-card:hover .agency-total strong,
+.deck-shell .agency-summary-card:hover > .info-card-label {
+  color: #fff;
+}
+
 .info-card {
   min-height: 0;
   padding: 0.66rem 0.7rem;
