@@ -682,6 +682,9 @@
     const studentPhotoSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s13b-student-photo") + 1}`);
     studentPhotoSlide?.classList.add("student-photo-slide");
     studentPhotoSlide?.querySelector(".deck-figure")?.classList.add("apple-product-rise");
+    const labReportSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s15b-lab-report") + 1}`);
+    labReportSlide?.classList.add("student-photo-slide", "lab-report-slide");
+    labReportSlide?.querySelector(".deck-figure")?.classList.add("apple-product-rise");
     const professionalPrimary = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s14-former-students") + 1}`);
     professionalPrimary?.classList.add("professional-outcomes", "professional-primary", "professional-highlight");
 

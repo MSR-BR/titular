@@ -471,6 +471,18 @@
   line-height: 1.35;
 }
 
+.deck-shell .lab-report-slide .photo-stage {
+  width: min(100%, 62rem);
+}
+
+.deck-shell .lab-report-slide .deck-figure img {
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: top center;
+}
+
 .metric-grid {
   min-height: 0;
   height: 100%;

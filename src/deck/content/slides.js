@@ -379,12 +379,12 @@ window.MemorialDeckSlides = [
     layout: "cards",
     section: "UFF",
     eyebrow: "UFF | Montagem de laboratórios",
-    title: "Laboratório de Magnetismo da UFF",
+    title: "Laboratório de Magnetismo da UFF 2010–2017",
     cards: [
-      { label: "Contexto UFF", text: "Ingresso em um movimento de renovação experimental do IF, com foco em matéria condensada e novas frentes de pesquisa." },
-      { label: "Equipamentos", text: "PPMS com acessórios para medidas magnéticas e de transporte, liquefatora de hélio e operação em altos campos/baixas temperaturas." },
-      { label: "Construção", text: "Projetos de fomento, apoio institucional, espaço físico, instalação, protocolos e manutenção experimental." },
-      { label: "Formação", text: "Equipe com docentes, pós-doutorandos e estudantes; laboratório destacado em reportagem institucional da FAPERJ." }
+      { label: "Contexto UFF", text: "Ingresso em um movimento de renovação do parque experimental do IF-UFF, com foco em novas frentes de pesquisa." },
+      { label: "Equipamentos adquiridos", html: "<ul><li>PPMS com acessórios para medidas magnéticas e de transporte</li><li>Liquefatora de hélio</li><li>SQUID para medidas a baixas temperaturas</li><li>Diversos acessórios</li></ul>" },
+      { label: "Construção", html: "<ul><li>Projetos de fomento</li><li>Apoio institucional</li><li>Espaço físico</li></ul>" },
+      { label: "Destaque", text: "Laboratório destacado em reportagem institucional da FAPERJ." }
     ],
     figure: {
       src: "assets/figures/lab-magnetismo-uff-2014.png",
@@ -394,6 +394,20 @@ window.MemorialDeckSlides = [
     footerRefs: "MEM pp.16-17,21",
     sourceRefs: ["E012", "E015"],
     notes: "Ligar com CICECO: experiência anterior com VSM e protocolos experimentais aparece aqui como capacidade institucional."
+  },
+  {
+    id: "s15b-lab-report",
+    layout: "photo",
+    section: "UFF",
+    eyebrow: "",
+    title: "",
+    figure: {
+      src: "assets/figures/faperj-nanomagnetismo-reportagem-2014.png",
+      alt: "Reportagem da FAPERJ sobre o Laboratório de Magnetismo da UFF",
+      caption: "Reportagem institucional da FAPERJ, publicada em 13 de fevereiro de 2014."
+    },
+    footerRefs: "FAPERJ | O maravilhoso mundo do nanomagnetismo | 13 fev. 2014",
+    sourceRefs: ["E012", "E015"]
   },
   {
     id: "s16-l3d",
