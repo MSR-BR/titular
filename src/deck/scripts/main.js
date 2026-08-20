@@ -326,7 +326,6 @@
     if (slide.layout === "photo") {
       return `
         <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
-          ${renderHeader(slide, title)}
           <div class="slide-body photo-stage">
             ${renderFigure(slide.figure)}
           </div>
@@ -657,9 +656,7 @@
     studentPhotoSlide?.classList.add("student-photo-slide");
     studentPhotoSlide?.querySelector(".deck-figure")?.classList.add("apple-product-rise");
     const professionalPrimary = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s14-former-students") + 1}`);
-    professionalPrimary?.classList.add("professional-outcomes", "professional-primary");
-    const professionalSecondary = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s14b-former-students") + 1}`);
-    professionalSecondary?.classList.add("professional-outcomes", "professional-secondary");
+    professionalPrimary?.classList.add("professional-outcomes", "professional-primary", "professional-highlight");
 
     deck.querySelectorAll("#slide-2 .index-section-card").forEach((card, index) => {
       if (sections[index]) card.setAttribute("href", `#${sections[index].anchor}`);

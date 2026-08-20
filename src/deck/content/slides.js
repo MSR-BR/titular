@@ -334,10 +334,10 @@ window.MemorialDeckSlides = [
     lead: "Formação em todos os níveis, da iniciação científica ao pós-doutorado, articulando pesquisa experimental, modelagem teórica e colaboração internacional.",
     cards: [
       { label: "25 IC e extensão | 2010–2025", html: "<ul><li>Física</li><li>Engenharia</li><li>Cinema e outras áreas</li><li>Bolsas de IC: FAPERJ, CNPq e UFF</li><li>5 monografias derivadas dos projetos</li></ul>" },
-      { label: "4 mestrados", html: "<ul><li>Complexos metálicos</li><li>Ligas Heusler</li><li>Materiais magnetocalóricos e barocalóricos</li></ul><p>Bruno Pimentel concluiu o mestrado em um ano e recebeu o prêmio de melhor dissertação da UFF em 2018.</p>" },
+      { label: "4 mestrados", html: "<ul><li>Complexos metálicos</li><li>Ligas Heusler</li><li>Materiais magnetocalóricos e barocalóricos</li></ul><p>Bruno Pimentel recebeu o prêmio de melhor dissertação da UFF em 2018.</p>" },
       { label: "5 doutorados + 2 em curso", html: "<p>Dois eixos:</p><ul><li>Informação quântica e correlações quânticas em complexos metálicos</li><li>Síntese e caracterização de novos materiais magnéticos para efeitos calóricos</li></ul><p><strong>1 coorientação internacional:</strong> tese de Vivian Andrade na Universidade do Porto sobre redução de escala em compostos Gd-Si-Ge e efeitos magnetocalóricos.</p>" },
       { label: "Experiência internacional de doutorandos", html: "<p>Estágios de doutorado de alunos:</p><ul><li>França</li><li>Oak Ridge National Laboratory</li><li>Portugal</li></ul>" },
-      { label: "10 pós-doutorados", html: "<p>Supervisões com bolsas PNPD/CAPES, PPG-Física/UFF, FAPERJ e CNPq, com liberdade acadêmica e foco predominante na fabricação e caracterização de materiais para efeitos calóricos.</p><p><strong>Projeto PNPD/CAPES:</strong> durante aproximadamente cinco anos, as cotas viabilizaram a incorporação de pesquisadores e de novas agendas ao Programa de Pós-Graduação em Física da UFF.</p>" }
+      { label: "10(2) pós-doutorados", html: "<p>Supervisões com bolsas PNPD/CAPES, PPG-Física/UFF, FAPERJ e CNPq, com liberdade acadêmica e foco predominante na fabricação e caracterização de materiais para efeitos calóricos.</p><p><strong>Projeto PNPD/CAPES:</strong> durante aproximadamente cinco anos, as cotas viabilizaram a incorporação de pesquisadores e de novas agendas ao Programa de Pós-Graduação em Física da UFF.</p>" }
     ],
     footerRefs: "MEM pp.13-15; Tabelas 10.2, 10.3 e 10.4",
     sourceRefs: ["E009", "E010", "E029"]
@@ -346,8 +346,8 @@ window.MemorialDeckSlides = [
     id: "s13b-student-photo",
     layout: "photo",
     section: "UFF",
-    eyebrow: "UFF | Formação de alunos",
-    title: "Uma comunidade de formação",
+    eyebrow: "",
+    title: "",
     figure: {
       src: "assets/figures/formacao-alunos-2013.jpg",
       alt: "Almoço de final de ano com estudantes do grupo em dezembro de 2013",
@@ -361,31 +361,15 @@ window.MemorialDeckSlides = [
     layout: "cards",
     section: "UFF",
     eyebrow: "UFF | Inserção profissional",
-    title: "Egressos que multiplicam a formação",
-    lead: "Ex-orientandos e pós-doutorandos ocupam posições docentes em universidades e institutos federais de diferentes regiões do país.",
+    title: "Inserção profissional e acadêmica dos ex-orientandos",
     cards: [
-      { label: "Richard Javier Caraballo-Vivas", meta: "Professor | UFRJ, Campus Macaé", logo: { src: "assets/logos/ufrj.png", alt: "UFRJ" }, text: "Formação e pesquisa em materiais magnéticos e efeitos calóricos." },
-      { label: "Clebson dos Santos Cruz", meta: "Professor | UFOB, Campus Barreiras", logo: { src: "assets/logos/ufob.png", alt: "UFOB" }, text: "Atuação docente no oeste da Bahia e expansão regional do ensino superior." },
-      { label: "Diogo Pinto", meta: "Professor | USP, Campus São Carlos", logo: { src: "assets/logos/usp.png", alt: "USP" }, text: "Inserção acadêmica em uma das principais universidades de pesquisa do país." },
-      { label: "Cleidson Santos de Castro", meta: "Professor | UFRB", logo: { src: "assets/logos/ufrb.png", alt: "UFRB" }, text: "Trajetória em informação quântica aplicada a complexos metálicos." },
-      { label: "Sandra Pedro e Julio Tedesco", meta: "Professores | UERJ", logo: { src: "assets/logos/uerj.svg", alt: "UERJ" }, text: "Dois pós-doutorandos supervisionados incorporados à docência universitária no Rio de Janeiro." },
-      { label: "Thales Costa Soares", meta: "Professor | IF Sudeste de Minas Gerais", logo: { src: "assets/logos/if-sudeste-mg.png", alt: "IF Sudeste MG" }, text: "Atuação na rede federal de educação profissional, científica e tecnológica." }
-    ],
-    footerRefs: "MEM pp.15-16",
-    sourceRefs: ["E011"]
-  },
-  {
-    id: "s14b-former-students",
-    layout: "cards",
-    section: "UFF",
-    eyebrow: "UFF | Inserção profissional",
-    title: "Universidade, ciência e setor público",
-    lead: "As trajetórias alcançam docência, pesquisa e instituições estratégicas, evidenciando a contribuição para o ensino superior e para a ciência no país.",
-    cards: [
-      { label: "Livia Batista Lopes Escobar", meta: "Professora | PUC-Rio", logo: { src: "assets/logos/puc-rio.png", alt: "PUC-Rio" }, text: "Pós-doutoranda supervisionada entre 2018 e 2020, hoje integrada à docência universitária." },
-      { label: "Vinicius Gomes", meta: "Professor | UFF, Campus Petrópolis", logo: { src: "assets/logos/uff.svg", alt: "UFF" }, text: "Atuação docente em outro campus da própria universidade, ampliando a capilaridade institucional." },
-      { label: "Lucas Soares de Oliveira Paixão", meta: "Caixa Econômica Federal", logo: { src: "assets/logos/caixa.svg", alt: "Caixa Econômica Federal" }, text: "Inserção profissional em instituição estratégica do setor público." },
-      { label: "Vivian Andrade", meta: "Pós-doutoranda | CBPF", logo: { src: "assets/logos/cbpf.png", alt: "CBPF" }, text: "Continuidade da trajetória científica em centro nacional de referência em pesquisa física." }
+      { label: "Richard Javier Caraballo-Vivas", meta: "UFRJ | Campus Macaé", logo: { src: "assets/logos/ufrj.png", alt: "UFRJ" } },
+      { label: "Clebson dos Santos Cruz", meta: "UFOB", logo: { src: "assets/logos/ufob.png", alt: "UFOB" } },
+      { label: "Diogo Pinto", meta: "USP", logo: { src: "assets/logos/usp.png", alt: "USP" } },
+      { label: "Cleidson Santos de Castro", meta: "UFRB", logo: { src: "assets/logos/ufrb.png", alt: "UFRB" } },
+      { label: "Sandra Pedro, Julio Tedesco e Vivian Andrade", meta: "UERJ", logo: { src: "assets/logos/uerj.svg", alt: "UERJ" } },
+      { label: "Livia Batista Lopes Escobar", meta: "PUC-Rio", logo: { src: "assets/logos/puc-rio.png", alt: "PUC-Rio" } },
+      { label: "Vinicius Gomes", meta: "UFF | Campus Petrópolis", logo: { src: "assets/logos/uff.svg", alt: "UFF" } }
     ],
     footerRefs: "MEM pp.15-16",
     sourceRefs: ["E011"]

@@ -154,6 +154,10 @@
   line-height: 1.14;
 }
 
+.info-card-text:empty {
+  display: none;
+}
+
 .info-card-text ul {
   display: grid;
   gap: 0.22rem;
@@ -377,31 +381,51 @@
 }
 
 .deck-shell .professional-primary .card-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-auto-rows: auto;
 }
 
-.deck-shell .professional-secondary .card-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-auto-rows: auto;
+.deck-shell .professional-primary .info-card {
+  grid-column: span 3;
+}
+
+.deck-shell .professional-primary .info-card:nth-child(n + 5) {
+  grid-column: span 4;
+}
+
+.deck-shell .professional-highlight::before {
+  content: "★";
+  position: absolute;
+  inset: clamp(2.6rem, 5vh, 4rem) auto auto -.35rem;
+  width: auto;
+  color: #c99b22;
+  font-size: clamp(2rem, 3.2vw, 3.2rem);
+  line-height: 1;
+  text-shadow: 0 8px 24px rgba(201, 155, 34, .24);
+  z-index: 2;
 }
 
 .deck-shell .student-levels .card-grid {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-auto-rows: auto;
 }
 
 .deck-shell .student-levels .info-card {
-  grid-column: span 2;
+  grid-column: span 4;
 }
 
 .deck-shell .student-levels .info-card:nth-child(n + 4) {
-  grid-column: span 3;
+  grid-column: span 4;
+}
+
+.deck-shell .student-levels .info-card:nth-child(5) {
+  grid-column: span 8;
 }
 
 .deck-shell .student-photo-slide .photo-stage {
   width: min(100%, 68rem);
   margin-inline: auto;
+  margin-top: 0;
 }
 
 .deck-shell .student-photo-slide .deck-figure {
@@ -1632,13 +1656,15 @@
   }
 
   .deck-shell .professional-primary .card-grid,
-  .deck-shell .professional-secondary .card-grid,
   .deck-shell .student-levels .card-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
+  .deck-shell .professional-primary .info-card,
+  .deck-shell .professional-primary .info-card:nth-child(n + 5),
   .deck-shell .student-levels .info-card,
-  .deck-shell .student-levels .info-card:nth-child(n + 4) {
+  .deck-shell .student-levels .info-card:nth-child(n + 4),
+  .deck-shell .student-levels .info-card:nth-child(5) {
     grid-column: auto;
   }
 
