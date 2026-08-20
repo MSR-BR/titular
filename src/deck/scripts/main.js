@@ -692,7 +692,7 @@
     l3dSlide?.classList.add("l3d-overview");
     const l3dPhotoSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s16a-l3d-photo") + 1}`);
     l3dPhotoSlide?.classList.add("student-photo-slide", "l3d-photo-slide");
-    l3dPhotoSlide?.querySelector(".deck-figure")?.classList.add("apple-product-rise");
+    l3dPhotoSlide?.querySelector(".deck-figure")?.classList.add("apple-product-rise", "early-product-rise");
     const studentLevelsSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s13-people") + 1}`);
     studentLevelsSlide?.classList.add("student-levels");
     const studentPhotoSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s13b-student-photo") + 1}`);
@@ -831,19 +831,21 @@
           } else {
             const rect = element.getBoundingClientRect();
             const isProductRise = element.classList.contains("apple-product-rise");
-            const start = window.innerHeight * (isProductRise ? 1.02 : .84) + Math.min(index, 7) * 18;
-            const finish = window.innerHeight * (isProductRise ? .30 : .48) + Math.min(index, 7) * 8;
+            const isEarlyRise = element.classList.contains("early-product-rise");
+            const start = window.innerHeight * (isEarlyRise ? 1.25 : isProductRise ? 1.02 : .84) + Math.min(index, 7) * 18;
+            const finish = window.innerHeight * (isEarlyRise ? .34 : isProductRise ? .30 : .48) + Math.min(index, 7) * 8;
             progress = Math.max(0, Math.min(1, (start - rect.top) / Math.max(1, start - finish)));
           }
           element.style.setProperty("--scrub-opacity", progress.toFixed(4));
           const isProductRise = element.classList.contains("apple-product-rise");
-          const riseDistance = isProductRise ? 112 : 42;
+          const isEarlyRise = element.classList.contains("early-product-rise");
+          const riseDistance = isEarlyRise ? 88 : isProductRise ? 112 : 42;
           element.style.setProperty("--scrub-y", `${((1 - progress) * riseDistance).toFixed(2)}px`);
           const blurDistance = isProductRise ? 7 : 5;
           element.style.setProperty("--scrub-blur", `${((1 - progress) * blurDistance).toFixed(2)}px`);
           element.style.setProperty("--star-rise", `${((1 - progress) * 20).toFixed(2)}px`);
           element.style.setProperty("--star-turn", `${((1 - progress) * -150).toFixed(2)}deg`);
-          const initialScale = isProductRise ? .90 : .88;
+          const initialScale = isEarlyRise ? .94 : isProductRise ? .90 : .88;
           const scale = element.classList.contains("content-scroll-card")
             ? initialScale + progress * (1 - initialScale)
             : 1;

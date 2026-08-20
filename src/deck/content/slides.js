@@ -419,7 +419,19 @@ window.MemorialDeckSlides = [
     cards: [
       { label: "Contexto", text: "Criação do laboratório com foco em ensino." },
       { label: "Equipamentos adquiridos", html: "<ul><li>Arduinos e placas de controle</li><li>Sensores</li><li>Impressoras 3D</li><li>Outros itens para instrumentação</li></ul>" },
-      { label: "Curso", text: "Robótica aplicada à Física para graduação e pós-graduação, com aprendizagem orientada por projetos." },
+      { label: "Curso", html: `
+        <p>Robótica aplicada à Física para graduação e pós-graduação, com aprendizagem orientada por projetos.</p>
+        <button class="publications-trigger" type="button" data-publications-open="automation-course-pdf">Visualizar material do curso</button>
+        <dialog class="publications-dialog course-pdf-dialog" id="automation-course-pdf" aria-labelledby="automation-course-pdf-title">
+          <div class="publications-dialog-head">
+            <div><p class="publications-kicker">L3D · Material didático</p><h2 id="automation-course-pdf-title">Automação para Físicos</h2></div>
+            <button class="publications-close" type="button" aria-label="Fechar material do curso">×</button>
+          </div>
+          <div class="course-pdf-viewer">
+            <iframe src="assets/docs/automacao-para-fisicos.pdf#view=FitH" title="Material do curso Automação para Físicos"></iframe>
+          </div>
+          <p class="course-pdf-fallback"><a href="assets/docs/automacao-para-fisicos.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF em uma nova aba ↗</a></p>
+        </dialog>` },
       { label: "Atividades de Extensão", html: `
         <p>Oficinas com o Coluni, cooperação educacional e desdobramentos com escolas em Portugal.</p>
         <button class="publications-trigger" type="button" data-publications-open="l3d-products">2 produtos · abrir lista</button>
