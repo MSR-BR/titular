@@ -656,6 +656,7 @@
       const target = deck.querySelector(`#slide-${section.targetSlide}`);
       target?.classList.add("standard-section-cover", "section-scroll-card", `section-${section.key}`);
       if (target) {
+        target.insertAdjacentHTML("afterbegin", `<span class="section-cover-number" aria-hidden="true">${section.number}</span>`);
         target.dataset.sectionNumber = String(section.number);
         target.dataset.sectionName = section.label;
         target.dataset.sectionTitle = section.title;
