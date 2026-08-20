@@ -410,6 +410,10 @@
   grid-auto-rows: auto;
 }
 
+.deck-shell > .student-levels {
+  padding-bottom: clamp(1rem, 2vh, 1.75rem);
+}
+
 .deck-shell .student-levels .info-card {
   grid-column: span 4;
 }
@@ -426,6 +430,11 @@
   width: min(100%, 68rem);
   margin-inline: auto;
   margin-top: 0;
+}
+
+.deck-shell > .student-photo-slide {
+  padding-top: clamp(.35rem, 1vh, .8rem);
+  padding-bottom: clamp(2rem, 4vh, 3.5rem);
 }
 
 .deck-shell .student-photo-slide .deck-figure {

@@ -779,15 +779,18 @@
             progress = 0;
           } else {
             const rect = element.getBoundingClientRect();
-            const start = window.innerHeight * .84 + Math.min(index, 7) * 18;
-            const finish = window.innerHeight * .48 + Math.min(index, 7) * 8;
+            const isProductRise = element.classList.contains("apple-product-rise");
+            const start = window.innerHeight * (isProductRise ? 1.02 : .84) + Math.min(index, 7) * 18;
+            const finish = window.innerHeight * (isProductRise ? .30 : .48) + Math.min(index, 7) * 8;
             progress = Math.max(0, Math.min(1, (start - rect.top) / Math.max(1, start - finish)));
           }
           element.style.setProperty("--scrub-opacity", progress.toFixed(4));
-          const riseDistance = element.classList.contains("apple-product-rise") ? 180 : 42;
+          const isProductRise = element.classList.contains("apple-product-rise");
+          const riseDistance = isProductRise ? 112 : 42;
           element.style.setProperty("--scrub-y", `${((1 - progress) * riseDistance).toFixed(2)}px`);
-          element.style.setProperty("--scrub-blur", `${((1 - progress) * 5).toFixed(2)}px`);
-          const initialScale = element.classList.contains("apple-product-rise") ? .82 : .88;
+          const blurDistance = isProductRise ? 7 : 5;
+          element.style.setProperty("--scrub-blur", `${((1 - progress) * blurDistance).toFixed(2)}px`);
+          const initialScale = isProductRise ? .90 : .88;
           const scale = element.classList.contains("content-scroll-card")
             ? initialScale + progress * (1 - initialScale)
             : 1;
