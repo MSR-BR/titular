@@ -39,16 +39,22 @@ window.MemorialDeckSlides = [
         html: "<ul><li>Atividades docentes</li><li>Formação de alunos</li><li>Montagem de laboratórios</li><li>Projetos de inovação e pesquisa</li><li>Administração</li></ul>"
       },
       {
-        number: "4",
-        href: "#section-4",
+        number: "3",
+        href: "#section-3",
         label: "Linhas de pesquisa",
         html: "<ul><li>Aplicação da Estatística de Tsallis ao Magnetismo</li><li>Efeito magnetocalórico e materiais magnéticos</li><li>Complexos Metálicos, Magnetismo e Modelagem Termodinâmica</li><li>Informação quântica em materiais magnéticos</li><li>Efeitos calóricos em materiais relativísticos</li><li>Termodinâmica quântica aplicada a novos materiais</li></ul>"
       },
       {
-        number: "5",
-        href: "#section-5",
+        number: "4",
+        href: "#section-4",
         label: "Produção científica e impacto acadêmico",
         html: "<ul><li>Produção científica</li></ul>"
+      },
+      {
+        number: "5",
+        href: "#section-5",
+        label: "Perspectivas futuras",
+        html: "<ul><li>Ensino, laboratórios e L3D</li><li>Termodinâmica quântica e novos materiais</li><li>Redes internacionais e cooperação Sul Global</li></ul>"
       }
     ],
     footerRefs: "Estrutura alinhada aos capítulos do memorial",
@@ -527,15 +533,15 @@ window.MemorialDeckSlides = [
     id: "s17-program-map",
     layout: "cards",
     section: "Resultados",
-    eyebrow: "Seção 4",
+    eyebrow: "Seção 3",
     title: "Linhas de pesquisa",
     cards: [
-      { label: "4.1", text: "Aplicação da Estatística de Tsallis ao Magnetismo" },
-      { label: "4.2", text: "Efeito magnetocalórico e materiais magnéticos" },
-      { label: "4.3", text: "Complexos Metálicos, Magnetismo e Modelagem Termodinâmica" },
-      { label: "4.4", text: "Informação quântica em materiais magnéticos" },
-      { label: "4.5", text: "Efeitos calóricos em materiais relativísticos" },
-      { label: "4.6", text: "Termodinâmica quântica aplicada a novos materiais" }
+      { label: "3.1", text: "Aplicação da Estatística de Tsallis ao Magnetismo" },
+      { label: "3.2", text: "Efeito magnetocalórico e materiais magnéticos" },
+      { label: "3.3", text: "Complexos Metálicos, Magnetismo e Modelagem Termodinâmica" },
+      { label: "3.4", text: "Informação quântica em materiais magnéticos" },
+      { label: "3.5", text: "Efeitos calóricos em materiais relativísticos" },
+      { label: "3.6", text: "Termodinâmica quântica aplicada a novos materiais" }
     ],
     footerRefs: "MEM pp.22-31",
     sourceRefs: ["E017"]
