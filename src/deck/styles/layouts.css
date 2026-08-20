@@ -115,6 +115,10 @@
   grid-column: span 3;
 }
 
+.research-projects .card-grid.compact > .info-card:nth-child(-n+4) {
+  grid-column: span 2;
+}
+
 .agency-summary-card .agency-breakdown {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1946,6 +1950,10 @@
 
   .card-grid.compact .agency-summary-card {
     grid-column: span 2;
+  }
+
+  .research-projects .card-grid.compact > .info-card:nth-child(-n+4) {
+    grid-column: auto;
   }
 
   .agency-summary-card .agency-breakdown {
