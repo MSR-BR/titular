@@ -506,7 +506,8 @@ window.MemorialDeckSlides = [
       { label: "Recursos humanos", text: "Projetos voltados à formação de pessoas, com bolsas de iniciação científica e pós-doutorado integradas às linhas de pesquisa e aos laboratórios." },
       { label: "Redes internacionais", text: "Projetos de colaboração com Portugal e, em 2026, com a América Latina, além de missões científicas, congressos e visitas a centros de pesquisa." },
       { label: "Gestão e administração", text: "Coordenação integral dos projetos: gestão de recursos financeiros, compras, bolsas, missões, relatórios técnicos e prestações de contas — uma dedicação administrativa contínua." },
-      { label: "Bolsas de mérito", html: "<ul><li>JCNE/FAPERJ</li><li>CNE/FAPERJ</li><li>Produtividade CNPq: nível 2 (3 ciclos), nível 1D (1 ciclo) e, atualmente, nível 1C</li></ul><p>Detalhamento na seção Impacto.</p>" }
+      { label: "Bolsas de mérito", html: "<ul><li>1 JCNE/FAPERJ</li><li>3 CNE/FAPERJ</li><li>Produtividade CNPq: nível 2 (3 ciclos), nível 1D (1 ciclo) e, atualmente, nível 1C</li></ul><p>Detalhamento na seção Impacto.</p>" },
+      { label: "Projetos por agência", html: "<ul><li><strong>CNPq — 8 coord. · 1 part.:</strong> PQ, Universal e INCT</li><li><strong>FAPERJ — 9 coord. · 7 part.:</strong> APQ1, JCNE, CNE, PRONEM e Sediadas</li><li><strong>CAPES/DAAD — 1 coord. · 2 part.:</strong> cooperação bilateral e redes</li><li><strong>FCT · Portugal — 1 coord.:</strong> cooperação científica</li><li><strong>UFF/Proppi — 3 coord.:</strong> Infralabpesq, Jovens Pesquisadores e FOPESq</li><li><strong>Universidade de Sevilha — 1 coord.:</strong> colaboração institucional</li></ul><p><strong>Total:</strong> 23 coordenados · 10 participações</p>" }
     ],
     footerRefs: "MEM p.20; Tabela 12.3",
     sourceRefs: ["E015"]
