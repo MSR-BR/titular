@@ -132,8 +132,17 @@
 
 .agency-summary-card .agency-breakdown {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 0.65rem;
+}
+
+.agency-summary-card .agency-breakdown p:nth-child(-n+3) {
+  grid-column: span 2;
+}
+
+.agency-summary-card .agency-breakdown p:nth-child(4),
+.agency-summary-card .agency-breakdown p:nth-child(5) {
+  grid-column: span 3;
 }
 
 .agency-summary-card .agency-breakdown p {
@@ -1994,6 +2003,10 @@
 
   .agency-summary-card .agency-breakdown {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .agency-summary-card .agency-breakdown p:nth-child(-n+5) {
+    grid-column: auto;
   }
 
   .section-indice .card-grid.count-5 {
