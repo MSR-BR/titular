@@ -336,8 +336,8 @@ window.MemorialDeckSlides = [
       { label: "25 IC e extensão | 2010–2025", html: "<ul><li>Física</li><li>Engenharia</li><li>Cinema e outras áreas</li><li>Bolsas de IC: FAPERJ, CNPq e UFF</li><li>5 monografias derivadas dos projetos</li></ul>" },
       { label: "4 mestrados", html: "<ul><li>Complexos metálicos</li><li>Ligas Heusler</li><li>Materiais magnetocalóricos e barocalóricos</li></ul><p>Bruno Pimentel recebeu o prêmio de melhor dissertação da UFF em 2018.</p>" },
       { label: "5 doutorados + 2 em curso", html: "<p>Dois eixos:</p><ul><li>Informação quântica e correlações quânticas em complexos metálicos</li><li>Síntese e caracterização de novos materiais magnéticos para efeitos calóricos</li></ul><p><strong>1 coorientação internacional:</strong> tese de Vivian Andrade na Universidade do Porto sobre redução de escala em compostos Gd-Si-Ge e efeitos magnetocalóricos.</p>" },
-      { label: "Experiência internacional de doutorandos", html: "<p>Estágios de doutorado de alunos:</p><ul><li>França</li><li>Oak Ridge National Laboratory</li><li>Portugal</li></ul>" },
-      { label: "10(2) pós-doutorados", html: "<p>Supervisões com bolsas PNPD/CAPES, PPG-Física/UFF, FAPERJ e CNPq, com liberdade acadêmica e foco predominante na fabricação e caracterização de materiais para efeitos calóricos.</p><p><strong>Projeto PNPD/CAPES:</strong> durante aproximadamente cinco anos, as cotas viabilizaram a incorporação de pesquisadores e de novas agendas ao Programa de Pós-Graduação em Física da UFF.</p>" }
+      { label: "Experiência internacional de doutorandos", html: "<p>Estágios de doutorado de alunos:</p><ul><li>França</li><li>EUA</li><li>Portugal</li></ul>" },
+      { label: "10(2) pós-doutorados", html: "<ul><li>PNPD/CAPES</li><li>PPG-Física/UFF</li><li>FAPERJ</li><li>CNPq</li><li>Foco predominante na fabricação e caracterização de materiais para efeitos calóricos</li></ul><p><strong>Projeto PNPD/CAPES:</strong> aproximadamente cinco anos.</p>" }
     ],
     footerRefs: "MEM pp.13-15; Tabelas 10.2, 10.3 e 10.4",
     sourceRefs: ["E009", "E010", "E029"]
