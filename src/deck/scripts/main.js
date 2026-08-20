@@ -267,11 +267,8 @@
       : hierarchy?.sectionNumber
         ? `Seção ${hierarchy.sectionNumber}`
         : section;
-    const topicLabel = hierarchy?.topicTitle
-      ? `${hierarchy.topicNumber ? `${hierarchy.topicNumber} · ` : ""}${hierarchy.topicTitle}`
-      : "";
     const kicker = hierarchyLabel ? `<p class="section-kicker">${escapeHtml(hierarchyLabel)}</p>` : "";
-    const eyebrowText = topicLabel || slide.eyebrow;
+    const eyebrowText = hierarchy ? "" : slide.eyebrow;
     const eyebrow = eyebrowText ? `<p class="eyebrow">${escapeHtml(eyebrowText)}</p>` : "";
     const subtitle = slide.subtitle ? `<p class="slide-subtitle">${escapeHtml(slide.subtitle)}</p>` : "";
     const affiliations = Array.isArray(slide.affiliations) && slide.affiliations.length
@@ -567,7 +564,7 @@
     }
     if (currentTopicLabel) {
       currentTopicLabel.textContent = hierarchy?.subsectionNumber
-        ? `${hierarchy.subsectionNumber} ${hierarchy.subsectionTitle}${hierarchy.topicTitle ? ` · ${hierarchy.topicNumber} ${hierarchy.topicTitle}` : ""}`
+        ? `${hierarchy.subsectionNumber} ${hierarchy.subsectionTitle}`
         : hierarchy?.topicTitle || activeSlide?.title || "";
     }
     storyIndex?.querySelectorAll("a").forEach((link) => {
@@ -716,9 +713,10 @@
       });
     });
 
-    storyIndex.innerHTML = sections
-      .map((section) => `<a href="#${section.anchor}" data-section="${section.key}"><span>${section.number}</span>${escapeHtml(section.label)}</a>`)
-      .join("");
+    storyIndex.innerHTML = [
+      '<a class="story-route-link" href="#slide-2" data-section="roteiro">Roteiro</a>',
+      ...sections.map((section) => `<a href="#${section.anchor}" data-section="${section.key}"><span>${section.number}</span>${escapeHtml(section.label)}</a>`)
+    ].join("");
 
     function announceSection(section) {
       navigationLockUntil = Date.now() + 1800;
@@ -746,7 +744,7 @@
           ? `Seção ${visible.target.dataset.sectionNumber} · ${visible.target.dataset.sectionName}`
           : visible.target.dataset.sectionName;
         currentTopicLabel.textContent = visible.target.dataset.subsectionNumber
-          ? `${visible.target.dataset.subsectionNumber} ${visible.target.dataset.subsectionTitle}${visible.target.dataset.topicTitle ? ` · ${visible.target.dataset.topicNumber} ${visible.target.dataset.topicTitle}` : ""}`
+          ? `${visible.target.dataset.subsectionNumber} ${visible.target.dataset.subsectionTitle}`
           : visible.target.dataset.sectionTitle || "";
       }
     }, { rootMargin: "-22% 0px -48%", threshold: [0.05, 0.35, 0.65] });
