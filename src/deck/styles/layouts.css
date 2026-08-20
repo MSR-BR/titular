@@ -322,6 +322,11 @@
   grid-column: span 3;
 }
 
+.section-indice .card-grid.count-4,
+.standard-section-cover.section-resultados .card-grid.count-6 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .section-indice .info-card {
   padding: 0.74rem 0.78rem;
 }
@@ -2018,6 +2023,11 @@
     grid-column: auto;
   }
 
+  .section-indice .card-grid.count-4,
+  .standard-section-cover.section-resultados .card-grid.count-6 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .timeline {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
@@ -2067,6 +2077,8 @@
   .figure-board,
   .dashboard-body { grid-template-columns: 1fr; }
   .section-indice .card-grid.count-5 { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .section-indice .card-grid.count-4,
+  .standard-section-cover.section-resultados .card-grid.count-6 { grid-template-columns: 1fr; }
   .section-indice .card-grid.count-5 .info-card { grid-column: auto; }
   .timeline { grid-template-columns: 1fr; }
   .timeline::before,

@@ -57,7 +57,7 @@
       ]
     },
     {
-      number: 3,
+      number: 4,
       key: "resultados",
       label: "Pesquisa",
       title: "Linhas de pesquisa",
@@ -66,72 +66,46 @@
         { id: "s18-physics-bridge", topic: "Visão geral do programa científico" }
       ],
       subsections: [
-        { number: "3.1", title: "Estatística não extensiva aplicada ao magnetismo", slides: [
+        { number: "4.1", title: "Aplicação da Estatística de Tsallis ao Magnetismo", slides: [
           { id: "s19-tsallis-problem", topic: "Problema físico" },
           { id: "s20-tsallis-equations", topic: "Formalismo" },
           { id: "s21-tsallis-result", topic: "Resultado" },
           { id: "s22-tsallis-contribution", topic: "Contribuição" }
         ] },
-        { number: "3.2", title: "Efeito magnetocalórico e materiais magnéticos", slides: [
+        { number: "4.2", title: "Efeito magnetocalórico e materiais magnéticos", slides: [
           { id: "s23-mce-foundation", topic: "Fundamentos termodinâmicos" },
           { id: "s24-mce-materials", topic: "Materiais" },
           { id: "s25-mce-synthesis", topic: "Síntese" }
         ] },
-        { number: "3.3", title: "Complexos metálicos e modelagem termodinâmica", slides: [
+        { number: "4.3", title: "Complexos Metálicos, Magnetismo e Modelagem Termodinâmica", slides: [
           { id: "s26-complexes-hamiltonian", topic: "Hamiltoniano e ajuste termodinâmico" },
           { id: "s27-complexes-result", topic: "Resultado representativo" },
           { id: "s28-cardamomo", topic: "Ferramenta computacional CARDAMOMO" }
         ] },
-        { number: "3.4", title: "Informação quântica em materiais magnéticos", slides: [
+        { number: "4.4", title: "Informação quântica em materiais magnéticos", slides: [
           { id: "s29-quantum-info-concept", topic: "Testemunha de emaranhamento" },
           { id: "s30-quantum-info-result", topic: "Correlações quânticas" }
         ] },
-        { number: "3.5", title: "Efeitos calóricos em materiais relativísticos", slides: [
+        { number: "4.5", title: "Efeitos calóricos em materiais relativísticos", slides: [
           { id: "s31-graphene-concept", topic: "Grafeno e efeitos calóricos oscilatórios" },
           { id: "s32-graphene-result", topic: "Resposta calórica mensurável" }
         ] },
-        { number: "3.6", title: "Termodinâmica quântica", slides: [
+        { number: "4.6", title: "Termodinâmica quântica aplicada a novos materiais", slides: [
           { id: "s33-quantum-thermo-batteries", topic: "Energia, trabalho e calor" },
-          { id: "s34-quantum-thermo-caloric", topic: "Máquinas e potenciais calóricos" }
-        ] },
-        { number: "3.7", title: "Síntese científica", slides: [
+          { id: "s34-quantum-thermo-caloric", topic: "Máquinas e potenciais calóricos" },
           { id: "s35-synthesis", topic: "Um programa, várias interfaces" }
         ] }
       ]
     },
     {
-      number: 4,
+      number: 5,
       key: "impacto",
-      label: "Impacto",
-      title: "Impacto e internacionalização",
+      label: "Produção",
+      title: "Produção científica e impacto acadêmico",
       targetId: "s36-impact",
       subsections: [
-        { number: "4.1", title: "Produção científica", slides: [
+        { number: "5.1", title: "Produção científica", slides: [
           { id: "s36-impact", topic: "Regularidade, qualidade e liderança", sectionCover: true }
-        ] },
-        { number: "4.2", title: "Internacionalização", slides: [
-          { id: "s37-internationalization", topic: "Internacionalização como estrutura" }
-        ] },
-        { number: "4.3", title: "Atividades editoriais", slides: [
-          { id: "s38-editorial", topic: "Physica B e responsabilidade científica global" }
-        ] }
-      ]
-    },
-    {
-      number: 5,
-      key: "futuro",
-      label: "Futuro",
-      title: "Perspectivas futuras",
-      targetId: "s39-innovation",
-      subsections: [
-        { number: "5.1", title: "Inovação e extensão", slides: [
-          { id: "s39-innovation", topic: "Circulação de conhecimento", sectionCover: true }
-        ] },
-        { number: "5.2", title: "Agenda futura", slides: [
-          { id: "s40-future", topic: "Perspectivas como titular" }
-        ] },
-        { number: "5.3", title: "Síntese e compromisso", slides: [
-          { id: "s41-closing", topic: "Titularidade como responsabilidade ampliada" }
         ] }
       ]
     }
@@ -164,9 +138,8 @@
     ["tpl-03-timeline", 1, "1.5", "1.5.1", "Síntese da trajetória de formação"],
     ["tpl-04-books", 2, "2.1", "2.1.1", "Material didático e livros"],
     ["tpl-05-figure-board", 2, "2.3", "2.3.1", "Laboratório de Magnetismo da UFF"],
-    ["tpl-06-technical", 3, "3.1", "3.1.1", "Painel técnico"],
-    ["tpl-07-dashboard", 4, "4.1", "4.1.1", "Indicadores de impacto"],
-    ["tpl-08-closing", 5, "5.3", "5.3.1", "Síntese e compromisso"]
+    ["tpl-06-technical", 4, "4.1", "4.1.1", "Painel técnico"],
+    ["tpl-07-dashboard", 5, "5.1", "5.1.1", "Indicadores de impacto"]
   ].forEach(([id, sectionNumber, subsectionNumber, topicNumber, topic]) => {
     const section = sections.find((item) => item.number === sectionNumber);
     const subsection = section?.subsections.find((item) => item.number === subsectionNumber);
