@@ -367,7 +367,7 @@ window.MemorialDeckSlides = [
       { label: "Clebson dos Santos Cruz", meta: "UFOB", logo: { src: "assets/logos/ufob.png", alt: "UFOB" } },
       { label: "Diogo Pinto", meta: "USP", logo: { src: "assets/logos/usp.png", alt: "USP" } },
       { label: "Cleidson Santos de Castro", meta: "UFRB", logo: { src: "assets/logos/ufrb.png", alt: "UFRB" } },
-      { label: "Sandra Pedro, Julio Tedesco e Vivian Andrade", meta: "UERJ", logo: { src: "assets/logos/uerj.svg", alt: "UERJ" } },
+      { label: "Sandra Pedro\nJulio Tedesco\nVivian Andrade", meta: "UERJ", logo: { src: "assets/logos/uerj.svg", alt: "UERJ" } },
       { label: "Livia Batista Lopes Escobar", meta: "PUC-Rio", logo: { src: "assets/logos/puc-rio.png", alt: "PUC-Rio" } },
       { label: "Vinicius Gomes", meta: "UFF | Campus Petrópolis", logo: { src: "assets/logos/uff.svg", alt: "UFF" } }
     ],
