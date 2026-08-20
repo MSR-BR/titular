@@ -393,15 +393,21 @@
   grid-column: span 4;
 }
 
-.deck-shell .professional-highlight::before {
+.deck-shell .professional-highlight .slide-title {
+  position: relative;
+}
+
+.deck-shell .professional-highlight .slide-title::before {
   content: "★";
   position: absolute;
-  inset: clamp(2.6rem, 5vh, 4rem) auto auto -.35rem;
+  inset: .08em auto auto clamp(-3.2rem, -4vw, -2.4rem);
   width: auto;
   color: #c99b22;
-  font-size: clamp(2rem, 3.2vw, 3.2rem);
+  font-size: clamp(1.8rem, 2.8vw, 2.8rem);
   line-height: 1;
   text-shadow: 0 8px 24px rgba(201, 155, 34, .24);
+  transform: translateY(var(--star-rise, 1.25rem)) rotate(var(--star-turn, -150deg));
+  transform-origin: 50% 50%;
   z-index: 2;
 }
 

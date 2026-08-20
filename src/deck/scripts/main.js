@@ -790,6 +790,8 @@
           element.style.setProperty("--scrub-y", `${((1 - progress) * riseDistance).toFixed(2)}px`);
           const blurDistance = isProductRise ? 7 : 5;
           element.style.setProperty("--scrub-blur", `${((1 - progress) * blurDistance).toFixed(2)}px`);
+          element.style.setProperty("--star-rise", `${((1 - progress) * 20).toFixed(2)}px`);
+          element.style.setProperty("--star-turn", `${((1 - progress) * -150).toFixed(2)}deg`);
           const initialScale = isProductRise ? .90 : .88;
           const scale = element.classList.contains("content-scroll-card")
             ? initialScale + progress * (1 - initialScale)
