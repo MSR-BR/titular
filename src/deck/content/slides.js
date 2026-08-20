@@ -500,12 +500,13 @@ window.MemorialDeckSlides = [
     section: "UFF",
     eyebrow: "UFF | Projetos de inovação e pesquisa",
     title: "Projetos que sustentam pesquisa e formação",
-    lead: "Projetos financiados por CNPq, FAPERJ, CAPES e FCT conectam produção científica, infraestrutura, formação de pessoas e cooperação internacional.",
+    lead: "Projetos financiados por CNPq, FAPERJ, CAPES, FCT e parceiros institucionais sustentam infraestrutura, recursos humanos, redes e a gestão continuada da pesquisa.",
     cards: [
-      { label: "Infraestrutura", text: "Recursos para o Laboratório de Magnetismo, o L3D, equipamentos, manutenção e condições experimentais." },
-      { label: "Formação", text: "Bolsas de iniciação científica e pós-doutorado integradas às linhas de pesquisa e aos laboratórios." },
-      { label: "Redes", text: "Missões científicas, congressos e visitas a centros nacionais e internacionais ampliam as colaborações do grupo." },
-      { label: "Gestão", text: "Elaboração de propostas, execução financeira, aquisição de equipamentos, relatórios técnicos e prestação de contas." }
+      { label: "Infraestrutura", text: "Projetos destinados à implantação e à consolidação do Laboratório de Magnetismo e do L3D, incluindo equipamentos, manutenção, adequação de espaços e condições experimentais." },
+      { label: "Recursos humanos", text: "Projetos voltados à formação de pessoas, com bolsas de iniciação científica e pós-doutorado integradas às linhas de pesquisa e aos laboratórios." },
+      { label: "Redes internacionais", text: "Projetos de colaboração com Portugal e, em 2026, com a América Latina, além de missões científicas, congressos e visitas a centros de pesquisa." },
+      { label: "Gestão e administração", text: "Coordenação integral dos projetos: gestão de recursos financeiros, compras, bolsas, missões, relatórios técnicos e prestações de contas — uma dedicação administrativa contínua." },
+      { label: "Bolsas de mérito", html: "<ul><li>JCNE/FAPERJ</li><li>CNE/FAPERJ</li><li>Produtividade CNPq: nível 2 (3 ciclos), nível 1D (1 ciclo) e, atualmente, nível 1C</li></ul><p>Detalhamento na seção Impacto.</p>" }
     ],
     footerRefs: "MEM p.20; Tabela 12.3",
     sourceRefs: ["E015"]
@@ -520,7 +521,7 @@ window.MemorialDeckSlides = [
     cards: [
       { label: "Colegiados", text: "Colegiado da Pós-Graduação em Física (2012-2016), Núcleo Docente Estruturante (2011) e comissão departamental (2013)." },
       { label: "Laboratórios", text: "Participação na coordenação do Laboratório de Magnetismo e concepção, montagem e coordenação do L3D." },
-      { label: "Projetos", text: "Gestão de recursos, bolsas, equipamentos, missões científicas, relatórios e prestações de contas." },
+      { label: "Projetos", text: "Gestão financeira e administrativa contínua: recursos, compras, bolsas, equipamentos, missões científicas, relatórios e prestações de contas." },
       { label: "Editoração", text: "Editor-chefe da Physica B: gestão de submissões, editores, revisores e política editorial." },
       { label: "Comunidade científica", text: "Organização de conferências e eventos para circulação do conhecimento e fortalecimento das redes de colaboração." }
     ],
