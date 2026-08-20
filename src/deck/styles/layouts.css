@@ -508,6 +508,15 @@
   object-position: top center;
 }
 
+.deck-shell .l3d-photo-slide .photo-stage {
+  width: min(100%, 68rem);
+}
+
+.deck-shell .l3d-photo-slide .deck-figure img {
+  aspect-ratio: 1.88 / 1;
+  object-position: center;
+}
+
 .deck-shell .lab-magnetism-gallery .slide-title {
   max-width: 24ch;
 }

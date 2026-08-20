@@ -690,6 +690,9 @@
     labMagnetismSlide?.classList.add("lab-magnetism-gallery");
     const l3dSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s16-l3d") + 1}`);
     l3dSlide?.classList.add("l3d-overview");
+    const l3dPhotoSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s16a-l3d-photo") + 1}`);
+    l3dPhotoSlide?.classList.add("student-photo-slide", "l3d-photo-slide");
+    l3dPhotoSlide?.querySelector(".deck-figure")?.classList.add("apple-product-rise");
     const studentLevelsSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s13-people") + 1}`);
     studentLevelsSlide?.classList.add("student-levels");
     const studentPhotoSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s13b-student-photo") + 1}`);

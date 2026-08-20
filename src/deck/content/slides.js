@@ -435,14 +435,23 @@ window.MemorialDeckSlides = [
         </dialog>` },
       { label: "Uso atual", html: "<ul><li><a href=\"https://edu.ieee.org/br-uff/lufft/\" target=\"_blank\" rel=\"noopener noreferrer\">Equipe de foguetes LUFFT/UFF</a></li><li>Meninas na Ciência e Casa da Descoberta</li><li>Alunos de monografia</li></ul>" }
     ],
-    figure: {
-      src: "assets/figures/l3d-robotica-projeto-2019.png",
-      alt: "Projeto final do curso de Automação e Robótica de 2019",
-      caption: "Exemplo de projeto final do curso de Automação e Robótica, 2019.2, com carro montado por estudantes com sensores."
-    },
     footerRefs: "MEM pp.17-18,46",
     sourceRefs: ["E013"],
     notes: "Usar o carro com sensores como exemplo concreto: o aluno projeta, monta, mede, controla e explica o fenômeno."
+  },
+  {
+    id: "s16a-l3d-photo",
+    layout: "photo",
+    section: "UFF",
+    eyebrow: "",
+    title: "",
+    figure: {
+      src: "assets/figures/l3d-robotica-projeto-2019.png",
+      alt: "Projeto final do curso de Automação e Robótica de 2019",
+      caption: "Projeto final do curso de Automação e Robótica, 2019.2: carro construído por estudantes com sensores e sistemas de controle."
+    },
+    footerRefs: "MEM pp.17-18,46",
+    sourceRefs: ["E013"]
   },
   {
     id: "s16b-innovation",

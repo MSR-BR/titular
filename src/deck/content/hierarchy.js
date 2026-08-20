@@ -43,7 +43,8 @@
         { number: "2.3", title: "Montagem de laboratórios", slides: [
           { id: "s15-lab-magnetism", topic: "Laboratório de Magnetismo da UFF" },
           { id: "s15b-lab-report", topic: "Destaque institucional na FAPERJ" },
-          { id: "s16-l3d", topic: "L3D: robótica, automação e ensino por projeto" }
+          { id: "s16-l3d", topic: "L3D: robótica, automação e ensino por projeto" },
+          { id: "s16a-l3d-photo", topic: "Projeto de robótica desenvolvido por estudantes" }
         ] },
         { number: "2.4", title: "Projetos de inovação e pesquisa", slides: [
           { id: "s16b-innovation", topic: "Sample for Science" },
