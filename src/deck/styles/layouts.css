@@ -380,8 +380,8 @@
 }
 
 .deck-shell .l3d-overview .cards-panel .card-grid {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: .62rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .72rem;
 }
 
 .deck-shell .l3d-overview .info-card {
@@ -390,7 +390,7 @@
 }
 
 .deck-shell .l3d-overview .info-card:nth-child(5) {
-  grid-column: auto;
+  grid-column: 1 / -1;
 }
 
 .deck-shell .l3d-overview .info-card-label {
@@ -1920,7 +1920,7 @@
   }
 
   .deck-shell .l3d-overview .cards-panel .card-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
