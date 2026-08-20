@@ -374,6 +374,51 @@
   box-shadow: none;
 }
 
+.deck-shell .l3d-overview .cards-with-figure {
+  grid-template-columns: minmax(0, 1.2fr) minmax(18rem, .8fr);
+  align-items: stretch;
+}
+
+.deck-shell .l3d-overview .cards-panel .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .72rem;
+}
+
+.deck-shell .l3d-overview .info-card {
+  min-height: 0;
+  padding: clamp(.95rem, 1.4vw, 1.25rem);
+}
+
+.deck-shell .l3d-overview .info-card:nth-child(5) {
+  grid-column: 1 / -1;
+}
+
+.deck-shell .l3d-overview .info-card-text,
+.deck-shell .l3d-overview .info-card-text li {
+  font-size: clamp(.74rem, .9vw, .86rem);
+  line-height: 1.32;
+}
+
+.deck-shell .info-card-action {
+  width: fit-content;
+  margin-top: .85rem;
+  padding: .48rem .78rem;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: var(--section-accent);
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 820;
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.deck-shell .info-card-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 20px color-mix(in srgb, var(--section-accent) 24%, transparent);
+}
+
 .deck-shell .side-media-slide .deck-figure figcaption {
   padding: .55rem .35rem .15rem;
   font-size: clamp(.68rem, .85vw, .78rem);
@@ -481,6 +526,75 @@
   aspect-ratio: auto;
   object-fit: contain;
   object-position: top center;
+}
+
+.deck-shell .lab-magnetism-gallery .slide-title {
+  max-width: 24ch;
+}
+
+.deck-shell .lab-magnetism-gallery .cards-with-figure.has-figure-gallery {
+  grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+  gap: clamp(1rem, 2vw, 1.6rem);
+  align-items: stretch;
+}
+
+.deck-shell .lab-magnetism-gallery .cards-panel,
+.deck-shell .lab-magnetism-gallery .card-grid {
+  height: 100%;
+}
+
+.deck-shell .lab-magnetism-gallery .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
+  gap: .75rem;
+}
+
+.deck-shell .lab-magnetism-gallery .info-card {
+  min-height: 0;
+  padding: clamp(1rem, 1.5vw, 1.35rem);
+}
+
+.deck-shell .lab-magnetism-gallery .info-card-label {
+  font-size: clamp(.82rem, 1.05vw, 1rem);
+}
+
+.deck-shell .lab-magnetism-gallery .info-card-text,
+.deck-shell .lab-magnetism-gallery .info-card-text li {
+  font-size: clamp(.72rem, .88vw, .84rem);
+  line-height: 1.32;
+}
+
+.deck-shell .lab-magnetism-gallery .figure-gallery {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: .65rem;
+}
+
+.deck-shell .lab-magnetism-gallery .figure-gallery .deck-figure {
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 1.15rem;
+  background: #dde1e2;
+  box-shadow: 0 18px 42px rgba(18, 25, 29, .1);
+}
+
+.deck-shell .lab-magnetism-gallery .figure-gallery img {
+  width: 100%;
+  height: 100%;
+  min-height: 12rem;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border: 0;
+  border-radius: inherit;
+  box-shadow: none;
+}
+
+.deck-shell .lab-magnetism-gallery .figure-gallery .deck-figure:first-child img {
+  object-position: center 38%;
 }
 
 .metric-grid {
@@ -1730,6 +1844,25 @@
   .deck-shell .side-media-slide .cards-with-figure,
   .deck-shell .side-media-slide .cards-panel .card-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .deck-shell .l3d-overview .cards-with-figure,
+  .deck-shell .l3d-overview .cards-panel .card-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .deck-shell .l3d-overview .info-card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .deck-shell .lab-magnetism-gallery .cards-with-figure.has-figure-gallery,
+  .deck-shell .lab-magnetism-gallery .card-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .deck-shell .lab-magnetism-gallery .figure-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
   }
 
   .deck-shell .professional-primary .card-grid,

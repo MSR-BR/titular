@@ -133,6 +133,11 @@
     `;
   }
 
+  function renderFigureGallery(figures) {
+    if (!Array.isArray(figures) || figures.length === 0) return "";
+    return `<div class="figure-gallery">${figures.map(renderFigure).join("")}</div>`;
+  }
+
   function renderCards(cards, options = {}) {
     if (!Array.isArray(cards) || cards.length === 0) {
       return "";
@@ -160,6 +165,9 @@
         const number = normalizedCard.number
           ? `<span class="section-number" aria-hidden="true">${escapeHtml(normalizedCard.number)}</span>`
           : "";
+        const action = normalizedCard.action?.label && normalizedCard.action?.targetId
+          ? `<a class="info-card-action" href="#" data-slide-target="${escapeAttribute(normalizedCard.action.targetId)}">${escapeHtml(normalizedCard.action.label)}</a>`
+          : "";
         return `
           <${tag} class="info-card${linkedClass}${logoClass}"${href}>
             ${number}
@@ -167,6 +175,7 @@
             ${label}
             ${meta}
             ${text}
+            ${action}
           </${tag}>
         `;
       })
@@ -344,7 +353,10 @@
     }
 
     if (slide.layout === "cards") {
-      const bodyClass = slide.figure ? "slide-body cards-with-figure" : "slide-body";
+      const hasGallery = Array.isArray(slide.figures) && slide.figures.length > 0;
+      const bodyClass = slide.figure || hasGallery
+        ? `slide-body cards-with-figure${hasGallery ? " has-figure-gallery" : ""}`
+        : "slide-body";
       return `
         <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
@@ -353,6 +365,7 @@
               ${renderCards(slide.cards)}
             </div>
             ${renderFigure(slide.figure)}
+            ${renderFigureGallery(slide.figures)}
           </div>
           ${footer}
           ${notes}
@@ -677,6 +690,10 @@
     const teachingSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s11-teaching") + 1}`);
     teachingSlide?.classList.add("side-media-slide", "teaching-robotics");
     teachingSlide?.querySelector(".deck-figure")?.classList.add("apple-product-rise");
+    const labMagnetismSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s15-lab-magnetism") + 1}`);
+    labMagnetismSlide?.classList.add("lab-magnetism-gallery");
+    const l3dSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s16-l3d") + 1}`);
+    l3dSlide?.classList.add("l3d-overview");
     const studentLevelsSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s13-people") + 1}`);
     studentLevelsSlide?.classList.add("student-levels");
     const studentPhotoSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s13b-student-photo") + 1}`);
@@ -687,6 +704,11 @@
     labReportSlide?.querySelector(".deck-figure")?.classList.add("apple-product-rise");
     const professionalPrimary = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s14-former-students") + 1}`);
     professionalPrimary?.classList.add("professional-outcomes", "professional-primary", "professional-highlight");
+
+    deck.querySelectorAll("[data-slide-target]").forEach((link) => {
+      const targetIndex = slides.findIndex((slide) => slide.id === link.dataset.slideTarget);
+      if (targetIndex >= 0) link.setAttribute("href", `#slide-${targetIndex + 1}`);
+    });
 
     deck.querySelectorAll("#slide-2 .index-section-card").forEach((card, index) => {
       if (sections[index]) card.setAttribute("href", `#${sections[index].anchor}`);

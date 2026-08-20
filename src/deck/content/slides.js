@@ -386,6 +386,12 @@ window.MemorialDeckSlides = [
       { label: "Construção", html: "<ul><li>Projetos de fomento</li><li>Apoio institucional</li><li>Espaço físico</li></ul>" },
       { label: "Destaque", text: "Laboratório destacado em reportagem institucional da FAPERJ." }
     ],
+    figures: [
+      { src: "assets/figures/lab-magnetismo-2014-bancadas.jpg", alt: "Bancadas e área de preparação do Laboratório de Magnetismo da UFF em 2014" },
+      { src: "assets/figures/lab-magnetismo-2014-equipamentos.jpg", alt: "Equipamentos criogênicos do Laboratório de Magnetismo da UFF em 2014" },
+      { src: "assets/figures/lab-magnetismo-2013-visao-geral.jpg", alt: "Visão geral do Laboratório de Magnetismo da UFF em 2013" },
+      { src: "assets/figures/lab-magnetismo-2013-bancada.jpg", alt: "Bancada de preparação de amostras do Laboratório de Magnetismo da UFF em 2013" }
+    ],
     footerRefs: "MEM pp.16-17,21",
     sourceRefs: ["E012", "E015"],
     notes: "Ligar com CICECO: experiência anterior com VSM e protocolos experimentais aparece aqui como capacidade institucional."
@@ -409,12 +415,13 @@ window.MemorialDeckSlides = [
     layout: "cards",
     section: "UFF",
     eyebrow: "UFF | Montagem de laboratórios",
-    title: "L3D: robótica, automação e ensino por projeto",
+    title: "L3D: robótica, automação e ensino por projeto 2018–presente",
     cards: [
-      { label: "2018", text: "Criação do laboratório como interface entre ensino, infraestrutura experimental, automação e desenvolvimento em didática." },
-      { label: "Ferramentas", text: "Arduino, sensores físicos, estações de montagem, impressoras 3D e instrumentação personalizada." },
+      { label: "Contexto", text: "Criação do laboratório com foco em ensino." },
+      { label: "Equipamentos adquiridos", html: "<ul><li>Arduinos e placas de controle</li><li>Sensores</li><li>Impressoras 3D</li><li>Outros itens para instrumentação</li></ul>" },
       { label: "Curso", text: "Robótica aplicada à Física para graduação e pós-graduação, com aprendizagem orientada por projetos." },
-      { label: "Extensão", text: "Oficinas com o Coluni, cooperação educacional e desdobramentos com escolas em Portugal." }
+      { label: "Atividades de Extensão", text: "Oficinas com o Coluni, cooperação educacional e desdobramentos com escolas em Portugal.", action: { label: "Ver produtos", targetId: "s16a-l3d-products" } },
+      { label: "Uso atual", html: "<ul><li><a href=\"https://edu.ieee.org/br-uff/lufft/\" target=\"_blank\" rel=\"noopener noreferrer\">Equipe de foguetes LUFFT/UFF</a></li><li>Meninas na Ciência e Casa da Descoberta</li><li>Alunos de monografia</li></ul>" }
     ],
     figure: {
       src: "assets/figures/l3d-robotica-projeto-2019.png",
@@ -424,6 +431,19 @@ window.MemorialDeckSlides = [
     footerRefs: "MEM pp.17-18,46",
     sourceRefs: ["E013"],
     notes: "Usar o carro com sensores como exemplo concreto: o aluno projeta, monta, mede, controla e explica o fenômeno."
+  },
+  {
+    id: "s16a-l3d-products",
+    layout: "cards",
+    section: "UFF",
+    eyebrow: "UFF | Montagem de laboratórios",
+    title: "Produtos acadêmicos do L3D",
+    cards: [
+      { label: "1 monografia", meta: "Patrick Ribeiro Rodrigues | UFF | 2021", text: "Reflexões e perspectivas acerca do uso da automação e robótica no ensino de Ciências Exatas." },
+      { label: "1 artigo", meta: "APEDuC | v. 7, n. 1, p. 194–209 | 2026", text: "Ensino por investigação e robótica educativa no contexto do Perfil dos Alunos à Saída da Escolaridade Obrigatória em Portugal." }
+    ],
+    footerRefs: "Monografia UFF 2021; APEDuC 7(1), 194–209, 2026",
+    sourceRefs: ["E013"]
   },
   {
     id: "s16b-innovation",
