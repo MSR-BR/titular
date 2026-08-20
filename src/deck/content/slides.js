@@ -317,11 +317,6 @@ window.MemorialDeckSlides = [
       { label: "Robótica e automação", text: "Curso para graduação e pós-graduação com Arduino, sistemas de automação e projetos que integram conceitos e prática experimental. Roteiro próprio. Laboratório montado para este propósito." },
       { label: "Material didático e livros", html: "<p>A experiência docente originou materiais próprios e os livros:</p><ol><li>Magnetismo Molecular (2010)</li><li>Fundamentals of Magnetism (2013)</li><li>Quantum Mechanics (2025)</li><li>Termodinâmica (em redação)</li></ol><p>Serão detalhados mais à frente nesta apresentação.</p>" }
     ],
-    figure: {
-      src: "assets/figures/robotica-uff-2019.png",
-      alt: "Robô desenvolvido no curso de Robótica e Automação da UFF",
-      caption: "Resultado de projeto desenvolvido no curso de Robótica e Automação, UFF, 2019."
-    },
     footerRefs: "MEM pp.12-13,48-50",
     sourceRefs: ["E007", "E008"]
   },
@@ -428,7 +423,7 @@ window.MemorialDeckSlides = [
             <button class="publications-close" type="button" aria-label="Fechar material do curso">×</button>
           </div>
           <div class="course-pdf-viewer">
-            <iframe src="assets/docs/automacao-para-fisicos.pdf#view=FitH" title="Material do curso Automação para Físicos"></iframe>
+            <iframe src="assets/docs/automacao-para-fisicos.pdf#page=1&zoom=page-width&view=FitH" title="Material do curso Automação para Físicos"></iframe>
           </div>
           <p class="course-pdf-fallback"><a href="assets/docs/automacao-para-fisicos.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF em uma nova aba ↗</a></p>
         </dialog>` },
@@ -445,7 +440,7 @@ window.MemorialDeckSlides = [
             <li><span>2026 · ARTIGO</span><strong>Ensino por investigação e robótica educativa no contexto do Perfil dos Alunos à Saída da Escolaridade Obrigatória em Portugal.</strong><small>P. R. Rodrigues, T. M. C. Reis, D. F. M. de Castro Ferreira, M. Reis e P. H. D. Menezes.</small><em>APEDuC Revista — Investigação e Práticas em Educação em Ciências, Matemática e Tecnologia 7(1), 194–209, 2026.</em></li>
           </ol>
         </dialog>` },
-      { label: "Uso atual", html: "<ul><li><a href=\"https://edu.ieee.org/br-uff/lufft/\" target=\"_blank\" rel=\"noopener noreferrer\">Equipe de foguetes LUFFT/UFF</a></li><li>Meninas na Ciência e Casa da Descoberta</li><li>Alunos de monografia</li></ul>" }
+      { label: "Uso atual", html: "<ul><li><a href=\"https://edu.ieee.org/br-uff/lufft/\" target=\"_blank\" rel=\"noopener noreferrer\">Equipe de foguetes LUFFT/UFF</a></li><li>Meninas na Ciência da Casa da Descoberta</li><li>Alunos de monografia</li></ul>" }
     ],
     footerRefs: "MEM pp.17-18,46",
     sourceRefs: ["E013"],
