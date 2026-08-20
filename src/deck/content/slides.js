@@ -331,38 +331,30 @@ window.MemorialDeckSlides = [
     section: "UFF",
     eyebrow: "UFF | Formação de alunos",
     title: "Formação de alunos",
-    lead: "A orientação insere estudantes no ambiente real de pesquisa, articulando problemas abertos, formação teórica e experimental, discussão bibliográfica e produção de resultados.",
+    lead: "Formação em todos os níveis, da iniciação científica ao pós-doutorado, articulando pesquisa experimental, modelagem teórica e colaboração internacional.",
     cards: [
-      { label: "25 IC e extensão | 2010–2025", text: "Estudantes de Física, Engenharia e, em casos específicos, de outras áreas, como Cinema, integrados a projetos experimentais e teóricos de acordo com seus interesses e perfis." },
-      { label: "Pesquisa desde a graduação", text: "Contato direto com métodos de investigação, problemas em aberto e produção científica como base para o mestrado ou para atuação qualificada no mercado de trabalho." },
-      { label: "5 monografias", text: "Cinco estudantes transformaram o projeto de iniciação científica em tema da monografia de final de curso." },
-      { label: "Bolsas e continuidade", text: "FAPERJ, CNPq, CAPES e programas institucionais apoiaram a dedicação aos projetos. Muitos estudantes seguiram para programas de mestrado na UFF e em outras instituições." }
+      { label: "25 IC e extensão | 2010–2025", html: "<ul><li>Física</li><li>Engenharia</li><li>Cinema e outras áreas</li><li>Bolsas de IC: FAPERJ, CNPq e UFF</li><li>5 monografias derivadas dos projetos</li></ul>" },
+      { label: "4 mestrados", html: "<ul><li>Complexos metálicos</li><li>Ligas Heusler</li><li>Materiais magnetocalóricos e barocalóricos</li></ul><p>Bruno Pimentel concluiu o mestrado em um ano e recebeu o prêmio de melhor dissertação da UFF em 2018.</p>" },
+      { label: "5 doutorados + 2 em curso", html: "<p>Dois eixos:</p><ul><li>Informação quântica e correlações quânticas em complexos metálicos</li><li>Síntese e caracterização de novos materiais magnéticos para efeitos calóricos</li></ul><p><strong>1 coorientação internacional:</strong> tese de Vivian Andrade na Universidade do Porto sobre redução de escala em compostos Gd-Si-Ge e efeitos magnetocalóricos.</p>" },
+      { label: "Experiência internacional de doutorandos", html: "<p>Estágios de doutorado de alunos:</p><ul><li>França</li><li>Oak Ridge National Laboratory</li><li>Portugal</li></ul>" },
+      { label: "10 pós-doutorados", html: "<p>Supervisões com bolsas PNPD/CAPES, PPG-Física/UFF, FAPERJ e CNPq, com liberdade acadêmica e foco predominante na fabricação e caracterização de materiais para efeitos calóricos.</p><p><strong>Projeto PNPD/CAPES:</strong> durante aproximadamente cinco anos, as cotas viabilizaram a incorporação de pesquisadores e de novas agendas ao Programa de Pós-Graduação em Física da UFF.</p>" }
     ],
+    footerRefs: "MEM pp.13-15; Tabelas 10.2, 10.3 e 10.4",
+    sourceRefs: ["E009", "E010", "E029"]
+  },
+  {
+    id: "s13b-student-photo",
+    layout: "photo",
+    section: "UFF",
+    eyebrow: "UFF | Formação de alunos",
+    title: "Uma comunidade de formação",
     figure: {
       src: "assets/figures/formacao-alunos-2013.jpg",
       alt: "Almoço de final de ano com estudantes do grupo em dezembro de 2013",
       caption: "Almoço de final de ano com estudantes do grupo, dezembro de 2013."
     },
-    footerRefs: "MEM pp.13-14; Tabelas 10.2 e 10.3",
-    sourceRefs: ["E009", "E010", "E029"]
-  },
-  {
-    id: "s13b-advanced-training",
-    layout: "cards",
-    section: "UFF",
-    eyebrow: "UFF | Formação de alunos",
-    title: "Mestrado, doutorado e pós-doutorado",
-    lead: "A formação avançada combina autonomia científica, integração entre teoria e experimento e inserção em redes nacionais e internacionais.",
-    cards: [
-      { label: "4 mestrados", text: "Pesquisas em complexos metálicos, ligas Heusler, grafeno e sistemas correlacionados, com ênfase em efeitos magnetocalóricos e barocalóricos. Bruno Pimentel concluiu o mestrado em um ano e recebeu o prêmio de melhor dissertação da UFF em 2018." },
-      { label: "5 doutorados + 2 em curso", text: "Teses organizadas em dois eixos: informação quântica e correlações em complexos metálicos; síntese e caracterização de novos materiais magnéticos para efeitos calóricos." },
-      { label: "1 coorientação internacional", text: "Coorientação da tese de Vivian Andrade na Universidade do Porto, dedicada à redução de escala em compostos Gd-Si-Ge e seus efeitos magnetocalóricos." },
-      { label: "Experiência internacional", text: "Estágios de doutorado na França e no Oak Ridge National Laboratory ampliaram a formação dos estudantes e fortaleceram a integração internacional das linhas de pesquisa." },
-      { label: "10 pós-doutorados", text: "Supervisões com bolsas PNPD/CAPES, PPG-Física/UFF, FAPERJ e CNPq, com liberdade acadêmica e foco predominante na fabricação e caracterização de materiais para efeitos calóricos." },
-      { label: "PNPD/CAPES", text: "Durante aproximadamente cinco anos, as cotas do programa viabilizaram a incorporação de pesquisadores e de novas agendas ao Programa de Pós-Graduação em Física da UFF." }
-    ],
-    footerRefs: "MEM pp.14-15; Tabelas 10.2 e 10.4",
-    sourceRefs: ["E009", "E010"]
+    footerRefs: "MEM p.15; Figura 3.2",
+    sourceRefs: ["E010"]
   },
   {
     id: "s14-former-students",
