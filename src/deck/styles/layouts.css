@@ -1314,7 +1314,7 @@
 .deck-shell .standard-section-cover .section-cover-number {
   position: absolute;
   top: clamp(1.6rem, 3.5vh, 2.4rem);
-  left: clamp(2rem, 5vw, 4rem);
+  right: clamp(2rem, 5vw, 4rem);
   width: 3.35rem;
   height: 3.35rem;
   display: grid;
