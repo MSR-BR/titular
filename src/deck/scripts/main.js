@@ -738,12 +738,13 @@
         slide.classList.contains("section-scroll-card");
       const scrubElements = [];
       animatedElements.forEach((element, order) => {
+        const isIndexCard = slide.classList.contains("index-cover") && element.classList.contains("index-section-card");
         element.classList.add("story-reveal");
         if (element.matches(".info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure")) {
           element.classList.add("content-scroll-card");
         }
         element.style.setProperty("--reveal-order", Math.min(order, 10));
-        if (usesScrollTemplate) {
+        if (usesScrollTemplate || isIndexCard) {
           element.classList.add("scroll-scrub-reveal");
           scrubElements.push(element);
         } else {
