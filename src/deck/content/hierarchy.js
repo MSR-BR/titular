@@ -107,7 +107,8 @@
         ] },
         { number: "4.2", title: "Livro-texto", slides: [
           { id: "s37-books", topic: "Publicados" },
-          { id: "s37-books-continuity", topic: "Em andamento" }
+          { id: "s37-books-continuity", topic: "Em andamento" },
+          { id: "s37-termo-app", topic: "App Termo" }
         ] },
         { number: "4.3", title: "Obra literária não-acadêmica", slides: [
           { id: "s37-literary-work", topic: "As viagens de ibn Hakim" }

@@ -997,22 +997,29 @@ window.MemorialDeckSlides = [
       },
       {
         label: "App Termo",
-        text: "Livro interativo associado ao projeto, reunindo capítulos, simuladores, recursos extras, área pessoal e mapa de conteúdo para ampliar a aprendizagem de Termodinâmica."
+        html: "<p>Livro interativo associado ao projeto:</p><ul><li>Capítulos</li><li>Simuladores</li><li>Exercícios por IA</li><li>Simulados por capítulo</li><li>Recursos para ampliar a aprendizagem de Termodinâmica</li></ul>"
       }
     ],
-    figures: [
-      {
-        src: "assets/figures/thermodynamics-book-draft-cover.png",
-        alt: "Capa provisória de Termodinâmica para Estudantes de Física",
-        caption: "Manuscrito em redação · notas de aula 2024-2026"
-      },
-      {
-        src: "assets/figures/termo-app-interface.png",
-        alt: "Interface do aplicativo interativo Termo",
-        caption: "App Termo · livro interativo e ambiente de aprendizagem"
-      }
-    ],
+    figure: {
+      src: "assets/figures/thermodynamics-book-draft-cover.png",
+      alt: "Capa provisória de Termodinâmica para Estudantes de Física",
+      caption: "Manuscrito em redação · notas de aula 2024-2026"
+    },
     footerRefs: "Projeto Termodinâmica para Estudantes de Física · App Termo",
+    sourceRefs: ["E025"]
+  },
+  {
+    id: "s37-termo-app",
+    layout: "photo",
+    className: "termo-app-slide",
+    section: "Produção",
+    figure: {
+      src: "assets/figures/termo-app-interface.png",
+      alt: "Interface do aplicativo interativo Termo",
+      caption: "App Termo · clicar para abrir o livro interativo",
+      href: "http://termo-theta.vercel.app"
+    },
+    footerRefs: "termo-theta.vercel.app",
     sourceRefs: ["E025"]
   },
   {

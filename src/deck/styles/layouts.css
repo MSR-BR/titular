@@ -906,17 +906,16 @@
   padding-bottom: clamp(1.2rem, 2.5vh, 2rem);
 }
 
-.deck-shell .textbook-progress-slide .cards-with-figure.has-figure-gallery {
+.deck-shell .textbook-progress-slide .cards-with-figure {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1.15fr) minmax(15rem, .85fr);
   gap: clamp(.7rem, 1.3vw, 1.1rem);
-  align-items: stretch;
+  align-items: center;
 }
 
-.deck-shell .textbook-progress-slide .card-grid,
-.deck-shell .textbook-progress-slide .figure-gallery {
+.deck-shell .textbook-progress-slide .card-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: clamp(.65rem, 1vw, .9rem);
 }
 
@@ -932,13 +931,45 @@
 
 .deck-shell .textbook-progress-slide .deck-figure img {
   width: 100%;
-  height: clamp(15rem, 34vh, 23rem);
+  height: clamp(28rem, 62vh, 43rem);
   object-fit: contain;
 }
 
 .deck-shell .textbook-progress-slide .deck-figure figcaption {
   font-size: clamp(.68rem, .78vw, .82rem);
   text-align: center;
+}
+
+.deck-shell > .termo-app-slide {
+  min-height: auto;
+  padding-top: clamp(1rem, 2vh, 1.7rem);
+  padding-bottom: clamp(1.2rem, 2.5vh, 2rem);
+}
+
+.deck-shell .termo-app-slide .photo-stage {
+  display: grid;
+  place-items: center;
+}
+
+.deck-shell .termo-app-slide .deck-figure {
+  width: min(100%, 72rem);
+  min-height: 0;
+}
+
+.deck-shell .termo-app-slide .figure-link {
+  display: block;
+  border-radius: inherit;
+}
+
+.deck-shell .termo-app-slide .deck-figure img {
+  width: 100%;
+  height: clamp(34rem, 72vh, 54rem);
+  object-fit: contain;
+}
+
+.deck-shell .termo-app-slide .figure-link:hover img,
+.deck-shell .termo-app-slide .figure-link:focus-visible img {
+  filter: brightness(1.03);
 }
 
 .deck-shell .literary-work-slide .figure-board {
@@ -2466,11 +2497,10 @@
   .deck-shell .impact-all-metrics .card-grid { grid-template-columns: 1fr; }
   .deck-shell .textbook-books-slide .card-grid,
   .deck-shell .textbook-books-slide .figure-gallery { grid-template-columns: 1fr; }
-  .deck-shell .textbook-progress-slide .cards-with-figure.has-figure-gallery {
+  .deck-shell .textbook-progress-slide .cards-with-figure {
     grid-template-columns: 1fr;
   }
-  .deck-shell .textbook-progress-slide .card-grid,
-  .deck-shell .textbook-progress-slide .figure-gallery {
+  .deck-shell .textbook-progress-slide .card-grid {
     grid-template-columns: 1fr;
   }
   .section-indice .card-grid.count-5 .info-card { grid-column: auto; }
