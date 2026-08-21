@@ -1008,13 +1008,14 @@
 }
 
 .deck-shell .termo-app-gallery-slide .photo-stage {
-  width: min(100%, 68rem);
+  width: min(100%, 76rem);
 }
 
 .deck-shell .termo-app-gallery-slide .figure-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(.8rem, 1.6vw, 1.3rem);
+  grid-template-rows: repeat(2, auto);
+  gap: clamp(.7rem, 1.35vw, 1.1rem);
   align-items: stretch;
 }
 
@@ -1031,16 +1032,17 @@
 
 .deck-shell .termo-app-gallery-slide .deck-figure img {
   width: 100%;
-  height: clamp(30rem, 68vh, 45rem);
+  height: clamp(17rem, 34vh, 25rem);
   object-fit: contain;
   border: 0;
-  border-radius: .9rem;
+  border-radius: 0;
   background: transparent;
+  box-shadow: none;
 }
 
 .deck-shell .termo-app-gallery-slide .deck-figure figcaption {
-  min-height: 2.1rem;
-  padding: .45rem .3rem .05rem;
+  min-height: 1.8rem;
+  padding: .3rem .3rem 0;
   font-size: .7rem;
   line-height: 1.25;
   text-align: center;
