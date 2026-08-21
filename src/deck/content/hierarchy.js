@@ -104,7 +104,8 @@
         { number: "4.1", title: "Produção Científica em Números", slides: [
           { id: "s36-impact", topic: "Produção Científica em Números" },
           { id: "s36-quality-metrics", topic: "Qualidade e visibilidade | indicadores" },
-          { id: "s36-leadership", topic: "Posição de autoria" }
+          { id: "s36-leadership", topic: "Posição de autoria" },
+          { id: "s36-merit-scholarships", topic: "Bolsas de mérito acadêmico" }
         ] },
         { number: "4.2", title: "Produção de Livros", slides: [
           { id: "s37-books", topic: "Pesquisa, sala de aula e livro-texto" },

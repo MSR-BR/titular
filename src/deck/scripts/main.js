@@ -283,12 +283,13 @@
           .join("")}</div>`
       : "";
     const lead = slide.lead && !options.omitLead ? `<p class="slide-lead">${escapeHtml(slide.lead)}</p>` : "";
+    const heading = title ? `<h1 class="slide-title">${title}</h1>` : "";
 
     return `
       <header class="slide-header">
         ${kicker}
         ${eyebrow}
-        <h1 class="slide-title">${title}</h1>
+        ${heading}
         ${subtitle}
         ${affiliations}
         ${lead}

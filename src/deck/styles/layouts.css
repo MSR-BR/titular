@@ -741,6 +741,25 @@
   font-size: clamp(2.8rem, 5vw, 4.9rem);
 }
 
+.deck-shell > .impact-followup-metrics {
+  min-height: clamp(15rem, 36vh, 23rem);
+  padding-top: clamp(.2rem, .8vh, .55rem);
+  padding-bottom: clamp(.7rem, 1.5vh, 1.2rem);
+}
+
+.deck-shell .impact-followup-metrics .slide-header {
+  min-height: 0;
+  margin-bottom: .25rem;
+}
+
+.deck-shell > .impact-merit-cards {
+  padding-top: clamp(1rem, 2.5vh, 2rem);
+}
+
+.deck-shell .impact-merit-cards .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .deck-shell > .impact-figure-slide {
   padding-top: clamp(.15rem, .6vh, .45rem);
   padding-bottom: clamp(1.35rem, 2.8vh, 2.4rem);
@@ -2238,6 +2257,7 @@
   .section-indice .card-grid.count-4,
   .standard-section-cover.section-resultados .card-grid.count-6 { grid-template-columns: 1fr; }
   .deck-shell .impact-author-metrics .metric-grid { grid-template-columns: 1fr; }
+  .deck-shell .impact-merit-cards .card-grid { grid-template-columns: 1fr; }
   .section-indice .card-grid.count-5 .info-card { grid-column: auto; }
   .timeline { grid-template-columns: 1fr; }
   .timeline::before,

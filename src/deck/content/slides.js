@@ -916,10 +916,10 @@ window.MemorialDeckSlides = [
   {
     id: "s36-quality-metrics",
     layout: "metrics",
-    className: "impact-transition-metrics impact-quality-metrics",
+    className: "impact-transition-metrics impact-followup-metrics impact-quality-metrics",
     section: "Impacto",
     eyebrow: "Produção Científica",
-    title: "Qualidade e visibilidade internacional*",
+    title: "",
     metrics: [
       { value: "20,4%", label: "publicações entre os 25% mais citados mundialmente" },
       { value: "70,2%", label: "artigos em periódicos top 25% por CiteScore" },
@@ -931,10 +931,10 @@ window.MemorialDeckSlides = [
   {
     id: "s36-leadership",
     layout: "metrics",
-    className: "impact-transition-metrics impact-author-metrics",
+    className: "impact-transition-metrics impact-followup-metrics impact-author-metrics",
     section: "Impacto",
     eyebrow: "Produção Científica",
-    title: "Posição de autoria",
+    title: "",
     metrics: [
       { value: "11%", label: "como primeiro autor" },
       { value: "57%", label: "como último autor" },
@@ -942,6 +942,26 @@ window.MemorialDeckSlides = [
       { value: "4%", label: "como autor único" }
     ],
     footerRefs: "Fonte: Scopus · últimos 10 anos (2015-2024)",
+    sourceRefs: ["E024"]
+  },
+  {
+    id: "s36-merit-scholarships",
+    layout: "cards",
+    className: "impact-merit-cards",
+    section: "Impacto",
+    eyebrow: "Produção Científica",
+    title: "Bolsas de mérito acadêmico",
+    cards: [
+      {
+        label: "CNPq",
+        text: "Produtividade em Pesquisa desde 2011: nível 2 em três ciclos, nível 1D em um ciclo e, atualmente, nível 1C."
+      },
+      {
+        label: "FAPERJ",
+        text: "1 JCNE, em 2012, e 3 CNE, concedidas em 2016, 2019 e 2024."
+      }
+    ],
+    footerRefs: "CNPq e FAPERJ",
     sourceRefs: ["E024"]
   },
   {
