@@ -99,10 +99,26 @@
       key: "impacto",
       label: "Produção",
       title: "Produção científica e impacto acadêmico",
-      targetId: "s36-impact",
+      targetId: "s36-section-opening",
       subsections: [
-        { number: "4.1", title: "Produção científica", slides: [
-          { id: "s36-impact", topic: "Regularidade, qualidade e liderança", sectionCover: true }
+        { number: "4.1", title: "Impacto das linhas de pesquisa", slides: [
+          { id: "s36-impact", topic: "Trajetória e impacto bibliométrico" },
+          { id: "s36-quality", topic: "Qualidade e visibilidade" },
+          { id: "s36-collaboration", topic: "Colaboração internacional" },
+          { id: "s36-leadership", topic: "Liderança científica" },
+          { id: "s36-areas", topic: "Atuação interdisciplinar" },
+          { id: "s36-recognition", topic: "Reconhecimento institucional" }
+        ] },
+        { number: "4.2", title: "Produção de Livros", slides: [
+          { id: "s37-books", topic: "Pesquisa, sala de aula e livro-texto" },
+          { id: "s37-books-continuity", topic: "Projetos editoriais em continuidade" }
+        ] },
+        { number: "4.3", title: "Atividades editoriais e liderança científica", slides: [
+          { id: "s38-editorial", topic: "Physica B e liderança editorial" }
+        ] },
+        { number: "4.4", title: "Internacionalização", slides: [
+          { id: "s39-internationalization", topic: "Mobilidade e consolidação internacional" },
+          { id: "s39-international-networks", topic: "Redes, colaborações e formação internacional" }
         ] }
       ]
     },

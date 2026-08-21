@@ -48,7 +48,7 @@ window.MemorialDeckSlides = [
         number: "4",
         href: "#section-4",
         label: "Produção científica e impacto acadêmico",
-        html: "<ul><li>Produção científica</li></ul>"
+        html: "<ul><li>Impacto das linhas de pesquisa</li><li>Produção de livros</li><li>Atividades editoriais e liderança científica</li><li>Internacionalização</li></ul>"
       },
       {
         number: "5",
@@ -878,69 +878,219 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E017", "E018", "E019", "E020", "E021", "E022", "E023"]
   },
   {
+    id: "s36-section-opening",
+    layout: "section",
+    section: "Produção",
+    eyebrow: "Seção 4",
+    title: "Produção científica e impacto acadêmico"
+  },
+  {
     id: "s36-impact",
     layout: "dashboard",
-    section: "Impacto",
-    eyebrow: "Impacto científico",
-    title: "Regularidade, qualidade e liderança",
+    section: "Produção",
+    eyebrow: "Impacto das linhas de pesquisa",
+    title: "25 anos de produção científica contínua",
     metrics: [
-      { value: "3625", label: "citações Google Scholar" },
+      { value: "3625", label: "citações acumuladas" },
+      { value: "1312", label: "citações desde 2021" },
       { value: "h = 33", label: "índice h" },
-      { value: "i10 = 88", label: "índice i10" },
-      { value: "67%", label: "colaboração internacional em 10 anos" },
-      { value: "70,2%", label: "artigos em periódicos top 25% CiteScore" }
+      { value: "i10 = 88", label: "publicações com 10+ citações" }
     ],
-    lead: "Os indicadores são tratados como fotografia documentada no memorial, não como métricas ao vivo.",
     cards: [
-      { label: "Crescimento", text: "A série temporal mostra crescimento acentuado de citações apos a consolidação das linhas UFF." },
-      { label: "Qualidade", text: "20,4% dos artigos entre os 25% mais citados mundialmente e 70,2% em periódicos top 25% CiteScore." },
-      { label: "Rede", text: "A colaboração internacional de 67% no período 2015-2024 conecta impacto a redes estruturais." },
-      { label: "Leitura", text: "A física apresentada antes explica estes indicadores; os números não substituem os resultados." }
+      { label: "Trajetória", text: "Produção iniciada em 2000, com crescimento acentuado a partir da consolidação das linhas de pesquisa na UFF." },
+      { label: "Pico recente", text: "Máximo anual em 2025, com aproximadamente 320 citações; o valor de 2026 ainda é parcial." }
     ],
     figure: {
       src: "assets/figures/impact-citations-trends.png",
-      alt: "Evolução anual das citações segundo Google Scholar e Scopus",
-      caption: "Figura 5.1: evolução anual das citações em bases documentadas no memorial."
+      alt: "Evolução anual de publicações e citações no Google Scholar e na Scopus",
+      caption: "Evolução da produção e das citações segundo Google Scholar e Scopus."
     },
-    footerRefs: "MEM pp.32-36,98-99",
+    footerRefs: "MEM pp.32-33; Fig. 5.1",
     sourceRefs: ["E024"]
   },
   {
-    id: "s37-internationalization",
-    layout: "timeline",
-    section: "Internacionalização",
-    eyebrow: "Internacionalização",
-    title: "Internacionalização como estrutura",
-    milestones: [
-      { label: "2001-2002", text: "Doutorado sanduíche em Aveiro; retorno ao Brasil e defesa no CBPF em 2003." },
-      { label: "2003-2009", text: "Pós-doc em Aveiro e Pesquisador Auxiliar no CICECO." },
-      { label: "2017-2018", text: "Pesquisador visitante na Universidade de Aveiro." },
-      { label: "2022-2023", text: "Distinguished Researcher na Universidad de Sevilla." },
-      { label: "Redes", text: "Portugal, Espanha, EUA, Chile, Russia, China e LAFMAT." }
+    id: "s36-quality",
+    layout: "content",
+    section: "Produção",
+    eyebrow: "Impacto das linhas de pesquisa",
+    title: "Qualidade e visibilidade internacional",
+    lead: "O recorte 2015-2024 combina impacto de citação e presença consistente em periódicos de alta visibilidade.",
+    metrics: [
+      { value: "20,4%", label: "entre os 25% mais citados mundialmente" },
+      { value: "70,2%", label: "em periódicos top 25% por CiteScore" }
     ],
-    footerRefs: "MEM pp.43-44",
-    sourceRefs: ["E005", "E026", "E030"]
+    figure: {
+      src: "assets/figures/impact-scival-percentiles.png",
+      alt: "Indicadores de publicações mais citadas e de periódicos no quartil superior",
+      caption: "Indicadores qualitativos da produção científica, Scopus/SciVal, 2015-2024."
+    },
+    footerRefs: "MEM p.34; Fig. 5.2",
+    sourceRefs: ["E024"]
+  },
+  {
+    id: "s36-collaboration",
+    layout: "content",
+    section: "Produção",
+    eyebrow: "Impacto das linhas de pesquisa",
+    title: "Pesquisa construída em redes internacionais",
+    lead: "A internacionalização aparece no próprio núcleo da produção: mais de dois terços dos artigos recentes foram realizados com parceiros de outros países.",
+    items: [
+      "Colaborações estruturais ampliam circulação, diversidade metodológica e impacto das publicações.",
+      "O indicador cobre o período 2015-2024 e é documentado pela Scopus."
+    ],
+    figure: {
+      src: "assets/figures/impact-international-collaboration.png",
+      alt: "Percentual de documentos publicados com colaboração internacional",
+      caption: "67,3% das publicações com colaboração internacional, 2015-2024."
+    },
+    footerRefs: "MEM p.35; Fig. 5.3",
+    sourceRefs: ["E024"]
+  },
+  {
+    id: "s36-leadership",
+    layout: "content",
+    section: "Produção",
+    eyebrow: "Impacto das linhas de pesquisa",
+    title: "Da autoria individual à liderança científica",
+    lead: "A predominância como último autor caracteriza responsabilidade intelectual pela coordenação das linhas, dos projetos e da formação de pesquisadores.",
+    metrics: [
+      { value: "57%", label: "último autor" },
+      { value: "11%", label: "primeiro autor" },
+      { value: "28%", label: "coautor" },
+      { value: "4%", label: "autor único" }
+    ],
+    figure: {
+      src: "assets/figures/impact-author-position.png",
+      alt: "Distribuição da posição de autoria nas publicações",
+      caption: "Posição de autoria nas publicações entre 2015 e 2024."
+    },
+    footerRefs: "MEM p.35; Fig. 5.4",
+    sourceRefs: ["E024"]
+  },
+  {
+    id: "s36-areas",
+    layout: "content",
+    section: "Produção",
+    eyebrow: "Impacto das linhas de pesquisa",
+    title: "Atuação interdisciplinar",
+    lead: "A produção ocupa a interface entre magnetismo, matéria condensada, ciência dos materiais e química.",
+    metrics: [
+      { value: "42%", label: "Física e Astronomia" },
+      { value: "34%", label: "Ciência dos Materiais" },
+      { value: "10%", label: "Química" }
+    ],
+    figure: {
+      src: "assets/figures/impact-scopus-subjects.png",
+      alt: "Distribuição das publicações por área do conhecimento",
+      caption: "Distribuição temática das publicações segundo a classificação Scopus."
+    },
+    footerRefs: "MEM p.36; Fig. 5.5",
+    sourceRefs: ["E024"]
+  },
+  {
+    id: "s36-recognition",
+    layout: "cards",
+    section: "Produção",
+    eyebrow: "Impacto das linhas de pesquisa",
+    title: "Reconhecimento institucional sustentado",
+    cards: [
+      { label: "CNPq | desde 2011", text: "Bolsa de Produtividade em Pesquisa mantida continuamente, com progressão do nível 2 aos níveis 1D e 1C." },
+      { label: "JCNE/FAPERJ | 2012", text: "Jovem Cientista do Nosso Estado: reconhecimento da consolidação inicial de uma agenda própria de pesquisa." },
+      { label: "CNE/FAPERJ | 2016, 2019 e 2024", text: "Três concessões de Cientista do Nosso Estado, associadas a produção, impacto, formação e coordenação de projetos." },
+      { label: "Leitura conjunta", text: "Indicadores bibliométricos e bolsas de mérito convergem para uma trajetória de impacto sustentado e liderança acadêmica." }
+    ],
+    footerRefs: "MEM pp.32-36, 98-99",
+    sourceRefs: ["E024"]
+  },
+  {
+    id: "s37-books",
+    layout: "figure-board",
+    section: "Produção",
+    eyebrow: "Produção de livros",
+    title: "Pesquisa, sala de aula e livro-texto",
+    cards: [
+      { label: "Magnetismo Molecular | 2010", text: "Fundamentos físicos e químicos, modelagem e técnicas experimentais em sistemas moleculares e de baixa dimensionalidade." },
+      { label: "Fundamentals of Magnetism | 2013", text: "Sistematização internacional dos fundamentos teóricos, do magnetismo cooperativo e do magnetismo molecular." },
+      { label: "Quantum Mechanics | 2025", text: "Dez anos de desenvolvimento, integrando a experiência nas disciplinas de graduação e pós-graduação a aplicações contemporâneas." }
+    ],
+    figure: {
+      src: "assets/figures/book-covers-memorial.png",
+      alt: "Capas dos livros Magnetismo Molecular, Fundamentals of Magnetism e Quantum Mechanics",
+      caption: "Três obras acadêmicas publicadas a partir da integração entre pesquisa e ensino."
+    },
+    footerRefs: "MEM pp.37-40; Fig. 6.1",
+    sourceRefs: ["E025"]
+  },
+  {
+    id: "s37-books-continuity",
+    layout: "content",
+    section: "Produção",
+    eyebrow: "Produção de livros",
+    title: "Projetos editoriais em continuidade",
+    lead: "O mesmo ciclo — pesquisa, sala de aula e sistematização — sustenta novos projetos acadêmicos e uma experiência literária independente.",
+    cards: [
+      { label: "Termodinâmica para Estudantes de Física", text: "Livro em redação a partir das notas de aula de 2024-2026, articulando termodinâmica clássica, estatística, transições de fase e ciclos térmicos." },
+      { label: "As viagens de ibn Hakim | 2025", text: "Obra literária não acadêmica construída como autobiografia heterônima no contexto cultural do mundo islâmico medieval." }
+    ],
+    figure: {
+      src: "assets/figures/ibn-hakim-cover.png",
+      alt: "Capa do livro As viagens de ibn Hakim",
+      caption: "Dimensão cultural da escrita, distinta da produção científica."
+    },
+    footerRefs: "MEM pp.39-40",
+    sourceRefs: ["E025"]
   },
   {
     id: "s38-editorial",
     layout: "content",
-    section: "Internacionalização",
-    eyebrow: "Liderança editorial",
+    section: "Produção",
+    eyebrow: "Atividades editoriais e liderança científica",
     title: "Physica B e responsabilidade científica global",
-    lead: "A atuação editorial amplia a dimensão de liderança para além do grupo de pesquisa e da universidade.",
+    lead: "A atuação editorial evoluiu da gestão de manuscritos para a responsabilidade estratégica por um periódico internacional de matéria condensada.",
     items: [
-      "Editor da Physica B: Condensed Matter desde 2016.",
-      "Editor-in-Chief registrado no material de 2026 da revista.",
-      "Coordenação de corpo editorial, política editorial, escopo científico e padrões éticos.",
-      "Iniciativas como Physica B Award e aproximação com conferências e redes científicas."
+      "Editor da Physica B: Condensed Matter entre 2016 e 2025.",
+      "Editor-in-Chief desde 2025, coordenando um corpo editorial internacional com 10 editores.",
+      "Definição de políticas, escopo científico, padrões éticos e estratégia de visibilidade internacional.",
+      "Criação do Physica B Award e aproximação com conferências, redes científicas e novas gerações de pesquisadores."
     ],
     figure: {
       src: "assets/figures/physica-b-cover-2026.png",
       alt: "Capa da revista Physica B Condensed Matter",
       caption: "Physica B: Condensed Matter, volume de 2026 com Mario Reis como Editor-in-Chief."
     },
-    footerRefs: "MEM pp.41-42,93; Fig. 7.1",
+    footerRefs: "MEM pp.41-42; Fig. 7.1",
     sourceRefs: ["E025"]
+  },
+  {
+    id: "s39-internationalization",
+    layout: "timeline",
+    section: "Produção",
+    eyebrow: "Internacionalização",
+    title: "Mobilidade que se converteu em colaboração duradoura",
+    milestones: [
+      { label: "2001-2003", text: "Estágio sanduíche na Universidade de Aveiro durante a formação doutoral." },
+      { label: "2003-2005", text: "Pós-doutorado na Universidade de Aveiro, consolidando a formação em magnetismo e materiais funcionais." },
+      { label: "2005-2009", text: "Pesquisador Auxiliar no CICECO: infraestrutura, projetos e início da supervisão de estudantes." },
+      { label: "2017-2018", text: "Pesquisador visitante na Universidade de Aveiro, fortalecendo colaborações já estabelecidas." },
+      { label: "2022-2023", text: "Distinguished Researcher na Universidad de Sevilla pelo programa María Zambrano." }
+    ],
+    footerRefs: "MEM pp.43-44",
+    sourceRefs: ["E026"]
+  },
+  {
+    id: "s39-international-networks",
+    layout: "cards",
+    section: "Produção",
+    eyebrow: "Internacionalização",
+    title: "Redes, estudantes e presença científica global",
+    cards: [
+      { label: "Colaborações", text: "Parcerias recorrentes em Portugal, Espanha, Estados Unidos, Chile, Rússia e China, com projetos, publicações e intercâmbio acadêmico." },
+      { label: "Formação internacional", text: "Estágios de orientandos na França e nos Estados Unidos, além de coorientações, bancas e atividades acadêmicas internacionais." },
+      { label: "LAFMAT", text: "Participação na Rede Latino-Americana de Matéria Condensada, integrando grupos por meio de seminários, colaborações e projetos." },
+      { label: "Liderança editorial", text: "A condução internacional da Physica B amplia a atuação em estruturas científicas de alcance global." }
+    ],
+    footerRefs: "MEM pp.43-44",
+    sourceRefs: ["E026", "E025"]
   },
   {
     id: "s39-innovation",
