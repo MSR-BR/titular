@@ -848,8 +848,45 @@
 }
 
 .deck-shell .textbook-books-slide .deck-figure {
+  position: relative;
   min-height: 0;
   padding: .55rem;
+}
+
+.deck-shell .textbook-books-slide .deck-figure.book-turn-reveal.scroll-scrub-reveal,
+.deck-shell .textbook-books-slide .deck-figure.book-turn-reveal.scroll-scrub-reveal.is-visible {
+  opacity: var(--scrub-opacity, .58);
+  transform: perspective(1400px) translateY(var(--scrub-y, 42px)) rotateY(var(--book-turn, 180deg)) scale(var(--scrub-scale, .88));
+  transform-style: preserve-3d;
+  transform-origin: 50% 52%;
+  filter: blur(var(--scrub-blur, 5px));
+  transition: none;
+  will-change: opacity, transform, filter;
+}
+
+.deck-shell .textbook-books-slide .deck-figure.book-turn-reveal::before {
+  content: "LIVRO-TEXTO";
+  position: absolute;
+  inset: .55rem;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, .58);
+  border-radius: 1rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .16), transparent 42%),
+    var(--section-accent, var(--accent));
+  color: rgba(255, 255, 255, .9);
+  font-size: clamp(.72rem, 1vw, .95rem);
+  font-weight: 820;
+  letter-spacing: .16em;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.deck-shell .textbook-books-slide .deck-figure.book-turn-reveal img,
+.deck-shell .textbook-books-slide .deck-figure.book-turn-reveal figcaption {
+  backface-visibility: hidden;
 }
 
 .deck-shell .textbook-books-slide .deck-figure img {

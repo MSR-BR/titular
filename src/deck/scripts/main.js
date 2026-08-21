@@ -799,12 +799,14 @@
       const scrubElements = [];
       animatedElements.forEach((element, order) => {
         const isIndexCard = slide.classList.contains("index-cover") && element.classList.contains("index-section-card");
+        const isBookTurn = slide.classList.contains("textbook-books-slide") && element.classList.contains("deck-figure");
         element.classList.add("story-reveal");
         if (element.matches(".info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure")) {
           element.classList.add("content-scroll-card");
         }
         element.style.setProperty("--reveal-order", Math.min(order, 10));
-        if (usesScrollTemplate || isIndexCard) {
+        if (isBookTurn) element.classList.add("book-turn-reveal");
+        if (usesScrollTemplate || isIndexCard || isBookTurn) {
           element.classList.add("scroll-scrub-reveal");
           scrubElements.push(element);
         } else {
@@ -844,11 +846,13 @@
             const rect = element.getBoundingClientRect();
             const isProductRise = element.classList.contains("apple-product-rise");
             const isEarlyRise = element.classList.contains("early-product-rise");
-            const start = window.innerHeight * (isEarlyRise ? 1.25 : isProductRise ? 1.02 : .84) + Math.min(index, 7) * 18;
-            const finish = window.innerHeight * (isEarlyRise ? .34 : isProductRise ? .30 : .48) + Math.min(index, 7) * 8;
+            const isBookTurn = element.classList.contains("book-turn-reveal");
+            const start = window.innerHeight * (isEarlyRise ? 1.25 : isProductRise ? 1.02 : isBookTurn ? 1.08 : .84) + Math.min(index, 7) * 18;
+            const finish = window.innerHeight * (isEarlyRise ? .34 : isProductRise ? .30 : isBookTurn ? .22 : .48) + Math.min(index, 7) * 8;
             progress = Math.max(0, Math.min(1, (start - rect.top) / Math.max(1, start - finish)));
           }
-          element.style.setProperty("--scrub-opacity", progress.toFixed(4));
+          const isBookTurn = element.classList.contains("book-turn-reveal");
+          element.style.setProperty("--scrub-opacity", (isBookTurn ? .58 + progress * .42 : progress).toFixed(4));
           const isProductRise = element.classList.contains("apple-product-rise");
           const isEarlyRise = element.classList.contains("early-product-rise");
           const riseDistance = isEarlyRise ? 88 : isProductRise ? 112 : 42;
@@ -862,6 +866,9 @@
             ? initialScale + progress * (1 - initialScale)
             : 1;
           element.style.setProperty("--scrub-scale", scale.toFixed(4));
+          if (isBookTurn) {
+            element.style.setProperty("--book-turn", `${((1 - progress) * 180).toFixed(2)}deg`);
+          }
         });
       });
       deck.querySelectorAll(".section-scroll-card").forEach((sectionCard) => {
