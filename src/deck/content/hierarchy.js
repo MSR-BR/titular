@@ -97,17 +97,18 @@
     {
       number: 4,
       key: "impacto",
-      label: "Produção",
-      title: "Produção científica e impacto acadêmico",
+      label: "Impacto",
+      title: "Impacto acadêmico",
       targetId: "s36-section-opening",
       subsections: [
-        { number: "4.1", title: "Impacto das linhas de pesquisa", slides: [
-          { id: "s36-impact", topic: "Trajetória e impacto bibliométrico" },
+        { number: "4.1", title: "Produção Científica", slides: [
+          { id: "s36-impact", topic: "Indicadores de impacto e reconhecimento" },
+          { id: "s36-google-scholar", topic: "Google Scholar | atualizado" },
+          { id: "s36-scopus", topic: "Evolução na Scopus" },
           { id: "s36-quality", topic: "Qualidade e visibilidade" },
           { id: "s36-collaboration", topic: "Colaboração internacional" },
           { id: "s36-leadership", topic: "Liderança científica" },
-          { id: "s36-areas", topic: "Atuação interdisciplinar" },
-          { id: "s36-recognition", topic: "Reconhecimento institucional" }
+          { id: "s36-areas", topic: "Atuação interdisciplinar" }
         ] },
         { number: "4.2", title: "Produção de Livros", slides: [
           { id: "s37-books", topic: "Pesquisa, sala de aula e livro-texto" },

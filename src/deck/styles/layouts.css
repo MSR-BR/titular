@@ -629,6 +629,77 @@
   object-position: center;
 }
 
+.deck-shell > .impact-metrics-slide {
+  padding-bottom: clamp(1rem, 2.2vh, 1.7rem);
+}
+
+.deck-shell .impact-metrics-slide .metric-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(.45rem, .9vw, .75rem);
+}
+
+.deck-shell .impact-metrics-slide .metric-item {
+  min-height: 0;
+  padding: clamp(.7rem, 1.1vw, 1rem);
+}
+
+.deck-shell .impact-metrics-slide .metric-value {
+  font-size: clamp(1.9rem, 3.25vw, 3.15rem);
+}
+
+.deck-shell .impact-metrics-slide .metric-label {
+  font-size: clamp(.68rem, .82vw, .8rem);
+  line-height: 1.16;
+}
+
+.deck-shell .impact-metrics-slide .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: auto;
+  margin-top: clamp(.55rem, 1vw, .85rem);
+}
+
+.deck-shell > .impact-figure-slide {
+  padding-top: clamp(.15rem, .6vh, .45rem);
+  padding-bottom: clamp(1.35rem, 2.8vh, 2.4rem);
+}
+
+.deck-shell .impact-figure-slide .photo-stage {
+  width: min(100%, 76rem);
+  margin-inline: auto;
+}
+
+.deck-shell .impact-figure-slide .deck-figure {
+  padding: clamp(.55rem, 1vw, .85rem);
+  border-radius: 1.55rem;
+  background: rgba(255, 255, 255, .94);
+  box-shadow: 0 28px 80px rgba(18, 25, 29, .09);
+}
+
+.deck-shell .impact-figure-slide .deck-figure img {
+  height: auto;
+  max-height: min(68vh, 46rem);
+  object-fit: contain;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: none;
+}
+
+.deck-shell .impact-figure-slide .deck-figure figcaption {
+  padding: .55rem .35rem .05rem;
+  font-size: clamp(.68rem, .86vw, .8rem);
+  line-height: 1.3;
+}
+
+.deck-shell .impact-google-slide .photo-stage,
+.deck-shell .impact-collaboration-slide .photo-stage {
+  width: min(100%, 50rem);
+}
+
+.deck-shell .impact-scopus-slide .photo-stage,
+.deck-shell .impact-leadership-slide .photo-stage {
+  width: min(100%, 64rem);
+}
+
 .course-pdf-dialog {
   width: min(94vw, 76rem);
   height: min(92vh, 58rem);

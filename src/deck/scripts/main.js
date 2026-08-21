@@ -300,6 +300,7 @@
   function slideClass(slide) {
     const layout = slug(slide.layout || "section");
     const section = slug(slide.hierarchy?.sectionKey || slide.section || slide.sectionName || slide.eyebrow?.split("|")[0] || "geral");
+    const customClasses = typeof slide.className === "string" ? slide.className.trim() : "";
     const hierarchyClasses = slide.hierarchy
       ? [
           "hierarchy-slide",
@@ -309,7 +310,7 @@
           slide.hierarchy.isSectionIntro ? "hierarchy-section-intro" : ""
         ].filter(Boolean).join(" ")
       : "";
-    return `slide reveal layout-${layout} section-${section} ${hierarchyClasses}`.trim();
+    return `slide reveal layout-${layout} section-${section} ${hierarchyClasses} ${customClasses}`.trim();
   }
 
   function renderSlide(slide, index) {

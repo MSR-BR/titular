@@ -47,8 +47,8 @@ window.MemorialDeckSlides = [
       {
         number: "4",
         href: "#section-4",
-        label: "Produção científica e impacto acadêmico",
-        html: "<ul><li>Impacto das linhas de pesquisa</li><li>Produção de livros</li><li>Atividades editoriais e liderança científica</li><li>Internacionalização</li></ul>"
+        label: "Impacto acadêmico",
+        html: "<ul><li>Produção Científica</li><li>Produção de livros</li><li>Atividades editoriais e liderança científica</li><li>Internacionalização</li></ul>"
       },
       {
         number: "5",
@@ -880,126 +880,122 @@ window.MemorialDeckSlides = [
   {
     id: "s36-section-opening",
     layout: "section",
-    section: "Produção",
+    section: "Impacto",
     eyebrow: "Seção 4",
-    title: "Produção científica e impacto acadêmico"
+    title: "Impacto acadêmico"
   },
   {
     id: "s36-impact",
-    layout: "dashboard",
-    section: "Produção",
-    eyebrow: "Impacto das linhas de pesquisa",
-    title: "25 anos de produção científica contínua",
+    layout: "metrics",
+    className: "impact-metrics-slide",
+    section: "Impacto",
+    eyebrow: "Produção Científica",
+    title: "Indicadores de impacto e reconhecimento",
     metrics: [
-      { value: "3625", label: "citações acumuladas" },
-      { value: "1312", label: "citações desde 2021" },
-      { value: "h = 33", label: "índice h" },
-      { value: "i10 = 88", label: "publicações com 10+ citações" }
+      { value: "3794*", label: "citações acumuladas" },
+      { value: "1483*", label: "citações desde 2021" },
+      { value: "h = 34*", label: "índice h" },
+      { value: "i10 = 89*", label: "publicações com 10+ citações" },
+      { value: "20,4%", label: "publicações no top 25% mundial" },
+      { value: "70,2%", label: "artigos em periódicos top 25%" },
+      { value: "67,3%", label: "colaboração internacional" },
+      { value: "57%", label: "publicações como último autor" }
     ],
     cards: [
-      { label: "Trajetória", text: "Produção iniciada em 2000, com crescimento acentuado a partir da consolidação das linhas de pesquisa na UFF." },
-      { label: "Pico recente", text: "Máximo anual em 2025, com aproximadamente 320 citações; o valor de 2026 ainda é parcial." }
+      { label: "CNPq | mérito acadêmico", text: "Bolsa de Produtividade em Pesquisa mantida desde 2011: nível 2, progressão para 1D e, atualmente, nível 1C." },
+      { label: "FAPERJ | mérito acadêmico", text: "JCNE em 2012 e três concessões CNE, em 2016, 2019 e 2024." }
     ],
+    footerRefs: "* Google Scholar atualizado em 21 ago. 2026; Scopus/SciVal, 2015-2024",
+    sourceRefs: ["E024"]
+  },
+  {
+    id: "s36-google-scholar",
+    layout: "photo",
+    className: "impact-figure-slide impact-google-slide",
+    section: "Impacto",
+    eyebrow: "Produção Científica",
+    title: "Google Scholar | atualizado",
     figure: {
-      src: "assets/figures/impact-citations-trends.png",
-      alt: "Evolução anual de publicações e citações no Google Scholar e na Scopus",
-      caption: "Evolução da produção e das citações segundo Google Scholar e Scopus."
+      src: "assets/figures/impact-google-scholar-updated.png",
+      alt: "Indicadores atualizados de citações, índice h e índice i10 no Google Scholar",
+      caption: "Google Scholar — 3794 citações, índice h 34 e índice i10 89. * Atualizado em 21 ago. 2026; o ano de 2026 é parcial."
     },
-    footerRefs: "MEM pp.32-33; Fig. 5.1",
+    footerRefs: "* Atualizado em 21 ago. 2026",
+    sourceRefs: ["E024"]
+  },
+  {
+    id: "s36-scopus",
+    layout: "photo",
+    className: "impact-figure-slide impact-scopus-slide",
+    section: "Impacto",
+    eyebrow: "Produção Científica",
+    title: "Evolução da produção e das citações | Scopus",
+    figure: {
+      src: "assets/figures/impact-scopus-citations-updated.png",
+      alt: "Evolução anual de documentos e citações na base Scopus entre 2000 e 2026",
+      caption: "Documentos e citações na Scopus, 2000-2026. O valor de 2026 é parcial."
+    },
+    footerRefs: "Scopus; consulta em 21 ago. 2026",
     sourceRefs: ["E024"]
   },
   {
     id: "s36-quality",
-    layout: "content",
-    section: "Produção",
-    eyebrow: "Impacto das linhas de pesquisa",
+    layout: "photo",
+    className: "impact-figure-slide impact-quality-slide",
+    section: "Impacto",
+    eyebrow: "Produção Científica",
     title: "Qualidade e visibilidade internacional",
-    lead: "O recorte 2015-2024 combina impacto de citação e presença consistente em periódicos de alta visibilidade.",
-    metrics: [
-      { value: "20,4%", label: "entre os 25% mais citados mundialmente" },
-      { value: "70,2%", label: "em periódicos top 25% por CiteScore" }
-    ],
     figure: {
       src: "assets/figures/impact-scival-percentiles.png",
       alt: "Indicadores de publicações mais citadas e de periódicos no quartil superior",
-      caption: "Indicadores qualitativos da produção científica, Scopus/SciVal, 2015-2024."
+      caption: "20,4% no top 25% de citações e 70,2% em periódicos top 25% por CiteScore, 2015-2024."
     },
-    footerRefs: "MEM p.34; Fig. 5.2",
+    footerRefs: "Scopus/SciVal, 2015-2024",
     sourceRefs: ["E024"]
   },
   {
     id: "s36-collaboration",
-    layout: "content",
-    section: "Produção",
-    eyebrow: "Impacto das linhas de pesquisa",
-    title: "Pesquisa construída em redes internacionais",
-    lead: "A internacionalização aparece no próprio núcleo da produção: mais de dois terços dos artigos recentes foram realizados com parceiros de outros países.",
-    items: [
-      "Colaborações estruturais ampliam circulação, diversidade metodológica e impacto das publicações.",
-      "O indicador cobre o período 2015-2024 e é documentado pela Scopus."
-    ],
+    layout: "photo",
+    className: "impact-figure-slide impact-collaboration-slide",
+    section: "Impacto",
+    eyebrow: "Produção Científica",
+    title: "Colaboração internacional",
     figure: {
       src: "assets/figures/impact-international-collaboration.png",
       alt: "Percentual de documentos publicados com colaboração internacional",
-      caption: "67,3% das publicações com colaboração internacional, 2015-2024."
+      caption: "67,3% das publicações foram realizadas com colaboração internacional, 2015-2024."
     },
-    footerRefs: "MEM p.35; Fig. 5.3",
+    footerRefs: "Scopus, 2015-2024",
     sourceRefs: ["E024"]
   },
   {
     id: "s36-leadership",
-    layout: "content",
-    section: "Produção",
-    eyebrow: "Impacto das linhas de pesquisa",
-    title: "Da autoria individual à liderança científica",
-    lead: "A predominância como último autor caracteriza responsabilidade intelectual pela coordenação das linhas, dos projetos e da formação de pesquisadores.",
-    metrics: [
-      { value: "57%", label: "último autor" },
-      { value: "11%", label: "primeiro autor" },
-      { value: "28%", label: "coautor" },
-      { value: "4%", label: "autor único" }
-    ],
+    layout: "photo",
+    className: "impact-figure-slide impact-leadership-slide",
+    section: "Impacto",
+    eyebrow: "Produção Científica",
+    title: "Liderança científica",
     figure: {
       src: "assets/figures/impact-author-position.png",
       alt: "Distribuição da posição de autoria nas publicações",
-      caption: "Posição de autoria nas publicações entre 2015 e 2024."
+      caption: "57% das publicações como último autor, caracterizando liderança científica, 2015-2024."
     },
-    footerRefs: "MEM p.35; Fig. 5.4",
+    footerRefs: "Scopus, 2015-2024",
     sourceRefs: ["E024"]
   },
   {
     id: "s36-areas",
-    layout: "content",
-    section: "Produção",
-    eyebrow: "Impacto das linhas de pesquisa",
+    layout: "photo",
+    className: "impact-figure-slide impact-areas-slide",
+    section: "Impacto",
+    eyebrow: "Produção Científica",
     title: "Atuação interdisciplinar",
-    lead: "A produção ocupa a interface entre magnetismo, matéria condensada, ciência dos materiais e química.",
-    metrics: [
-      { value: "42%", label: "Física e Astronomia" },
-      { value: "34%", label: "Ciência dos Materiais" },
-      { value: "10%", label: "Química" }
-    ],
     figure: {
       src: "assets/figures/impact-scopus-subjects.png",
       alt: "Distribuição das publicações por área do conhecimento",
-      caption: "Distribuição temática das publicações segundo a classificação Scopus."
+      caption: "42,1% em Física e Astronomia, 34,5% em Ciência dos Materiais e 10,3% em Química."
     },
-    footerRefs: "MEM p.36; Fig. 5.5",
-    sourceRefs: ["E024"]
-  },
-  {
-    id: "s36-recognition",
-    layout: "cards",
-    section: "Produção",
-    eyebrow: "Impacto das linhas de pesquisa",
-    title: "Reconhecimento institucional sustentado",
-    cards: [
-      { label: "CNPq | desde 2011", text: "Bolsa de Produtividade em Pesquisa mantida continuamente, com progressão do nível 2 aos níveis 1D e 1C." },
-      { label: "JCNE/FAPERJ | 2012", text: "Jovem Cientista do Nosso Estado: reconhecimento da consolidação inicial de uma agenda própria de pesquisa." },
-      { label: "CNE/FAPERJ | 2016, 2019 e 2024", text: "Três concessões de Cientista do Nosso Estado, associadas a produção, impacto, formação e coordenação de projetos." },
-      { label: "Leitura conjunta", text: "Indicadores bibliométricos e bolsas de mérito convergem para uma trajetória de impacto sustentado e liderança acadêmica." }
-    ],
-    footerRefs: "MEM pp.32-36, 98-99",
+    footerRefs: "Scopus; distribuição por área",
     sourceRefs: ["E024"]
   },
   {
