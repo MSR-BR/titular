@@ -106,8 +106,8 @@
           { id: "s36-quality-metrics", topic: "Indicadores e bolsas de mérito" }
         ] },
         { number: "4.2", title: "Livro-texto", slides: [
-          { id: "s37-books", topic: "Livro-texto" },
-          { id: "s37-books-continuity", topic: "Projetos editoriais em continuidade" }
+          { id: "s37-books", topic: "Publicados" },
+          { id: "s37-books-continuity", topic: "Em andamento" }
         ] },
         { number: "4.3", title: "Atividades editoriais e liderança científica", slides: [
           { id: "s38-editorial", topic: "Physica B e liderança editorial" }

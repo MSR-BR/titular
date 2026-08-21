@@ -900,6 +900,61 @@
   text-align: center;
 }
 
+.deck-shell > .textbook-progress-slide {
+  min-height: auto;
+  padding-top: clamp(1rem, 2vh, 1.7rem);
+  padding-bottom: clamp(1.2rem, 2.5vh, 2rem);
+}
+
+.deck-shell .textbook-progress-slide .cards-with-figure.has-figure-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: clamp(.7rem, 1.3vw, 1.1rem);
+  align-items: stretch;
+}
+
+.deck-shell .textbook-progress-slide .card-grid,
+.deck-shell .textbook-progress-slide .figure-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: clamp(.65rem, 1vw, .9rem);
+}
+
+.deck-shell .textbook-progress-slide .info-card {
+  min-height: 0;
+  padding: clamp(1rem, 1.5vw, 1.35rem);
+}
+
+.deck-shell .textbook-progress-slide .deck-figure {
+  min-height: 0;
+  padding: .55rem;
+}
+
+.deck-shell .textbook-progress-slide .deck-figure img {
+  width: 100%;
+  height: clamp(13rem, 28vh, 19rem);
+  object-fit: contain;
+}
+
+.deck-shell .textbook-progress-slide .deck-figure.story-reveal {
+  opacity: 1;
+  transform: none;
+  filter: blur(12px);
+  transition: filter 1100ms cubic-bezier(.2, .7, .2, 1);
+}
+
+.deck-shell .textbook-progress-slide .deck-figure.story-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
+
+.deck-shell .textbook-progress-slide .deck-figure figcaption {
+  font-size: clamp(.68rem, .78vw, .82rem);
+  text-align: center;
+}
+
 .deck-shell > .impact-figure-slide {
   padding-top: clamp(.15rem, .6vh, .45rem);
   padding-bottom: clamp(1.35rem, 2.8vh, 2.4rem);
@@ -2400,6 +2455,9 @@
   .deck-shell .impact-all-metrics .card-grid { grid-template-columns: 1fr; }
   .deck-shell .textbook-books-slide .card-grid,
   .deck-shell .textbook-books-slide .figure-gallery { grid-template-columns: 1fr; }
+  .deck-shell .textbook-progress-slide .cards-with-figure.has-figure-gallery {
+    grid-template-columns: 1fr;
+  }
   .section-indice .card-grid.count-5 .info-card { grid-column: auto; }
   .timeline { grid-template-columns: 1fr; }
   .timeline::before,

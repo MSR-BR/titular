@@ -947,8 +947,8 @@ window.MemorialDeckSlides = [
     layout: "cards",
     className: "textbook-books-slide",
     section: "Produção",
-    eyebrow: "Livro-texto",
-    title: "Livro-texto",
+    eyebrow: "Livro-texto · publicados",
+    title: "Livro-texto: publicados",
     cards: [
       {
         label: "Magnetismo Molecular",
@@ -985,21 +985,34 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s37-books-continuity",
-    layout: "content",
+    layout: "cards",
+    className: "textbook-progress-slide",
     section: "Produção",
-    eyebrow: "Produção de livros",
-    title: "Projetos editoriais em continuidade",
-    lead: "O mesmo ciclo — pesquisa, sala de aula e sistematização — sustenta novos projetos acadêmicos e uma experiência literária independente.",
+    eyebrow: "Livro-texto · em andamento",
+    title: "Livro-texto: em andamento",
     cards: [
-      { label: "Termodinâmica para Estudantes de Física", text: "Livro em redação a partir das notas de aula de 2024-2026, articulando termodinâmica clássica, estatística, transições de fase e ciclos térmicos." },
-      { label: "As viagens de ibn Hakim | 2025", text: "Obra literária não acadêmica construída como autobiografia heterônima no contexto cultural do mundo islâmico medieval." }
+      {
+        label: "Termodinâmica para Estudantes de Física",
+        text: "Livro em redação a partir das notas de aula de 2024-2026, articulando termodinâmica clássica, estatística, transições de fase e ciclos térmicos."
+      },
+      {
+        label: "App Termo",
+        text: "Livro interativo associado ao projeto, reunindo capítulos, simuladores, recursos extras, área pessoal e mapa de conteúdo para ampliar a aprendizagem de Termodinâmica."
+      }
     ],
-    figure: {
-      src: "assets/figures/ibn-hakim-cover.png",
-      alt: "Capa do livro As viagens de ibn Hakim",
-      caption: "Dimensão cultural da escrita, distinta da produção científica."
-    },
-    footerRefs: "MEM pp.39-40",
+    figures: [
+      {
+        src: "assets/figures/thermodynamics-book-draft-cover.png",
+        alt: "Capa provisória de Termodinâmica para Estudantes de Física",
+        caption: "Manuscrito em redação · notas de aula 2024-2026"
+      },
+      {
+        src: "assets/figures/termo-app-interface.png",
+        alt: "Interface do aplicativo interativo Termo",
+        caption: "App Termo · livro interativo e ambiente de aprendizagem"
+      }
+    ],
+    footerRefs: "Projeto Termodinâmica para Estudantes de Física · App Termo",
     sourceRefs: ["E025"]
   },
   {
