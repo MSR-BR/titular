@@ -732,32 +732,67 @@
   line-height: 1.25;
 }
 
-.deck-shell .impact-author-metrics .metric-grid {
-  width: min(100%, 78rem);
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.deck-shell > .impact-all-metrics {
+  min-height: auto;
+  padding-top: clamp(.25rem, .8vh, .65rem);
+  padding-bottom: clamp(1rem, 2vh, 1.6rem);
 }
 
-.deck-shell .impact-author-metrics .metric-value {
-  font-size: clamp(2.8rem, 5vw, 4.9rem);
-}
-
-.deck-shell > .impact-followup-metrics {
-  min-height: clamp(15rem, 36vh, 23rem);
-  padding-top: clamp(.2rem, .8vh, .55rem);
-  padding-bottom: clamp(.7rem, 1.5vh, 1.2rem);
-}
-
-.deck-shell .impact-followup-metrics .slide-header {
+.deck-shell .impact-all-metrics .slide-header {
   min-height: 0;
   margin-bottom: .25rem;
 }
 
-.deck-shell > .impact-merit-cards {
-  padding-top: clamp(1rem, 2.5vh, 2rem);
+.deck-shell .impact-all-metrics .slide-body {
+  display: grid;
+  gap: clamp(.65rem, 1.2vw, 1rem);
 }
 
-.deck-shell .impact-merit-cards .card-grid {
+.deck-shell .impact-all-metrics .metric-grid {
+  width: min(100%, 78rem);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: minmax(6.7rem, auto);
+  gap: clamp(.5rem, .9vw, .8rem);
+  margin-inline: auto;
+}
+
+.deck-shell .impact-all-metrics .metric-item {
+  padding: clamp(.65rem, 1vw, .9rem);
+  border-radius: 1.15rem;
+}
+
+.deck-shell .impact-all-metrics .metric-value {
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  white-space: nowrap;
+}
+
+.deck-shell .impact-all-metrics .metric-label {
+  font-size: clamp(.72rem, .95vw, .92rem);
+  line-height: 1.15;
+}
+
+.deck-shell .impact-all-metrics .card-grid {
+  width: min(100%, 78rem);
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(.55rem, 1vw, .85rem);
+  margin-inline: auto;
+}
+
+.deck-shell .impact-all-metrics .info-card {
+  min-height: auto;
+  padding: clamp(.85rem, 1.2vw, 1.1rem) clamp(1rem, 1.5vw, 1.3rem);
+}
+
+.deck-shell .impact-all-metrics .info-card ul {
+  display: grid;
+  gap: .22rem;
+  margin: .4rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.deck-shell .impact-all-metrics .info-card li {
+  font-size: clamp(.78rem, 1vw, .96rem);
+  line-height: 1.22;
 }
 
 .deck-shell > .impact-figure-slide {
@@ -2221,9 +2256,7 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .deck-shell .impact-author-metrics .metric-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  .deck-shell .impact-all-metrics .metric-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 @media (max-width: 760px) {
@@ -2256,8 +2289,8 @@
   .section-indice .card-grid.count-5 { grid-template-columns: 1fr; grid-template-rows: auto; }
   .section-indice .card-grid.count-4,
   .standard-section-cover.section-resultados .card-grid.count-6 { grid-template-columns: 1fr; }
-  .deck-shell .impact-author-metrics .metric-grid { grid-template-columns: 1fr; }
-  .deck-shell .impact-merit-cards .card-grid { grid-template-columns: 1fr; }
+  .deck-shell .impact-all-metrics .metric-grid,
+  .deck-shell .impact-all-metrics .card-grid { grid-template-columns: 1fr; }
   .section-indice .card-grid.count-5 .info-card { grid-column: auto; }
   .timeline { grid-template-columns: 1fr; }
   .timeline::before,

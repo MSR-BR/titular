@@ -916,52 +916,30 @@ window.MemorialDeckSlides = [
   {
     id: "s36-quality-metrics",
     layout: "metrics",
-    className: "impact-transition-metrics impact-followup-metrics impact-quality-metrics",
+    className: "impact-all-metrics",
     section: "Impacto",
     eyebrow: "Produção Científica",
     title: "",
     metrics: [
       { value: "20,4%", label: "publicações entre os 25% mais citados mundialmente" },
       { value: "70,2%", label: "artigos em periódicos top 25% por CiteScore" },
-      { value: "67,3%", label: "publicações realizadas com colaboração internacional" }
-    ],
-    footerRefs: "*Fonte: Scopus (10 últimos anos)",
-    sourceRefs: ["E024"]
-  },
-  {
-    id: "s36-leadership",
-    layout: "metrics",
-    className: "impact-transition-metrics impact-followup-metrics impact-author-metrics",
-    section: "Impacto",
-    eyebrow: "Produção Científica",
-    title: "",
-    metrics: [
+      { value: "67,3%", label: "publicações realizadas com colaboração internacional" },
       { value: "11%", label: "como primeiro autor" },
       { value: "57%", label: "como último autor" },
       { value: "28%", label: "como coautor" },
       { value: "4%", label: "como autor único" }
     ],
-    footerRefs: "Fonte: Scopus · últimos 10 anos (2015-2024)",
-    sourceRefs: ["E024"]
-  },
-  {
-    id: "s36-merit-scholarships",
-    layout: "cards",
-    className: "impact-merit-cards",
-    section: "Impacto",
-    eyebrow: "Produção Científica",
-    title: "Bolsas de mérito acadêmico",
     cards: [
       {
-        label: "CNPq",
-        text: "Produtividade em Pesquisa desde 2011: nível 2 em três ciclos, nível 1D em um ciclo e, atualmente, nível 1C."
+        label: "CNPq · Produtividade em Pesquisa",
+        html: "<ul><li>Bolsa mantida desde 2011</li><li>Nível 2 · três ciclos</li><li>Nível 1D · um ciclo</li><li>Atualmente · nível 1C</li></ul>"
       },
       {
-        label: "FAPERJ",
-        text: "1 JCNE, em 2012, e 3 CNE, concedidas em 2016, 2019 e 2024."
+        label: "FAPERJ · Bolsas de mérito",
+        html: "<ul><li>1 JCNE · 2012</li><li>3 CNE · 2016, 2019 e 2024</li></ul>"
       }
     ],
-    footerRefs: "CNPq e FAPERJ",
+    footerRefs: "*Indicadores: Scopus (10 últimos anos) · Bolsas: CNPq e FAPERJ",
     sourceRefs: ["E024"]
   },
   {
