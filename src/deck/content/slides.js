@@ -890,7 +890,7 @@ window.MemorialDeckSlides = [
     className: "impact-metrics-slide",
     section: "Impacto",
     eyebrow: "Produção Científica",
-    title: "Produção Científica",
+    title: "Produção Científica em Números",
     metrics: [
       { value: "3794", label: "citações acumuladas" },
       { value: "1483", label: "citações desde 2021" },
@@ -925,22 +925,7 @@ window.MemorialDeckSlides = [
       { value: "70,2%", label: "artigos em periódicos top 25% por CiteScore" },
       { value: "67,3%", label: "publicações realizadas com colaboração internacional" }
     ],
-    footerRefs: "Scopus/SciVal, 2015-2024",
-    sourceRefs: ["E024"]
-  },
-  {
-    id: "s36-collaboration",
-    layout: "photo",
-    className: "impact-figure-slide impact-collaboration-slide",
-    section: "Impacto",
-    eyebrow: "Produção Científica",
-    title: "Colaboração internacional",
-    figure: {
-      src: "assets/figures/impact-international-collaboration.png",
-      alt: "Percentual de documentos publicados com colaboração internacional",
-      caption: "67,3% das publicações foram realizadas com colaboração internacional, 2015-2024."
-    },
-    footerRefs: "Scopus, 2015-2024",
+    footerRefs: "Fonte: Scopus/SciVal · últimos 10 anos (2015-2024)",
     sourceRefs: ["E024"]
   },
   {
@@ -955,22 +940,23 @@ window.MemorialDeckSlides = [
       alt: "Indicadores de publicações mais citadas e de periódicos no quartil superior",
       caption: "20,4% no top 25% de citações e 70,2% em periódicos top 25% por CiteScore, 2015-2024."
     },
-    footerRefs: "Scopus/SciVal, 2015-2024",
+    footerRefs: "Fonte: Scopus/SciVal · últimos 10 anos (2015-2024)",
     sourceRefs: ["E024"]
   },
   {
     id: "s36-leadership",
-    layout: "photo",
-    className: "impact-figure-slide impact-leadership-slide",
+    layout: "metrics",
+    className: "impact-transition-metrics impact-author-metrics",
     section: "Impacto",
     eyebrow: "Produção Científica",
-    title: "Liderança científica",
-    figure: {
-      src: "assets/figures/impact-author-position.png",
-      alt: "Distribuição da posição de autoria nas publicações",
-      caption: "57% das publicações como último autor, caracterizando liderança científica, 2015-2024."
-    },
-    footerRefs: "Scopus, 2015-2024",
+    title: "Posição de autoria",
+    metrics: [
+      { value: "11%", label: "como primeiro autor" },
+      { value: "57%", label: "como último autor" },
+      { value: "28%", label: "como coautor" },
+      { value: "4%", label: "como autor único" }
+    ],
+    footerRefs: "Fonte: Scopus · últimos 10 anos (2015-2024)",
     sourceRefs: ["E024"]
   },
   {

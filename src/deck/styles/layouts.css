@@ -732,6 +732,15 @@
   line-height: 1.25;
 }
 
+.deck-shell .impact-author-metrics .metric-grid {
+  width: min(100%, 78rem);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.deck-shell .impact-author-metrics .metric-value {
+  font-size: clamp(2.8rem, 5vw, 4.9rem);
+}
+
 .deck-shell > .impact-figure-slide {
   padding-top: clamp(.15rem, .6vh, .45rem);
   padding-bottom: clamp(1.35rem, 2.8vh, 2.4rem);
@@ -2192,6 +2201,10 @@
   .deck-shell .l3d-overview .cards-panel .card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .deck-shell .impact-author-metrics .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 760px) {
@@ -2224,6 +2237,7 @@
   .section-indice .card-grid.count-5 { grid-template-columns: 1fr; grid-template-rows: auto; }
   .section-indice .card-grid.count-4,
   .standard-section-cover.section-resultados .card-grid.count-6 { grid-template-columns: 1fr; }
+  .deck-shell .impact-author-metrics .metric-grid { grid-template-columns: 1fr; }
   .section-indice .card-grid.count-5 .info-card { grid-column: auto; }
   .timeline { grid-template-columns: 1fr; }
   .timeline::before,
