@@ -402,12 +402,14 @@
     }
 
     if (slide.layout === "metrics") {
+      const hasGallery = Array.isArray(slide.figures) && slide.figures.length > 0;
       return `
         <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
-          <div class="slide-body">
+          <div class="slide-body${hasGallery ? " metrics-with-figures" : ""}">
             ${renderMetrics(slide.metrics)}
             ${renderCards(slide.cards)}
+            ${renderFigureGallery(slide.figures)}
           </div>
           ${footer}
           ${notes}

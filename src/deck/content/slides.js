@@ -890,52 +890,27 @@ window.MemorialDeckSlides = [
     className: "impact-metrics-slide",
     section: "Impacto",
     eyebrow: "Produção Científica",
-    title: "Indicadores de impacto e reconhecimento",
+    title: "Produção Científica",
     metrics: [
-      { value: "3794*", label: "citações acumuladas" },
-      { value: "1483*", label: "citações desde 2021" },
-      { value: "h = 34*", label: "índice h" },
-      { value: "i10 = 89*", label: "publicações com 10+ citações" },
-      { value: "20,4%", label: "publicações no top 25% mundial" },
-      { value: "70,2%", label: "artigos em periódicos top 25%" },
-      { value: "67,3%", label: "colaboração internacional" },
-      { value: "57%", label: "publicações como último autor" }
+      { value: "3794", label: "citações acumuladas" },
+      { value: "1483", label: "citações desde 2021" },
+      { value: "h = 34", label: "índice h" },
+      { value: "i10 = 89", label: "publicações com 10+ citações" },
+      { value: "140+", label: "artigos publicados" }
     ],
-    cards: [
-      { label: "CNPq | mérito acadêmico", text: "Bolsa de Produtividade em Pesquisa mantida desde 2011: nível 2, progressão para 1D e, atualmente, nível 1C." },
-      { label: "FAPERJ | mérito acadêmico", text: "JCNE em 2012 e três concessões CNE, em 2016, 2019 e 2024." }
+    figures: [
+      {
+        src: "assets/figures/impact-google-scholar-updated.png",
+        alt: "Indicadores atualizados de citações, índice h e índice i10 no Google Scholar",
+        caption: "Google Scholar — atualizado em 21 ago. 2026; o ano de 2026 é parcial."
+      },
+      {
+        src: "assets/figures/impact-scopus-citations-updated.png",
+        alt: "Evolução anual de documentos e citações na base Scopus entre 2000 e 2026",
+        caption: "Documentos e citações na Scopus, 2000-2026; o ano de 2026 é parcial."
+      }
     ],
-    footerRefs: "* Google Scholar atualizado em 21 ago. 2026; Scopus/SciVal, 2015-2024",
-    sourceRefs: ["E024"]
-  },
-  {
-    id: "s36-google-scholar",
-    layout: "photo",
-    className: "impact-figure-slide impact-google-slide",
-    section: "Impacto",
-    eyebrow: "Produção Científica",
-    title: "Google Scholar | atualizado",
-    figure: {
-      src: "assets/figures/impact-google-scholar-updated.png",
-      alt: "Indicadores atualizados de citações, índice h e índice i10 no Google Scholar",
-      caption: "Google Scholar — 3794 citações, índice h 34 e índice i10 89. * Atualizado em 21 ago. 2026; o ano de 2026 é parcial."
-    },
-    footerRefs: "* Atualizado em 21 ago. 2026",
-    sourceRefs: ["E024"]
-  },
-  {
-    id: "s36-scopus",
-    layout: "photo",
-    className: "impact-figure-slide impact-scopus-slide",
-    section: "Impacto",
-    eyebrow: "Produção Científica",
-    title: "Evolução da produção e das citações | Scopus",
-    figure: {
-      src: "assets/figures/impact-scopus-citations-updated.png",
-      alt: "Evolução anual de documentos e citações na base Scopus entre 2000 e 2026",
-      caption: "Documentos e citações na Scopus, 2000-2026. O valor de 2026 é parcial."
-    },
-    footerRefs: "Scopus; consulta em 21 ago. 2026",
+    footerRefs: "Google Scholar e Scopus; consulta em 21 ago. 2026",
     sourceRefs: ["E024"]
   },
   {
