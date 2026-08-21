@@ -1031,48 +1031,16 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E025"]
   },
   {
-    id: "s37-termo-app-examples",
-    layout: "photo",
-    className: "termo-app-gallery-slide",
-    section: "Produção",
-    eyebrow: "",
-    title: "",
-    figures: [
-      {
-        src: "assets/figures/termo-app-home.jpg",
-        alt: "Página inicial do livro interativo Termo",
-        caption: "Página inicial e acesso aos recursos do livro interativo."
-      },
-      {
-        src: "assets/figures/termo-app-chapter-navigation.jpg",
-        alt: "Menu de navegação por capítulos do App Termo",
-        caption: "Navegação direta pelos capítulos de Termodinâmica."
-      },
-      {
-        src: "assets/figures/termo-app-ai-exercises.jpg",
-        alt: "Exercícios por inteligência artificial no App Termo",
-        caption: "Exercícios por IA integrados ao acompanhamento dos tópicos."
-      },
-      {
-        src: "assets/figures/termo-app-content-simulator.jpg",
-        alt: "Conteúdo teórico e simulador de isotermas no App Termo",
-        caption: "Conteúdo conceitual articulado a gráficos e simuladores."
-      }
-    ],
-    footerRefs: "termo-theta.vercel.app",
-    sourceRefs: ["E025"]
-  },
-  {
     id: "s37-literary-work",
     layout: "figure-board",
     className: "literary-work-slide",
     section: "Produção",
     eyebrow: "",
-    title: "Obra literária não-acadêmica: As viagens de ibn Hakim",
+    title: "Obra literária não-acadêmica",
     cards: [
       {
         label: "Obra literária · 2025",
-        html: "<p><em>Viagens de ibn Hakim</em> é uma autobiografia heterônima narrada por um personagem fictício situado no mundo islâmico medieval.</p><ul><li>Romance</li><li>Autor: ibn Hakim</li><li>Idioma: Português</li><li>ISBN: 978-65-01-31806-6</li></ul><p>A narrativa acompanha viagens e encontros com diferentes tradições, explorando filosofia, espiritualidade e intercâmbio cultural entre civilizações.</p><p><a href=\"https://ibnhakim.wordpress.com\" target=\"_blank\" rel=\"noopener\">Conhecer o projeto ↗</a></p>"
+        html: "<p><em>As Viagens de ibn Hakim</em> é uma autobiografia heterônima narrada por um personagem fictício (ibn Hakim) situado no mundo islâmico medieval.</p><ul><li>Romance</li><li>Autor: ibn Hakim</li><li>Idioma: Português</li><li>ISBN: 978-65-01-31806-6</li></ul><p><a href=\"https://ibnhakim.wordpress.com\" target=\"_blank\" rel=\"noopener\">Conhecer o projeto ↗</a></p>"
       }
     ],
     figure: {
