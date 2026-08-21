@@ -850,7 +850,11 @@
 .deck-shell .textbook-books-slide .deck-figure {
   position: relative;
   min-height: 0;
-  padding: .55rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .deck-shell .textbook-books-slide .deck-figure.book-turn-reveal.scroll-scrub-reveal,
@@ -867,7 +871,7 @@
 .deck-shell .textbook-books-slide .deck-figure.book-turn-reveal::before {
   content: "LIVRO-TEXTO";
   position: absolute;
-  inset: .55rem;
+  inset: 0;
   z-index: 2;
   display: grid;
   place-items: center;
@@ -893,6 +897,8 @@
   width: 100%;
   height: clamp(15rem, 34vh, 24rem);
   object-fit: contain;
+  border: 0;
+  background: transparent;
 }
 
 .deck-shell .textbook-books-slide .deck-figure figcaption {
@@ -926,13 +932,19 @@
 
 .deck-shell .textbook-progress-slide .deck-figure {
   min-height: 0;
-  padding: .55rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .deck-shell .textbook-progress-slide .deck-figure img {
   width: 100%;
   height: clamp(28rem, 62vh, 43rem);
   object-fit: contain;
+  border: 0;
+  background: transparent;
 }
 
 .deck-shell .textbook-progress-slide .deck-figure figcaption {
@@ -1009,10 +1021,11 @@
 .deck-shell .termo-app-gallery-slide .deck-figure {
   min-width: 0;
   margin: 0;
-  padding: .55rem;
-  border-radius: 1.35rem;
-  background: rgba(255, 255, 255, .94);
-  box-shadow: 0 24px 70px rgba(18, 25, 29, .09);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   transform-origin: 50% 100%;
 }
 
@@ -1022,7 +1035,7 @@
   object-fit: contain;
   border: 0;
   border-radius: .9rem;
-  background: #f5f7fa;
+  background: transparent;
 }
 
 .deck-shell .termo-app-gallery-slide .deck-figure figcaption {
@@ -1054,12 +1067,19 @@
   order: 2;
   max-width: 31rem;
   justify-self: center;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .deck-shell .literary-work-slide .deck-figure img {
   width: 100%;
   height: clamp(26rem, 61vh, 43rem);
   object-fit: contain;
+  border: 0;
+  background: transparent;
 }
 
 .deck-shell > .impact-figure-slide {
