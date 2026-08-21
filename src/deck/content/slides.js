@@ -1036,11 +1036,11 @@ window.MemorialDeckSlides = [
     className: "literary-work-slide",
     section: "Produção",
     eyebrow: "",
-    title: "OBRA LITERÁRIA NÃO-ACADÊMICA: As viagens de ibn Hakim",
+    title: "Obra literária não-acadêmica: As viagens de ibn Hakim",
     cards: [
       {
         label: "Obra literária · 2025",
-        html: "<p><em>Viagens de ibn Hakim</em> é uma autobiografia heterônima narrada por um personagem fictício situado no mundo islâmico medieval.</p><p>A narrativa acompanha viagens e encontros com diferentes tradições, explorando filosofia, espiritualidade e intercâmbio cultural entre civilizações.</p><p>A obra transpõe uma autobiografia para outro personagem, tempo e espaço.</p><p><a href=\"https://ibnhakim.wordpress.com\" target=\"_blank\" rel=\"noopener\">Conhecer o projeto ↗</a></p>"
+        html: "<p><em>Viagens de ibn Hakim</em> é uma autobiografia heterônima narrada por um personagem fictício situado no mundo islâmico medieval.</p><ul><li>Romance</li><li>Autor: ibn Hakim</li><li>Idioma: Português</li><li>ISBN: 978-65-01-31806-6</li></ul><p>A narrativa acompanha viagens e encontros com diferentes tradições, explorando filosofia, espiritualidade e intercâmbio cultural entre civilizações.</p><p><a href=\"https://ibnhakim.wordpress.com\" target=\"_blank\" rel=\"noopener\">Conhecer o projeto ↗</a></p>"
       }
     ],
     figure: {

@@ -942,19 +942,30 @@
 
 .deck-shell > .termo-app-slide {
   min-height: auto;
-  padding-top: clamp(1rem, 2vh, 1.7rem);
+  margin-top: clamp(-2.8rem, -4vh, -1.4rem);
+  padding-top: .35rem;
   padding-bottom: clamp(1.2rem, 2.5vh, 2rem);
 }
 
 .deck-shell .termo-app-slide .figure-board {
-  grid-template-columns: minmax(17rem, .92fr) minmax(0, 1.08fr);
+  grid-template-columns: minmax(0, .88fr) minmax(18rem, 1.12fr);
   align-items: center;
   gap: clamp(.8rem, 1.5vw, 1.4rem);
 }
 
+.deck-shell .termo-app-slide .figure-copy {
+  order: 1;
+}
+
 .deck-shell .termo-app-slide .deck-figure {
+  order: 2;
   width: 100%;
   min-height: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .deck-shell .termo-app-slide .figure-copy .card-grid {
@@ -963,13 +974,16 @@
 
 .deck-shell .termo-app-slide .figure-link {
   display: block;
-  border-radius: inherit;
+  border-radius: 0;
 }
 
 .deck-shell .termo-app-slide .deck-figure img {
   width: 100%;
   height: clamp(28rem, 62vh, 44rem);
   object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .deck-shell .termo-app-slide .figure-link:hover img,
