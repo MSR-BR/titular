@@ -547,16 +547,6 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E017"]
   },
   {
-    id: "s18-physics-bridge",
-    layout: "section",
-    section: "Resultados",
-    eyebrow: "Resultados em física",
-    title: "Da entropia aos materiais quânticos",
-    subtitle: "A parte técnica do memorial organiza resultados em torno de uma pergunta comum: como propriedades microscópicas de spins, orbitais, redes e espectros geram respostas termodinâmicas mensuráveis?",
-    footerRefs: "MEM pp.22-31",
-    sourceRefs: ["E017"]
-  },
-  {
     id: "s19-tsallis-problem",
     layout: "technical",
     section: "Resultados",

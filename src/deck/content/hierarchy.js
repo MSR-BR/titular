@@ -62,9 +62,6 @@
       label: "Pesquisa",
       title: "Linhas de pesquisa",
       targetId: "s17-program-map",
-      introSlides: [
-        { id: "s18-physics-bridge", topic: "Visão geral do programa científico" }
-      ],
       subsections: [
         { number: "3.1", title: "Aplicação da Estatística de Tsallis ao Magnetismo", slides: [
           { id: "s19-tsallis-problem", topic: "Problema físico" },
