@@ -922,37 +922,10 @@ window.MemorialDeckSlides = [
     title: "Qualidade e visibilidade internacional",
     metrics: [
       { value: "20,4%", label: "publicações entre os 25% mais citados mundialmente" },
-      { value: "70,2%", label: "artigos em periódicos top 25% por CiteScore" }
-    ],
-    footerRefs: "Scopus/SciVal, 2015-2024",
-    sourceRefs: ["E024"]
-  },
-  {
-    id: "s36-quality",
-    layout: "photo",
-    className: "impact-figure-slide impact-quality-slide",
-    section: "Impacto",
-    eyebrow: "Produção Científica",
-    title: "Qualidade e visibilidade internacional",
-    figure: {
-      src: "assets/figures/impact-scival-percentiles.png",
-      alt: "Indicadores de publicações mais citadas e de periódicos no quartil superior",
-      caption: "20,4% no top 25% de citações e 70,2% em periódicos top 25% por CiteScore, 2015-2024."
-    },
-    footerRefs: "Scopus/SciVal, 2015-2024",
-    sourceRefs: ["E024"]
-  },
-  {
-    id: "s36-collaboration-metric",
-    layout: "metrics",
-    className: "impact-transition-metrics impact-collaboration-metric",
-    section: "Impacto",
-    eyebrow: "Produção Científica",
-    title: "Colaboração internacional",
-    metrics: [
+      { value: "70,2%", label: "artigos em periódicos top 25% por CiteScore" },
       { value: "67,3%", label: "publicações realizadas com colaboração internacional" }
     ],
-    footerRefs: "Scopus, 2015-2024",
+    footerRefs: "Scopus/SciVal, 2015-2024",
     sourceRefs: ["E024"]
   },
   {
@@ -971,6 +944,21 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E024"]
   },
   {
+    id: "s36-quality",
+    layout: "photo",
+    className: "impact-figure-slide impact-quality-slide",
+    section: "Impacto",
+    eyebrow: "Produção Científica",
+    title: "Qualidade e visibilidade internacional",
+    figure: {
+      src: "assets/figures/impact-scival-percentiles.png",
+      alt: "Indicadores de publicações mais citadas e de periódicos no quartil superior",
+      caption: "20,4% no top 25% de citações e 70,2% em periódicos top 25% por CiteScore, 2015-2024."
+    },
+    footerRefs: "Scopus/SciVal, 2015-2024",
+    sourceRefs: ["E024"]
+  },
+  {
     id: "s36-leadership",
     layout: "photo",
     className: "impact-figure-slide impact-leadership-slide",
@@ -983,21 +971,6 @@ window.MemorialDeckSlides = [
       caption: "57% das publicações como último autor, caracterizando liderança científica, 2015-2024."
     },
     footerRefs: "Scopus, 2015-2024",
-    sourceRefs: ["E024"]
-  },
-  {
-    id: "s36-areas",
-    layout: "photo",
-    className: "impact-figure-slide impact-areas-slide",
-    section: "Impacto",
-    eyebrow: "Produção Científica",
-    title: "Atuação interdisciplinar",
-    figure: {
-      src: "assets/figures/impact-scopus-subjects.png",
-      alt: "Distribuição das publicações por área do conhecimento",
-      caption: "42,1% em Física e Astronomia, 34,5% em Ciência dos Materiais e 10,3% em Química."
-    },
-    footerRefs: "Scopus; distribuição por área",
     sourceRefs: ["E024"]
   },
   {
