@@ -996,8 +996,8 @@ window.MemorialDeckSlides = [
         text: "Livro em redação a partir das notas de aula de 2024-2026, articulando termodinâmica clássica, estatística, transições de fase e ciclos térmicos."
       },
       {
-        label: "App Termo",
-        html: "<p>Livro interativo associado ao projeto:</p><ul><li>Capítulos</li><li>Simuladores</li><li>Exercícios por IA</li><li>Simulados por capítulo</li><li>Recursos para ampliar a aprendizagem de Termodinâmica</li></ul>"
+        label: "Capítulos",
+        html: "<ol><li>Introdução</li><li>Conceitos Fundamentais</li><li>Potenciais Termodinâmicos e Aplicações</li><li>Termodinâmica Estatística</li><li>Transições de Fase</li><li>Processos Termodinâmicos</li><li>Ciclos Termodinâmicos</li></ol>"
       }
     ],
     figure: {
@@ -1010,9 +1010,17 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s37-termo-app",
-    layout: "photo",
+    layout: "figure-board",
     className: "termo-app-slide",
     section: "Produção",
+    eyebrow: "Livro interativo",
+    title: "App Termo",
+    cards: [
+      {
+        label: "Aprendizagem ampliada",
+        html: "<p>Livro interativo associado ao projeto:</p><ul><li>Capítulos</li><li>Simuladores</li><li>Exercícios por IA</li><li>Simulados por capítulo</li><li>Recursos para ampliar a aprendizagem de Termodinâmica</li></ul>"
+      }
+    ],
     figure: {
       src: "assets/figures/termo-app-interface.png",
       alt: "Interface do aplicativo interativo Termo",
@@ -1027,8 +1035,8 @@ window.MemorialDeckSlides = [
     layout: "figure-board",
     className: "literary-work-slide",
     section: "Produção",
-    eyebrow: "Obra literária não-acadêmica",
-    title: "As viagens de ibn Hakim",
+    eyebrow: "",
+    title: "OBRA LITERÁRIA NÃO-ACADÊMICA: As viagens de ibn Hakim",
     cards: [
       {
         label: "Obra literária · 2025",
