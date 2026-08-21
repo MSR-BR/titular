@@ -103,7 +103,9 @@
       subsections: [
         { number: "4.1", title: "Produção Científica", slides: [
           { id: "s36-impact", topic: "Produção Científica" },
+          { id: "s36-quality-metrics", topic: "Qualidade e visibilidade | indicadores" },
           { id: "s36-quality", topic: "Qualidade e visibilidade" },
+          { id: "s36-collaboration-metric", topic: "Colaboração internacional | indicador" },
           { id: "s36-collaboration", topic: "Colaboração internacional" },
           { id: "s36-leadership", topic: "Liderança científica" },
           { id: "s36-areas", topic: "Atuação interdisciplinar" }

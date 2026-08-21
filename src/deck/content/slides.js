@@ -914,6 +914,20 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E024"]
   },
   {
+    id: "s36-quality-metrics",
+    layout: "metrics",
+    className: "impact-transition-metrics impact-quality-metrics",
+    section: "Impacto",
+    eyebrow: "Produção Científica",
+    title: "Qualidade e visibilidade internacional",
+    metrics: [
+      { value: "20,4%", label: "publicações entre os 25% mais citados mundialmente" },
+      { value: "70,2%", label: "artigos em periódicos top 25% por CiteScore" }
+    ],
+    footerRefs: "Scopus/SciVal, 2015-2024",
+    sourceRefs: ["E024"]
+  },
+  {
     id: "s36-quality",
     layout: "photo",
     className: "impact-figure-slide impact-quality-slide",
@@ -926,6 +940,19 @@ window.MemorialDeckSlides = [
       caption: "20,4% no top 25% de citações e 70,2% em periódicos top 25% por CiteScore, 2015-2024."
     },
     footerRefs: "Scopus/SciVal, 2015-2024",
+    sourceRefs: ["E024"]
+  },
+  {
+    id: "s36-collaboration-metric",
+    layout: "metrics",
+    className: "impact-transition-metrics impact-collaboration-metric",
+    section: "Impacto",
+    eyebrow: "Produção Científica",
+    title: "Colaboração internacional",
+    metrics: [
+      { value: "67,3%", label: "publicações realizadas com colaboração internacional" }
+    ],
+    footerRefs: "Scopus, 2015-2024",
     sourceRefs: ["E024"]
   },
   {

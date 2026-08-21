@@ -697,6 +697,46 @@
   line-height: 1.2;
 }
 
+.deck-shell > .impact-transition-metrics {
+  min-height: clamp(20rem, 52vh, 34rem);
+  padding-top: clamp(1.1rem, 3vh, 2.4rem);
+  padding-bottom: clamp(1.1rem, 3vh, 2.4rem);
+}
+
+.deck-shell .impact-transition-metrics .slide-body {
+  display: grid;
+  align-items: center;
+}
+
+.deck-shell .impact-transition-metrics .metric-grid {
+  width: min(100%, 70rem);
+  height: auto;
+  margin-inline: auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: minmax(11rem, auto);
+  gap: clamp(.8rem, 1.8vw, 1.4rem);
+}
+
+.deck-shell .impact-transition-metrics .metric-item {
+  padding: clamp(1.1rem, 2vw, 1.8rem);
+  border-radius: 1.45rem;
+}
+
+.deck-shell .impact-transition-metrics .metric-value {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  white-space: nowrap;
+}
+
+.deck-shell .impact-transition-metrics .metric-label {
+  font-size: clamp(.9rem, 1.25vw, 1.15rem);
+  line-height: 1.25;
+}
+
+.deck-shell .impact-collaboration-metric .metric-grid {
+  width: min(100%, 35rem);
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .deck-shell > .impact-figure-slide {
   padding-top: clamp(.15rem, .6vh, .45rem);
   padding-bottom: clamp(1.35rem, 2.8vh, 2.4rem);
