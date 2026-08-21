@@ -48,7 +48,7 @@ window.MemorialDeckSlides = [
         number: "4",
         href: "#section-4",
         label: "Impacto acadêmico",
-        html: "<ul><li>Produção Científica</li><li>Produção de livros</li><li>Atividades editoriais e liderança científica</li><li>Internacionalização</li></ul>"
+        html: "<ul><li>Produção Científica</li><li>Livro-texto</li><li>Obra literária não-acadêmica</li><li>Atividades editoriais e liderança científica</li><li>Internacionalização</li></ul>"
       },
       {
         number: "5",
@@ -1013,6 +1013,27 @@ window.MemorialDeckSlides = [
       }
     ],
     footerRefs: "Projeto Termodinâmica para Estudantes de Física · App Termo",
+    sourceRefs: ["E025"]
+  },
+  {
+    id: "s37-literary-work",
+    layout: "figure-board",
+    className: "literary-work-slide",
+    section: "Produção",
+    eyebrow: "Obra literária não-acadêmica",
+    title: "As viagens de ibn Hakim",
+    cards: [
+      {
+        label: "Obra literária · 2025",
+        html: "<p><em>Viagens de ibn Hakim</em> é uma autobiografia heterônima narrada por um personagem fictício situado no mundo islâmico medieval.</p><p>A narrativa acompanha viagens e encontros com diferentes tradições, explorando filosofia, espiritualidade e intercâmbio cultural entre civilizações.</p><p>A obra transpõe uma autobiografia para outro personagem, tempo e espaço.</p><p><a href=\"https://ibnhakim.wordpress.com\" target=\"_blank\" rel=\"noopener\">Conhecer o projeto ↗</a></p>"
+      }
+    ],
+    figure: {
+      src: "assets/figures/ibn-hakim-cover-literary.png",
+      alt: "Capa do livro As viagens de ibn Hakim",
+      caption: "As viagens de ibn Hakim · obra literária publicada em 2025"
+    },
+    footerRefs: "Obra e materiais do projeto: ibnhakim.wordpress.com",
     sourceRefs: ["E025"]
   },
   {

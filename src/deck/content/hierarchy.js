@@ -109,10 +109,13 @@
           { id: "s37-books", topic: "Publicados" },
           { id: "s37-books-continuity", topic: "Em andamento" }
         ] },
-        { number: "4.3", title: "Atividades editoriais e liderança científica", slides: [
+        { number: "4.3", title: "Obra literária não-acadêmica", slides: [
+          { id: "s37-literary-work", topic: "As viagens de ibn Hakim" }
+        ] },
+        { number: "4.4", title: "Atividades editoriais e liderança científica", slides: [
           { id: "s38-editorial", topic: "Physica B e liderança editorial" }
         ] },
-        { number: "4.4", title: "Internacionalização", slides: [
+        { number: "4.5", title: "Internacionalização", slides: [
           { id: "s39-internationalization", topic: "Mobilidade e consolidação internacional" },
           { id: "s39-international-networks", topic: "Redes, colaborações e formação internacional" }
         ] }

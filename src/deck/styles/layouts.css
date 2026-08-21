@@ -936,22 +936,34 @@
   object-fit: contain;
 }
 
-.deck-shell .textbook-progress-slide .deck-figure.story-reveal {
-  opacity: 1;
-  transform: none;
-  filter: blur(12px);
-  transition: filter 1100ms cubic-bezier(.2, .7, .2, 1);
-}
-
-.deck-shell .textbook-progress-slide .deck-figure.story-reveal.is-visible {
-  opacity: 1;
-  transform: none;
-  filter: blur(0);
-}
-
 .deck-shell .textbook-progress-slide .deck-figure figcaption {
   font-size: clamp(.68rem, .78vw, .82rem);
   text-align: center;
+}
+
+.deck-shell .literary-work-slide .figure-board {
+  grid-template-columns: minmax(0, 1.08fr) minmax(15rem, .92fr);
+  align-items: center;
+}
+
+.deck-shell .literary-work-slide .figure-copy {
+  order: 1;
+}
+
+.deck-shell .literary-work-slide .figure-copy .card-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.deck-shell .literary-work-slide .deck-figure {
+  order: 2;
+  max-width: 31rem;
+  justify-self: center;
+}
+
+.deck-shell .literary-work-slide .deck-figure img {
+  width: 100%;
+  height: clamp(26rem, 61vh, 43rem);
+  object-fit: contain;
 }
 
 .deck-shell > .impact-figure-slide {

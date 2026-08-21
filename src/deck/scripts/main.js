@@ -800,13 +800,14 @@
       animatedElements.forEach((element, order) => {
         const isIndexCard = slide.classList.contains("index-cover") && element.classList.contains("index-section-card");
         const isBookTurn = slide.classList.contains("textbook-books-slide") && element.classList.contains("deck-figure");
+        const isTraditionalFigure = slide.classList.contains("textbook-progress-slide") && element.classList.contains("deck-figure");
         element.classList.add("story-reveal");
         if (element.matches(".info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure")) {
           element.classList.add("content-scroll-card");
         }
         element.style.setProperty("--reveal-order", Math.min(order, 10));
         if (isBookTurn) element.classList.add("book-turn-reveal");
-        if (usesScrollTemplate || isIndexCard || isBookTurn) {
+        if (usesScrollTemplate || isIndexCard || isBookTurn || isTraditionalFigure) {
           element.classList.add("scroll-scrub-reveal");
           scrubElements.push(element);
         } else {
