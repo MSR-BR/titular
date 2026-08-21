@@ -944,21 +944,43 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s37-books",
-    layout: "figure-board",
+    layout: "cards",
+    className: "textbook-books-slide",
     section: "Produção",
-    eyebrow: "Produção de livros",
-    title: "Pesquisa, sala de aula e livro-texto",
+    eyebrow: "Livro-texto",
+    title: "Livro-texto",
     cards: [
-      { label: "Magnetismo Molecular | 2010", text: "Fundamentos físicos e químicos, modelagem e técnicas experimentais em sistemas moleculares e de baixa dimensionalidade." },
-      { label: "Fundamentals of Magnetism | 2013", text: "Sistematização internacional dos fundamentos teóricos, do magnetismo cooperativo e do magnetismo molecular." },
-      { label: "Quantum Mechanics | 2025", text: "Dez anos de desenvolvimento, integrando a experiência nas disciplinas de graduação e pós-graduação a aplicações contemporâneas." }
+      {
+        label: "Magnetismo Molecular",
+        html: "<p><em>Mario Reis e Antônio dos Santos</em></p><ul><li>Editora Livraria da Física · 2010</li><li>192 páginas</li><li>Português</li><li>ISBN 978-85-7861-079-1</li></ul>"
+      },
+      {
+        label: "Fundamentals of Magnetism",
+        html: "<p><em>Mario Reis</em></p><ul><li>Elsevier · 2013</li><li>297 páginas</li><li>Inglês</li><li>ISBN 978-0-12-405545-2</li></ul>"
+      },
+      {
+        label: "Quantum Mechanics: Theory and Applications",
+        html: "<p><em>Mario Reis</em></p><ul><li>Elsevier · 2025</li><li>Inglês</li><li>ISBN 9780443328268</li></ul>"
+      }
     ],
-    figure: {
-      src: "assets/figures/book-covers-memorial.png",
-      alt: "Capas dos livros Magnetismo Molecular, Fundamentals of Magnetism e Quantum Mechanics",
-      caption: "Três obras acadêmicas publicadas a partir da integração entre pesquisa e ensino."
-    },
-    footerRefs: "MEM pp.37-40; Fig. 6.1",
+    figures: [
+      {
+        src: "assets/figures/magnetismo-molecular-cover.png",
+        alt: "Capa do livro Magnetismo Molecular",
+        caption: "Magnetismo Molecular · 2010"
+      },
+      {
+        src: "assets/figures/fundamentals-magnetism-cover.png",
+        alt: "Capa do livro Fundamentals of Magnetism",
+        caption: "Fundamentals of Magnetism · 2013"
+      },
+      {
+        src: "assets/figures/quantum-mechanics-cover.png",
+        alt: "Capa do livro Quantum Mechanics: Theory and Applications",
+        caption: "Quantum Mechanics: Theory and Applications · 2025"
+      }
+    ],
+    footerRefs: "MEM pp.37-40",
     sourceRefs: ["E025"]
   },
   {

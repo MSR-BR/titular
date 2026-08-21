@@ -795,6 +795,74 @@
   line-height: 1.22;
 }
 
+.deck-shell > .textbook-books-slide {
+  min-height: auto;
+  padding-top: clamp(1rem, 2vh, 1.7rem);
+  padding-bottom: clamp(1.2rem, 2.5vh, 2rem);
+}
+
+.deck-shell .textbook-books-slide .cards-with-figure.has-figure-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(.8rem, 1.4vw, 1.2rem);
+}
+
+.deck-shell .textbook-books-slide .card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.6rem, 1vw, .9rem);
+}
+
+.deck-shell .textbook-books-slide .info-card {
+  min-height: auto;
+  padding: clamp(.8rem, 1.2vw, 1.1rem);
+}
+
+.deck-shell .textbook-books-slide .info-card-label {
+  font-size: clamp(1rem, 1.25vw, 1.22rem);
+  line-height: 1.08;
+}
+
+.deck-shell .textbook-books-slide .info-card-text p {
+  margin: .35rem 0 .45rem;
+  font-size: clamp(.78rem, .9vw, .92rem);
+}
+
+.deck-shell .textbook-books-slide .info-card-text ul {
+  display: grid;
+  gap: .18rem;
+  margin: 0;
+  padding-left: 1.05rem;
+}
+
+.deck-shell .textbook-books-slide .info-card-text li {
+  font-size: clamp(.72rem, .82vw, .86rem);
+  line-height: 1.18;
+}
+
+.deck-shell .textbook-books-slide .figure-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.7rem, 1.2vw, 1rem);
+  width: min(100%, 68rem);
+  margin-inline: auto;
+}
+
+.deck-shell .textbook-books-slide .deck-figure {
+  min-height: 0;
+  padding: .55rem;
+}
+
+.deck-shell .textbook-books-slide .deck-figure img {
+  width: 100%;
+  height: clamp(15rem, 34vh, 24rem);
+  object-fit: contain;
+}
+
+.deck-shell .textbook-books-slide .deck-figure figcaption {
+  font-size: clamp(.68rem, .78vw, .82rem);
+  text-align: center;
+}
+
 .deck-shell > .impact-figure-slide {
   padding-top: clamp(.15rem, .6vh, .45rem);
   padding-bottom: clamp(1.35rem, 2.8vh, 2.4rem);
@@ -2257,6 +2325,8 @@
   }
 
   .deck-shell .impact-all-metrics .metric-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .deck-shell .textbook-books-slide .card-grid,
+  .deck-shell .textbook-books-slide .figure-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 @media (max-width: 760px) {
@@ -2291,6 +2361,8 @@
   .standard-section-cover.section-resultados .card-grid.count-6 { grid-template-columns: 1fr; }
   .deck-shell .impact-all-metrics .metric-grid,
   .deck-shell .impact-all-metrics .card-grid { grid-template-columns: 1fr; }
+  .deck-shell .textbook-books-slide .card-grid,
+  .deck-shell .textbook-books-slide .figure-gallery { grid-template-columns: 1fr; }
   .section-indice .card-grid.count-5 .info-card { grid-column: auto; }
   .timeline { grid-template-columns: 1fr; }
   .timeline::before,

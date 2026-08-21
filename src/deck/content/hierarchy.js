@@ -105,8 +105,8 @@
           { id: "s36-impact", topic: "Produção Científica em Números" },
           { id: "s36-quality-metrics", topic: "Indicadores e bolsas de mérito" }
         ] },
-        { number: "4.2", title: "Produção de Livros", slides: [
-          { id: "s37-books", topic: "Pesquisa, sala de aula e livro-texto" },
+        { number: "4.2", title: "Livro-texto", slides: [
+          { id: "s37-books", topic: "Livro-texto" },
           { id: "s37-books-continuity", topic: "Projetos editoriais em continuidade" }
         ] },
         { number: "4.3", title: "Atividades editoriais e liderança científica", slides: [
