@@ -908,7 +908,7 @@
 
 .deck-shell .textbook-progress-slide .cards-with-figure.has-figure-gallery {
   display: grid;
-  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  grid-template-columns: 1fr;
   gap: clamp(.7rem, 1.3vw, 1.1rem);
   align-items: stretch;
 }
@@ -916,8 +916,7 @@
 .deck-shell .textbook-progress-slide .card-grid,
 .deck-shell .textbook-progress-slide .figure-gallery {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(.65rem, 1vw, .9rem);
 }
 
@@ -933,7 +932,7 @@
 
 .deck-shell .textbook-progress-slide .deck-figure img {
   width: 100%;
-  height: clamp(13rem, 28vh, 19rem);
+  height: clamp(15rem, 34vh, 23rem);
   object-fit: contain;
 }
 
@@ -2456,6 +2455,10 @@
   .deck-shell .textbook-books-slide .card-grid,
   .deck-shell .textbook-books-slide .figure-gallery { grid-template-columns: 1fr; }
   .deck-shell .textbook-progress-slide .cards-with-figure.has-figure-gallery {
+    grid-template-columns: 1fr;
+  }
+  .deck-shell .textbook-progress-slide .card-grid,
+  .deck-shell .textbook-progress-slide .figure-gallery {
     grid-template-columns: 1fr;
   }
   .section-indice .card-grid.count-5 .info-card { grid-column: auto; }
