@@ -707,6 +707,8 @@
     const sampleGallerySlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s16ba-sample-gallery") + 1}`);
     sampleGallerySlide?.classList.add("student-photo-slide", "sample-gallery-slide");
     sampleGallerySlide?.querySelectorAll(".deck-figure").forEach((figure) => figure.classList.add("apple-product-rise", "early-product-rise"));
+    const termoAppGallerySlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s37-termo-app-examples") + 1}`);
+    termoAppGallerySlide?.querySelectorAll(".deck-figure").forEach((figure) => figure.classList.add("apple-product-rise", "early-product-rise"));
     const researchProjectsSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s16c-research-projects") + 1}`);
     researchProjectsSlide?.classList.add("research-projects");
     const studentLevelsSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s13-people") + 1}`);

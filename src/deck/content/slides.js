@@ -1031,6 +1031,38 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E025"]
   },
   {
+    id: "s37-termo-app-examples",
+    layout: "photo",
+    className: "termo-app-gallery-slide",
+    section: "Produção",
+    eyebrow: "",
+    title: "",
+    figures: [
+      {
+        src: "assets/figures/termo-app-home.jpg",
+        alt: "Página inicial do livro interativo Termo",
+        caption: "Página inicial e acesso aos recursos do livro interativo."
+      },
+      {
+        src: "assets/figures/termo-app-chapter-navigation.jpg",
+        alt: "Menu de navegação por capítulos do App Termo",
+        caption: "Navegação direta pelos capítulos de Termodinâmica."
+      },
+      {
+        src: "assets/figures/termo-app-ai-exercises.jpg",
+        alt: "Exercícios por inteligência artificial no App Termo",
+        caption: "Exercícios por IA integrados ao acompanhamento dos tópicos."
+      },
+      {
+        src: "assets/figures/termo-app-content-simulator.jpg",
+        alt: "Conteúdo teórico e simulador de isotermas no App Termo",
+        caption: "Conteúdo conceitual articulado a gráficos e simuladores."
+      }
+    ],
+    footerRefs: "termo-theta.vercel.app",
+    sourceRefs: ["E025"]
+  },
+  {
     id: "s37-literary-work",
     layout: "figure-board",
     className: "literary-work-slide",
