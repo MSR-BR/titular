@@ -1024,8 +1024,8 @@ window.MemorialDeckSlides = [
     figure: {
       src: "assets/figures/termo-app-interface.png",
       alt: "Interface do aplicativo interativo Termo",
-      caption: "App Termo · clicar para abrir o livro interativo",
-      href: "http://termo-theta.vercel.app"
+      href: "http://termo-theta.vercel.app",
+      bare: true
     },
     footerRefs: "termo-theta.vercel.app",
     sourceRefs: ["E025"]

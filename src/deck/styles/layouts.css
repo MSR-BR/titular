@@ -969,37 +969,29 @@
   order: 1;
 }
 
-.deck-shell .termo-app-slide .deck-figure {
+.deck-shell .termo-app-slide .standalone-figure-link {
   order: 2;
   width: 100%;
-  min-height: 0;
-  padding: 0;
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
+  display: block;
 }
 
 .deck-shell .termo-app-slide .figure-copy .card-grid {
   grid-template-columns: minmax(0, 1fr);
 }
 
-.deck-shell .termo-app-slide .figure-link {
+.deck-shell .termo-app-slide .standalone-figure-image {
   display: block;
-  border-radius: 0;
-}
-
-.deck-shell .termo-app-slide .deck-figure img {
   width: 100%;
   height: clamp(28rem, 62vh, 44rem);
   object-fit: contain;
   border: 0;
   border-radius: 0;
   background: transparent;
+  box-shadow: none;
 }
 
-.deck-shell .termo-app-slide .figure-link:hover img,
-.deck-shell .termo-app-slide .figure-link:focus-visible img {
+.deck-shell .termo-app-slide .standalone-figure-link:hover img,
+.deck-shell .termo-app-slide .standalone-figure-link:focus-visible img {
   filter: brightness(1.03);
 }
 

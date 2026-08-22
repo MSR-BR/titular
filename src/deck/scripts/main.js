@@ -124,6 +124,13 @@
       return "";
     }
 
+    if (figure.bare) {
+      const bareImage = `<img class="standalone-figure-image" src="${escapeAttribute(figure.src)}" alt="${escapeAttribute(figure.alt || "")}" />`;
+      return figure.href
+        ? `<a class="standalone-figure-link" href="${escapeAttribute(figure.href)}" target="_blank" rel="noopener" aria-label="Abrir ${escapeAttribute(figure.alt || "imagem")} em uma nova aba">${bareImage}</a>`
+        : bareImage;
+    }
+
     const caption = figure.caption ? `<figcaption>${escapeHtml(figure.caption)}</figcaption>` : "";
     const image = `<img src="${escapeAttribute(figure.src)}" alt="${escapeAttribute(figure.alt || "")}" />`;
     const media = figure.href
@@ -797,7 +804,7 @@
     const scrollRevealGroups = [];
     deck.querySelectorAll(".slide").forEach((slide) => {
       const animatedElements = slide.querySelectorAll(
-        ".section-kicker, .eyebrow, .slide-title, .slide-subtitle, .slide-affiliations, .slide-lead, .info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure, .section-question"
+        ".section-kicker, .eyebrow, .slide-title, .slide-subtitle, .slide-affiliations, .slide-lead, .info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure, .standalone-figure-link, .section-question"
       );
       const usesScrollTemplate =
         slide.classList.contains("subsection-slide") ||
@@ -808,9 +815,9 @@
         const isBookTurn = slide.classList.contains("textbook-books-slide") && element.classList.contains("deck-figure");
         const isTraditionalFigure =
           (slide.classList.contains("textbook-progress-slide") || slide.classList.contains("termo-app-slide")) &&
-          element.classList.contains("deck-figure");
+          (element.classList.contains("deck-figure") || element.classList.contains("standalone-figure-link"));
         element.classList.add("story-reveal");
-        if (element.matches(".info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure")) {
+        if (element.matches(".info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure, .standalone-figure-link")) {
           element.classList.add("content-scroll-card");
         }
         element.style.setProperty("--reveal-order", Math.min(order, 10));
