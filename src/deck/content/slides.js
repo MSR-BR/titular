@@ -945,7 +945,7 @@ window.MemorialDeckSlides = [
   {
     id: "s37-books",
     layout: "cards",
-    className: "textbook-books-slide",
+    className: "textbook-books-slide gold-star-title",
     section: "Produção",
     eyebrow: "Livro-texto · publicados",
     title: "Livro-texto: publicados",
@@ -1033,7 +1033,7 @@ window.MemorialDeckSlides = [
   {
     id: "s37-literary-work",
     layout: "figure-board",
-    className: "literary-work-slide",
+    className: "literary-work-slide gold-star-title",
     section: "Produção",
     eyebrow: "",
     title: "Obra literária não-acadêmica",
@@ -1046,7 +1046,7 @@ window.MemorialDeckSlides = [
     figure: {
       src: "assets/figures/ibn-hakim-cover-literary.png",
       alt: "Capa do livro As viagens de ibn Hakim",
-      caption: "As viagens de ibn Hakim · obra literária publicada em 2025"
+      bare: true
     },
     footerRefs: "Obra e materiais do projeto: ibnhakim.wordpress.com",
     sourceRefs: ["E025"]

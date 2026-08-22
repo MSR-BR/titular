@@ -541,6 +541,24 @@
   z-index: 2;
 }
 
+.deck-shell .gold-star-title .slide-title {
+  position: relative;
+  padding-right: clamp(3rem, 5vw, 4.5rem);
+}
+
+.deck-shell .gold-star-title .slide-title::before {
+  content: "★";
+  position: absolute;
+  inset: .08em 0 auto auto;
+  color: #c99b22;
+  font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+  line-height: 1;
+  text-shadow: 0 8px 24px rgba(201, 155, 34, .24);
+  transform: translateY(var(--star-rise, 1.25rem)) rotate(var(--star-turn, -150deg));
+  transform-origin: 50% 50%;
+  z-index: 2;
+}
+
 .deck-shell .professional-primary .info-card-label {
   white-space: pre-line;
 }
@@ -1057,23 +1075,23 @@
   grid-template-columns: minmax(0, 1fr);
 }
 
-.deck-shell .literary-work-slide .deck-figure {
+.deck-shell .literary-work-slide .standalone-figure-link {
   order: 2;
+  display: block;
+  width: 100%;
   max-width: 31rem;
   justify-self: center;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
 }
 
-.deck-shell .literary-work-slide .deck-figure img {
+.deck-shell .literary-work-slide .standalone-figure-image {
+  display: block;
   width: 100%;
   height: clamp(26rem, 61vh, 43rem);
   object-fit: contain;
   border: 0;
+  border-radius: 0;
   background: transparent;
+  box-shadow: none;
 }
 
 .deck-shell > .impact-figure-slide {

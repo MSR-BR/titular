@@ -128,7 +128,7 @@
       const bareImage = `<img class="standalone-figure-image" src="${escapeAttribute(figure.src)}" alt="${escapeAttribute(figure.alt || "")}" />`;
       return figure.href
         ? `<a class="standalone-figure-link" href="${escapeAttribute(figure.href)}" target="_blank" rel="noopener" aria-label="Abrir ${escapeAttribute(figure.alt || "imagem")} em uma nova aba">${bareImage}</a>`
-        : bareImage;
+        : `<span class="standalone-figure-link standalone-figure-static">${bareImage}</span>`;
     }
 
     const caption = figure.caption ? `<figcaption>${escapeHtml(figure.caption)}</figcaption>` : "";
