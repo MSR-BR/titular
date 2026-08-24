@@ -1184,7 +1184,7 @@ window.MemorialDeckSlides = [
       },
       {
         label: "Ensino · Produção de material didático",
-        html: "<ul><li>Concluir <em>Termodinâmica para Estudantes de Física</em>.</li><li>Traduzir o livro de Mecânica Quântica para o português e produzir uma edição de divulgação.</li></ul>"
+        html: "<ul><li>Concluir Termodinâmica para Estudantes de Física.</li><li>Traduzir o livro de Mecânica Quântica para o português e produzir uma edição de divulgação.</li></ul>"
       },
       {
         label: "Extensão · Laboratório de Robótica e Automação",

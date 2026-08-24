@@ -2465,7 +2465,32 @@
 
 .deck-shell .future-priorities-slide .card-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, auto);
+  grid-auto-rows: auto;
+  height: auto;
+  align-items: stretch;
+  gap: clamp(.65rem, 1vw, .9rem);
+}
+
+.deck-shell .future-priorities-slide .slide-body {
+  align-self: auto;
+}
+
+.deck-shell .future-priorities-slide .info-card {
+  min-height: 0;
+  padding: clamp(.85rem, 1.35vw, 1.15rem);
+  border-radius: 1.25rem;
+}
+
+.deck-shell .future-priorities-slide .info-card-label {
+  font-size: clamp(.78rem, 1vw, .92rem);
+  line-height: 1.08;
+}
+
+.deck-shell .future-priorities-slide .info-card-text,
+.deck-shell .future-priorities-slide .info-card-text li {
+  font-size: clamp(.72rem, .9vw, .84rem);
+  line-height: 1.24;
 }
 
 /* Number and copy occupy independent columns on the index cards. */
