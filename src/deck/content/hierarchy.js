@@ -65,9 +65,10 @@
       subsections: [
         { number: "3.1", title: "Aplicação da Estatística de Tsallis ao Magnetismo", slides: [
           { id: "s19-tsallis-problem", topic: "Problema físico" },
-          { id: "s20-tsallis-equations", topic: "Formalismo" },
-          { id: "s21-tsallis-result", topic: "Resultado" },
-          { id: "s22-tsallis-contribution", topic: "Contribuição" }
+          { id: "s20-tsallis-equations", topic: "Fundamentos estatísticos" },
+          { id: "s20b-tsallis-magnetism", topic: "Formalismo magnético" },
+          { id: "s21-tsallis-result", topic: "Teoria e experimento" },
+          { id: "s22-tsallis-contribution", topic: "Significado físico e legado" }
         ] },
         { number: "3.2", title: "Efeito magnetocalórico e materiais magnéticos", slides: [
           { id: "s23-mce-foundation", topic: "Fundamentos termodinâmicos" },

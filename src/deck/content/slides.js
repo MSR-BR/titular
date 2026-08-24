@@ -554,80 +554,120 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s19-tsallis-problem",
-    layout: "technical",
+    layout: "cards",
     section: "Resultados",
     eyebrow: "Linha 1 | Tsallis e magnetismo",
-    title: "O problema físico: magnetismo não homogêneo",
-    lead: "Manganitas CMR exibem desvios sistemáticos em M(H) e suscetibilidade que não são descritos adequadamente por modelos tradicionais de campo médio.",
-    items: [
-      "Separação de fases e distribuição de interações magnéticas.",
-      "Necessidade de um parâmetro físico para não homogeneidade.",
-      "Aplicação de estatística não extensiva a sistemas magnéticos reais."
+    title: "Por que a estatística tradicional não bastava?",
+    lead: "Durante o doutorado, o desafio foi compreender desvios sistemáticos nas curvas de magnetização e suscetibilidade de manganitas de magnetorresistência colossal.",
+    cards: [
+      { label: "Sistema físico", text: "Manganitas CMR magneticamente não homogêneas, marcadas por separação de fases, interações de longo alcance e respostas coletivas complexas." },
+      { label: "Limite dos modelos usuais", text: "Modelos tradicionais de campo médio não reproduziam adequadamente a curvatura das isotermas M(H), a suscetibilidade e a aproximação à saturação." },
+      { label: "Hipótese de trabalho", text: "Usar a estatística não extensiva de Tsallis para incorporar a distribuição de interações magnéticas sem introduzir distribuições artificiais de campo." }
     ],
-    equations: [
-      equationAsset("tsallis-entropy", "Entropia de Tsallis", "entropia q"),
-      equationAsset("q-exponential", "q-exponencial", "distribuição generalizada")
-    ],
-    footerRefs: "MEM pp.22-23; refs. [2-8]",
+    footerRefs: "MEM · Aplicação da Estatística de Tsallis ao Magnetismo",
     sourceRefs: ["E018"]
   },
   {
     id: "s20-tsallis-equations",
     layout: "technical",
     section: "Resultados",
-    eyebrow: "Linha 1 | Formalismo",
-    title: "Entropia q e distribuição generalizada",
-    lead: "A reformulação estatística altera a função partição e, portanto, as propriedades magnéticas calculadas.",
+    eyebrow: "Linha 1 | Fundamentos estatísticos",
+    title: "Da entropia de Boltzmann–Gibbs à q-exponencial",
+    lead: "A generalização da entropia modifica as probabilidades, a função partição e, consequentemente, as propriedades termodinâmicas.",
     equations: [
-      equationAsset("tsallis-entropy", "Entropia q", "S_q"),
-      equationAsset("q-exponential", "q-exponencial", "peso estatístico"),
-      equationAsset("tsallis-magnetization", "Magnetização q", "observável magnético")
+      equationAsset("tsallis-entropy", "Entropia não extensiva de Tsallis", "S_q"),
+      equationAsset("q-exponential", "Função q-exponencial", "e_q(x)")
     ],
     items: [
-      "A abordagem recupera Boltzmann-Gibbs no limite q = 1.",
-      "O parâmetro q passa a representar a inhomogeneidade magnética efetiva."
+      "q mede o grau de não extensividade do sistema.",
+      "No limite q → 1, recuperam-se a entropia e a exponencial de Boltzmann–Gibbs.",
+      "A distribuição generalizada altera diretamente os pesos estatísticos dos estados."
     ],
-    footerRefs: "MEM pp.22-23; refs. [2-4]",
+    footerRefs: "MEM · Entropia de Tsallis e distribuição generalizada",
+    sourceRefs: ["E018"]
+  },
+  {
+    id: "s20b-tsallis-magnetism",
+    layout: "technical",
+    section: "Resultados",
+    eyebrow: "Linha 1 | Formalismo magnético",
+    title: "Do sistema de spins às funções generalizadas",
+    lead: "Para N spins s sob campo H, a magnetização média é calculada com probabilidades generalizadas no formalismo de Tsallis.",
+    equations: [
+      equationAsset("tsallis-magnetization", "Magnetização média no formalismo de Tsallis", "M_q")
+    ],
+    items: [
+      "Formulação desenvolvida nos regimes clássico e quântico.",
+      "Limite clássico: função de Langevin generalizada.",
+      "Regime quântico: função de Brillouin generalizada.",
+      "A resposta magnética passa a depender explicitamente do parâmetro entrópico q."
+    ],
+    footerRefs: "MEM · Sistema de spins não extensivo; PRB 66, 134417; EPL 58, 42",
     sourceRefs: ["E018"]
   },
   {
     id: "s21-tsallis-result",
     layout: "technical",
     section: "Resultados",
-    eyebrow: "Linha 1 | Resultado",
-    title: "M(H) em manganitas: teoria e experimento",
-    lead: "A função de Langevin generalizada ajusta isotermas de magnetização em manganitas acima da temperatura de Curie.",
+    eyebrow: "Linha 1 | Teoria e experimento",
+    title: "M(H): excelente concordância em todo o campo",
+    lead: "A função de Langevin generalizada reproduz as isotermas de La₀.₆₀Y₀.₀₇Ca₀.₃₃MnO₃ entre 175 K e 290 K, acima de Tᶜ = 150 K.",
     items: [
-      "Sistema representativo: La0.60Y0.07Ca0.33MnO3.",
-      "Ajuste das curvas M(H) entre 175 K e 290 K.",
-      "q interpretado como medida macroscópica da não homogeneidade magnética.",
-      "Sem introduzir distribuições artificiais de campo."
+      "Círculos: dados experimentais; linhas sólidas: ajustes não extensivos.",
+      "Descrição quantitativa da curvatura e da aproximação à saturação magnética.",
+      "Um único formalismo para todas as temperaturas medidas.",
+      "Sem distribuições artificiais de campo magnético."
     ],
     equations: [
-      equationAsset("tsallis-magnetization", "Magnetização no formalismo q", "M(H,T) ajustado por funções generalizadas")
+      equationAsset("tsallis-magnetization", "Magnetização no formalismo de Tsallis", "M_q")
     ],
     figure: {
       src: "assets/figures/tsallis-manganite-mh.png",
       alt: "Curvas de magnetização em manganita ajustadas por função de Langevin generalizada",
-      caption: "La0.60Y0.07Ca0.33MnO3: M(H) acima de Tc = 150 K; ajuste por abordagem não extensiva."
+      caption: "La₀.₆₀Y₀.₀₇Ca₀.₃₃MnO₃: M(H) acima de Tᶜ = 150 K. Figura adaptada de Physical Review B 68, 014404 (2003)."
     },
-    footerRefs: "MEM pp.22-23; refs. [3-8]",
+    footerRefs: "MEM · Curvas M(H); Physical Review B 68, 014404 (2003)",
     sourceRefs: ["E018"]
   },
   {
     id: "s22-tsallis-contribution",
-    layout: "content",
+    layout: "cards",
+    className: "tsallis-contributions-slide",
     section: "Resultados",
-    eyebrow: "Linha 1 | Contribuição",
-    title: "O parâmetro q como observável físico",
-    lead: "A contribuição não e apenas ajustar curvas: e estabelecer uma ponte entre não homogeneidade, separação de fases e medidas macroscópicas.",
-    items: [
-      "Evidência experimental de não extensividade em manganitas CMR.",
-      "Determinação experimental direta do parâmetro q.",
-      "Diagrama de fases magnético não extensivo.",
-      "Extensão do formalismo a sistemas magnéticos compostos."
+    eyebrow: "Linha 1 | Significado físico e legado",
+    title: "q: da parametrização à medida experimental",
+    lead: "O resultado central foi estabelecer uma conexão física direta entre não homogeneidade, distribuição de interações, separação de fases e não extensividade.",
+    cards: [
+      { label: "Significado físico", text: "O parâmetro q é relacionado aos momentos da distribuição das interações magnéticas e quantifica a não homogeneidade efetiva do sistema." },
+      { label: "Determinação experimental", text: "q pode ser obtido diretamente a partir de medidas macroscópicas de magnetização e suscetibilidade." },
+      { label: "Desdobramentos", html: "<ul><li>Diagrama de fases magnético não extensivo.</li><li>Sistemas magnéticos compostos.</li><li>Ondas de spin e modelos de Ising 2D.</li><li>Escalonamento de tamanho finito.</li></ul>" },
+      {
+        label: "Produção científica",
+        html: `<p>Doze trabalhos publicados entre 2002 e 2009.</p>
+          <button class="publications-trigger" type="button" data-publications-open="tsallis-publications">12 publicações · abrir lista</button>
+          <dialog class="publications-dialog" id="tsallis-publications" aria-labelledby="tsallis-publications-title">
+            <div class="publications-dialog-head">
+              <div><p class="publications-kicker">Tsallis e magnetismo · 2002–2009</p><h2 id="tsallis-publications-title">Publicações associadas</h2></div>
+              <button class="publications-close" type="button" aria-label="Fechar publicações">×</button>
+            </div>
+            <ol class="publications-list" reversed>
+              <li><span>2009</span><strong>Finite-size analysis of a two-dimensional Ising model within a nonextensive approach.</strong><small>N. Crokidakis, D.O. Soares-Pinto, M.S. Reis, A.M. Souza, R.S. Sarthour e I.S. Oliveira.</small><em>Physical Review E 80, 051101.</em><a href="https://doi.org/10.1103/PhysRevE.80.051101" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2008</span><strong>Phase diagram of a 2D Ising model within a nonextensive approach.</strong><small>D.O. Soares-Pinto, I.S. Oliveira e M.S. Reis.</small><em>European Physical Journal B 62, 337.</em><a href="https://doi.org/10.1140/epjb/e2008-00170-5" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2007</span><strong>On the nonextensive character of some magnetic systems.</strong><small>D.O. Soares-Pinto, M.S. Reis, R.S. Sarthour e I.S. Oliveira.</small><em>AIP Conference Proceedings 965, 232.</em><a href="https://doi.org/10.1063/1.2828738" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2007</span><strong>Spin-waves in a complex magnetic system: nonextensive approach.</strong><small>D.O. Soares-Pinto, M.S. Reis, R.S. Sarthour e I.S. Oliveira.</small><em>Journal of Statistical Mechanics: Theory and Experiment, P08011.</em><a href="https://doi.org/10.1088/1742-5468/2007/08/P08011" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2006</span><strong>Experimental determination of the non-extensive entropic parameter q.</strong><small>M.S. Reis, V.S. Amaral, R.S. Sarthour e I.S. Oliveira.</small><em>Physical Review B 73, 092401.</em><a href="https://doi.org/10.1103/PhysRevB.73.092401" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2006</span><strong>Physical meaning and measurement of the entropic parameter q in an inhomogeneous magnetic systems.</strong><small>M.S. Reis, V.S. Amaral, R.S. Sarthour e I.S. Oliveira.</small><em>European Physical Journal B 50, 99.</em><a href="https://doi.org/10.1140/epjb/e2006-00065-5" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2004</span><strong>A study on composed non-extensive magnetic systems.</strong><small>F.A.R. Navarro, M.S. Reis, E.K. Lenzi e I.S. Oliveira.</small><em>Physica A 343, 499.</em><a href="https://doi.org/10.1016/j.physa.2004.05.074" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2004</span><strong>Magnetic nonextensivity in CMR manganites.</strong><small>M.S. Reis, J.P. Araújo, V.S. Amaral e I.S. Oliveira.</small><em>Journal of Magnetism and Magnetic Materials 272, 1011.</em><a href="https://doi.org/10.1016/j.jmmm.2003.12.651" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2004</span><strong>Positive and colossal magnetocaloric effect due to charge ordering in CMR manganites.</strong><small>M.S. Reis, A.M. Gomes, J.P. Araújo, P.B. Tavares, J.S. Amaral, I.S. Oliveira e V.S. Amaral.</small><em>Journal of Magnetism and Magnetic Materials 272, 2393.</em><a href="https://doi.org/10.1016/j.jmmm.2003.12.650" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2003</span><strong>Magnetic phase diagram for a non-extensive system: Experimental connection with manganites.</strong><small>M.S. Reis, V.S. Amaral, J.P. Araújo e I.S. Oliveira.</small><em>Physical Review B 68, 014404.</em><a href="https://doi.org/10.1103/PhysRevB.68.014404" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2002</span><strong>Evidences for Tsallis non-extensivity on CMR manganites.</strong><small>M.S. Reis, J.C.C. Freitas, M.T.D. Orlando, E.K. Lenzi e I.S. Oliveira.</small><em>Europhysics Letters 58, 42.</em><a href="https://doi.org/10.1209/epl/i2002-00603-9" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2002</span><strong>Magnetic behavior of a non-extensive S-spin system: possible connections to manganites.</strong><small>M.S. Reis, J.P. Araújo, V.S. Amaral, E.K. Lenzi e I.S. Oliveira.</small><em>Physical Review B 66, 134417.</em><a href="https://doi.org/10.1103/PhysRevB.66.134417" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+            </ol>
+          </dialog>`
+      }
     ],
-    footerRefs: "MEM p.23; refs. [4-8]",
+    footerRefs: "MEM · Significado físico de q e produção associada",
     sourceRefs: ["E018"]
   },
   {
