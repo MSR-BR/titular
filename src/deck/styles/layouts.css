@@ -2463,6 +2463,11 @@
   opacity: 1;
 }
 
+.deck-shell .future-priorities-slide .card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 /* Number and copy occupy independent columns on the index cards. */
 .deck-shell .index-cover .index-section-card {
   padding: 1.35rem;

@@ -129,21 +129,10 @@
       label: "Perspectivas",
       title: "Perspectivas futuras",
       targetId: "s39-innovation",
-      subsections: [
-        { number: "5.1", title: "Ensino", slides: [
-          { id: "s39-innovation", topic: "Perspectivas futuras", sectionCover: true },
-          { id: "s40-future-teaching", topic: "Ensino" }
-        ] },
-        { number: "5.2", title: "Extensão", slides: [
-          { id: "s40-future-extension", topic: "Laboratório de Robótica e Automação" }
-        ] },
-        { number: "5.3", title: "Pesquisa e inovação", slides: [
-          { id: "s40-future-research", topic: "Pesquisa e inovação" }
-        ] },
-        { number: "5.4", title: "Rede", slides: [
-          { id: "s40-future-network", topic: "Integração Sul Global" }
-        ] }
-      ]
+      introSlides: [
+        { id: "s40-future-priorities", topic: "Prioridades" }
+      ],
+      subsections: []
     },
     {
       number: 6,
@@ -154,7 +143,7 @@
       subsections: [
         { number: "6.1", title: "Agradecimentos", slides: [
           { id: "s42-acknowledgements", topic: "Agradecimentos", sectionCover: true },
-          { id: "s42-thanks", topic: "Uma trajetória construída coletivamente" }
+          { id: "s42-thanks", topic: "Agradecimentos" }
         ] }
       ]
     }

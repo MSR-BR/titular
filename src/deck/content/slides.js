@@ -54,7 +54,7 @@ window.MemorialDeckSlides = [
         number: "5",
         href: "#section-5",
         label: "Perspectivas futuras",
-        html: "<ul><li>Ensino</li><li>Extensão</li><li>Pesquisa e inovação</li><li>Rede</li></ul>"
+        html: "<ul><li>Ensino</li><li>Extensão</li><li>Pesquisa</li><li>Inovação</li><li>Rede</li></ul>"
       },
       {
         number: "6",
@@ -1171,71 +1171,39 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E027"]
   },
   {
-    id: "s40-future-teaching",
+    id: "s40-future-priorities",
     layout: "cards",
+    className: "future-priorities-slide",
     section: "Futuro",
-    eyebrow: "Perspectivas futuras · Ensino",
-    title: "Ensino",
+    eyebrow: "Perspectivas futuras",
+    title: "Prioridades",
     cards: [
       {
-        label: "Curso Automação para Físicos",
+        label: "Ensino · Curso Automação para Físicos",
         html: "<ul><li>Ampliar a formação experimental.</li><li>Integrar a disciplina ao currículo.</li></ul>"
       },
       {
-        label: "Produção de material didático",
+        label: "Ensino · Produção de material didático",
         html: "<ul><li>Concluir <em>Termodinâmica para Estudantes de Física</em>.</li><li>Traduzir o livro de Mecânica Quântica para o português e produzir uma edição de divulgação.</li></ul>"
-      }
-    ],
-    footerRefs: "MEM · Perspectivas futuras · ensino",
-    sourceRefs: ["E027"]
-  },
-  {
-    id: "s40-future-extension",
-    layout: "cards",
-    section: "Futuro",
-    eyebrow: "Perspectivas futuras · Extensão",
-    title: "Extensão",
-    cards: [
+      },
       {
-        label: "Laboratório de Robótica e Automação",
+        label: "Extensão · Laboratório de Robótica e Automação",
         html: "<ul><li>Explorar atividades de ensino e robótica para estudantes do ensino médio e universitário.</li><li>Estruturar uma equipe com professores e educadores, articulando escolas e a UFF.</li></ul>"
-      }
-    ],
-    footerRefs: "MEM · Perspectivas futuras · extensão",
-    sourceRefs: ["E027"]
-  },
-  {
-    id: "s40-future-research",
-    layout: "cards",
-    section: "Futuro",
-    eyebrow: "Perspectivas futuras · Pesquisa e inovação",
-    title: "Pesquisa e inovação",
-    cards: [
+      },
       {
-        label: "Termodinâmica quântica e materiais quânticos",
+        label: "Pesquisa · Termodinâmica quântica e materiais quânticos",
         html: "<ul><li>Desenvolver projeto de colaboração internacional no CNPq.</li><li>Ampliar colaborações com Chile e China.</li><li>Fomentar a participação de novos alunos de graduação e pós-graduação.</li></ul>"
       },
       {
-        label: "Inovação · Aplicativos educacionais",
+        label: "Inovação · Aplicativos para pesquisa e educacionais",
         html: "<ul><li>Retomar o Sample for Science (SfS).</li><li>Desenvolver o App Termo.</li><li>Criar para o livro de Mecânica Quântica um aplicativo similar ao Termo.</li></ul>"
-      }
-    ],
-    footerRefs: "MEM · Perspectivas futuras · pesquisa e inovação",
-    sourceRefs: ["E027"]
-  },
-  {
-    id: "s40-future-network",
-    layout: "cards",
-    section: "Futuro",
-    eyebrow: "Perspectivas futuras · Rede",
-    title: "Rede",
-    cards: [
+      },
       {
-        label: "Integração Sul Global",
+        label: "Rede · Integração Sul Global",
         html: "<ul><li>Integrar cientificamente a LAFMAT ao Sul Global.</li><li>Estabelecer conexões com África, Sul e Sudeste da Ásia.</li><li>Usar a Physica B como ponte entre comunidades científicas.</li></ul>"
       }
     ],
-    footerRefs: "MEM · Perspectivas futuras · rede",
+    footerRefs: "MEM · Perspectivas futuras",
     sourceRefs: ["E027"]
   },
   {
@@ -1252,7 +1220,7 @@ window.MemorialDeckSlides = [
     layout: "cards",
     section: "Agradecimentos",
     eyebrow: "Agradecimentos",
-    title: "Uma trajetória construída coletivamente",
+    title: "Agradecimentos",
     cards: [
       { label: "Instituições", text: "Brasil, Portugal e Espanha." },
       { label: "Instituições de fomento", text: "Brasil, Portugal e Espanha." },
