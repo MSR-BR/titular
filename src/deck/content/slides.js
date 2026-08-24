@@ -48,7 +48,7 @@ window.MemorialDeckSlides = [
         number: "4",
         href: "#section-4",
         label: "Impacto acadêmico",
-        html: "<ul><li>Produção Científica</li><li>Livro-texto</li><li>Obra literária não-acadêmica</li><li>Atividades editoriais e liderança científica</li><li>Internacionalização</li></ul>"
+        html: "<ul><li>Produção Científica</li><li>Livro-texto</li><li>Obra literária não-acadêmica</li><li>Atividades editoriais</li><li>Internacionalização</li></ul>"
       },
       {
         number: "5",
@@ -1054,20 +1054,24 @@ window.MemorialDeckSlides = [
   {
     id: "s38-editorial",
     layout: "content",
+    className: "editorial-physica-slide",
     section: "Produção",
-    eyebrow: "Atividades editoriais e liderança científica",
-    title: "Physica B e responsabilidade científica global",
-    lead: "A atuação editorial evoluiu da gestão de manuscritos para a responsabilidade estratégica por um periódico internacional de matéria condensada.",
+    eyebrow: "Atividades editoriais",
+    title: "Physica B",
+    lead: "A atuação editorial evoluiu da gestão de manuscritos para a gestão estratégica de um periódico internacional.",
     items: [
       "Editor da Physica B: Condensed Matter entre 2016 e 2025.",
-      "Editor-in-Chief desde 2025, coordenando um corpo editorial internacional com 10 editores.",
-      "Definição de políticas, escopo científico, padrões éticos e estratégia de visibilidade internacional.",
-      "Criação do Physica B Award e aproximação com conferências, redes científicas e novas gerações de pesquisadores."
+      "Editor-in-Chief desde 2025.",
+      "Fator de impacto: 3,2.",
+      "Mais de 6.000 submissões por ano.",
+      "Atuação como editor-chefe: definição de políticas, escopo científico, padrões éticos e estratégia de visibilidade internacional.",
+      "Criação do Physica B Award e aproximação com conferências, comunidades estratégicas, redes científicas e novas gerações de pesquisadores.",
+      "Coordenação do corpo editorial internacional: 10 editores, mais de 5 editores associados, 1 managing editor, 1 journal manager, 1 social media editor e advisory board com mais de 5 integrantes."
     ],
     figure: {
-      src: "assets/figures/physica-b-cover-2026.png",
+      src: "assets/figures/physica-b-cover-volume-740.jpg",
       alt: "Capa da revista Physica B Condensed Matter",
-      caption: "Physica B: Condensed Matter, volume de 2026 com Mario Reis como Editor-in-Chief."
+      bare: true
     },
     footerRefs: "MEM pp.41-42; Fig. 7.1",
     sourceRefs: ["E025"]

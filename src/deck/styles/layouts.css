@@ -1094,6 +1094,38 @@
   box-shadow: none;
 }
 
+.deck-shell .editorial-physica-slide .content-with-figure {
+  grid-template-columns: minmax(0, 1.32fr) minmax(15rem, .68fr);
+  gap: clamp(1rem, 2.2vw, 2rem);
+  align-items: center;
+}
+
+.deck-shell .editorial-physica-slide .content-panel {
+  align-content: center;
+}
+
+.deck-shell .editorial-physica-slide .content-panel > ul {
+  font-size: clamp(.9rem, 1.2vw, 1.15rem);
+  line-height: 1.28;
+}
+
+.deck-shell .editorial-physica-slide .standalone-figure-link {
+  display: block;
+  width: min(100%, 25rem);
+  justify-self: center;
+}
+
+.deck-shell .editorial-physica-slide .standalone-figure-image {
+  display: block;
+  width: 100%;
+  height: clamp(25rem, 62vh, 42rem);
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
 .deck-shell > .impact-figure-slide {
   padding-top: clamp(.15rem, .6vh, .45rem);
   padding-bottom: clamp(1.35rem, 2.8vh, 2.4rem);

@@ -114,8 +114,8 @@
         { number: "4.3", title: "Obra literária não-acadêmica", slides: [
           { id: "s37-literary-work", topic: "As viagens de ibn Hakim" }
         ] },
-        { number: "4.4", title: "Atividades editoriais e liderança científica", slides: [
-          { id: "s38-editorial", topic: "Physica B e liderança editorial" }
+        { number: "4.4", title: "Atividades editoriais", slides: [
+          { id: "s38-editorial", topic: "Physica B" }
         ] },
         { number: "4.5", title: "Internacionalização", slides: [
           { id: "s39-internationalization", topic: "Mobilidade e consolidação internacional" },
