@@ -130,22 +130,18 @@
       title: "Perspectivas futuras",
       targetId: "s39-innovation",
       subsections: [
-        { number: "5.1", title: "Responsabilidade ampliada", slides: [
+        { number: "5.1", title: "Ensino", slides: [
           { id: "s39-innovation", topic: "Perspectivas futuras", sectionCover: true },
-          { id: "s40-future-role", topic: "Professor Titular" }
+          { id: "s40-future-teaching", topic: "Ensino" }
         ] },
-        { number: "5.2", title: "Ensino e extensão", slides: [
-          { id: "s40-future-teaching", topic: "Formação experimental e produção didática" }
+        { number: "5.2", title: "Extensão", slides: [
+          { id: "s40-future-extension", topic: "Laboratório de Robótica e Automação" }
         ] },
-        { number: "5.3", title: "Pesquisa e cooperação", slides: [
-          { id: "s40-future-research", topic: "Termodinâmica quântica e novos materiais" },
-          { id: "s40-future-global", topic: "Cooperação Sul Global" }
+        { number: "5.3", title: "Pesquisa e inovação", slides: [
+          { id: "s40-future-research", topic: "Pesquisa e inovação" }
         ] },
-        { number: "5.4", title: "Inovação científica", slides: [
-          { id: "s40-future-sample", topic: "Sample for Science" }
-        ] },
-        { number: "5.5", title: "Síntese e compromisso", slides: [
-          { id: "s41-closing", topic: "Titularidade como responsabilidade ampliada" }
+        { number: "5.4", title: "Rede", slides: [
+          { id: "s40-future-network", topic: "Integração Sul Global" }
         ] }
       ]
     }
