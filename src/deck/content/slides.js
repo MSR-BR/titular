@@ -1090,6 +1090,16 @@ window.MemorialDeckSlides = [
       { label: "2017-2018", text: "Pesquisador visitante na Universidade de Aveiro, fortalecendo colaborações já estabelecidas." },
       { label: "2022-2023", text: "Distinguished Researcher na Universidad de Sevilla pelo programa María Zambrano." }
     ],
+    footerRefs: "MEM pp.43-44",
+    sourceRefs: ["E026"]
+  },
+  {
+    id: "s39-collaboration",
+    layout: "cards",
+    className: "international-collaboration-slide",
+    section: "Produção",
+    eyebrow: "Internacionalização · Colaboração",
+    title: "Colaboração",
     cards: [
       { label: "Oak Ridge National Laboratory", text: "Estados Unidos", logo: { src: "assets/logos/oak-ridge-national-laboratory.png", alt: "Oak Ridge National Laboratory" } },
       { label: "Universidade de Aveiro", text: "Portugal", logo: { src: "assets/logos/universidade-aveiro.png", alt: "Universidade de Aveiro" } },
@@ -1105,7 +1115,7 @@ window.MemorialDeckSlides = [
   {
     id: "s39-lafmat",
     layout: "cards",
-    className: "lafmat-overview-slide",
+    className: "lafmat-overview-slide gold-star-title",
     section: "Produção",
     eyebrow: "Internacionalização · Rede científica",
     title: "LAFMAT",
@@ -1137,6 +1147,23 @@ window.MemorialDeckSlides = [
       bare: true
     },
     footerRefs: "MEM pp.43-44; LAFMAT",
+    sourceRefs: ["E026"]
+  },
+  {
+    id: "s39-lafmat-gallery",
+    layout: "cards",
+    className: "lafmat-gallery-slide",
+    section: "Produção",
+    eyebrow: "Internacionalização · LAFMAT",
+    title: "Seminários",
+    lead: "Galeria de seminários da LAFMAT em 2025.",
+    cards: [],
+    figure: {
+      src: "assets/figures/lafmat-video-gallery-2025.png",
+      alt: "Galeria de seminários da LAFMAT em 2025",
+      bare: true
+    },
+    footerRefs: "LAFMAT · 2025",
     sourceRefs: ["E026"]
   },
   {
