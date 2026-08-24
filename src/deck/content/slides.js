@@ -1054,7 +1054,7 @@ window.MemorialDeckSlides = [
   {
     id: "s38-editorial",
     layout: "content",
-    className: "editorial-physica-slide",
+    className: "editorial-physica-slide gold-star-title",
     section: "Produção",
     eyebrow: "Atividades editoriais",
     title: "Physica B",
