@@ -100,6 +100,14 @@
   --section-wash-2: rgba(176, 138, 39, 0.12);
 }
 
+.section-agradecimentos {
+  --section-accent: #8b2448;
+  --section-accent-2: #b08a27;
+  --section-accent-3: #0b6f74;
+  --section-wash: rgba(139, 36, 72, 0.13);
+  --section-wash-2: rgba(176, 138, 39, 0.12);
+}
+
 .slide-header,
 .slide-body,
 .slide-footer {

@@ -1860,6 +1860,28 @@
     linear-gradient(145deg, #090b0d, #1c2227 58%, #111418);
 }
 
+.deck-shell > .slide.closing-title-slide:last-child {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  padding-top: 16vh;
+  padding-inline: max(2rem, calc((100vw - 1080px) / 2));
+  color: #f5f5f7;
+  background:
+    radial-gradient(circle at 78% 30%, rgba(38, 132, 138, 0.48), transparent 28%),
+    radial-gradient(circle at 20% 80%, rgba(139, 36, 72, 0.42), transparent 31%),
+    linear-gradient(145deg, #090b0d, #1c2227 58%, #111418);
+}
+
+.deck-shell > .closing-title-slide .slide-title,
+.deck-shell > .closing-title-slide .slide-affiliations {
+  color: #fff;
+}
+
+.deck-shell > .closing-title-slide .eyebrow {
+  color: #77d3d5;
+}
+
 .deck-shell > .slide:nth-child(2) { padding-top: clamp(3rem, 5.5vh, 4.5rem); }
 
 .deck-shell > .slide:last-child {

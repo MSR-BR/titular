@@ -55,6 +55,12 @@ window.MemorialDeckSlides = [
         href: "#section-5",
         label: "Perspectivas futuras",
         html: "<ul><li>Ensino</li><li>Extensão</li><li>Pesquisa e inovação</li><li>Rede</li></ul>"
+      },
+      {
+        number: "6",
+        href: "#section-6",
+        label: "Agradecimentos",
+        html: "<ul><li>Instituições e agências de fomento</li><li>Mentores, colaboradores e colegas</li><li>Alunos</li><li>Família</li></ul>"
       }
     ],
     footerRefs: "Estrutura alinhada aos capítulos do memorial",
@@ -1231,5 +1237,45 @@ window.MemorialDeckSlides = [
     ],
     footerRefs: "MEM · Perspectivas futuras · rede",
     sourceRefs: ["E027"]
+  },
+  {
+    id: "s42-acknowledgements",
+    layout: "section",
+    section: "Agradecimentos",
+    eyebrow: "Seção 6",
+    title: "Agradecimentos",
+    footerRefs: "Memorial · Agradecimentos",
+    sourceRefs: ["E001"]
+  },
+  {
+    id: "s42-thanks",
+    layout: "cards",
+    section: "Agradecimentos",
+    eyebrow: "Agradecimentos",
+    title: "Uma trajetória construída coletivamente",
+    cards: [
+      { label: "Instituições", text: "Brasil, Portugal e Espanha." },
+      { label: "Instituições de fomento", text: "Brasil, Portugal e Espanha." },
+      { label: "Mentores e orientadores", text: "Pela formação, confiança e exemplo ao longo da trajetória." },
+      { label: "Colaboradores", text: "Parceiros científicos no Brasil e no exterior." },
+      { label: "Colegas e funcionários", text: "Colegas de departamento e profissionais que sustentam o cotidiano institucional." },
+      { label: "Alunos", text: "Estudantes de graduação e pós-graduação, razão central do trabalho acadêmico." },
+      { label: "Família", text: "Pelo apoio, presença e afeto em toda a caminhada." }
+    ],
+    footerRefs: "Memorial · Agradecimentos",
+    sourceRefs: ["E001"]
+  },
+  {
+    id: "s43-closing-title",
+    layout: "title",
+    className: "closing-title-slide",
+    eyebrow: "MEMORIAL ACADÊMICO",
+    title: "Mario Reis",
+    affiliations: [
+      "Instituto de Física",
+      "Universidade Federal Fluminense"
+    ],
+    footerRefs: "Memorial para Professor Titular",
+    sourceRefs: ["E001"]
   }
 ];

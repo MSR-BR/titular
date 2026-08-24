@@ -144,6 +144,19 @@
           { id: "s40-future-network", topic: "Integração Sul Global" }
         ] }
       ]
+    },
+    {
+      number: 6,
+      key: "agradecimentos",
+      label: "Agradecimentos",
+      title: "Agradecimentos",
+      targetId: "s42-acknowledgements",
+      subsections: [
+        { number: "6.1", title: "Agradecimentos", slides: [
+          { id: "s42-acknowledgements", topic: "Agradecimentos", sectionCover: true },
+          { id: "s42-thanks", topic: "Uma trajetória construída coletivamente" }
+        ] }
+      ]
     }
   ];
 
