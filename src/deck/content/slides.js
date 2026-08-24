@@ -1225,10 +1225,10 @@ window.MemorialDeckSlides = [
     cards: [
       { label: "Instituições", text: "Brasil, Portugal e Espanha." },
       { label: "Instituições de fomento", text: "Brasil, Portugal e Espanha." },
-      { label: "Mentores e orientadores", text: "Pela formação, confiança e exemplo ao longo da trajetória." },
+      { label: "Orientadores", text: "Pela formação, confiança e exemplo ao longo da trajetória." },
       { label: "Colaboradores", text: "Parceiros científicos no Brasil e no exterior." },
       { label: "Colegas e funcionários", text: "Colegas de departamento e profissionais que sustentam o cotidiano institucional." },
-      { label: "Alunos", text: "Estudantes de graduação e pós-graduação, razão central do trabalho acadêmico." },
+      { label: "Alunos", text: "Estudantes de graduação e pós-graduação." },
       { label: "Família", text: "Pelo apoio, presença e afeto em toda a caminhada." }
     ],
     footerRefs: "Memorial · Agradecimentos",
