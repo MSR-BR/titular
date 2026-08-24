@@ -821,8 +821,7 @@
         const isBookTurn = slide.classList.contains("textbook-books-slide") && element.classList.contains("deck-figure");
         const isTraditionalFigure =
           (slide.classList.contains("textbook-progress-slide") ||
-            slide.classList.contains("termo-app-slide") ||
-            slide.classList.contains("lafmat-gallery-slide")) &&
+            slide.classList.contains("termo-app-slide")) &&
           (element.classList.contains("deck-figure") || element.classList.contains("standalone-figure-link"));
         element.classList.add("story-reveal");
         if (element.matches(".info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure, .standalone-figure-link")) {

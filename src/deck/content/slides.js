@@ -1140,30 +1140,19 @@ window.MemorialDeckSlides = [
       { label: "🇵🇪 Peru", html: "<ul><li>Universidad Nacional Mayor de San Marcos</li></ul>" },
       { label: "🇻🇪 Venezuela", html: "<ul><li>Universidad del Zulia</li><li>IVIC</li></ul>" }
     ],
-    figure: {
-      src: "assets/figures/lafmat-affiliated-institutions.png",
-      alt: "Faixa com as instituições afiliadas à rede LAFMAT",
-      caption: "Instituições afiliadas à Rede LAFMAT.",
-      bare: true
-    },
-    footerRefs: "MEM pp.43-44; LAFMAT",
-    sourceRefs: ["E026"]
-  },
-  {
-    id: "s39-lafmat-gallery",
-    layout: "cards",
-    className: "lafmat-gallery-slide",
-    section: "Produção",
-    eyebrow: "Internacionalização · LAFMAT",
-    title: "Seminários",
-    lead: "Galeria de seminários da LAFMAT em 2025.",
-    cards: [],
-    figure: {
-      src: "assets/figures/lafmat-video-gallery-2025.png",
-      alt: "Galeria de seminários da LAFMAT em 2025",
-      bare: true
-    },
-    footerRefs: "LAFMAT · 2025",
+    figures: [
+      {
+        src: "assets/figures/lafmat-affiliated-institutions.png",
+        alt: "Faixa com as instituições afiliadas à rede LAFMAT",
+        bare: true
+      },
+      {
+        src: "assets/figures/lafmat-video-gallery-2025.png",
+        alt: "Galeria de seminários da LAFMAT em 2025",
+        bare: true
+      }
+    ],
+    footerRefs: "MEM pp.43-44; LAFMAT · Galeria de seminários 2025",
     sourceRefs: ["E026"]
   },
   {
