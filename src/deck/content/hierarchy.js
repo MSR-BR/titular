@@ -140,12 +140,10 @@
       label: "Agradecimentos",
       title: "Agradecimentos",
       targetId: "s42-acknowledgements",
-      subsections: [
-        { number: "6.1", title: "Agradecimentos", slides: [
-          { id: "s42-acknowledgements", topic: "Agradecimentos", sectionCover: true },
-          { id: "s42-thanks", topic: "Agradecimentos" }
-        ] }
-      ]
+      introSlides: [
+        { id: "s42-thanks", topic: "Agradecimentos" }
+      ],
+      subsections: []
     }
   ];
 

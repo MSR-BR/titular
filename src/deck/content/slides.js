@@ -1218,6 +1218,7 @@ window.MemorialDeckSlides = [
   {
     id: "s42-thanks",
     layout: "cards",
+    className: "acknowledgements-cards-slide",
     section: "Agradecimentos",
     eyebrow: "Agradecimentos",
     title: "Agradecimentos",
