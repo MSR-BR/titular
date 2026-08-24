@@ -54,7 +54,7 @@ window.MemorialDeckSlides = [
         number: "5",
         href: "#section-5",
         label: "Perspectivas futuras",
-        html: "<ul><li>Ensino, laboratórios e L3D</li><li>Termodinâmica quântica e novos materiais</li><li>Redes internacionais e cooperação Sul Global</li></ul>"
+        html: "<ul><li>Ensino, extensão e produção didática</li><li>Termodinâmica quântica e novos materiais</li><li>Redes internacionais e cooperação Sul Global</li><li>Sample for Science</li></ul>"
       }
     ],
     footerRefs: "Estrutura alinhada aos capítulos do memorial",
@@ -1162,37 +1162,89 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s39-innovation",
+    layout: "section",
+    section: "Futuro",
+    eyebrow: "Seção 5",
+    title: "Perspectivas futuras",
+    footerRefs: "MEM · Perspectivas futuras",
+    sourceRefs: ["E027"]
+  },
+  {
+    id: "s40-future-role",
     layout: "cards",
     section: "Futuro",
-    eyebrow: "Inovação e extensão",
-    title: "Da infraestrutura local a circulação de conhecimento",
+    eyebrow: "Perspectivas como Professor Titular",
+    title: "Responsabilidade ampliada",
     cards: [
-      { label: "L3D", text: "Robótica, automação, ensino por investigação e oficinas educacionais." },
-      { label: "Sample for Science", text: "Plataforma para compartilhamento de amostras científicas entre grupos." },
-      { label: "Aplicativo", text: "Projeto mobile-first disponibilizado em lojas digitais." },
-      { label: "Formação", text: "Equipe multidisciplinar com física, matemática, computação, marketing e comunicação audiovisual." }
+      { label: "Universidade", text: "Integrar ensino, pesquisa, extensão, administração e construção institucional em iniciativas de maior alcance." },
+      { label: "Comunidade científica nacional", text: "Ampliar a liderança na formação de pessoas, na articulação de projetos e no fortalecimento de redes de pesquisa." },
+      { label: "Comunidade científica internacional", text: "Conectar colaboração, mobilidade, editoração científica e novas redes de cooperação." }
+    ],
+    footerRefs: "MEM · Perspectivas futuras",
+    sourceRefs: ["E027"]
+  },
+  {
+    id: "s40-future-teaching",
+    layout: "cards",
+    section: "Futuro",
+    eyebrow: "Ensino e extensão",
+    title: "Formação experimental, materiais e diálogo com escolas",
+    cards: [
+      { label: "Automação para Físicos", text: "Consolidar a disciplina na grade curricular, integrando instrumentação científica, automação, robótica e práticas contemporâneas de laboratório." },
+      { label: "Termodinâmica", text: "Concluir o livro Termodinâmica para Estudantes de Física, desenvolvido a partir das atividades de ensino de 2024-2026." },
+      { label: "Mecânica Quântica", text: "Traduzir Quantum Mechanics: Theory and Applications para ampliar o acesso de estudantes brasileiros à obra." },
+      { label: "L3D e escolas", text: "Ampliar oficinas, demonstrações e materiais didáticos para a licenciatura, professores e estudantes da educação básica." }
+    ],
+    footerRefs: "MEM · Perspectivas futuras · ensino e extensão",
+    sourceRefs: ["E027"]
+  },
+  {
+    id: "s40-future-research",
+    layout: "cards",
+    section: "Futuro",
+    eyebrow: "Pesquisa científica",
+    title: "Termodinâmica quântica e novos materiais",
+    cards: [
+      { label: "Fronteira científica", text: "Consolidar a termodinâmica quântica na interface entre mecânica quântica, magnetismo e respostas termodinâmicas." },
+      { label: "Sistemas correlacionados", text: "Investigar fenômenos emergentes em sistemas quânticos correlacionados e suas conexões com materiais funcionais." },
+      { label: "Projetos em rede", text: "Ampliar projetos interinstitucionais e colaborações internacionais de longo prazo." },
+      { label: "Formação", text: "Inserir estudantes e jovens pesquisadores em redes internacionais e problemas de pesquisa de fronteira." }
+    ],
+    footerRefs: "MEM · Perspectivas futuras · pesquisa",
+    sourceRefs: ["E027"]
+  },
+  {
+    id: "s40-future-global",
+    layout: "cards",
+    section: "Futuro",
+    eyebrow: "Cooperação científica internacional",
+    title: "Do LAFMAT a uma articulação Sul Global",
+    cards: [
+      { label: "LAFMAT", text: "Usar a experiência latino-americana como base para uma integração científica mais ampla." },
+      { label: "África", text: "Construir novas conexões em matéria condensada e ciência dos materiais com instituições e comunidades locais." },
+      { label: "Sul e Sudeste Asiático", text: "Criar oportunidades de cooperação científica, mobilidade acadêmica e formação em rede." },
+      { label: "Physica B", text: "Mobilizar a atuação editorial como plataforma de visibilidade, diversidade geográfica e aproximação entre comunidades." }
+    ],
+    footerRefs: "MEM · Perspectivas futuras · internacionalização",
+    sourceRefs: ["E027"]
+  },
+  {
+    id: "s40-future-sample",
+    layout: "cards",
+    section: "Futuro",
+    eyebrow: "Inovação científica",
+    title: "Retomar e desenvolver o Sample for Science",
+    cards: [
+      { label: "Gestão", text: "Organizar amostras, informações experimentais e histórico de materiais em laboratórios de pesquisa." },
+      { label: "Rastreamento", text: "Acompanhar procedência, circulação e uso das amostras ao longo dos projetos." },
+      { label: "Compartilhamento", text: "Favorecer a colaboração e a circulação responsável de materiais entre grupos e instituições." }
     ],
     figure: {
       src: "assets/figures/sample-for-science-app.png",
       alt: "Telas do aplicativo Sample for Science",
-      caption: "Sample for Science: compartilhamento de amostras com registro de material, resultados prévios e contato entre grupos."
+      caption: "Plataforma digital para gestão, compartilhamento e rastreamento de amostras científicas."
     },
-    footerRefs: "MEM pp.18-20,46,99",
-    sourceRefs: ["E013", "E014", "E027"]
-  },
-  {
-    id: "s40-future",
-    layout: "cards",
-    section: "Futuro",
-    eyebrow: "Perspectivas como titular",
-    title: "Agenda futura",
-    cards: [
-      { label: "Ensino", text: "Consolidar Automação para Físicos e concluir Termodinâmica para Estudantes de Física." },
-      { label: "Extensão", text: "Ampliar o L3D como espaço de formação experimental e divulgação científica." },
-      { label: "Pesquisa", text: "Expandir a termodinâmica quântica aplicada a novos materiais." },
-      { label: "Redes", text: "Fortalecer cooperações Sul Global em matéria condensada e ciência dos materiais." }
-    ],
-    footerRefs: "MEM pp.45-46",
+    footerRefs: "MEM · Perspectivas futuras · Sample for Science",
     sourceRefs: ["E027"]
   },
   {

@@ -109,7 +109,6 @@
           { id: "s37-books", topic: "Publicados" },
           { id: "s37-books-continuity", topic: "Em andamento" },
           { id: "s37-termo-app", topic: "App Termo" },
-          { id: "s37-termo-app-examples", topic: "Exemplos do App Termo" }
         ] },
         { number: "4.3", title: "Obra literária não-acadêmica", slides: [
           { id: "s37-literary-work", topic: "As viagens de ibn Hakim" }
@@ -132,13 +131,21 @@
       title: "Perspectivas futuras",
       targetId: "s39-innovation",
       subsections: [
-        { number: "5.1", title: "Inovação e extensão", slides: [
-          { id: "s39-innovation", topic: "Circulação de conhecimento", sectionCover: true }
+        { number: "5.1", title: "Responsabilidade ampliada", slides: [
+          { id: "s39-innovation", topic: "Perspectivas futuras", sectionCover: true },
+          { id: "s40-future-role", topic: "Professor Titular" }
         ] },
-        { number: "5.2", title: "Agenda futura", slides: [
-          { id: "s40-future", topic: "Perspectivas como titular" }
+        { number: "5.2", title: "Ensino e extensão", slides: [
+          { id: "s40-future-teaching", topic: "Formação experimental e produção didática" }
         ] },
-        { number: "5.3", title: "Síntese e compromisso", slides: [
+        { number: "5.3", title: "Pesquisa e cooperação", slides: [
+          { id: "s40-future-research", topic: "Termodinâmica quântica e novos materiais" },
+          { id: "s40-future-global", topic: "Cooperação Sul Global" }
+        ] },
+        { number: "5.4", title: "Inovação científica", slides: [
+          { id: "s40-future-sample", topic: "Sample for Science" }
+        ] },
+        { number: "5.5", title: "Síntese e compromisso", slides: [
           { id: "s41-closing", topic: "Titularidade como responsabilidade ampliada" }
         ] }
       ]
@@ -174,7 +181,7 @@
     ["tpl-05-figure-board", 2, "2.3", "2.3.1", "Laboratório de Magnetismo da UFF"],
     ["tpl-06-technical", 3, "3.1", "3.1.1", "Painel técnico"],
     ["tpl-07-dashboard", 4, "4.1", "4.1.1", "Indicadores de impacto"],
-    ["tpl-08-closing", 5, "5.3", "5.3.1", "Síntese e compromisso"]
+    ["tpl-08-closing", 5, "5.5", "5.5.1", "Síntese e compromisso"]
   ].forEach(([id, sectionNumber, subsectionNumber, topicNumber, topic]) => {
     const section = sections.find((item) => item.number === sectionNumber);
     const subsection = section?.subsections.find((item) => item.number === subsectionNumber);
