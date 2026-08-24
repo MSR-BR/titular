@@ -1229,7 +1229,7 @@ window.MemorialDeckSlides = [
       { label: "Colaboradores", text: "Parceiros científicos no Brasil e no exterior." },
       { label: "Colegas e funcionários", text: "Colegas de departamento e profissionais que sustentam o cotidiano institucional." },
       { label: "Alunos", text: "Estudantes de graduação e pós-graduação." },
-      { label: "Família", text: "Pelo apoio, presença e afeto em toda a caminhada." }
+      { label: "Família", text: "Pelo apoio e presença em toda a caminhada." }
     ],
     footerRefs: "Memorial · Agradecimentos",
     sourceRefs: ["E001"]

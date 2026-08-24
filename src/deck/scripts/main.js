@@ -743,7 +743,8 @@
       if (
         slide.id !== "slide-1" &&
         !slide.classList.contains("standard-section-cover") &&
-        !slide.classList.contains("layout-closing")
+        !slide.classList.contains("layout-closing") &&
+        !slide.classList.contains("closing-title-slide")
       ) {
         slide.classList.add("subsection-slide");
       }

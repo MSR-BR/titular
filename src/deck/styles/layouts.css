@@ -2831,7 +2831,8 @@
     width: calc(100vw - 1.25rem);
     padding: clamp(2.8rem, 6vh, 4.2rem) 0.15rem;
   }
-  .deck-shell > .slide:first-child { width: 100%; padding-inline: 1.2rem; }
+  .deck-shell > .slide:first-child,
+  .deck-shell > .slide.closing-title-slide:last-child { width: 100%; padding-inline: 1.2rem; }
   .deck-shell > .slide:last-child { width: 100%; padding-inline: 1.2rem; }
   .deck-shell .slide-title { font-size: clamp(2.4rem, 11vw, 4rem); }
   .deck-shell .layout-section .slide-title,
