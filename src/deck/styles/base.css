@@ -88,6 +88,13 @@ html {
 
 .story-brand strong { font-size: 0.84rem; }
 .story-brand span { margin-top: 0.18rem; color: var(--muted); font-size: 0.62rem; }
+.story-brand time {
+  margin-top: 0.12rem;
+  color: var(--muted-2);
+  font-size: 0.56rem;
+  font-weight: 650;
+  letter-spacing: 0.035em;
+}
 
 .story-index {
   display: flex;
