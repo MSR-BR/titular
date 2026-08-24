@@ -481,6 +481,12 @@
           ${renderHeader(slide, title)}
           <div class="slide-body">
             ${renderTimeline(slide.milestones)}
+            ${slide.cards?.length ? `
+              <div class="timeline-followup">
+                <h3 class="timeline-followup-title">Colaboração</h3>
+                ${renderCards(slide.cards, { compact: true })}
+              </div>
+            ` : ""}
           </div>
           ${footer}
           ${notes}

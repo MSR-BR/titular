@@ -1079,9 +1079,10 @@ window.MemorialDeckSlides = [
   {
     id: "s39-internationalization",
     layout: "timeline",
+    className: "international-mobility-slide",
     section: "Produção",
     eyebrow: "Internacionalização · Mobilidade",
-    title: "Mobilidade, Colaboração e Atuação",
+    title: "Mobilidade",
     milestones: [
       { label: "2001-2003", text: "Estágio sanduíche na Universidade de Aveiro durante a formação doutoral." },
       { label: "2003-2005", text: "Pós-doutorado na Universidade de Aveiro, consolidando a formação em magnetismo e materiais funcionais." },
@@ -1089,24 +1090,14 @@ window.MemorialDeckSlides = [
       { label: "2017-2018", text: "Pesquisador visitante na Universidade de Aveiro, fortalecendo colaborações já estabelecidas." },
       { label: "2022-2023", text: "Distinguished Researcher na Universidad de Sevilla pelo programa María Zambrano." }
     ],
-    footerRefs: "MEM pp.43-44",
-    sourceRefs: ["E026"]
-  },
-  {
-    id: "s39-international-networks",
-    layout: "cards",
-    className: "international-collaboration-slide",
-    section: "Produção",
-    eyebrow: "Internacionalização · Colaboração",
-    title: "Colaboração",
     cards: [
-      { label: "Oak Ridge National Laboratory", text: "Estados Unidos", logo: { src: "assets/logos/ornl-mark.svg", alt: "Oak Ridge National Laboratory" } },
+      { label: "Oak Ridge National Laboratory", text: "Estados Unidos", logo: { src: "assets/logos/oak-ridge-national-laboratory.png", alt: "Oak Ridge National Laboratory" } },
       { label: "Universidade de Aveiro", text: "Portugal", logo: { src: "assets/logos/universidade-aveiro.png", alt: "Universidade de Aveiro" } },
       { label: "Universidade do Porto", text: "Portugal", logo: { src: "assets/logos/uporto-mark.svg", alt: "Universidade do Porto" } },
       { label: "Universidad de Sevilla", text: "Espanha", logo: { src: "assets/logos/sevilla-mark.svg", alt: "Universidad de Sevilla" } },
-      { label: "Ning Ma", text: "China", logo: { src: "assets/logos/china-collaboration-mark.svg", alt: "Colaboração científica na China" } },
-      { label: "Moscow State University", text: "Rússia", logo: { src: "assets/logos/msu-mark.svg", alt: "Moscow State University" } },
-      { label: "Colaboração científica", text: "Chile", logo: { src: "assets/logos/chile-collaboration-mark.svg", alt: "Colaboração científica no Chile" } }
+      { label: "Taiyuan University of Technology", text: "China", logo: { src: "assets/logos/taiyuan-university-technology.png", alt: "Taiyuan University of Technology" } },
+      { label: "Lomonosov Moscow State University", text: "Rússia", logo: { src: "assets/logos/lomonosov-msu.jpeg", alt: "Lomonosov Moscow State University" } },
+      { label: "Universidad Técnica Federico Santa María", text: "Chile", logo: { src: "assets/logos/universidad-tecnica-federico-santa-maria.jpg", alt: "Universidad Técnica Federico Santa María" } }
     ],
     footerRefs: "MEM pp.43-44",
     sourceRefs: ["E026"]
@@ -1126,25 +1117,7 @@ window.MemorialDeckSlides = [
       {
         label: "Agenda científica",
         html: "<strong>Agenda completa até maio de 2027.</strong><br>Seminários todos os sábados."
-      }
-    ],
-    figure: {
-      src: "assets/figures/lafmat-affiliated-institutions.png",
-      alt: "Faixa com as instituições afiliadas à rede LAFMAT",
-      caption: "Instituições afiliadas à Rede LAFMAT.",
-      bare: true
-    },
-    footerRefs: "MEM pp.43-44; LAFMAT",
-    sourceRefs: ["E026"]
-  },
-  {
-    id: "s39-lafmat-institutions",
-    layout: "cards",
-    className: "lafmat-institutions-slide",
-    section: "Produção",
-    eyebrow: "LAFMAT · Instituições afiliadas",
-    title: "Uma rede latino-americana",
-    cards: [
+      },
       { label: "🇦🇷 Argentina", html: "<ul><li>Universidad Nacional de Córdoba</li><li>CONICET · CAB-CNEA · Instituto Balseiro</li></ul>" },
       { label: "🇧🇴 Bolívia", html: "<ul><li>Universidad Mayor de San Andrés</li></ul>" },
       { label: "🇧🇷 Brasil", html: "<ul><li>UFPE</li><li>UFRRJ</li><li>UFF</li></ul>" },
@@ -1157,7 +1130,13 @@ window.MemorialDeckSlides = [
       { label: "🇵🇪 Peru", html: "<ul><li>Universidad Nacional Mayor de San Marcos</li></ul>" },
       { label: "🇻🇪 Venezuela", html: "<ul><li>Universidad del Zulia</li><li>IVIC</li></ul>" }
     ],
-    footerRefs: "LAFMAT · Affiliated Institutions",
+    figure: {
+      src: "assets/figures/lafmat-affiliated-institutions.png",
+      alt: "Faixa com as instituições afiliadas à rede LAFMAT",
+      caption: "Instituições afiliadas à Rede LAFMAT.",
+      bare: true
+    },
+    footerRefs: "MEM pp.43-44; LAFMAT",
     sourceRefs: ["E026"]
   },
   {

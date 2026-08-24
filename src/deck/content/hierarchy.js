@@ -118,9 +118,7 @@
         ] },
         { number: "4.5", title: "Internacionalização", slides: [
           { id: "s39-internationalization", topic: "Mobilidade" },
-          { id: "s39-international-networks", topic: "Colaboração" },
-          { id: "s39-lafmat", topic: "LAFMAT" },
-          { id: "s39-lafmat-institutions", topic: "Instituições afiliadas" }
+          { id: "s39-lafmat", topic: "LAFMAT" }
         ] }
       ]
     },
