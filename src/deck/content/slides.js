@@ -1080,8 +1080,8 @@ window.MemorialDeckSlides = [
     id: "s39-internationalization",
     layout: "timeline",
     section: "Produção",
-    eyebrow: "Internacionalização",
-    title: "Mobilidade que se converteu em colaboração duradoura",
+    eyebrow: "Internacionalização · Mobilidade",
+    title: "Mobilidade, Colaboração e Atuação",
     milestones: [
       { label: "2001-2003", text: "Estágio sanduíche na Universidade de Aveiro durante a formação doutoral." },
       { label: "2003-2005", text: "Pós-doutorado na Universidade de Aveiro, consolidando a formação em magnetismo e materiais funcionais." },
@@ -1095,17 +1095,70 @@ window.MemorialDeckSlides = [
   {
     id: "s39-international-networks",
     layout: "cards",
+    className: "international-collaboration-slide",
     section: "Produção",
-    eyebrow: "Internacionalização",
-    title: "Redes, estudantes e presença científica global",
+    eyebrow: "Internacionalização · Colaboração",
+    title: "Colaboração",
     cards: [
-      { label: "Colaborações", text: "Parcerias recorrentes em Portugal, Espanha, Estados Unidos, Chile, Rússia e China, com projetos, publicações e intercâmbio acadêmico." },
-      { label: "Formação internacional", text: "Estágios de orientandos na França e nos Estados Unidos, além de coorientações, bancas e atividades acadêmicas internacionais." },
-      { label: "LAFMAT", text: "Participação na Rede Latino-Americana de Matéria Condensada, integrando grupos por meio de seminários, colaborações e projetos." },
-      { label: "Liderança editorial", text: "A condução internacional da Physica B amplia a atuação em estruturas científicas de alcance global." }
+      { label: "Oak Ridge National Laboratory", text: "Estados Unidos", logo: { src: "assets/logos/ornl-mark.svg", alt: "Oak Ridge National Laboratory" } },
+      { label: "Universidade de Aveiro", text: "Portugal", logo: { src: "assets/logos/universidade-aveiro.png", alt: "Universidade de Aveiro" } },
+      { label: "Universidade do Porto", text: "Portugal", logo: { src: "assets/logos/uporto-mark.svg", alt: "Universidade do Porto" } },
+      { label: "Universidad de Sevilla", text: "Espanha", logo: { src: "assets/logos/sevilla-mark.svg", alt: "Universidad de Sevilla" } },
+      { label: "Ning Ma", text: "China", logo: { src: "assets/logos/china-collaboration-mark.svg", alt: "Colaboração científica na China" } },
+      { label: "Moscow State University", text: "Rússia", logo: { src: "assets/logos/msu-mark.svg", alt: "Moscow State University" } },
+      { label: "Colaboração científica", text: "Chile", logo: { src: "assets/logos/chile-collaboration-mark.svg", alt: "Colaboração científica no Chile" } }
     ],
     footerRefs: "MEM pp.43-44",
-    sourceRefs: ["E026", "E025"]
+    sourceRefs: ["E026"]
+  },
+  {
+    id: "s39-lafmat",
+    layout: "cards",
+    className: "lafmat-overview-slide",
+    section: "Produção",
+    eyebrow: "Internacionalização · Rede científica",
+    title: "LAFMAT",
+    cards: [
+      {
+        label: "Rede Latino-Americana de Matéria Condensada",
+        html: "Atuação em uma iniciativa voltada à integração científica entre grupos da América Latina e de outros países, promovendo seminários, colaborações e projetos conjuntos.<br><a href=\"https://www.lafmat.com\" target=\"_blank\" rel=\"noopener noreferrer\">lafmat.com ↗</a>"
+      },
+      {
+        label: "Agenda científica",
+        html: "<strong>Agenda completa até maio de 2027.</strong><br>Seminários todos os sábados."
+      }
+    ],
+    figure: {
+      src: "assets/figures/lafmat-affiliated-institutions.png",
+      alt: "Faixa com as instituições afiliadas à rede LAFMAT",
+      caption: "Instituições afiliadas à Rede LAFMAT.",
+      bare: true
+    },
+    footerRefs: "MEM pp.43-44; LAFMAT",
+    sourceRefs: ["E026"]
+  },
+  {
+    id: "s39-lafmat-institutions",
+    layout: "cards",
+    className: "lafmat-institutions-slide",
+    section: "Produção",
+    eyebrow: "LAFMAT · Instituições afiliadas",
+    title: "Uma rede latino-americana",
+    cards: [
+      { label: "🇦🇷 Argentina", html: "<ul><li>Universidad Nacional de Córdoba</li><li>CONICET · CAB-CNEA · Instituto Balseiro</li></ul>" },
+      { label: "🇧🇴 Bolívia", html: "<ul><li>Universidad Mayor de San Andrés</li></ul>" },
+      { label: "🇧🇷 Brasil", html: "<ul><li>UFPE</li><li>UFRRJ</li><li>UFF</li></ul>" },
+      { label: "🇨🇱 Chile", html: "<ul><li>Universidad San Sebastián</li><li>Universidad Católica del Norte</li></ul>" },
+      { label: "🇨🇴 Colômbia", html: "<ul><li>Universidad Nacional de Colombia</li></ul>" },
+      { label: "🇨🇷 Costa Rica", html: "<ul><li>LANOTEC-CONARE</li><li>Universidad de Costa Rica</li></ul>" },
+      { label: "🇪🇨 Equador", html: "<ul><li>Universidad Técnica de Manabí</li></ul>" },
+      { label: "🇸🇻 El Salvador", html: "<ul><li>Universidad de El Salvador</li></ul>" },
+      { label: "🇲🇽 México", html: "<ul><li>CINVESTAV</li><li>Universidad Autónoma de Nuevo León</li></ul>" },
+      { label: "🇵🇪 Peru", html: "<ul><li>Universidad Nacional Mayor de San Marcos</li></ul>" },
+      { label: "🇻🇪 Venezuela", html: "<ul><li>Universidad del Zulia</li><li>IVIC</li></ul>" }
+    ],
+    footerRefs: "LAFMAT · Affiliated Institutions",
+    sourceRefs: ["E026"]
   },
   {
     id: "s39-innovation",

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 88" role="img" aria-label="Oak Ridge National Laboratory">
+  <rect width="180" height="88" rx="14" fill="#fff"/>
+  <path d="M24 64V24h9l17 25 17-25h9v40H65V41L50 62 35 41v23z" fill="#007833"/>
+  <text x="88" y="49" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#243229">ORNL</text>
+</svg>

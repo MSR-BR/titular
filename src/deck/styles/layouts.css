@@ -2259,6 +2259,117 @@
   filter: grayscale(1) contrast(.95);
 }
 
+/* Internacionalização: colaboração institucional e rede LAFMAT. */
+.international-collaboration-slide .card-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
+}
+
+.international-collaboration-slide .info-card {
+  min-height: 0;
+  padding: clamp(.8rem, 1.4vw, 1.15rem);
+  padding-right: clamp(5rem, 8vw, 7rem);
+}
+
+.international-collaboration-slide .institutional-logo {
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(4.2rem, 7vw, 6.4rem);
+  height: clamp(3rem, 5vw, 4.8rem);
+  opacity: .78;
+  filter: none;
+  mix-blend-mode: normal;
+}
+
+.international-collaboration-slide .info-card:hover .institutional-logo {
+  opacity: 1;
+  filter: none;
+}
+
+.international-collaboration-slide .info-card-label {
+  font-size: clamp(.92rem, 1.35vw, 1.2rem);
+}
+
+.international-collaboration-slide .info-card-text {
+  font-size: clamp(.76rem, 1.02vw, .94rem);
+}
+
+.lafmat-overview-slide .cards-with-figure {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+  min-width: 0;
+}
+
+.lafmat-overview-slide .cards-panel .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lafmat-overview-slide .deck-figure {
+  min-height: 6rem;
+  height: clamp(7rem, 17vh, 10rem);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: .4rem 0;
+  overflow: hidden;
+}
+
+.lafmat-overview-slide .deck-figure img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.lafmat-overview-slide .deck-figure figcaption {
+  text-align: center;
+}
+
+.lafmat-overview-slide .standalone-figure-link {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: clamp(7rem, 17vh, 10rem);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.deck-shell .lafmat-overview-slide .standalone-figure-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.lafmat-institutions-slide .card-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
+  gap: .42rem;
+}
+
+.lafmat-institutions-slide .info-card {
+  padding: clamp(.64rem, 1vw, .9rem);
+}
+
+.lafmat-institutions-slide .info-card-label {
+  font-size: clamp(.78rem, 1.04vw, .96rem);
+}
+
+.lafmat-institutions-slide .info-card-text,
+.lafmat-institutions-slide .info-card-text li {
+  font-size: clamp(.63rem, .82vw, .78rem);
+  line-height: 1.18;
+}
+
+.lafmat-institutions-slide .info-card-text ul {
+  gap: .12rem;
+}
+
 .deck-shell .info-card:hover {
   background-color: rgba(255,255,255,.58);
 }
