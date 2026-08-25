@@ -2484,9 +2484,42 @@
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .technical-summary .info-card {
   min-height: 2.15rem;
-  padding: .34rem .48rem;
-  font-size: .7rem;
-  line-height: 1.16;
+  padding: .22rem .58rem;
+  border: 0;
+  border-left: .22rem solid var(--section-accent-2, var(--accent-2));
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  font-size: .74rem;
+  line-height: 1.2;
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .technical-summary .info-card:nth-child(2) {
+  border-left-color: var(--section-accent-3, var(--accent-3));
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .technical-summary .info-card::after {
+  display: none;
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .technical-summary .info-card:hover {
+  transform: none;
+  border-left-color: var(--section-accent-2, var(--accent-2));
+  background: transparent;
+  color: var(--ink);
+  box-shadow: none;
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .technical-summary .info-card:nth-child(2):hover {
+  border-left-color: var(--section-accent-3, var(--accent-3));
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .technical-summary .info-card:hover .info-card-text {
+  color: var(--ink);
+}
+
+.deck-shell .tsallis-theory-slide .slide-title:empty {
+  display: none;
 }
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .technical-primary {
@@ -2495,12 +2528,18 @@
 }
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .equation-stack {
-  padding: .38rem;
+  padding: 0;
   gap: .24rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .equation-line {
   padding: .2rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .equation-line img {
@@ -2544,7 +2583,7 @@
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .figure-gallery .deck-figure {
   min-width: 0;
   min-height: 0;
-  padding: .24rem;
+  padding: 0;
 }
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .figure-gallery img {
@@ -2552,6 +2591,10 @@
   height: 100%;
   min-height: 0;
   object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  mix-blend-mode: multiply;
 }
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .figure-gallery figcaption {

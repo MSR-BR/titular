@@ -582,12 +582,12 @@ window.MemorialDeckSlides = [
     className: "tsallis-theory-slide",
     section: "Resultados",
     eyebrow: "Linha 1 | Modelo não extensivo",
-    title: "De Tsallis ao controle da ordem da transição",
+    title: "",
     lead: "A maximização da entropia generalizada conduz à função de Langevin q e, em campo médio, a uma energia livre cuja topologia é regulada por q.",
     equations: [
-      equationAsset("tsallis-entropy", "Entropia não extensiva de Tsallis", "S_q"),
-      equationAsset("tsallis-langevin-generalized", "Função de Langevin generalizada", "L_q(x)"),
-      equationAsset("tsallis-gibbs-transition", "Energia livre de Gibbs e limites de metaestabilidade", "G, t_SH e t_SC")
+      equationAsset("tsallis-entropy", "Entropia não extensiva de Tsallis", ""),
+      equationAsset("tsallis-langevin-generalized", "Função de Langevin generalizada", ""),
+      equationAsset("tsallis-gibbs-transition", "Energia livre de Gibbs e limites de metaestabilidade", "")
     ],
     items: [
       "q > 0,5: mínimo único e transição contínua de segunda ordem.",
@@ -621,7 +621,7 @@ window.MemorialDeckSlides = [
       "Os parâmetros ajustados em M(H) reproduzem H/M(T) sem qualquer parâmetro adicional."
     ],
     equations: [
-      equationAsset("tsallis-landau-coefficients", "Expansão da energia livre e coeficientes de Landau generalizados", "G, A_q, B_q e C_q")
+      equationAsset("tsallis-landau-coefficients", "Expansão da energia livre e coeficientes de Landau generalizados", "")
     ],
     figures: [
       {
