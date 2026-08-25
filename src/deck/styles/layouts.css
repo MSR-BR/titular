@@ -2528,6 +2528,14 @@
   align-content: start;
 }
 
+.deck-shell .tsallis-theory-slide .slide-lead {
+  margin-bottom: .38rem;
+  color: var(--muted);
+  font-size: .68rem;
+  font-style: italic;
+  line-height: 1.2;
+}
+
 .deck-shell .tsallis-theory-slide .technical-body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: auto auto auto;
