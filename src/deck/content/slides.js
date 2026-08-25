@@ -631,11 +631,7 @@ window.MemorialDeckSlides = [
     items: [
       "A expansão da energia livre fornece todos os coeficientes de Landau e conecta a ordem da transição às assinaturas experimentais de La₀.₆₀Y₀.₀₇Ca₀.₃₃MnO₃.",
       "B_q < 0 para q < 0,5: o Arrot plot adquire inclinação negativa e identifica uma transição de primeira ordem.",
-      "Os parâmetros ajustados em M(H) reproduzem H/M(T) sem qualquer parâmetro adicional.",
-      {
-        className: "tsallis-reference",
-        html: `<cite>M. S. Reis, V. S. Amaral, J. P. Araújo e I. S. Oliveira, “Magnetic phase diagram for a nonextensive system: Experimental connection with manganites”, <em>Physical Review B</em> <strong>68</strong>, 014404 (2003).</cite>`
-      }
+      "Os parâmetros ajustados em M(H) reproduzem H/M(T) sem qualquer parâmetro adicional."
     ],
     equations: [
       equationAsset("tsallis-landau-coefficients", "Expansão da energia livre e coeficientes de Landau generalizados", "")

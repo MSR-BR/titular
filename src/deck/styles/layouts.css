@@ -2614,20 +2614,6 @@
   grid-column: 1 / -1;
 }
 
-.deck-shell .tsallis-validation-slide .technical-summary .tsallis-reference {
-  grid-column: 1 / -1;
-  min-height: 0;
-  padding-block: .16rem;
-  border-left-width: .12rem;
-  font-size: .62rem;
-}
-
-.deck-shell .tsallis-validation-slide .technical-summary .tsallis-reference .info-card-text {
-  color: var(--muted);
-  font-size: .62rem;
-  line-height: 1.18;
-}
-
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .equation-line figcaption {
   font-size: .58rem;
 }
