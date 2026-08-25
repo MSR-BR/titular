@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T21:28:18.843Z",
+  "generatedAt": "2026-08-25T22:01:09.447Z",
   "equations": [
     {
       "id": "tsallis-entropy",
@@ -38,13 +38,22 @@
       "asset": "src/deck/assets/equations/tsallis-partition-function.svg"
     },
     {
-      "id": "tsallis-gibbs-transition",
-      "title": "Energia livre e limites de metaestabilidade",
+      "id": "tsallis-gibbs-free-energy",
+      "title": "Energia livre de Gibbs",
       "sourceRefs": [
-        "PRB 68, 014404 (2003), Eqs. (9)-(11)"
+        "PRB 68, 014404 (2003), Eq. (9)"
       ],
       "sourceFile": "src/deck/equations/equations.mjs",
-      "asset": "src/deck/assets/equations/tsallis-gibbs-transition.svg"
+      "asset": "src/deck/assets/equations/tsallis-gibbs-free-energy.svg"
+    },
+    {
+      "id": "tsallis-transition-limits",
+      "title": "Limites de metaestabilidade",
+      "sourceRefs": [
+        "PRB 68, 014404 (2003), Eqs. (10)-(11)"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/tsallis-transition-limits.svg"
     },
     {
       "id": "tsallis-landau-coefficients",

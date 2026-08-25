@@ -24,13 +24,16 @@ export const equations = [
     tex: String.raw`Z_q=\operatorname{Tr}\!\left[1-(1-q)\tilde{\beta}\left(\hat{H}-U_q\right)\right]^{\!1/(1-q)}`,
   },
   {
-    id: "tsallis-gibbs-transition",
-    title: "Energia livre e limites de metaestabilidade",
-    sourceRefs: ["PRB 68, 014404 (2003), Eqs. (9)-(11)"],
-    tex: String.raw`\begin{aligned}
-G&=\frac{k_BT}{\mu}\int_0^{M_q}L_q^{-1}(M_q')\,dM_q'-HM_q-\frac{\lambda}{2}M_q^2,\\[2pt]
-t_{\mathrm{SH}}&=\frac{3}{4(2-q)},\qquad t_{\mathrm{SC}}=q
-\end{aligned}`,
+    id: "tsallis-gibbs-free-energy",
+    title: "Energia livre de Gibbs",
+    sourceRefs: ["PRB 68, 014404 (2003), Eq. (9)"],
+    tex: String.raw`G=\frac{k_BT}{\mu}\int_0^{M_q}L_q^{-1}(M_q')\,dM_q'-HM_q-\frac{\lambda}{2}M_q^2`,
+  },
+  {
+    id: "tsallis-transition-limits",
+    title: "Limites de metaestabilidade",
+    sourceRefs: ["PRB 68, 014404 (2003), Eqs. (10)-(11)"],
+    tex: String.raw`t_{\mathrm{SH}}=\frac{3}{4(2-q)},\qquad t_{\mathrm{SC}}=q`,
   },
   {
     id: "tsallis-landau-coefficients",

@@ -598,7 +598,8 @@ window.MemorialDeckSlides = [
       equationAsset("tsallis-density-matrix", "Matriz densidade generalizada", ""),
       equationAsset("tsallis-partition-function", "Função de partição generalizada", ""),
       equationAsset("tsallis-langevin-generalized", "Função de Langevin generalizada", ""),
-      equationAsset("tsallis-gibbs-transition", "Energia livre de Gibbs e limites de metaestabilidade", "")
+      equationAsset("tsallis-gibbs-free-energy", "Energia livre de Gibbs", ""),
+      equationAsset("tsallis-transition-limits", "Limites de metaestabilidade", "")
     ],
     items: [
       "q > 0,5: mínimo único e transição contínua de segunda ordem.",

@@ -2524,7 +2524,7 @@
 
 .deck-shell .tsallis-theory-slide .technical-primary {
   grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: 15rem 12rem;
+  grid-template-rows: 17rem 12rem;
   align-content: start;
 }
 
@@ -2589,7 +2589,11 @@
 }
 
 .deck-shell .tsallis-theory-slide .equation-line:nth-child(5) {
-  grid-column: 1 / -1;
+  grid-column: span 4;
+}
+
+.deck-shell .tsallis-theory-slide .equation-line:nth-child(6) {
+  grid-column: span 2;
 }
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .figure-gallery .deck-figure {
