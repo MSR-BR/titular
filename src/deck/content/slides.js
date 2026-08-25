@@ -552,7 +552,16 @@ window.MemorialDeckSlides = [
           <button class="publications-trigger research-line-publications-trigger" type="button" data-publications-open="tsallis-publications">12 publicações · abrir lista</button>
         `
       },
-      { label: "3.2", text: "Efeito magnetocalórico e materiais magnéticos" },
+      {
+        label: "3.2",
+        slideTarget: "s23-mce-foundation",
+        className: "research-line-card-mce",
+        html: `
+          <p>Efeito magnetocalórico e materiais magnéticos</p>
+          <p class="research-line-period">2002–2020</p>
+          <button class="publications-trigger research-line-publications-trigger" type="button" data-publications-open="mce-publications">12 publicações · abrir lista</button>
+        `
+      },
       { label: "3.3", text: "Complexos Metálicos, Magnetismo e Modelagem Termodinâmica" },
       { label: "3.4", text: "Informação quântica em materiais magnéticos" },
       { label: "3.5", text: "Efeitos calóricos em materiais relativísticos" },
@@ -691,6 +700,34 @@ window.MemorialDeckSlides = [
     ],
     footerRefs: "MEM pp.23-24; refs. [9-11]",
     sourceRefs: ["E019"]
+  },
+  {
+    id: "s23b-mce-publications",
+    layout: "modal",
+    cards: [
+      {
+        html: `<dialog class="publications-dialog" id="mce-publications" aria-labelledby="mce-publications-title">
+            <div class="publications-dialog-head">
+              <div><p class="publications-kicker">Efeito magnetocalórico e materiais magnéticos · 2002–2020</p><h2 id="mce-publications-title">Publicações associadas</h2></div>
+              <button class="publications-close" type="button" aria-label="Fechar publicações">×</button>
+            </div>
+            <ol class="publications-list" reversed>
+              <li><span>2020</span><strong>Magnetocaloric and barocaloric effects of metal complexes for solid state cooling: Review, trends and perspectives.</strong><small>M.S. Reis.</small><em>Coordination Chemistry Reviews 417, 213357.</em><a href="https://doi.org/10.1016/j.ccr.2020.213357" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2019</span><strong>Multicaloric effect in a multiferroic composite of Gd₅(Si,Ge)₄ microparticles embedded into a ferroelectric PVDF matrix.</strong><small>V.M. Andrade, A. Amirov, D. Yusupov, B. Pimentel, N. Barroca, A.L. Pires, J.H. Belo, A.M. Pereira, M.A. Valente, J.P. Araújo e M.S. Reis.</small><em>Scientific Reports 9, 18308.</em><a href="https://doi.org/10.1038/s41598-019-54635-8" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2014</span><strong>Cs₂NaAl₁₋ₓCrₓF₆: A family of compounds presenting magnetocaloric effect.</strong><small>S.S. Pedro, J.C.G. Tedesco, F. Yokaichiya, P. Brandão, A.M. Gomes, S. Landsgesell, M.J.M. Pires, L.P. Sosman, A.M. Mansanares, M.S. Reis e H.N. Bordallo.</small><em>Physical Review B 90, 064407.</em><a href="https://doi.org/10.1103/PhysRevB.90.064407" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2009</span><strong>Understanding the inverse magnetocaloric effect in antiferro- and ferrimagnetic arrangements.</strong><small>P.J. von Ranke, N.A. de Oliveira, B.P. Alho, E.J.R. Plaza, V.S.R. de Sousa, L. Caron e M.S. Reis.</small><em>Journal of Physics: Condensed Matter 21, 056004.</em><a href="https://doi.org/10.1088/0953-8984/21/5/056004" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2009</span><strong>High refrigerant capacity of PrNi₅₋ₓCoₓ magnetic compounds exploiting its spin reorientation and magnetic transition over a wide temperature zone.</strong><small>D.L. Rocco, J.S. Amaral, J.V. Leitão, V.S. Amaral, M.S. Reis, S. Das, R.P. Fernandes, J.P. Araújo, A.M. Pereira, P.B. Tavares, N.V. Martins e A.A. Coelho.</small><em>Journal of Physics D: Applied Physics 42, 055002.</em><a href="https://doi.org/10.1088/0022-3727/42/5/055002" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2009</span><strong>Influence of the magnetocrystalline anisotropy on the magnetocaloric properties of PrNi₅₋ₓCoₓ: from spin reorientation to percolation processes.</strong><small>D.L. Rocco, J.V. Leitão, M.S. Reis, J.S. Amaral, V.S. Amaral, R.P. Fernandes, J.P. Araújo, P.B. Tavares e A.A. Coelho.</small><em>Physical Review B 79, 014428.</em><a href="https://doi.org/10.1103/PhysRevB.79.014428" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2008</span><strong>Influence of the magnetic anisotropy on the magnetic entropy change of Ni₂Mn(Ga,Bi) memory shape alloy.</strong><small>J.V. Leitão, D.L. Rocco, J.S. Amaral, M.S. Reis, V.S. Amaral, R.P. Fernandes, N.V. Martins e P.B. Tavares.</small><em>IEEE Transactions on Magnetics 44, 3036.</em><a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&amp;queryText=Influence%20of%20the%20magnetic%20anisotropy%20on%20the%20magnetic%20entropy%20change%20of%20Ni2Mn%28Ga%2CBi%29%20memory%20shape%20alloy" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2008</span><strong>Influence of the strong magnetocrystalline anisotropy on the magnetocaloric properties of MnP single crystal.</strong><small>M.S. Reis, R.M. Rubinger, N.A. Sobolev, M.A. Valente, K. Yamada, K. Sato, Y. Todate, A. Bouravleuv, P.J. von Ranke e S. Gama.</small><em>Physical Review B 77, 104439.</em><a href="https://doi.org/10.1103/PhysRevB.77.104439" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2005</span><strong>Magnetic entropy change of Pr₁₋ₓCaₓMnO₃ manganites (0.2 &lt; x &lt; 0.95).</strong><small>M.S. Reis, V.S. Amaral, J.P. Araújo, P.B. Tavares, A.M. Gomes e I.S. Oliveira.</small><em>Physical Review B 71, 144413.</em><a href="https://doi.org/10.1103/PhysRevB.71.144413" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2005</span><strong>Magnetocaloric effect of the (Pr,Ca)MnO₃ manganites at low temperatures.</strong><small>A.M. Gomes, F. Garcia, M.S. Reis, V.S. Amaral e A.P. Guimarães.</small><em>Journal of Magnetism and Magnetic Materials 290, 694.</em><a href="https://doi.org/10.1016/j.jmmm.2004.11.339" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2004</span><strong>Magnetocaloric effect of the Pr₀.₄₃Gd₀.₂₅Ca₀.₃₂MnO₃.</strong><small>A.M. Gomes, M.S. Reis, A.P. Guimarães, J.P. Araújo, P.B. Tavares e V.S. Amaral.</small><em>Journal of Magnetism and Magnetic Materials 272, 2385.</em><a href="https://doi.org/10.1016/j.jmmm.2003.12.1129" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2002</span><strong>Magnetocaloric effect in (Er,Tb)Co₂.</strong><small>A.M. Gomes, M.S. Reis, I.S. Oliveira, A.P. Guimarães e A.Y. Takeuchi.</small><em>Journal of Magnetism and Magnetic Materials 242, 870.</em><a href="https://doi.org/10.1016/S0304-8853(01)01327-0" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+            </ol>
+          </dialog>`
+      }
+    ]
   },
   {
     id: "s24-mce-materials",

@@ -2797,12 +2797,12 @@
   outline-offset: 4px;
 }
 
-.deck-shell .research-line-card-tsallis .info-card-text {
+.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce) .info-card-text {
   display: grid;
   gap: .46rem;
 }
 
-.deck-shell .research-line-card-tsallis .info-card-text > p {
+.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce) .info-card-text > p {
   margin: 0;
 }
 
@@ -2810,14 +2810,18 @@
   --section-accent: #315d85;
 }
 
-.deck-shell .research-line-card-tsallis .research-line-period {
-  color: #315d85;
+.deck-shell .research-line-card-mce {
+  --section-accent: #8b3156;
+}
+
+.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce) .research-line-period {
+  color: var(--section-accent);
   font-size: .72rem;
   font-weight: 820;
   letter-spacing: .08em;
 }
 
-.deck-shell .research-line-card-tsallis:hover .research-line-period {
+.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce):hover .research-line-period {
   color: rgba(255, 255, 255, .84);
 }
 
