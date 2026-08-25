@@ -2524,7 +2524,7 @@
 
 .deck-shell .tsallis-theory-slide .technical-primary {
   grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: 11.5rem 15rem;
+  grid-template-rows: 15rem 12rem;
   align-content: start;
 }
 
@@ -2532,35 +2532,6 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(2, 12.5rem);
   align-content: start;
-}
-
-.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .equation-stack {
-  padding: 0;
-  gap: .24rem;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-}
-
-.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .equation-line {
-  padding: .2rem;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-}
-
-.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .equation-line img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-}
-
-.deck-shell .tsallis-theory-slide .equation-line img {
-  max-height: 3.8rem;
-}
-
-.deck-shell .tsallis-validation-slide .equation-line img {
-  max-height: 13rem;
 }
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .equation-line figcaption {
@@ -2604,7 +2575,7 @@
 
 .deck-shell .tsallis-theory-slide .equation-stack {
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .deck-shell .tsallis-theory-slide .equation-line:nth-child(1),
@@ -2636,6 +2607,7 @@
   border-radius: 0;
   background: transparent;
   mix-blend-mode: multiply;
+  box-shadow: none;
 }
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .figure-gallery figcaption {
