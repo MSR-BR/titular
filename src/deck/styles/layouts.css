@@ -2682,6 +2682,50 @@
   max-height: none;
 }
 
+.deck-shell .mce-motivation-slide .slide-body,
+.deck-shell .mce-motivation-slide .cards-panel,
+.deck-shell .mce-motivation-slide .card-grid {
+  height: auto;
+}
+
+.deck-shell .mce-motivation-slide .card-grid.count-5.compact {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-rows: auto auto;
+  gap: .7rem;
+}
+
+.deck-shell .mce-motivation-slide .card-grid.count-5 > .info-card:nth-child(-n + 3) {
+  grid-column: span 2;
+  min-height: 7.2rem;
+}
+
+.deck-shell .mce-motivation-slide .card-grid.count-5 > .mce-video-card {
+  grid-column: span 3;
+  padding: .58rem;
+}
+
+.deck-shell .mce-motivation-slide .mce-video-card .info-card-text {
+  display: grid;
+  gap: .34rem;
+}
+
+.deck-shell .mce-motivation-slide .mce-video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: 0;
+  border-radius: .78rem;
+  background: #111;
+}
+
+.deck-shell .mce-motivation-slide .mce-video-link {
+  color: var(--section-accent, var(--accent));
+  font-size: .68rem;
+  font-weight: 780;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
 .deck-shell .tsallis-theory-slide .equation-stack {
   grid-template-columns: repeat(6, minmax(0, 1fr));
   grid-template-rows: repeat(3, minmax(0, 1fr));

@@ -686,21 +686,37 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s23-mce-foundation",
-    layout: "technical",
+    layout: "cards",
+    className: "mce-motivation-slide",
     section: "Resultados",
     eyebrow: "Linha 2 | Efeito magnetocalórico",
-    title: "O efeito como resposta termodinâmica",
-    lead: "A variação de campo magnético permite observar mudanças de entropia em processo isotérmico e mudanças de temperatura em processo adiabático.",
-    equations: [
-      equationAsset("mce-entropy", "Variação isotérmica de entropia magnética", "Delta S_mag"),
-      equationAsset("mce-temperature", "Variação adiabática de temperatura", "Delta T_ad"),
-      equationAsset("heat-capacity-split", "Capacidade térmica total", "termos magnético, rede e eletrônico")
+    title: "Motivação",
+    lead: "O efeito magnetocalórico descreve a resposta térmica reversível de um material magnético quando o campo aplicado varia — princípio físico da refrigeração magnética em estado sólido.",
+    cards: [
+      {
+        label: "Efeito magnetocalórico",
+        text: "A aplicação ou remoção do campo reorganiza os momentos magnéticos e altera a entropia do material, produzindo troca de calor ou mudança de temperatura."
+      },
+      {
+        label: "Processo isotérmico",
+        text: "A temperatura é mantida constante pela troca de calor com o meio. A variação de campo produz uma mudança de entropia magnética, ΔSₘₐg."
+      },
+      {
+        label: "Processo adiabático",
+        text: "Sem troca de calor com o meio, a entropia total permanece constante. A variação de campo produz uma mudança de temperatura, ΔTₐd."
+      },
+      {
+        label: "Processo isotérmico · vídeo",
+        className: "mce-video-card",
+        html: `<iframe class="mce-video-frame" src="https://www.youtube-nocookie.com/embed/ANXU2Ml0tms" title="Processo isotérmico: mudança de entropia" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><a class="mce-video-link" href="https://youtu.be/ANXU2Ml0tms?si=nvpNLXrLIlee1gkG" target="_blank" rel="noopener noreferrer">Abrir no YouTube ↗</a>`
+      },
+      {
+        label: "Processo adiabático · vídeo",
+        className: "mce-video-card",
+        html: `<iframe class="mce-video-frame" src="https://www.youtube-nocookie.com/embed/B7VKhML38JI" title="Processo adiabático: mudança de temperatura" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><a class="mce-video-link" href="https://youtu.be/B7VKhML38JI?si=s-FicFeks2cwz1_n" target="_blank" rel="noopener noreferrer">Abrir no YouTube ↗</a>`
+      }
     ],
-    items: [
-      "Base conceitual para refrigeração magnética em estado sólido.",
-      "Relação direta entre medidas magnéticas e resposta calórica."
-    ],
-    footerRefs: "MEM pp.23-24; refs. [9-11]",
+    footerRefs: "MEM pp.23-24; vídeos demonstrativos fornecidos pelo autor",
     sourceRefs: ["E019"]
   },
   {
