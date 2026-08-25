@@ -27,7 +27,7 @@ export const equations = [
     id: "tsallis-gibbs-free-energy",
     title: "Energia livre de Gibbs",
     sourceRefs: ["PRB 68, 014404 (2003), Eq. (9)"],
-    tex: String.raw`G=\frac{k_BT}{\mu}\int_0^{M_q}L_q^{-1}(M_q')\,dM_q'-HM_q-\frac{\lambda}{2}M_q^2`,
+    tex: String.raw`G=\frac{k_BT}{\mu}\int_0^{M_q}M_q^{-1}(M_q')\,dM_q'-HM_q-\frac{\lambda}{2}M_q^2`,
   },
   {
     id: "tsallis-transition-limits",

@@ -2528,6 +2528,32 @@
   align-content: start;
 }
 
+.deck-shell .tsallis-theory-slide .technical-body {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: .5rem;
+}
+
+.deck-shell .tsallis-theory-slide .technical-evidence,
+.deck-shell .tsallis-theory-slide .technical-primary {
+  display: contents;
+}
+
+.deck-shell .tsallis-theory-slide .equation-stack {
+  grid-row: 1;
+  height: 17rem;
+}
+
+.deck-shell .tsallis-theory-slide .technical-summary {
+  grid-row: 2;
+}
+
+.deck-shell .tsallis-theory-slide .figure-gallery {
+  grid-row: 3;
+  height: auto;
+  align-items: start;
+}
+
 .deck-shell .tsallis-validation-slide .technical-primary {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(2, 12.5rem);
@@ -2547,6 +2573,15 @@
 
 .deck-shell .tsallis-theory-slide .figure-gallery {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.deck-shell .tsallis-theory-slide .figure-gallery .deck-figure {
+  grid-template-rows: auto auto;
+}
+
+.deck-shell .tsallis-theory-slide .figure-gallery img {
+  width: 100%;
+  height: auto;
 }
 
 .deck-shell .tsallis-validation-slide .figure-gallery {
@@ -2612,6 +2647,10 @@
   background: transparent;
   mix-blend-mode: multiply;
   box-shadow: none;
+}
+
+.deck-shell .tsallis-theory-slide .figure-gallery img {
+  height: auto;
 }
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .figure-gallery figcaption {
