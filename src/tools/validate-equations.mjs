@@ -85,8 +85,8 @@ for (const slide of slides) {
   }
 }
 
-if (technicalSlidesWithAssets < 10) {
-  throw new Error(`Expected at least 10 technical slides with rendered equation assets, found ${technicalSlidesWithAssets}.`);
+if (technicalSlidesWithAssets < 9) {
+  throw new Error(`Expected at least 9 technical slides with rendered equation assets, found ${technicalSlidesWithAssets}.`);
 }
 
 if (usedEquationIds.size < 12) {

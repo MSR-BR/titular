@@ -566,12 +566,12 @@ window.MemorialDeckSlides = [
     layout: "cards",
     section: "Resultados",
     eyebrow: "Linha 1 | Tsallis e magnetismo",
-    title: "Por que a estatística tradicional não bastava?",
+    title: "Motivação",
     lead: "Durante o doutorado, o desafio foi compreender desvios sistemáticos nas curvas de magnetização e suscetibilidade de manganitas de magnetorresistência colossal.",
     cards: [
-      { label: "Sistema físico", text: "Manganitas CMR magneticamente não homogêneas, marcadas por separação de fases, interações de longo alcance e respostas coletivas complexas." },
+      { label: "Sistema físico", text: "Manganitas CMR magneticamente não homogêneas, marcadas por separação de fases e interações de longo alcance." },
       { label: "Limite dos modelos usuais", text: "Modelos tradicionais de campo médio não reproduziam adequadamente a curvatura das isotermas M(H), a suscetibilidade e a aproximação à saturação." },
-      { label: "Hipótese de trabalho", text: "Usar a estatística não extensiva de Tsallis para incorporar a distribuição de interações magnéticas sem introduzir distribuições artificiais de campo." }
+      { label: "Hipótese de trabalho", text: "Usar a estatística não extensiva de Tsallis para incorporar a distribuição de interações magnéticas sem introduzir distribuições de campo." }
     ],
     footerRefs: "MEM · Aplicação da Estatística de Tsallis ao Magnetismo",
     sourceRefs: ["E018"]
@@ -579,63 +579,68 @@ window.MemorialDeckSlides = [
   {
     id: "s20-tsallis-equations",
     layout: "technical",
+    className: "tsallis-theory-slide",
     section: "Resultados",
-    eyebrow: "Linha 1 | Fundamentos estatísticos",
-    title: "Da entropia de Boltzmann–Gibbs à q-exponencial",
-    lead: "A generalização da entropia modifica as probabilidades, a função partição e, consequentemente, as propriedades termodinâmicas.",
+    eyebrow: "Linha 1 | Modelo não extensivo",
+    title: "De Tsallis ao controle da ordem da transição",
+    lead: "A maximização da entropia generalizada conduz à função de Langevin q e, em campo médio, a uma energia livre cuja topologia é regulada por q.",
     equations: [
       equationAsset("tsallis-entropy", "Entropia não extensiva de Tsallis", "S_q"),
-      equationAsset("q-exponential", "Função q-exponencial", "e_q(x)")
+      equationAsset("tsallis-langevin-generalized", "Função de Langevin generalizada", "L_q(x)"),
+      equationAsset("tsallis-gibbs-transition", "Energia livre de Gibbs e limites de metaestabilidade", "G, t_SH e t_SC")
     ],
     items: [
-      "q mede o grau de não extensividade do sistema.",
-      "No limite q → 1, recuperam-se a entropia e a exponencial de Boltzmann–Gibbs.",
-      "A distribuição generalizada altera diretamente os pesos estatísticos dos estados."
+      "q > 0,5: mínimo único e transição contínua de segunda ordem.",
+      "q < 0,5: mínimos degenerados, metaestabilidade, histerese e transição de primeira ordem."
     ],
-    footerRefs: "MEM · Entropia de Tsallis e distribuição generalizada",
-    sourceRefs: ["E018"]
-  },
-  {
-    id: "s20b-tsallis-magnetism",
-    layout: "technical",
-    section: "Resultados",
-    eyebrow: "Linha 1 | Formalismo magnético",
-    title: "Do sistema de spins às funções generalizadas",
-    lead: "Para N spins s sob campo H, a magnetização média é calculada com probabilidades generalizadas no formalismo de Tsallis.",
-    equations: [
-      equationAsset("tsallis-magnetization", "Magnetização média no formalismo de Tsallis", "M_q")
+    figures: [
+      {
+        src: "assets/figures/tsallis-fig-1-gibbs.png",
+        alt: "Energia livre de Gibbs para transições de segunda e primeira ordem",
+        caption: "Fig. 1 · q regula o número e a estabilidade dos mínimos de G."
+      },
+      {
+        src: "assets/figures/tsallis-fig-2-magnetization.png",
+        alt: "Magnetização reduzida em função da temperatura para diferentes valores de q",
+        caption: "Fig. 2 · A descontinuidade aparece para q < 0,5."
+      }
     ],
-    items: [
-      "Formulação desenvolvida nos regimes clássico e quântico.",
-      "Limite clássico: função de Langevin generalizada.",
-      "Regime quântico: função de Brillouin generalizada.",
-      "A resposta magnética passa a depender explicitamente do parâmetro entrópico q."
-    ],
-    footerRefs: "MEM · Sistema de spins não extensivo; PRB 66, 134417; EPL 58, 42",
+    footerRefs: "Physical Review B 68, 014404 (2003), Eqs. (1), (7), (9)-(11), Figs. 1-2",
     sourceRefs: ["E018"]
   },
   {
     id: "s21-tsallis-result",
     layout: "technical",
+    className: "tsallis-validation-slide",
     section: "Resultados",
-    eyebrow: "Linha 1 | Teoria e experimento",
-    title: "M(H): excelente concordância em todo o campo",
-    lead: "A função de Langevin generalizada reproduz as isotermas de La₀.₆₀Y₀.₀₇Ca₀.₃₃MnO₃ entre 175 K e 290 K, acima de Tᶜ = 150 K.",
+    eyebrow: "Linha 1 | Landau e conexão experimental",
+    title: "Do diagrama de fases aos dados de manganitas",
+    lead: "A expansão da energia livre fornece todos os coeficientes de Landau e conecta a ordem da transição às assinaturas experimentais de La₀.₆₀Y₀.₀₇Ca₀.₃₃MnO₃.",
     items: [
-      "Círculos: dados experimentais; linhas sólidas: ajustes não extensivos.",
-      "Descrição quantitativa da curvatura e da aproximação à saturação magnética.",
-      "Um único formalismo para todas as temperaturas medidas.",
-      "Sem distribuições artificiais de campo magnético."
+      "B_q < 0 para q < 0,5: o Arrot plot adquire inclinação negativa e identifica uma transição de primeira ordem.",
+      "Os parâmetros ajustados em M(H) reproduzem H/M(T) sem qualquer parâmetro adicional."
     ],
     equations: [
-      equationAsset("tsallis-magnetization", "Magnetização no formalismo de Tsallis", "M_q")
+      equationAsset("tsallis-landau-coefficients", "Expansão da energia livre e coeficientes de Landau generalizados", "G, A_q, B_q e C_q")
     ],
-    figure: {
-      src: "assets/figures/tsallis-manganite-mh.png",
-      alt: "Curvas de magnetização em manganita ajustadas por função de Langevin generalizada",
-      caption: "La₀.₆₀Y₀.₀₇Ca₀.₃₃MnO₃: M(H) acima de Tᶜ = 150 K. Figura adaptada de Physical Review B 68, 014404 (2003)."
-    },
-    footerRefs: "MEM · Curvas M(H); Physical Review B 68, 014404 (2003)",
+    figures: [
+      {
+        src: "assets/figures/tsallis-fig-9-arrot.png",
+        alt: "Arrot plots generalizados para diferentes valores do parâmetro q",
+        caption: "Fig. 9 · A inclinação muda com q e revela a ordem da transição."
+      },
+      {
+        src: "assets/figures/tsallis-fig-10-mh.png",
+        alt: "Curvas experimentais e teóricas de magnetização em função do campo",
+        caption: "Fig. 10 · Ajuste de M(H) entre 175 K e 290 K."
+      },
+      {
+        src: "assets/figures/tsallis-fig-12-hm.png",
+        alt: "Curvas experimental e teórica de H sobre M em função da temperatura",
+        caption: "Fig. 12 · Predição de H/M(T) sem novo ajuste."
+      }
+    ],
+    footerRefs: "Physical Review B 68, 014404 (2003), Eqs. (26)-(29), Figs. 9, 10 e 12",
     sourceRefs: ["E018"]
   },
   {

@@ -2,8 +2,34 @@ export const equations = [
   {
     id: "tsallis-entropy",
     title: "Entropia nao extensiva de Tsallis",
-    sourceRefs: ["MEM 4.1", "refs. [2-4]"],
+    sourceRefs: ["PRB 68, 014404 (2003), Eq. (1)"],
     tex: String.raw`S_q = k_B\,\frac{1-\sum_i p_i^q}{q-1}`,
+  },
+  {
+    id: "tsallis-langevin-generalized",
+    title: "Funcao de Langevin generalizada",
+    sourceRefs: ["PRB 68, 014404 (2003), Eq. (7)"],
+    tex: String.raw`\frac{M_q}{\mu}=L_q(x)=\frac{1}{2-q}\left[\coth_q(x)-\frac{1}{x}\right],\qquad x=\frac{\mu H}{k_BT}`,
+  },
+  {
+    id: "tsallis-gibbs-transition",
+    title: "Energia livre e limites de metaestabilidade",
+    sourceRefs: ["PRB 68, 014404 (2003), Eqs. (9)-(11)"],
+    tex: String.raw`\begin{aligned}
+G&=\frac{k_BT}{\mu}\int_0^{M_q}L_q^{-1}(M_q')\,dM_q'-HM_q-\frac{\lambda}{2}M_q^2,\\[2pt]
+t_{\mathrm{SH}}&=\frac{3}{4(2-q)},\qquad t_{\mathrm{SC}}=q
+\end{aligned}`,
+  },
+  {
+    id: "tsallis-landau-coefficients",
+    title: "Coeficientes de Landau generalizados",
+    sourceRefs: ["PRB 68, 014404 (2003), Eqs. (26)-(29)"],
+    tex: String.raw`\begin{aligned}
+G&=\frac{A_q}{2}m^2+\frac{B_q}{4}m^4+\frac{C_q}{6}m^6-hm,\\
+A_q&=\frac{3}{q}(t-q),\\
+B_q&=\frac{9(-3+8q-4q^2)t}{5q^3},\\
+C_q&=\frac{27(54-318q+623q^2-464q^3+116q^4)t}{175q^5}
+\end{aligned}`,
   },
   {
     id: "q-exponential",

@@ -349,6 +349,7 @@
               <div class="technical-primary">
                 ${renderEquations(slide.equations)}
                 ${renderFigure(slide.figure)}
+                ${renderFigureGallery(slide.figures)}
                 ${renderMetrics(slide.metrics)}
               </div>
               ${

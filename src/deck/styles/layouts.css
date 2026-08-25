@@ -2478,6 +2478,87 @@
   height: auto;
 }
 
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .technical-body {
+  gap: .34rem;
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .technical-summary .info-card {
+  min-height: 2.15rem;
+  padding: .34rem .48rem;
+  font-size: .7rem;
+  line-height: 1.16;
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .technical-primary {
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .equation-stack {
+  padding: .38rem;
+  gap: .24rem;
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .equation-line {
+  padding: .2rem;
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .equation-line img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.deck-shell .tsallis-theory-slide .equation-line img {
+  max-height: 4.7rem;
+}
+
+.deck-shell .tsallis-validation-slide .equation-line img {
+  max-height: 13rem;
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .equation-line figcaption {
+  font-size: .58rem;
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .figure-gallery {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  gap: .3rem;
+}
+
+.deck-shell .tsallis-theory-slide .figure-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.deck-shell .tsallis-validation-slide .figure-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.deck-shell .tsallis-validation-slide .figure-gallery .deck-figure:first-child {
+  grid-row: 1 / span 2;
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .figure-gallery .deck-figure {
+  min-width: 0;
+  min-height: 0;
+  padding: .24rem;
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .figure-gallery img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+}
+
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .figure-gallery figcaption {
+  font-size: .54rem;
+  line-height: 1.08;
+}
+
 .deck-shell .future-priorities-slide .slide-body {
   align-self: auto;
 }
