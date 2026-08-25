@@ -2614,11 +2614,11 @@
 }
 
 .deck-shell .tsallis-theory-slide .equation-line:nth-child(4) {
-  grid-column: span 3;
+  grid-column: 1 / -1;
 }
 
 .deck-shell .tsallis-theory-slide .equation-line:nth-child(5) {
-  grid-column: span 3;
+  grid-column: 1 / -1;
 }
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .figure-gallery .deck-figure {

@@ -592,7 +592,7 @@ window.MemorialDeckSlides = [
     section: "Resultados",
     eyebrow: "Linha 1 | Modelo não extensivo",
     title: "",
-    lead: "A maximização da entropia generalizada conduz à função de Langevin q e, em campo médio, a uma energia livre cuja topologia é regulada por q.",
+    lead: "",
     equations: [
       equationAsset("tsallis-entropy", "Entropia não extensiva de Tsallis", ""),
       equationAsset("tsallis-density-matrix", "Matriz densidade generalizada", ""),
