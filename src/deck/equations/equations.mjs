@@ -12,6 +12,18 @@ export const equations = [
     tex: String.raw`\frac{M_q}{\mu}=L_q(x)=\frac{1}{2-q}\left[\coth_q(x)-\frac{1}{x}\right],\qquad x=\frac{\mu H}{k_BT}`,
   },
   {
+    id: "tsallis-density-matrix",
+    title: "Matriz densidade generalizada",
+    sourceRefs: ["PRB 68, 014404 (2003), Eq. (3)"],
+    tex: String.raw`\hat{\rho}=\frac{1}{Z_q}\left[1-(1-q)\tilde{\beta}\left(\hat{H}-U_q\right)\right]^{\!1/(1-q)}`,
+  },
+  {
+    id: "tsallis-partition-function",
+    title: "Funcao de particao generalizada",
+    sourceRefs: ["PRB 68, 014404 (2003), Eq. (4)"],
+    tex: String.raw`Z_q=\operatorname{Tr}\!\left[1-(1-q)\tilde{\beta}\left(\hat{H}-U_q\right)\right]^{\!1/(1-q)}`,
+  },
+  {
     id: "tsallis-gibbs-transition",
     title: "Energia livre e limites de metaestabilidade",
     sourceRefs: ["PRB 68, 014404 (2003), Eqs. (9)-(11)"],

@@ -5,7 +5,9 @@
     params.get("mode") === "template" ||
     params.get("deck") === "template";
 
-  const defaultSlides = Array.isArray(window.MemorialDeckSlides) ? window.MemorialDeckSlides : [];
+  const defaultSlideSource = Array.isArray(window.MemorialDeckSlides) ? window.MemorialDeckSlides : [];
+  const auxiliarySlides = defaultSlideSource.filter((slide) => slide.layout === "modal");
+  const defaultSlides = defaultSlideSource.filter((slide) => slide.layout !== "modal");
   const prototypeSlides = Array.isArray(window.MemorialDeckTemplatePrototypes)
     ? window.MemorialDeckTemplatePrototypes
     : [];
@@ -663,6 +665,13 @@
 
     slides.forEach(applyHierarchy);
     deck.innerHTML = slides.map(renderSlide).join("");
+    const auxiliaryMarkup = auxiliarySlides
+      .flatMap((slide) => Array.isArray(slide.cards) ? slide.cards : [])
+      .map((card) => card?.html || "")
+      .join("");
+    if (auxiliaryMarkup) {
+      deck.insertAdjacentHTML("afterend", `<div class="deck-auxiliary">${auxiliaryMarkup}</div>`);
+    }
     const sections = hierarchyTemplate.sections
       .map((section) => {
         const exactTarget = slides.findIndex((slide) => slide.id === section.targetId);

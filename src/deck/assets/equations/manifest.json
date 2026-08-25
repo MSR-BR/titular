@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T20:39:53.691Z",
+  "generatedAt": "2026-08-25T21:28:18.843Z",
   "equations": [
     {
       "id": "tsallis-entropy",
@@ -18,6 +18,24 @@
       ],
       "sourceFile": "src/deck/equations/equations.mjs",
       "asset": "src/deck/assets/equations/tsallis-langevin-generalized.svg"
+    },
+    {
+      "id": "tsallis-density-matrix",
+      "title": "Matriz densidade generalizada",
+      "sourceRefs": [
+        "PRB 68, 014404 (2003), Eq. (3)"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/tsallis-density-matrix.svg"
+    },
+    {
+      "id": "tsallis-partition-function",
+      "title": "Funcao de particao generalizada",
+      "sourceRefs": [
+        "PRB 68, 014404 (2003), Eq. (4)"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/tsallis-partition-function.svg"
     },
     {
       "id": "tsallis-gibbs-transition",

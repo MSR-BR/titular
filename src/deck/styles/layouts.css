@@ -2518,13 +2518,20 @@
   color: var(--ink);
 }
 
-.deck-shell .tsallis-theory-slide .slide-title:empty {
+.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .slide-title:empty {
   display: none;
 }
 
-.deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .technical-primary {
-  grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
-  grid-template-rows: minmax(0, 1fr);
+.deck-shell .tsallis-theory-slide .technical-primary {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 11.5rem 15rem;
+  align-content: start;
+}
+
+.deck-shell .tsallis-validation-slide .technical-primary {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 12.5rem);
+  align-content: start;
 }
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .equation-stack {
@@ -2549,7 +2556,7 @@
 }
 
 .deck-shell .tsallis-theory-slide .equation-line img {
-  max-height: 4.7rem;
+  max-height: 3.8rem;
 }
 
 .deck-shell .tsallis-validation-slide .equation-line img {
@@ -2572,12 +2579,46 @@
 }
 
 .deck-shell .tsallis-validation-slide .figure-gallery {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+  display: contents;
 }
 
 .deck-shell .tsallis-validation-slide .figure-gallery .deck-figure:first-child {
-  grid-row: 1 / span 2;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.deck-shell .tsallis-validation-slide .figure-gallery .deck-figure:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.deck-shell .tsallis-validation-slide .figure-gallery .deck-figure:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.deck-shell .tsallis-validation-slide .equation-stack {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.deck-shell .tsallis-theory-slide .equation-stack {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.deck-shell .tsallis-theory-slide .equation-line:nth-child(1),
+.deck-shell .tsallis-theory-slide .equation-line:nth-child(2),
+.deck-shell .tsallis-theory-slide .equation-line:nth-child(3) {
+  grid-column: span 2;
+}
+
+.deck-shell .tsallis-theory-slide .equation-line:nth-child(4) {
+  grid-column: span 3;
+}
+
+.deck-shell .tsallis-theory-slide .equation-line:nth-child(5) {
+  grid-column: span 3;
 }
 
 .deck-shell :is(.tsallis-theory-slide, .tsallis-validation-slide) .figure-gallery .deck-figure {

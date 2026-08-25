@@ -586,6 +586,8 @@ window.MemorialDeckSlides = [
     lead: "A maximização da entropia generalizada conduz à função de Langevin q e, em campo médio, a uma energia livre cuja topologia é regulada por q.",
     equations: [
       equationAsset("tsallis-entropy", "Entropia não extensiva de Tsallis", ""),
+      equationAsset("tsallis-density-matrix", "Matriz densidade generalizada", ""),
+      equationAsset("tsallis-partition-function", "Função de partição generalizada", ""),
       equationAsset("tsallis-langevin-generalized", "Função de Langevin generalizada", ""),
       equationAsset("tsallis-gibbs-transition", "Energia livre de Gibbs e limites de metaestabilidade", "")
     ],
@@ -597,12 +599,12 @@ window.MemorialDeckSlides = [
       {
         src: "assets/figures/tsallis-fig-1-gibbs.png",
         alt: "Energia livre de Gibbs para transições de segunda e primeira ordem",
-        caption: "Fig. 1 · q regula o número e a estabilidade dos mínimos de G."
+        caption: ""
       },
       {
         src: "assets/figures/tsallis-fig-2-magnetization.png",
         alt: "Magnetização reduzida em função da temperatura para diferentes valores de q",
-        caption: "Fig. 2 · A descontinuidade aparece para q < 0,5."
+        caption: ""
       }
     ],
     footerRefs: "Physical Review B 68, 014404 (2003), Eqs. (1), (7), (9)-(11), Figs. 1-2",
@@ -614,7 +616,7 @@ window.MemorialDeckSlides = [
     className: "tsallis-validation-slide",
     section: "Resultados",
     eyebrow: "Linha 1 | Landau e conexão experimental",
-    title: "Do diagrama de fases aos dados de manganitas",
+    title: "",
     lead: "A expansão da energia livre fornece todos os coeficientes de Landau e conecta a ordem da transição às assinaturas experimentais de La₀.₆₀Y₀.₀₇Ca₀.₃₃MnO₃.",
     items: [
       "B_q < 0 para q < 0,5: o Arrot plot adquire inclinação negativa e identifica uma transição de primeira ordem.",
@@ -627,17 +629,17 @@ window.MemorialDeckSlides = [
       {
         src: "assets/figures/tsallis-fig-9-arrot.png",
         alt: "Arrot plots generalizados para diferentes valores do parâmetro q",
-        caption: "Fig. 9 · A inclinação muda com q e revela a ordem da transição."
+        caption: ""
       },
       {
         src: "assets/figures/tsallis-fig-10-mh.png",
         alt: "Curvas experimentais e teóricas de magnetização em função do campo",
-        caption: "Fig. 10 · Ajuste de M(H) entre 175 K e 290 K."
+        caption: ""
       },
       {
         src: "assets/figures/tsallis-fig-12-hm.png",
         alt: "Curvas experimental e teórica de H sobre M em função da temperatura",
-        caption: "Fig. 12 · Predição de H/M(T) sem novo ajuste."
+        caption: ""
       }
     ],
     footerRefs: "Physical Review B 68, 014404 (2003), Eqs. (26)-(29), Figs. 9, 10 e 12",
@@ -645,21 +647,10 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s22-tsallis-contribution",
-    layout: "cards",
-    className: "tsallis-contributions-slide",
-    section: "Resultados",
-    eyebrow: "Linha 1 | Significado físico e legado",
-    title: "q: da parametrização à medida experimental",
-    lead: "O resultado central foi estabelecer uma conexão física direta entre não homogeneidade, distribuição de interações, separação de fases e não extensividade.",
+    layout: "modal",
     cards: [
-      { label: "Significado físico", text: "O parâmetro q é relacionado aos momentos da distribuição das interações magnéticas e quantifica a não homogeneidade efetiva do sistema." },
-      { label: "Determinação experimental", text: "q pode ser obtido diretamente a partir de medidas macroscópicas de magnetização e suscetibilidade." },
-      { label: "Desdobramentos", html: "<ul><li>Diagrama de fases magnético não extensivo.</li><li>Sistemas magnéticos compostos.</li><li>Ondas de spin e modelos de Ising 2D.</li><li>Escalonamento de tamanho finito.</li></ul>" },
       {
-        label: "Produção científica",
-        html: `<p>Doze trabalhos publicados entre 2002 e 2009.</p>
-          <button class="publications-trigger" type="button" data-publications-open="tsallis-publications">12 publicações · abrir lista</button>
-          <dialog class="publications-dialog" id="tsallis-publications" aria-labelledby="tsallis-publications-title">
+        html: `<dialog class="publications-dialog" id="tsallis-publications" aria-labelledby="tsallis-publications-title">
             <div class="publications-dialog-head">
               <div><p class="publications-kicker">Tsallis e magnetismo · 2002–2009</p><h2 id="tsallis-publications-title">Publicações associadas</h2></div>
               <button class="publications-close" type="button" aria-label="Fechar publicações">×</button>
@@ -680,9 +671,7 @@ window.MemorialDeckSlides = [
             </ol>
           </dialog>`
       }
-    ],
-    footerRefs: "MEM · Significado físico de q e produção associada",
-    sourceRefs: ["E018"]
+    ]
   },
   {
     id: "s23-mce-foundation",
