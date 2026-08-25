@@ -2623,6 +2623,30 @@
   color: #fff;
 }
 
+.deck-shell .navigable-card {
+  cursor: pointer;
+}
+
+.deck-shell .navigable-card:focus-visible {
+  outline: 3px solid var(--section-accent, var(--accent));
+  outline-offset: 4px;
+}
+
+.deck-shell .research-line-card-tsallis .info-card-text {
+  display: grid;
+  gap: .7rem;
+}
+
+.deck-shell .research-line-card-tsallis .info-card-text > p {
+  margin: 0;
+}
+
+.deck-shell .research-line-publications-trigger {
+  justify-self: start;
+  padding: .48rem .76rem;
+  font-size: .68rem;
+}
+
 .publications-dialog {
   width: min(58rem, calc(100vw - 2rem));
   max-height: min(78vh, 46rem);

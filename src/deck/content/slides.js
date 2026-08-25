@@ -542,7 +542,15 @@ window.MemorialDeckSlides = [
     eyebrow: "Seção 3",
     title: "Linhas de pesquisa",
     cards: [
-      { label: "3.1", text: "Aplicação da Estatística de Tsallis ao Magnetismo" },
+      {
+        label: "3.1",
+        slideTarget: "s19-tsallis-problem",
+        className: "research-line-card-tsallis",
+        html: `
+          <p>Aplicação da Estatística de Tsallis ao Magnetismo</p>
+          <button class="publications-trigger research-line-publications-trigger" type="button" data-publications-open="tsallis-publications">12 publicações · abrir lista</button>
+        `
+      },
       { label: "3.2", text: "Efeito magnetocalórico e materiais magnéticos" },
       { label: "3.3", text: "Complexos Metálicos, Magnetismo e Modelagem Termodinâmica" },
       { label: "3.4", text: "Informação quântica em materiais magnéticos" },

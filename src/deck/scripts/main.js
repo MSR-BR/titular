@@ -169,6 +169,10 @@
         const tag = normalizedCard.href ? "a" : "article";
         const href = normalizedCard.href ? ` href="${escapeAttribute(normalizedCard.href)}"` : "";
         const linkedClass = normalizedCard.href ? " index-section-card" : "";
+        const slideTarget = normalizedCard.slideTarget
+          ? ` data-slide-target="${escapeAttribute(normalizedCard.slideTarget)}" role="link" tabindex="0"`
+          : "";
+        const navigableClass = normalizedCard.slideTarget ? " navigable-card" : "";
         const logoClass = normalizedCard.logo?.src ? " has-institutional-logo" : "";
         const customClass = normalizedCard.className ? ` ${escapeAttribute(normalizedCard.className)}` : "";
         const logo = normalizedCard.logo?.src
@@ -178,7 +182,7 @@
           ? `<span class="section-number" aria-hidden="true">${escapeHtml(normalizedCard.number)}</span>`
           : "";
         return `
-          <${tag} class="info-card${linkedClass}${logoClass}${customClass}"${href}>
+          <${tag} class="info-card${linkedClass}${navigableClass}${logoClass}${customClass}"${href}${slideTarget}>
             ${number}
             ${logo}
             ${label}
@@ -761,6 +765,26 @@
       dialog.querySelector(".publications-close")?.addEventListener("click", () => dialog.close());
       dialog.addEventListener("click", (event) => {
         if (event.target === dialog) dialog.close();
+      });
+    });
+
+    function navigateToCardTarget(card) {
+      const targetIndex = slides.findIndex((slide) => slide.id === card.dataset.slideTarget);
+      if (targetIndex < 0) return;
+      currentIndex = targetIndex;
+      updateControls();
+      document.getElementById(`slide-${targetIndex + 1}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    deck.querySelectorAll("[data-slide-target]").forEach((card) => {
+      card.addEventListener("click", (event) => {
+        if (event.target.closest("button, a, dialog")) return;
+        navigateToCardTarget(card);
+      });
+      card.addEventListener("keydown", (event) => {
+        if (event.target !== card || (event.key !== "Enter" && event.key !== " ")) return;
+        event.preventDefault();
+        navigateToCardTarget(card);
       });
     });
 
