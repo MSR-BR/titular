@@ -627,8 +627,9 @@ window.MemorialDeckSlides = [
     section: "Resultados",
     eyebrow: "Linha 1 | Landau e conexão experimental",
     title: "",
-    lead: "A expansão da energia livre fornece todos os coeficientes de Landau e conecta a ordem da transição às assinaturas experimentais de La₀.₆₀Y₀.₀₇Ca₀.₃₃MnO₃.",
+    lead: "",
     items: [
+      "A expansão da energia livre fornece todos os coeficientes de Landau e conecta a ordem da transição às assinaturas experimentais de La₀.₆₀Y₀.₀₇Ca₀.₃₃MnO₃.",
       "B_q < 0 para q < 0,5: o Arrot plot adquire inclinação negativa e identifica uma transição de primeira ordem.",
       "Os parâmetros ajustados em M(H) reproduzem H/M(T) sem qualquer parâmetro adicional."
     ],
