@@ -548,6 +548,7 @@ window.MemorialDeckSlides = [
         className: "research-line-card-tsallis",
         html: `
           <p>Aplicação da Estatística de Tsallis ao Magnetismo</p>
+          <p class="research-line-period">2002–2009</p>
           <button class="publications-trigger research-line-publications-trigger" type="button" data-publications-open="tsallis-publications">12 publicações · abrir lista</button>
         `
       },

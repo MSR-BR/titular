@@ -2634,11 +2634,26 @@
 
 .deck-shell .research-line-card-tsallis .info-card-text {
   display: grid;
-  gap: .7rem;
+  gap: .46rem;
 }
 
 .deck-shell .research-line-card-tsallis .info-card-text > p {
   margin: 0;
+}
+
+.deck-shell .research-line-card-tsallis {
+  --section-accent: #315d85;
+}
+
+.deck-shell .research-line-card-tsallis .research-line-period {
+  color: #315d85;
+  font-size: .72rem;
+  font-weight: 820;
+  letter-spacing: .08em;
+}
+
+.deck-shell .research-line-card-tsallis:hover .research-line-period {
+  color: rgba(255, 255, 255, .84);
 }
 
 .deck-shell .research-line-publications-trigger {
