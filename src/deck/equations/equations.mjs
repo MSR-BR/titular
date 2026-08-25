@@ -40,10 +40,10 @@ export const equations = [
     title: "Coeficientes de Landau generalizados",
     sourceRefs: ["PRB 68, 014404 (2003), Eqs. (26)-(29)"],
     tex: String.raw`\begin{aligned}
-G&=\frac{A_q}{2}m^2+\frac{B_q}{4}m^4+\frac{C_q}{6}m^6-hm,\\
-A_q&=\frac{3}{q}(t-q),\\
-B_q&=\frac{9(-3+8q-4q^2)t}{5q^3},\\
-C_q&=\frac{27(54-318q+623q^2-464q^3+116q^4)t}{175q^5}
+G&=\frac{A_q}{2}m^2+\frac{B_q}{4}m^4+\frac{C_q}{6}m^6-hm,
+&\qquad A_q&=\frac{3}{q}(t-q),\\[5pt]
+B_q&=\frac{9(-3+8q-4q^2)t}{5q^3},
+&\qquad C_q&=\frac{27(54-318q+623q^2-464q^3+116q^4)t}{175q^5}
 \end{aligned}`,
   },
   {

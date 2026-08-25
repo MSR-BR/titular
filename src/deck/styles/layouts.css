@@ -2569,9 +2569,19 @@
   grid-template-columns: minmax(0, 1fr);
 }
 
+.deck-shell .tsallis-theory-slide .technical-summary .info-card.story-reveal,
+.deck-shell .tsallis-theory-slide .technical-summary .info-card.story-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: none;
+  transition: none;
+  will-change: auto;
+}
+
 .deck-shell .tsallis-validation-slide .technical-primary {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(2, 12.5rem);
+  grid-template-rows: 10rem repeat(2, 9.35rem);
+  gap: .5rem;
   align-content: start;
 }
 
@@ -2604,22 +2614,22 @@
 }
 
 .deck-shell .tsallis-validation-slide .figure-gallery .deck-figure:first-child {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 1;
+  grid-row: 2 / span 2;
 }
 
 .deck-shell .tsallis-validation-slide .figure-gallery .deck-figure:nth-child(2) {
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 2;
 }
 
 .deck-shell .tsallis-validation-slide .figure-gallery .deck-figure:nth-child(3) {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 3;
 }
 
 .deck-shell .tsallis-validation-slide .equation-stack {
-  grid-column: 1;
+  grid-column: 1 / -1;
   grid-row: 1;
 }
 
