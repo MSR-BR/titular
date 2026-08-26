@@ -1014,15 +1014,29 @@ window.MemorialDeckSlides = [
   {
     id: "s28-cardamomo",
     layout: "content",
+    className: "cardamomo-slide",
     section: "Resultados",
     eyebrow: "Linha 3 | Ferramenta computacional",
-    title: "CARDAMOMO como infraestrutura teórica",
+    title: "cardamomo",
+    animateContentBlock: true,
     lead: "O pacote automatiza o ajuste de modelos quânticos e clássicos a dados experimentais de suscetibilidade magnética.",
     items: [
       "Modelos para clusters e cadeias unimetálicas e bimetálicas.",
       "Cadeias regulares e irregulares, além de modelos de Ising.",
       "Integra modelagem microscópica e dados experimentais em uma ferramenta reprodutível.",
       "Registrado no memorial como propriedade intelectual/produção computacional."
+    ],
+    figures: [
+      {
+        src: "assets/figures/cardamomo-zero-dimensional-article.png",
+        alt: "Página de abertura do artigo Models for zero-dimensional molecular magnets",
+        caption: "Models for zero-dimensional molecular magnets · Computer Physics Communications 182 (2011) 1169–1177"
+      },
+      {
+        src: "assets/figures/cardamomo-one-dimensional-article.png",
+        alt: "Página de abertura do artigo Models for one-dimensional molecular magnets",
+        caption: "Models for one-dimensional molecular magnets · Computer Physics Communications 183 (2012) 99–105"
+      }
     ],
     footerRefs: "MEM pp.25,99; refs. [26,27]",
     sourceRefs: ["E020", "E014"]

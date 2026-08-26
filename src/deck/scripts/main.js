@@ -536,12 +536,15 @@
     }
 
     if (slide.layout === "content") {
-      const bodyClass = slide.figure ? "slide-body content-with-figure" : "slide-body";
+      const hasGallery = Array.isArray(slide.figures) && slide.figures.length > 0;
+      const bodyClass = slide.figure
+        ? "slide-body content-with-figure"
+        : `slide-body${hasGallery ? " content-with-gallery" : ""}`;
       return `
         <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title, { omitLead: true })}
           <div class="${bodyClass}">
-            <div class="content-panel">
+            <div class="content-panel${slide.animateContentBlock ? " animate-content-block" : ""}">
               ${slide.lead ? `<p class="slide-lead">${escapeHtml(slide.lead)}</p>` : ""}
               ${renderList(slide.items)}
               ${renderEquations(slide.equations)}
@@ -549,6 +552,7 @@
               ${renderMetrics(slide.metrics)}
             </div>
             ${renderFigure(slide.figure)}
+            ${renderFigureGallery(slide.figures)}
           </div>
           ${footer}
           ${notes}
@@ -853,7 +857,7 @@
     const scrollRevealGroups = [];
     deck.querySelectorAll(".slide").forEach((slide) => {
       const animatedElements = slide.querySelectorAll(
-        ".section-kicker, .eyebrow, .slide-title, .slide-subtitle, .slide-affiliations, .slide-lead, .info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure, .standalone-figure-link, .section-question, .photo-publications-trigger"
+        ".section-kicker, .eyebrow, .slide-title, .slide-subtitle, .slide-affiliations, .slide-lead, .animate-content-block, .info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure, .standalone-figure-link, .section-question, .photo-publications-trigger"
       );
       const usesScrollTemplate =
         slide.classList.contains("subsection-slide") ||
