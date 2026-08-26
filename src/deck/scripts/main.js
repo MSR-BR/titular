@@ -862,6 +862,10 @@
       const usesScrollTemplate =
         slide.classList.contains("subsection-slide") ||
         slide.classList.contains("section-scroll-card");
+      const subsectionNumber = Number.parseFloat(slide.dataset.subsectionNumber || "0");
+      const animateResearchCards =
+        slide.dataset.sectionNumber === "3" &&
+        subsectionNumber >= 3.3;
       const scrubElements = [];
       animatedElements.forEach((element, order) => {
         const isIndexCard = slide.classList.contains("index-cover") && element.classList.contains("index-section-card");
@@ -876,7 +880,10 @@
         }
         element.style.setProperty("--reveal-order", Math.min(order, 10));
         if (isBookTurn) element.classList.add("book-turn-reveal");
-        if (usesScrollTemplate || isIndexCard || isBookTurn || isTraditionalFigure) {
+        const isResearchCard =
+          animateResearchCards &&
+          element.matches(".info-card, .metric-item");
+        if (usesScrollTemplate || isIndexCard || isBookTurn || isTraditionalFigure || isResearchCard) {
           element.classList.add("scroll-scrub-reveal");
           scrubElements.push(element);
         } else {
