@@ -592,7 +592,7 @@ window.MemorialDeckSlides = [
     section: "Resultados",
     eyebrow: "Linha 1 | Modelo não extensivo",
     title: "",
-    lead: "M. S. Reis, V. S. Amaral, J. P. Araújo e I. S. Oliveira, Physical Review B 68, 014404 (2003).",
+    lead: "",
     equations: [
       equationAsset("tsallis-entropy", "Entropia não extensiva de Tsallis", ""),
       equationAsset("tsallis-density-matrix", "Matriz densidade generalizada", ""),
@@ -657,6 +657,20 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E018"]
   },
   {
+    id: "s22-tsallis-paper",
+    layout: "photo",
+    className: "tsallis-paper-slide",
+    section: "Resultados",
+    title: "",
+    figure: {
+      src: "assets/figures/tsallis-prb-68-title.png",
+      alt: "Cabeçalho do artigo Magnetic phase diagram for a nonextensive system: Experimental connection with manganites",
+      caption: ""
+    },
+    footerRefs: "Physical Review B 68, 014404 (2003)",
+    sourceRefs: ["E018"]
+  },
+  {
     id: "s22-tsallis-contribution",
     layout: "modal",
     cards: [
@@ -695,15 +709,15 @@ window.MemorialDeckSlides = [
     cards: [
       {
         label: "Efeito magnetocalórico",
-        text: "A aplicação ou remoção do campo reorganiza os momentos magnéticos e altera a entropia do material, produzindo troca de calor ou mudança de temperatura."
+        text: "A variação do campo magnético altera a magnetização que, por fim, altera a entropia de spin do material, produzindo troca de calor no processo isotérmico ou mudança de temperatura no processo adiabático."
       },
       {
         label: "Processo isotérmico",
-        text: "A temperatura é mantida constante pela troca de calor com o meio. A variação de campo produz uma mudança de entropia magnética, ΔSₘₐg."
+        text: "A temperatura é mantida constante devido ao contato com o reservatório térmico. A variação de campo produz uma mudança de entropia magnética, ΔQ = TΔS."
       },
       {
         label: "Processo adiabático",
-        text: "Sem troca de calor com o meio, a entropia total permanece constante. A variação de campo produz uma mudança de temperatura, ΔTₐd."
+        text: "Sem troca de calor com o meio, a entropia total permanece constante. A variação de campo modifica a entropia magnética e, consequentemente, a entropia da rede, levando a uma mudança de temperatura, ΔTₐd."
       },
       {
         label: "Processo isotérmico · vídeo",
@@ -717,6 +731,36 @@ window.MemorialDeckSlides = [
       }
     ],
     footerRefs: "MEM pp.23-24; vídeos demonstrativos fornecidos pelo autor",
+    sourceRefs: ["E019"]
+  },
+  {
+    id: "s23c-mce-entropy-figure",
+    layout: "photo",
+    className: "mce-entropy-slide",
+    section: "Resultados",
+    title: "",
+    figure: {
+      src: "assets/figures/mce-entropy-temperature.png",
+      alt: "Entropias magnética, de rede e total em função da temperatura, com as variações isotérmica de entropia e adiabática de temperatura",
+      caption: ""
+    },
+    footerRefs: "Representação termodinâmica dos processos isotérmico e adiabático",
+    sourceRefs: ["E019"]
+  },
+  {
+    id: "s23d-mce-equations",
+    layout: "technical",
+    className: "mce-equations-slide",
+    section: "Resultados",
+    eyebrow: "Linha 2 | Efeito magnetocalórico",
+    title: "",
+    lead: "",
+    equations: [
+      equationAsset("mce-entropy-process", "Processo isotérmico e variação de entropia magnética", ""),
+      equationAsset("mce-temperature-process", "Processo adiabático e variação de temperatura", "")
+    ],
+    items: [],
+    footerRefs: "MEM pp.23-24; relações de Maxwell e condição adiabática",
     sourceRefs: ["E019"]
   },
   {

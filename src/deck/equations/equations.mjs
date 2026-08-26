@@ -71,6 +71,28 @@ B_q&=\frac{9(-3+8q-4q^2)t}{5q^3},
     tex: String.raw`\Delta T_{\mathrm{ad}}(T,\Delta B)=-\int_{B_i}^{B_f}\frac{T}{C_{\mathrm{tot}}(T,B)}\left(\frac{\partial M}{\partial T}\right)_B\,dB`,
   },
   {
+    id: "mce-entropy-process",
+    title: "Processo isotermico e variacao de entropia magnetica",
+    sourceRefs: ["MEM 4.2", "refs. [9-11]"],
+    tex: String.raw`\left.\frac{\partial M}{\partial T}\right|_B
+=\left.\frac{\partial S_{\mathrm{mag}}}{\partial B}\right|_T,
+\qquad
+\Delta S_{\mathrm{mag}}(T,\Delta B)
+=\int_{B_i}^{B_f}\left.\frac{\partial M}{\partial T}\right|_B\,dB`,
+  },
+  {
+    id: "mce-temperature-process",
+    title: "Processo adiabatico e variacao de temperatura",
+    sourceRefs: ["MEM 4.2", "refs. [9-11]"],
+    tex: String.raw`dS_{\mathrm{tot}}
+=\left.\frac{\partial S_{\mathrm{tot}}}{\partial T}\right|_B dT
++\left.\frac{\partial S_{\mathrm{tot}}}{\partial B}\right|_T dB,
+\qquad
+\Delta T_{\mathrm{ad}}(T,\Delta B)
+=-\int_{B_i}^{B_f}\frac{T}{C_{\mathrm{tot}}}
+\left.\frac{\partial M}{\partial T}\right|_B\,dB`,
+  },
+  {
     id: "heat-capacity-split",
     title: "Capacidade termica total",
     sourceRefs: ["MEM 4.2", "refs. [9-11]"],

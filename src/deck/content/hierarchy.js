@@ -68,10 +68,12 @@
           { id: "s20-tsallis-equations", topic: "Fundamentos estatísticos" },
           { id: "s20b-tsallis-magnetism", topic: "Formalismo magnético" },
           { id: "s21-tsallis-result", topic: "Teoria e experimento" },
-          { id: "s22-tsallis-contribution", topic: "Significado físico e legado" }
+          { id: "s22-tsallis-paper", topic: "Artigo de referência" }
         ] },
         { number: "3.2", title: "Efeito magnetocalórico e materiais magnéticos", slides: [
           { id: "s23-mce-foundation", topic: "Fundamentos termodinâmicos" },
+          { id: "s23c-mce-entropy-figure", topic: "Entropia e temperatura" },
+          { id: "s23d-mce-equations", topic: "Variações de entropia e temperatura" },
           { id: "s24-mce-materials", topic: "Materiais" },
           { id: "s25-mce-synthesis", topic: "Síntese" }
         ] },
