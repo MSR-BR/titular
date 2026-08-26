@@ -905,12 +905,12 @@ window.MemorialDeckSlides = [
       {
         src: "assets/figures/complexes-ni4-cubane.jpg",
         alt: "Estrutura do complexo quiral Ni4 em geometria cubano e sistema local de coordenadas",
-        caption: "Journal of Molecular Structure 1274 (2023) 134412"
+        caption: "Cluster quiral de Ni₄: [NaNi₄(OAc)₃(H₂O)₃(L)₂(N₃)₂]·7H₂O\nJournal of Molecular Structure 1274 (2023) 134412"
       },
       {
         src: "assets/figures/complexes-co2-dimer.png",
         alt: "Estrutura molecular de um dímero de cobalto II com pontes bioinspiradas",
-        caption: "ACS Phys. Chem. Au 2026, 6, 334–339"
+        caption: "Dímero de Co(II) com pontes de adenina: [Co₂(μ-L¹H)₂(μ-H₂O)₂(H₂O)₄]·4NO₃·2H₂O\nACS Phys. Chem. Au 2026, 6, 334–339"
       }
     ],
     cards: [],
@@ -927,7 +927,7 @@ window.MemorialDeckSlides = [
     equations: [
       equationAsset("heisenberg-hamiltonian", "Interação de troca de Heisenberg", "J > 0: ferro; J < 0: antiferromagnética"),
       equationAsset("dm-hamiltonian", "Interação de Dzyaloshinskii–Moriya", "acoplamento antissimétrico"),
-      equationAsset("local-anisotropy-hamiltonian", "Anisotropia magnetocristalina local", "acoplamento spin–órbita"),
+      equationAsset("local-anisotropy-hamiltonian", "Anisotropia magnetocristalina local", "anisotropia magnetocristalina"),
       equationAsset("zeeman-hamiltonian", "Interação de Zeeman", "campo magnético externo")
     ],
     items: [],
