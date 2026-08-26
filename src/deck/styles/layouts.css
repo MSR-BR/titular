@@ -2534,6 +2534,10 @@
   gap: .5rem;
 }
 
+.deck-shell .tsallis-theory-slide .slide-lead {
+  display: none !important;
+}
+
 .deck-shell .tsallis-theory-slide .technical-evidence,
 .deck-shell .tsallis-theory-slide .technical-primary {
   display: contents;

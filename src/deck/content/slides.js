@@ -592,7 +592,6 @@ window.MemorialDeckSlides = [
     section: "Resultados",
     eyebrow: "Linha 1 | Modelo não extensivo",
     title: "",
-    lead: "",
     equations: [
       equationAsset("tsallis-entropy", "Entropia não extensiva de Tsallis", ""),
       equationAsset("tsallis-density-matrix", "Matriz densidade generalizada", ""),
@@ -663,7 +662,7 @@ window.MemorialDeckSlides = [
     section: "Resultados",
     title: "",
     figure: {
-      src: "assets/figures/tsallis-prb-68-title.png",
+      src: "assets/figures/tsallis-prb-68-title.png?v=20260826.02",
       alt: "Cabeçalho do artigo Magnetic phase diagram for a nonextensive system: Experimental connection with manganites",
       caption: ""
     },
