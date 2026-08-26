@@ -576,7 +576,11 @@ window.MemorialDeckSlides = [
         label: "3.5",
         slideTarget: "s31-graphene-concept",
         className: "research-line-card-relativistic",
-        text: "Efeitos calóricos em materiais relativísticos"
+        html: `
+          <p>Efeitos calóricos em materiais relativísticos</p>
+          <p class="research-line-period">2011–2020</p>
+          <button class="publications-trigger research-line-publications-trigger" type="button" data-publications-open="graphene-caloric-publications">22 publicações · abrir lista</button>
+        `
       },
       {
         label: "3.6",
@@ -1060,6 +1064,8 @@ window.MemorialDeckSlides = [
     section: "Resultados",
     eyebrow: "Linha 5 | Materiais relativísticos",
     title: "Grafeno e efeitos calóricos oscilatórios",
+    publicationsDialogId: "graphene-caloric-publications",
+    publicationsLabel: "22 publicações · abrir lista",
     lead: "Em materiais relativísticos, a quantização de Landau e o espectro de Dirac alteram a resposta termodinâmica a campos externos.",
     equations: [
       equationAsset("graphene-landau", "Quantização de Landau em grafeno", "escala m e níveis relativísticos"),
@@ -1098,6 +1104,44 @@ window.MemorialDeckSlides = [
     ],
     footerRefs: "MEM pp.29-30; refs. [43-51]",
     sourceRefs: ["E022"]
+  },
+  {
+    id: "s32b-graphene-caloric-publications",
+    layout: "modal",
+    cards: [
+      {
+        html: `<dialog class="publications-dialog" id="graphene-caloric-publications" aria-labelledby="graphene-caloric-publications-title">
+            <div class="publications-dialog-head">
+              <div><p class="publications-kicker">Efeitos calóricos em grafeno · 2011–2020</p><h2 id="graphene-caloric-publications-title">22 publicações associadas</h2></div>
+              <button class="publications-close" type="button" aria-label="Fechar publicações">×</button>
+            </div>
+            <ol class="publications-list" reversed>
+              <li><span>2020</span><strong>Caloric effects of quantum materials: An outlook.</strong><small>M.S. Reis e N. Ma.</small><em>Physics Open 4, 100028.</em><a href="https://scholar.google.com/scholar?q=Caloric+effects+of+quantum+materials+An+outlook+Reis+Ma" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2019</span><strong>External mechanisms for valley polarisation and its effect on the magnetisation of graphene: strain and electric field.</strong><small>N. Ma, Z. Alisultanov e M.S. Reis.</small><em>Journal of Magnetism and Magnetic Materials 482, 178.</em><a href="https://scholar.google.com/scholar?q=External+mechanisms+valley+polarisation+magnetisation+graphene+strain+electric+field" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2019</span><strong>Anomalous acoustic phonons as the physical mechanism behind the adiabatic barocaloric effect on graphene.</strong><small>N. Ma e M.S. Reis.</small><em>Scientific Reports 9, 219.</em><a href="https://scholar.google.com/scholar?q=Anomalous+acoustic+phonons+adiabatic+barocaloric+effect+graphene" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2017</span><strong>Barocaloric effect on graphene.</strong><small>N. Ma e M.S. Reis.</small><em>Scientific Reports 7, 13257.</em><a href="https://scholar.google.com/scholar?q=Barocaloric+effect+on+graphene+Ma+Reis" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2016</span><strong>Magnetocaloric Effect of Graphenes.</strong><small>M.S. Reis e L.S. Paixão.</small><em>CRC Graphene Science Handbook: Nanostructure and Atomic Arrangement, cap. 34, p. 541.</em><a href="https://scholar.google.com/scholar?q=Magnetocaloric+Effect+of+Graphenes+Reis+Paixao" target="_blank" rel="noopener noreferrer">Localizar capítulo ↗</a></li>
+              <li><span>2016</span><strong>On the quantum magnetic oscillations of electrical and thermal conductivities of graphene.</strong><small>Z.Z. Alisultanov e M.S. Reis.</small><em>Solid State Communications 234, 26.</em><a href="https://scholar.google.com/scholar?q=quantum+magnetic+oscillations+electrical+thermal+conductivities+graphene" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2016</span><strong>Quantum capacitance oscillations in graphene under crossed magnetic and electric fields.</strong><small>Z.Z. Alisultanov e M.S. Reis.</small><em>Europhysics Letters 113, 28004.</em><a href="https://scholar.google.com/scholar?q=Quantum+capacitance+oscillations+graphene+crossed+magnetic+electric+fields" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2016</span><strong>Magneto-oscillations on specific heat of graphene monolayer.</strong><small>Z.Z. Alisultanov e M.S. Reis.</small><em>Physics Letters A 380, 470.</em><a href="https://scholar.google.com/scholar?q=Magneto-oscillations+specific+heat+graphene+monolayer" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2015</span><strong>Magnetocaloric cycle with six stages: Possible application of graphene at low temperature.</strong><small>M.S. Reis.</small><em>Applied Physics Letters 107, 102401.</em><a href="https://scholar.google.com/scholar?q=Magnetocaloric+cycle+six+stages+graphene+low+temperature" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2015</span><strong>Oscillating magneto- and electrocaloric effects on bilayer graphenes.</strong><small>Z.Z. Alisultanov e M.S. Reis.</small><em>Solid State Communications 206, 17.</em><a href="https://scholar.google.com/scholar?q=Oscillating+magneto+electrocaloric+effects+bilayer+graphenes" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2014</span><strong>Oscillating magnetocaloric effect in quantum nanoribbons.</strong><small>Z.Z. Alisultanov, R.P. Meilanov, L. Paixão e M.S. Reis.</small><em>Physica E 65, 44.</em><a href="https://scholar.google.com/scholar?q=Oscillating+magnetocaloric+effect+quantum+nanoribbons" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2014</span><strong>Oscillating magnetocaloric effect of a multilayer graphene.</strong><small>Z.Z. Alisultanov, L. Paixão e M.S. Reis.</small><em>Applied Physics Letters 105, 232406.</em><a href="https://scholar.google.com/scholar?q=Oscillating+magnetocaloric+effect+multilayer+graphene" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2014</span><strong>Oscillating adiabatic temperature change of 2D diamagnetic materials.</strong><small>L. Paixão, Z.Z. Alisultanov e M.S. Reis.</small><em>Journal of Magnetism and Magnetic Materials 368, 374.</em><a href="https://scholar.google.com/scholar?q=Oscillating+adiabatic+temperature+change+2D+diamagnetic+materials" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2014</span><strong>Mean field magnetization of gapped anisotropic multiplet.</strong><small>L. Paixão e M.S. Reis.</small><em>Physica B 442, 95.</em><a href="https://scholar.google.com/scholar?q=Mean+field+magnetization+gapped+anisotropic+multiplet" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2014</span><strong>Diamagnetic magnetocaloric effect due to a transversal oscillating magnetic field.</strong><small>M.S. Reis.</small><em>Physics Letters A 378, 1903.</em><a href="https://scholar.google.com/scholar?q=Diamagnetic+magnetocaloric+effect+transversal+oscillating+magnetic+field" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2014</span><strong>Step-like features on caloric effects of graphenes.</strong><small>M.S. Reis.</small><em>Physics Letters A 378, 918.</em><a href="https://scholar.google.com/scholar?q=Step-like+features+caloric+effects+graphenes" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2013</span><strong>Oscillating magnetocaloric effect of a two dimensional non-relativistic diamagnetic material.</strong><small>M.S. Reis.</small><em>Journal of Applied Physics 113, 243901.</em><a href="https://scholar.google.com/scholar?q=Oscillating+magnetocaloric+effect+two+dimensional+non-relativistic+diamagnetic+material" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2013</span><strong>Influence of longitudinal electric field on the oscillating magnetocaloric effect of graphenes.</strong><small>M.S. Reis.</small><em>Solid State Communications 161, 19.</em><a href="https://scholar.google.com/scholar?q=Influence+longitudinal+electric+field+oscillating+magnetocaloric+effect+graphenes" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2013</span><strong>Electrocaloric effect on graphenes.</strong><small>M.S. Reis e S. Soriano.</small><em>Applied Physics Letters 102, 112903.</em><a href="https://scholar.google.com/scholar?q=Electrocaloric+effect+on+graphenes+Reis+Soriano" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2012</span><strong>Oscillating magnetocaloric effect on graphenes.</strong><small>M.S. Reis.</small><em>Applied Physics Letters 101, 222405.</em><a href="https://scholar.google.com/scholar?q=Oscillating+magnetocaloric+effect+on+graphenes" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2012</span><strong>Oscillating adiabatic temperature change of diamagnetic materials.</strong><small>M.S. Reis.</small><em>Solid State Communications 152, 921.</em><a href="https://scholar.google.com/scholar?q=Oscillating+adiabatic+temperature+change+diamagnetic+materials" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2011</span><strong>Oscillating magnetocaloric effect.</strong><small>M.S. Reis.</small><em>Applied Physics Letters 99, 052511.</em><a href="https://scholar.google.com/scholar?q=Oscillating+magnetocaloric+effect+Applied+Physics+Letters+99+052511" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+            </ol>
+          </dialog>`
+      }
+    ]
   },
   {
     id: "s33-quantum-thermo-batteries",

@@ -3403,12 +3403,12 @@
   outline-offset: 4px;
 }
 
-.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce, .research-line-card-complexes) .info-card-text {
+.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce, .research-line-card-complexes, .research-line-card-relativistic, .research-line-card-quantum-thermo) .info-card-text {
   display: grid;
   gap: .46rem;
 }
 
-.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce, .research-line-card-complexes) .info-card-text > p {
+.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce, .research-line-card-complexes, .research-line-card-relativistic, .research-line-card-quantum-thermo) .info-card-text > p {
   margin: 0;
 }
 
@@ -3424,14 +3424,22 @@
   --section-accent: #0b6f74;
 }
 
-.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce, .research-line-card-complexes) .research-line-period {
+.deck-shell .research-line-card-relativistic {
+  --section-accent: #8a4c20;
+}
+
+.deck-shell .research-line-card-quantum-thermo {
+  --section-accent: #5d438c;
+}
+
+.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce, .research-line-card-complexes, .research-line-card-relativistic, .research-line-card-quantum-thermo) .research-line-period {
   color: var(--section-accent);
   font-size: .72rem;
   font-weight: 820;
   letter-spacing: .08em;
 }
 
-.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce, .research-line-card-complexes):hover .research-line-period {
+.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce, .research-line-card-complexes, .research-line-card-relativistic, .research-line-card-quantum-thermo):hover .research-line-period {
   color: rgba(255, 255, 255, .84);
 }
 
