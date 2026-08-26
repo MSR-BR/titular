@@ -2815,6 +2815,15 @@
   box-shadow: none;
 }
 
+.deck-shell .mce-review-paper-slide .deck-figure figcaption {
+  margin-top: .5rem;
+  color: var(--muted);
+  font-size: .78rem;
+  font-weight: 720;
+  line-height: 1.25;
+  text-align: center;
+}
+
 .deck-shell .mce-materials-slide .card-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-auto-rows: minmax(10rem, auto);
@@ -3071,12 +3080,12 @@
   outline-offset: 4px;
 }
 
-.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce) .info-card-text {
+.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce, .research-line-card-complexes) .info-card-text {
   display: grid;
   gap: .46rem;
 }
 
-.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce) .info-card-text > p {
+.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce, .research-line-card-complexes) .info-card-text > p {
   margin: 0;
 }
 
@@ -3088,14 +3097,18 @@
   --section-accent: #8b3156;
 }
 
-.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce) .research-line-period {
+.deck-shell .research-line-card-complexes {
+  --section-accent: #0b6f74;
+}
+
+.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce, .research-line-card-complexes) .research-line-period {
   color: var(--section-accent);
   font-size: .72rem;
   font-weight: 820;
   letter-spacing: .08em;
 }
 
-.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce):hover .research-line-period {
+.deck-shell :is(.research-line-card-tsallis, .research-line-card-mce, .research-line-card-complexes):hover .research-line-period {
   color: rgba(255, 255, 255, .84);
 }
 

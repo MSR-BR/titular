@@ -562,7 +562,16 @@ window.MemorialDeckSlides = [
           <button class="publications-trigger research-line-publications-trigger" type="button" data-publications-open="mce-publications">35 publicações · abrir lista</button>
         `
       },
-      { label: "3.3", text: "Complexos Metálicos, Magnetismo e Modelagem Termodinâmica" },
+      {
+        label: "3.3",
+        slideTarget: "s26-complexes-hamiltonian",
+        className: "research-line-card-complexes",
+        html: `
+          <p>Complexos Metálicos, Magnetismo e Modelagem Termodinâmica</p>
+          <p class="research-line-period">2006–presente</p>
+          <button class="publications-trigger research-line-publications-trigger" type="button" data-publications-open="complexes-publications">18 publicações · abrir lista</button>
+        `
+      },
       { label: "3.4", text: "Informação quântica em materiais magnéticos" },
       { label: "3.5", text: "Efeitos calóricos em materiais relativísticos" },
       { label: "3.6", text: "Termodinâmica quântica aplicada a novos materiais" }
@@ -845,10 +854,44 @@ window.MemorialDeckSlides = [
     figure: {
       src: "assets/figures/mce-coordination-chemistry-reviews-title.png?v=20260826.04",
       alt: "Cabeçalho do artigo Magnetocaloric and barocaloric effects of metal complexes for solid state cooling: Review, trends and perspectives",
-      caption: ""
+      caption: "IF: 25.6 · Citations: 91"
     },
     footerRefs: "M.S. Reis, Coordination Chemistry Reviews 417 (2020) 213357",
     sourceRefs: ["E019"]
+  },
+  {
+    id: "s25b-complexes-publications",
+    layout: "modal",
+    cards: [
+      {
+        html: `<dialog class="publications-dialog" id="complexes-publications" aria-labelledby="complexes-publications-title">
+            <div class="publications-dialog-head">
+              <div><p class="publications-kicker">Complexos metálicos e modelagem · 2006–presente</p><h2 id="complexes-publications-title">18 publicações associadas</h2></div>
+              <button class="publications-close" type="button" aria-label="Fechar publicações">×</button>
+            </div>
+            <ol class="publications-list" reversed>
+              <li><span>2026</span><strong>Magnetic Anisotropy and Spin Coupling in a Cobalt(II) Dimer with Bioinspired Bridges.</strong><small>A. Almeida, A.C. das Neves, P. Brandão, M. Masmoudi, L. Ghivelder, C. Cruz et al.</small><em>ACS Physical Chemistry Au 6(2), 334.</em><a href="https://scholar.google.com/scholar?q=Magnetic+Anisotropy+and+Spin+Coupling+in+a+Cobalt+II+Dimer+with+Bioinspired+Bridges" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2023</span><strong>Novel Co₅ Cluster Based Triazole Bridged Cobalt-Fluorophosphate: Synthesis, Structure, Magnetic and Heterogeneous Catalytic Epoxidation Studies.</strong><small>R. Sen, S. De, A.M. dos Santos, L.B.L. Escobar, P. Brandão, F. Paz, M.S. Reis e Z. Lin.</small><em>European Journal of Inorganic Chemistry, e202300123.</em><a href="https://scholar.google.com/scholar?q=Novel+Co5+Cluster+Based+Triazole+Bridged+Cobalt-Fluorophosphate" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2023</span><strong>A chiral alkali metal capped Ni₄ cubane complex: Synthesis, structure, magnetic and catalytic bromination studies.</strong><small>R. Sen, K. Mondal, A.M. dos Santos, L.L. Escobar, P. Brandão, M.S. Reis e Z. Lin.</small><em>Journal of Molecular Structure 1274, 134412.</em><a href="https://scholar.google.com/scholar?q=A+chiral+alkali+metal+capped+Ni4+cubane+complex" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2022</span><strong>Synthesis and magnetic properties of two cobalt-coordination polymers containing 1,10-phenanthroline and alkyl dicarboxylates ligands.</strong><small>F.J. Teixeira, L.S. Flores, T. Valverde, L.B.L. Escobar, M.S. Reis e C.C. Corrêa.</small><em>Journal of Molecular Structure 1261, 132820.</em><a href="https://scholar.google.com/scholar?q=two+cobalt-coordination+polymers+1,10-phenanthroline+alkyl+dicarboxylates" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2020</span><strong>A 3D interpenetrated Co(II)-glutarate coordination polymer: Synthesis, crystal structure, magnetic and adsorption properties.</strong><small>F.J. Teixeira, L.S. Flores, L.B.L. Escobar, T.C. Santos, M.I. Yoshida, M.S. Reis, S. Hill, C.M. Ronconi e C.C. Corrêa.</small><em>Inorganica Chimica Acta 511, 119791.</em><a href="https://scholar.google.com/scholar?q=3D+interpenetrated+CoII-glutarate+coordination+polymer" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2018</span><strong>A Co(II) 1D coordination polymer constructed from 1,3-bisbenzyl-2-oxoimidazoline-4,5-dicarboxylic acid: crystal structure and magnetic properties.</strong><small>F.M. Scaldini, M.C.R. Freitas, M.S. Reis, M.I. Yoshida, K. Krambrock e F.C. Machado.</small><em>New Journal of Chemistry 42, 1216.</em><a href="https://scholar.google.com/scholar?q=CoII+1D+coordination+polymer+Scaldini+Reis" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2017</span><strong>A one-dimensional Mn(II)-based metal organic oxide: structure and properties.</strong><small>F.N. Shi, Y.W. Bai, M. Lu, C. Cruz, M.S. Reis e J. Gao.</small><em>Transition Metal Chemistry 42, 605.</em><a href="https://scholar.google.com/scholar?q=one-dimensional+MnII-based+metal+organic+oxide" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2015</span><strong>Heptacopper(II) and dicopper(II)-adenine complexes: synthesis, structural characterization, and magnetic properties.</strong><small>B.J.M. Leite Ferreira, P. Brandão, A.M. Santos, Z. Gai, C. Cruz, M.S. Reis, T.M. Santos e V. Félix.</small><em>Journal of Coordination Chemistry 68, 2770.</em><a href="https://scholar.google.com/scholar?q=HeptacopperII+dicopperII-adenine+complexes" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2014</span><strong>New manganese(II) structures derived from 2,6-dichlorobenzoic acid: Syntheses, crystal structures and magnetism.</strong><small>D. Esteves, J.C.G. Tedesco, S.S. Pedro, C. Cruz, M.S. Reis e P. Brandão.</small><em>Materials Chemistry and Physics 147, 611–616.</em><a href="https://scholar.google.com/scholar?q=manganese+structures+2,6-dichlorobenzoic+acid+Reis" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2014</span><strong>A new metal organic framework constructed of Co(II) ions six and seven-coordinated: Synthesis, structure and magnetism.</strong><small>S.S. Pedro, P. Brandão, F.N. Shi, J.C.G. Tedesco e M.S. Reis.</small><em>Polyhedron 81, 210.</em><a href="https://scholar.google.com/scholar?q=metal+organic+framework+CoII+six+seven-coordinated" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2014</span><strong>Mean field magnetization of gapped anisotropic multiplet.</strong><small>L. Paixão e M.S. Reis.</small><em>Physica B 442, 95.</em><a href="https://scholar.google.com/scholar?q=Mean+field+magnetization+of+gapped+anisotropic+multiplet" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2014</span><strong>Synthesis, characterization and magnetic properties of a manganese(II) silicate containing frustrated S = 5/2 zig-zag ladders.</strong><small>P. Brandão, A.M. Santos, L. Paixão e M.S. Reis.</small><em>Journal of Solid State Chemistry 211, 130.</em><a href="https://scholar.google.com/scholar?q=manganese+silicate+frustrated+zig-zag+ladders" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2013</span><strong>Magnetic Dimensionality of Metal Formate M[(H₂O)₂(HCOO)₂] Compounds (M = Co(II), Cu(II)).</strong><small>L.L.L. Sousa, G.F. Barbosa, F.L.A. Machado, L.R.S. Araújo, P. Brandão e M.S. Reis.</small><em>IEEE Transactions on Magnetics 49, 5610.</em><a href="https://scholar.google.com/scholar?q=Magnetic+Dimensionality+Metal+Formate+CoII+CuII" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2013</span><strong>Novel alkaline earth copper germanates with ferro- and antiferromagnetic S = 1/2 chains.</strong><small>P. Brandão, A.M. Santos e M.S. Reis.</small><em>Journal of Solid State Chemistry 198, 39.</em><a href="https://scholar.google.com/scholar?q=alkaline+earth+copper+germanates+ferro+antiferromagnetic+chains" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2010</span><strong>Synthesis, structures and magnetic properties of three metal-organic frameworks containing Mn²⁺.</strong><small>F.N. Shi, M.S. Reis, P. Brandão, A.M. Souza, V. Félix e J. Rocha.</small><em>Transition Metal Chemistry 35, 779.</em><a href="https://scholar.google.com/scholar?q=three+metal-organic+frameworks+containing+Mn2+Shi+Reis" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2007</span><strong>Specific heat of clusterized low-dimensional magnetic systems.</strong><small>M.S. Reis, A.M. dos Santos, V.S. Amaral, P. Brandão, J. Rocha, N. Tristan, R. Klingeler, B. Büchner, A.N. Vassiliev e O. Volkova.</small><em>Journal of Physics: Condensed Matter 19, 446203.</em><a href="https://doi.org/10.1088/0953-8984/19/44/446203" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2007</span><strong>Synthesis, crystal structure and magnetic characterization of Na₂Cu₅(Si₂O₇)₂: An inorganic ferrimagnetic chain.</strong><small>A.M. dos Santos, P. Brandão, A. Fitch, M.S. Reis, V.S. Amaral e J. Rocha.</small><em>Journal of Solid State Chemistry 180, 16.</em><a href="https://scholar.google.com/scholar?q=Na2Cu5+Si2O7+2+inorganic+ferrimagnetic+chain" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2006</span><strong>Homometallic Ferrimagnetism in Zig-Zag Chain Compound Na₂Cu₅Si₄O₁₄.</strong><small>M.S. Reis, A.M. dos Santos, V.S. Amaral, P. Brandão e J. Rocha.</small><em>Physical Review B 73, 214415.</em><a href="https://doi.org/10.1103/PhysRevB.73.214415" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+            </ol>
+          </dialog>`
+      }
+    ]
   },
   {
     id: "s26-complexes-hamiltonian",
