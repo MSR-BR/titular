@@ -741,7 +741,7 @@ window.MemorialDeckSlides = [
     figure: {
       src: "assets/figures/mce-entropy-temperature.png",
       alt: "Entropias magnética, de rede e total em função da temperatura, com as variações isotérmica de entropia e adiabática de temperatura",
-      caption: ""
+      caption: "M.S. Reis, Coordination Chemistry Reviews 417 (2020) 213357"
     },
     footerRefs: "Representação termodinâmica dos processos isotérmico e adiabático",
     sourceRefs: ["E019"]
@@ -816,16 +816,20 @@ window.MemorialDeckSlides = [
   {
     id: "s24-mce-materials",
     layout: "cards",
+    className: "mce-materials-slide",
     section: "Resultados",
     eyebrow: "Linha 2 | Materiais",
     title: "Classes de materiais e mecanismos",
+    lead: "A pesquisa percorreu diferentes famílias de materiais, relacionando composição, estrutura e ordem magnética aos mecanismos que controlam a resposta calórica.",
     cards: [
-      { label: "Manganitas", text: "Substituição química, correlações e separação de fases." },
-      { label: "Intermetálicos", text: "Transições magnéticas múltiplas e efeitos magnetoestruturais." },
-      { label: "Anisotropia", text: "Amplitude e largura térmica do efeito dependem da anisotropia magnetocristalina." },
-      { label: "Moleculares", text: "Alta degenerescência magnética para maximizar entropia disponível." }
+      { label: "Manganitas e óxidos correlacionados", text: "Ordem de carga, separação de fases, metamagnetismo, dopagem e controle por tamanho de partícula." },
+      { label: "Intermetálicos de terras raras", text: "Sistemas RNi₂, RAl₂, PrNi₅₋ₓCoₓ e Gd₅(Si,Ge)₄, com transições sucessivas e reorientação de spin." },
+      { label: "Ligas e compostos magnetoestruturais", text: "MnAs, MnP e ligas Ni–Mn–Ga, explorando acoplamento magnetoelástico e anisotropia magnetocristalina." },
+      { label: "Complexos metálicos e spin-crossover", text: "Materiais moleculares nos quais campo magnético ou pressão reorganizam estados de spin e entropia." },
+      { label: "Fluoretos magnéticos", text: "A família Cs₂NaAl₁₋ₓCrₓF₆ amplia o estudo para redes iônicas com resposta magnetocalórica ajustável." },
+      { label: "Compósitos e materiais multicalóricos", text: "Micropartículas magnetocalóricas em matrizes ferroelétricas e sistemas poliméricos integram diferentes estímulos calóricos." }
     ],
-    footerRefs: "MEM pp.24-25; refs. [12-23]",
+    footerRefs: "Publicações associadas à subseção 3.2 · 2002–2025",
     sourceRefs: ["E019"]
   },
   {

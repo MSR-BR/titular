@@ -2758,6 +2758,45 @@
   width: min(100%, 52rem);
 }
 
+.deck-shell .tsallis-paper-slide {
+  margin-top: clamp(-3rem, -4vh, -1.5rem);
+  padding-top: 0;
+}
+
+.deck-shell .tsallis-paper-slide .photo-stage {
+  min-height: 0;
+  place-items: start center;
+}
+
+.deck-shell .mce-entropy-slide .figure-caption {
+  margin-top: .48rem;
+  color: var(--muted);
+  font-size: .68rem;
+  font-style: italic;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.deck-shell .mce-materials-slide .card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: minmax(10rem, auto);
+  gap: .8rem;
+}
+
+.deck-shell .mce-materials-slide .card {
+  padding: 1rem 1.05rem;
+}
+
+.deck-shell .mce-materials-slide .card strong {
+  font-size: 1rem;
+  line-height: 1.14;
+}
+
+.deck-shell .mce-materials-slide .card p {
+  font-size: .8rem;
+  line-height: 1.38;
+}
+
 .deck-shell .mce-equations-slide .slide-title:empty,
 .deck-shell .mce-equations-slide .technical-summary:empty {
   display: none;
