@@ -2914,6 +2914,76 @@
   object-fit: contain;
 }
 
+.deck-shell .co-dimer-case-slide .technical-summary:empty {
+  display: none;
+}
+
+.deck-shell .co-dimer-case-slide .technical-primary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: .6rem;
+}
+
+.deck-shell .co-dimer-case-slide .equation-stack {
+  height: auto;
+  min-height: 5.5rem;
+  padding: .35rem 1rem;
+}
+
+.deck-shell .co-dimer-case-slide .equation-line {
+  min-height: 4.8rem;
+  padding: .2rem;
+}
+
+.deck-shell .co-dimer-case-slide .equation-asset {
+  width: 100%;
+  max-height: 3.8rem;
+  object-fit: contain;
+}
+
+.deck-shell .co-dimer-case-slide .figure-gallery {
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+  gap: .8rem;
+}
+
+.deck-shell .co-dimer-case-slide .deck-figure {
+  min-height: 0;
+  margin: 0;
+  padding: .45rem;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  background: rgba(255, 255, 255, .82);
+}
+
+.deck-shell .co-dimer-case-slide .deck-figure img {
+  width: 100%;
+  height: 11rem;
+  object-fit: contain;
+}
+
+.deck-shell .co-dimer-case-slide .deck-figure figcaption {
+  margin-top: .3rem;
+  font-size: .72rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.deck-shell .co-dimer-case-slide .metric-grid {
+  height: auto;
+  min-height: 4rem;
+}
+
+.deck-shell .co-dimer-case-slide .metric-value {
+  font-size: 1.1rem;
+}
+
+.deck-shell .co-dimer-case-slide .metric-label {
+  font-size: .66rem;
+}
+
 .deck-shell .mce-equations-slide .slide-title:empty,
 .deck-shell .mce-equations-slide .technical-summary:empty {
   display: none;

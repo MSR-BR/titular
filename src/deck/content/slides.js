@@ -935,6 +935,37 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E020"]
   },
   {
+    id: "s26c-co-dimer-case",
+    layout: "technical",
+    className: "co-dimer-case-slide",
+    section: "Resultados",
+    eyebrow: "Linha 3 | Caso representativo",
+    title: "Caso: dímero de Co(II)",
+    equations: [
+      equationAsset("co2-dimer-hamiltonian", "Hamiltoniana efetiva do dímero de cobalto II", "troca de Heisenberg + anisotropias axial e rômbica + Zeeman")
+    ],
+    figures: [
+      {
+        src: "assets/figures/complexes-co2-dimer.png",
+        alt: "Estrutura molecular do dímero de cobalto II com pontes de adenina e água",
+        caption: "[Co₂(μ-L¹H)₂(μ-H₂O)₂(H₂O)₄]·4NO₃·2H₂O"
+      },
+      {
+        src: "assets/figures/co2-dimer-chit-fit.png",
+        alt: "Dados experimentais de chi T e ajuste teórico para o dímero de cobalto II",
+        caption: "χT experimental (pontos) e ajuste do Hamiltoniano efetivo (linha vermelha)"
+      }
+    ],
+    metrics: [
+      { value: "J = −8,6(8) K", label: "acoplamento antiferromagnético" },
+      { value: "D = 89(5) K · E = 23(2) K", label: "anisotropias axial e rômbica" },
+      { value: "gₓ = gᵧ = 2,5(1) · g_z = 2,4(1)", label: "plano xy de fácil magnetização" },
+      { value: "χ²_red = 0,09", label: "qualidade do ajuste" }
+    ],
+    footerRefs: "A. Almeida et al., ACS Physical Chemistry Au 6 (2026) 334–339",
+    sourceRefs: ["E020"]
+  },
+  {
     id: "s27-complexes-result",
     layout: "technical",
     section: "Resultados",

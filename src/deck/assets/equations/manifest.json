@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T19:56:48.402Z",
+  "generatedAt": "2026-08-26T20:18:04.390Z",
   "equations": [
     {
       "id": "tsallis-entropy",
@@ -193,6 +193,15 @@
       ],
       "sourceFile": "src/deck/equations/equations.mjs",
       "asset": "src/deck/assets/equations/zeeman-hamiltonian.svg"
+    },
+    {
+      "id": "co2-dimer-hamiltonian",
+      "title": "Hamiltoniano efetivo do dimero de Co(II)",
+      "sourceRefs": [
+        "ACS Phys. Chem. Au 6 (2026) 334-339, Eq. (1)"
+      ],
+      "sourceFile": "src/deck/equations/equations.mjs",
+      "asset": "src/deck/assets/equations/co2-dimer-hamiltonian.svg"
     },
     {
       "id": "cu5-hamiltonian",

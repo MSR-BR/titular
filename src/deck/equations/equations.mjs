@@ -148,6 +148,14 @@ M &= -\left(\frac{\partial F}{\partial B}\right)_T,\qquad
 \end{aligned}`,
   },
   {
+    id: "co2-dimer-hamiltonian",
+    title: "Hamiltoniano efetivo do dimero de Co(II)",
+    sourceRefs: ["ACS Phys. Chem. Au 6 (2026) 334-339, Eq. (1)"],
+    tex: String.raw`\mathcal{H}=-J\,\mathbf{S}_1\!\cdot\!\mathbf{S}_2+
+\sum_{i=1}^{2}\!\left[D\!\left(S_{iz}^{2}-\frac{1}{3}\mathbf{S}_{i}^{2}\right)
++E\!\left(S_{ix}^{2}-S_{iy}^{2}\right)-\mu_B\,\mathbf{B}\!\cdot\!\mathbf{g}\!\cdot\!\mathbf{S}_i\right]`,
+  },
+  {
     id: "cu5-hamiltonian",
     title: "Modelo dimero-trimero para Na2Cu5Si4O14",
     sourceRefs: ["MEM 4.3", "ref. [35]"],
