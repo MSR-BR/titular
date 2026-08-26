@@ -42,7 +42,7 @@ window.MemorialDeckSlides = [
         number: "3",
         href: "#section-3",
         label: "Linhas de pesquisa",
-        html: "<ul><li>Aplicação da Estatística de Tsallis ao Magnetismo</li><li>Efeito magnetocalórico e materiais magnéticos</li><li>Complexos Metálicos, Magnetismo e Modelagem Termodinâmica</li><li>Informação quântica em materiais magnéticos</li><li>Efeitos calóricos em materiais relativísticos</li><li>Termodinâmica quântica aplicada a novos materiais</li></ul>"
+        html: "<ul><li>Aplicação da Estatística de Tsallis ao Magnetismo</li><li>Efeito magnetocalórico e materiais magnéticos</li><li>Complexos Metálicos, Magnetismo e Modelagem Termodinâmica</li><li>Informação quântica em materiais magnéticos</li><li>Efeitos calóricos em materiais relativísticos</li><li>Termodinâmica quântica em materiais magnéticos</li></ul>"
       },
       {
         number: "4",
@@ -574,7 +574,16 @@ window.MemorialDeckSlides = [
       },
       { label: "3.4", text: "Informação quântica em materiais magnéticos" },
       { label: "3.5", text: "Efeitos calóricos em materiais relativísticos" },
-      { label: "3.6", text: "Termodinâmica quântica aplicada a novos materiais" }
+      {
+        label: "3.6",
+        slideTarget: "s33-quantum-thermo-batteries",
+        className: "research-line-card-quantum-thermo",
+        html: `
+          <p>Termodinâmica quântica em materiais magnéticos</p>
+          <p class="research-line-period">2008–presente</p>
+          <button class="publications-trigger research-line-publications-trigger" type="button" data-publications-open="quantum-thermo-publications">16 publicações · abrir lista</button>
+        `
+      }
     ],
     footerRefs: "MEM pp.22-31",
     sourceRefs: ["E017"]
@@ -1136,6 +1145,8 @@ window.MemorialDeckSlides = [
     section: "Resultados",
     eyebrow: "Linha 6 | Termodinâmica quântica",
     title: "Energia, trabalho e calor em materiais quânticos",
+    publicationsDialogId: "quantum-thermo-publications",
+    publicationsLabel: "16 publicações · abrir lista",
     lead: "Materiais moleculares e sistemas de spin permitem estudar armazenamento e conversão de energia em plataformas físicas reais.",
     equations: [
       equationAsset("quantum-battery", "Trabalho extraível em bateria quântica", "ergotropia / energia extraível")
@@ -1165,6 +1176,38 @@ window.MemorialDeckSlides = [
     ],
     footerRefs: "MEM pp.31-32; refs. [53-56]",
     sourceRefs: ["E023"]
+  },
+  {
+    id: "s34b-quantum-thermo-publications",
+    layout: "modal",
+    cards: [
+      {
+        html: `<dialog class="publications-dialog" id="quantum-thermo-publications" aria-labelledby="quantum-thermo-publications-title">
+            <div class="publications-dialog-head">
+              <div><p class="publications-kicker">Termodinâmica quântica em materiais magnéticos · 2008–presente</p><h2 id="quantum-thermo-publications-title">Publicações associadas</h2></div>
+              <button class="publications-close" type="button" aria-label="Fechar publicações">×</button>
+            </div>
+            <ol class="publications-list" reversed>
+              <li><span>2025</span><strong>Quantum Level-Crossing Induced by Anisotropy in Spin-1 Heisenberg Dimers: Applications to Quantum Stirling Engines.</strong><small>B. Castorene, V.G. de Paula, F.J. Peña, C. Cruz, M. Reis e P. Vargas.</small><em>Advanced Quantum Technologies, e2500204.</em><a href="https://scholar.google.com/scholar?q=Quantum+Level-Crossing+Induced+by+Anisotropy+in+Spin-1+Heisenberg+Dimers" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2025</span><strong>Quantum thermodynamics of a power-law potential.</strong><small>V.G. de Paula, W.S. Santana, C. Cruz e M. Reis.</small><em>Physica A 674, 130728.</em><a href="https://scholar.google.com/scholar?q=Quantum+thermodynamics+of+a+power-law+potential" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2025</span><strong>Quantum caloric effects.</strong><small>C. Cruz, J.S. Amaral e M. Reis.</small><em>Quantum Science and Technology 10, 035015.</em><a href="https://scholar.google.com/scholar?q=Quantum+caloric+effects+Cruz+Amaral+Reis" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2023</span><strong>Quantum Stirling engine based on dinuclear metal complexes.</strong><small>C. Cruz, H.-R. Rastegar-Sedehi, M.F. Anka, T.R. de Oliveira e M. Reis.</small><em>Quantum Science and Technology 8, 035010.</em><a href="https://scholar.google.com/scholar?q=Quantum+Stirling+engine+based+on+dinuclear+metal+complexes" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2022</span><strong>Quantum battery based on quantum discord at room temperature.</strong><small>C. Cruz, M. Anka, M. Reis, R. Bachelard e A. Santos.</small><em>Quantum Science and Technology 7, 025020.</em><a href="https://scholar.google.com/scholar?q=Quantum+battery+based+on+quantum+discord+at+room+temperature" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2017</span><strong>Influence of the external pressure on the quantum correlations of molecular magnets.</strong><small>C. Cruz, A.S. Alves, R.N. Santos, D.D.O. Soares-Pinto, J.C.O. Jesus, J.S. Almeida e M.S. Reis.</small><em>Europhysics Letters 117, 20004.</em><a href="https://scholar.google.com/scholar?q=Influence+external+pressure+quantum+correlations+molecular+magnets" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2016</span><strong>Thermal entanglement and teleportation in a dipolar interacting system.</strong><small>C.S. Castro, O.S. Duarte, D.P. Pires, D.O. Soares-Pinto e M.S. Reis.</small><em>Physics Letters A 380, 1571.</em><a href="https://scholar.google.com/scholar?q=Thermal+entanglement+and+teleportation+in+a+dipolar+interacting+system" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2016</span><strong>Carboxylate-based molecular magnet: One path toward achieving stable quantum correlations at room temperature.</strong><small>C. Cruz, D.O. Soares-Pinto, P. Brandão, A.M. dos Santos e M.S. Reis.</small><em>Europhysics Letters 113, 40004.</em><a href="https://scholar.google.com/scholar?q=Carboxylate-based+molecular+magnet+stable+quantum+correlations+room+temperature" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2013</span><strong>Witnessing spin-orbit thermal entanglement in rare-earth ions.</strong><small>O.S. Duarte, C.S. Castro, D.O. Soares-Pinto e M.S. Reis.</small><em>Europhysics Letters 103, 40002.</em><a href="https://scholar.google.com/scholar?q=Witnessing+spin-orbit+thermal+entanglement+in+rare-earth+ions" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2013</span><strong>Spin-orbit thermal entanglement in a rare-earth-metal ion: Susceptibility witness.</strong><small>O.S. Duarte, C.S. Castro e M.S. Reis.</small><em>Physical Review A 88, 012317.</em><a href="https://doi.org/10.1103/PhysRevA.88.012317" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2012</span><strong>Thermal entanglement hundreds of Kelvin above room temperature in iron dimer.</strong><small>M.S. Reis, S. Soriano, A. Santos, D. Soares-Pinto e P. Brandão.</small><em>Europhysics Letters 100, 50001.</em><a href="https://scholar.google.com/scholar?q=Thermal+entanglement+hundreds+Kelvin+above+room+temperature+Iron+dimer" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2011</span><strong>Writing electronic ferromagnetic states in a high-temperature paramagnetic nuclear spin system.</strong><small>D.O. Soares-Pinto, J. Teles, A.M. Souza, E.R. de Azevedo, R.S. Sarthour, T.J. Bonagamba, M.S. Reis e I.S. Oliveira.</small><em>International Journal of Quantum Information 9, 1047.</em><a href="https://scholar.google.com/scholar?q=Writing+electronic+ferromagnetic+states+high-temperature+paramagnetic+nuclear+spin+system" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2009</span><strong>Identifying the temperature of entanglement in magnetic materials composed by S-spin dimers.</strong><small>D.O. Soares-Pinto, A.M. Souza, R.S. Sarthour, I.S. Oliveira, M.S. Reis, P. Brandão e A.M. dos Santos.</small><em>Europhysics Letters 87, 40008.</em><a href="https://scholar.google.com/scholar?q=Identifying+temperature+entanglement+magnetic+materials+S-spin+dimers" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2009</span><strong>Entanglement and Bell’s inequality violation above room temperature in metal carboxylates.</strong><small>A.M. Souza, D.O. Soares-Pinto, R.S. Sarthour, I.S. Oliveira, M.S. Reis, P. Brandão e A.M. dos Santos.</small><em>Physical Review B 79, 054408.</em><a href="https://doi.org/10.1103/PhysRevB.79.054408" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+              <li><span>2008</span><strong>Emaranhamento: um recurso computacional que desafia os físicos.</strong><small>I.S. Oliveira, R.S. Sarthour, A.M. Souza, D.O. Soares-Pinto e M.S. Reis.</small><em>Ciência Hoje 42, 32.</em><a href="https://scholar.google.com/scholar?q=Emaranhamento+um+recurso+computacional+que+desafia+os+fisicos" target="_blank" rel="noopener noreferrer">Localizar artigo ↗</a></li>
+              <li><span>2008</span><strong>Experimental determination of thermal entanglement in spin clusters using magnetic susceptibility measurements.</strong><small>I.S. Oliveira, R.S. Sarthour, A.M. Souza, D.O. Soares-Pinto e M.S. Reis.</small><em>Physical Review B 77, 104402.</em><a href="https://doi.org/10.1103/PhysRevB.77.104402" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></li>
+            </ol>
+          </dialog>`
+      }
+    ]
   },
   {
     id: "s35-synthesis",

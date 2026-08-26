@@ -93,7 +93,7 @@
           { id: "s31-graphene-concept", topic: "Grafeno e efeitos calóricos oscilatórios" },
           { id: "s32-graphene-result", topic: "Resposta calórica mensurável" }
         ] },
-        { number: "3.6", title: "Termodinâmica quântica aplicada a novos materiais", slides: [
+        { number: "3.6", title: "Termodinâmica quântica em materiais magnéticos", slides: [
           { id: "s33-quantum-thermo-batteries", topic: "Energia, trabalho e calor" },
           { id: "s34-quantum-thermo-caloric", topic: "Máquinas e potenciais calóricos" },
           { id: "s35-synthesis", topic: "Um programa, várias interfaces" }
