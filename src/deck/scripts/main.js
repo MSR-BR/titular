@@ -849,7 +849,7 @@
     const scrollRevealGroups = [];
     deck.querySelectorAll(".slide").forEach((slide) => {
       const animatedElements = slide.querySelectorAll(
-        ".section-kicker, .eyebrow, .slide-title, .slide-subtitle, .slide-affiliations, .slide-lead, .info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure, .standalone-figure-link, .section-question"
+        ".section-kicker, .eyebrow, .slide-title, .slide-subtitle, .slide-affiliations, .slide-lead, .info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure, .standalone-figure-link, .section-question, .photo-publications-trigger"
       );
       const usesScrollTemplate =
         slide.classList.contains("subsection-slide") ||
@@ -863,7 +863,7 @@
             slide.classList.contains("termo-app-slide")) &&
           (element.classList.contains("deck-figure") || element.classList.contains("standalone-figure-link"));
         element.classList.add("story-reveal");
-        if (element.matches(".info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure, .standalone-figure-link")) {
+        if (element.matches(".info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure, .standalone-figure-link, .photo-publications-trigger")) {
           element.classList.add("content-scroll-card");
         }
         element.style.setProperty("--reveal-order", Math.min(order, 10));
