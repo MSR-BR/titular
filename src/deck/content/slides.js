@@ -983,23 +983,30 @@ window.MemorialDeckSlides = [
   {
     id: "s27-complexes-result",
     layout: "technical",
+    className: "co-dimer-case-slide cu5-case-slide",
     section: "Resultados",
     eyebrow: "Linha 3 | Resultado representativo",
-    title: "Na2Cu5Si4O14: cadeia dímero-trimero",
-    lead: "Um exemplo mostra a métodologia: estrutura cristalina, Hamiltoniano efetivo, parâmetros de troca e interpretação física.",
+    title: "Na₂Cu₅Si₄O₁₄: cadeia dímero–trímero",
     equations: [
-      equationAsset("cu5-hamiltonian", "Hamiltoniano dímero-trimero", "Na2Cu5Si4O14"),
-      equationAsset("cu5-parameters", "Parametros de troca", "ajuste de suscetibilidade")
+      equationAsset("cu5-hamiltonian", "Hamiltoniano dímero–trímero", "trocas J₁, J₂ e J₃ + interação de Zeeman")
     ],
-    figure: {
-      src: "assets/figures/molecular-chain-na2cu5si4o14.png",
-      alt: "Cadeia magnética em zigue-zague do composto Na2Cu5Si4O14",
-      caption: "Estrutura dímero-trimero em cadeia Cu2/Cu3; ponte entre geometria e Hamiltoniano efetivo."
-    },
-    items: [
-      "Cadeia em zigue-zague com unidades Cu2 e Cu3.",
-      "Momento liquido ao longo da cadeia: ferrimagnetismo homometálico.",
-      "Ajuste quantitativo de suscetibilidade experimental."
+    figures: [
+      {
+        src: "assets/figures/molecular-chain-na2cu5si4o14.png",
+        alt: "Cadeia magnética em zigue-zague do composto Na₂Cu₅Si₄O₁₄",
+        caption: "Estrutura dímero–trímero em cadeia, com unidades Cu₂ e Cu₃"
+      },
+      {
+        src: "assets/figures/molecular-chit-fit-na2cu5si4o14.png",
+        alt: "Ajuste de χT para Na₂Cu₅Si₄O₁₄ e esquema das interações de troca",
+        caption: "χT experimental (círculos) e ajuste do Hamiltoniano efetivo (linha)"
+      }
+    ],
+    metrics: [
+      { value: "J₁ = −224,9 K", label: "interação de troca dominante" },
+      { value: "J₂ = −8,01 K", label: "acoplamento entre unidades" },
+      { value: "J₃ = 40,22 K", label: "interação ferromagnética" },
+      { value: "g = 2,30", label: "fator de Landé" }
     ],
     footerRefs: "MEM pp.26-27; ref. [35]",
     sourceRefs: ["E020"]
@@ -1008,11 +1015,6 @@ window.MemorialDeckSlides = [
     id: "s28-cardamomo",
     layout: "content",
     section: "Resultados",
-    figure: {
-      src: "assets/figures/molecular-chit-fit-na2cu5si4o14.png",
-      alt: "Ajuste de chi T para Na2Cu5Si4O14 e esquema de interações de troca",
-      caption: "CARDAMOMO: ajuste quantitativo de chi T e interações J1, J2, J3 no exemplo Na2Cu5Si4O14."
-    },
     eyebrow: "Linha 3 | Ferramenta computacional",
     title: "CARDAMOMO como infraestrutura teórica",
     lead: "O pacote automatiza o ajuste de modelos quânticos e clássicos a dados experimentais de suscetibilidade magnética.",

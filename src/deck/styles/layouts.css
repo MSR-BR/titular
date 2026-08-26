@@ -3007,6 +3007,14 @@
   height: 19rem;
 }
 
+.deck-shell .cu5-case-slide .figure-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.deck-shell .cu5-case-slide .deck-figure:nth-child(2) img {
+  height: 17rem;
+}
+
 .deck-shell .co-dimer-case-slide .deck-figure figcaption {
   margin-top: .3rem;
   font-size: .72rem;
