@@ -78,7 +78,8 @@
           { id: "s25-mce-synthesis", topic: "Artigo de revisão" }
         ] },
         { number: "3.3", title: "Complexos Metálicos, Magnetismo e Modelagem Termodinâmica", slides: [
-          { id: "s26-complexes-hamiltonian", topic: "Hamiltoniano e ajuste termodinâmico" },
+          { id: "s26-complexes-hamiltonian", topic: "Motivação" },
+          { id: "s26b-complexes-hamiltonians", topic: "Hamiltonianas" },
           { id: "s27-complexes-result", topic: "Resultado representativo" },
           { id: "s28-cardamomo", topic: "Ferramenta computacional CARDAMOMO" }
         ] },

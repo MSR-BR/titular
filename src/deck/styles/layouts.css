@@ -2844,6 +2844,75 @@
   line-height: 1.38;
 }
 
+.deck-shell .complexes-motivation-slide .cards-with-figure {
+  display: block;
+}
+
+.deck-shell .complexes-motivation-slide .cards-panel:empty {
+  display: none;
+}
+
+.deck-shell .complexes-motivation-slide .figure-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.deck-shell .complexes-motivation-slide .deck-figure {
+  min-height: 24rem;
+  margin: 0;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  align-items: center;
+  padding: .8rem;
+  background: rgba(255, 255, 255, .78);
+}
+
+.deck-shell .complexes-motivation-slide .deck-figure img {
+  width: 100%;
+  height: 21rem;
+  object-fit: contain;
+}
+
+.deck-shell .complexes-motivation-slide .deck-figure figcaption {
+  margin-top: .55rem;
+  color: var(--muted);
+  font-size: .76rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.deck-shell .complexes-hamiltonians-slide .technical-summary:empty {
+  display: none;
+}
+
+.deck-shell .complexes-hamiltonians-slide .technical-body,
+.deck-shell .complexes-hamiltonians-slide .technical-primary {
+  display: block;
+}
+
+.deck-shell .complexes-hamiltonians-slide .equation-stack {
+  height: auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(13rem, auto));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.deck-shell .complexes-hamiltonians-slide .equation-line {
+  min-height: 13rem;
+  padding: 1rem;
+}
+
+.deck-shell .complexes-hamiltonians-slide .equation-asset {
+  width: 100%;
+  height: 100%;
+  max-height: 9rem;
+  object-fit: contain;
+}
+
 .deck-shell .mce-equations-slide .slide-title:empty,
 .deck-shell .mce-equations-slide .technical-summary:empty {
   display: none;

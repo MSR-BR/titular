@@ -895,20 +895,43 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s26-complexes-hamiltonian",
-    layout: "technical",
+    layout: "cards",
+    className: "complexes-motivation-slide",
     section: "Resultados",
     eyebrow: "Linha 3 | Complexos metálicos",
-    title: "Do Hamiltoniano ao ajuste termodinâmico",
-    lead: "Complexos metálicos permitem conectar estrutura de spins, interações de troca, anisotropia e observáveis magnéticas.",
+    title: "Motivação",
+    lead: "Compreender o comportamento magnético de materiais de baixa dimensionalidade.",
+    figures: [
+      {
+        src: "assets/figures/complexes-ni4-cubane.jpg",
+        alt: "Estrutura do complexo quiral Ni4 em geometria cubano e sistema local de coordenadas",
+        caption: "Journal of Molecular Structure 1274 (2023) 134412"
+      },
+      {
+        src: "assets/figures/complexes-co2-dimer.png",
+        alt: "Estrutura molecular de um dímero de cobalto II com pontes bioinspiradas",
+        caption: "ACS Phys. Chem. Au 2026, 6, 334–339"
+      }
+    ],
+    cards: [],
+    footerRefs: "Estruturas moleculares representativas da subseção 3.3",
+    sourceRefs: ["E020"]
+  },
+  {
+    id: "s26b-complexes-hamiltonians",
+    layout: "technical",
+    className: "complexes-hamiltonians-slide",
+    section: "Resultados",
+    eyebrow: "Linha 3 | Complexos metálicos",
+    title: "Hamiltonianas",
     equations: [
-      equationAsset("spin-hamiltonian", "Hamiltoniano efetivo de spins", "troca, anisotropia e Zeeman"),
-      equationAsset("partition-observables", "Função de partição e observáveis", "Z, F, M e chi")
+      equationAsset("heisenberg-hamiltonian", "Interação de troca de Heisenberg", "J > 0: ferro; J < 0: antiferromagnética"),
+      equationAsset("dm-hamiltonian", "Interação de Dzyaloshinskii–Moriya", "acoplamento antissimétrico"),
+      equationAsset("local-anisotropy-hamiltonian", "Anisotropia magnetocristalina local", "acoplamento spin–órbita"),
+      equationAsset("zeeman-hamiltonian", "Interação de Zeeman", "campo magnético externo")
     ],
-    items: [
-      "Diagonalização fornece o espectro de energias E_n.",
-      "A função de partição conecta o modelo microscópico a M e chi."
-    ],
-    footerRefs: "MEM pp.25-26; refs. [24-27]",
+    items: [],
+    footerRefs: "Modelos microscópicos para troca, interação antissimétrica, anisotropia e campo externo",
     sourceRefs: ["E020"]
   },
   {

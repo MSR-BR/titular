@@ -121,6 +121,33 @@ M &= -\left(\frac{\partial F}{\partial B}\right)_T,\qquad
 \end{aligned}`,
   },
   {
+    id: "heisenberg-hamiltonian",
+    title: "Hamiltoniano de Heisenberg",
+    sourceRefs: ["MEM 4.3", "refs. [24-36]"],
+    tex: String.raw`\mathcal{H}_{\mathrm{H}}=-J\,\mathbf{S}_1\cdot\mathbf{S}_2`,
+  },
+  {
+    id: "dm-hamiltonian",
+    title: "Hamiltoniano de Dzyaloshinskii-Moriya",
+    sourceRefs: ["MEM 4.3", "refs. [24-36]"],
+    tex: String.raw`\mathcal{H}_{\mathrm{DM}}=-\mathbf{d}\cdot\left(\mathbf{S}_1\times\mathbf{S}_2\right)`,
+  },
+  {
+    id: "local-anisotropy-hamiltonian",
+    title: "Anisotropia magnetocristalina local",
+    sourceRefs: ["MEM 4.3", "refs. [24-36]"],
+    tex: String.raw`\mathcal{H}_{\mathrm{ani}}=D\left(S_z^2-\frac{1}{3}\mathbf{S}^2\right)+E\left(S_x^2-S_y^2\right)`,
+  },
+  {
+    id: "zeeman-hamiltonian",
+    title: "Hamiltoniano de Zeeman",
+    sourceRefs: ["MEM 4.3", "refs. [24-36]"],
+    tex: String.raw`\begin{aligned}
+\mathcal{H}_{Z}&=\mu_B\,\mathbf{B}\cdot\mathbf{g}\cdot\mathbf{S}\\
+&=g_{xx}S_xB_x+g_{yy}S_yB_y+g_{zz}S_zB_z
+\end{aligned}`,
+  },
+  {
     id: "cu5-hamiltonian",
     title: "Modelo dimero-trimero para Na2Cu5Si4O14",
     sourceRefs: ["MEM 4.3", "ref. [35]"],
