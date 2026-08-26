@@ -340,9 +340,13 @@
     if (slide.layout === "technical") {
       const hasSecondary = Array.isArray(slide.cards) && slide.cards.length > 0;
       const evidenceClass = hasSecondary ? "technical-evidence" : "technical-evidence no-secondary";
+      const publicationsButton = slide.publicationsDialogId
+        ? `<button class="publications-trigger photo-publications-trigger technical-publications-trigger" type="button" data-publications-open="${escapeAttribute(slide.publicationsDialogId)}">${escapeHtml(slide.publicationsLabel || "Publicações · abrir lista")}</button>`
+        : "";
       return `
         <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title)}
+          ${publicationsButton}
           <div class="technical-body">
             <div class="technical-summary">
               ${renderCards(slide.items, { compact: true })}

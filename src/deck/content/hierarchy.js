@@ -81,6 +81,7 @@
           { id: "s26-complexes-hamiltonian", topic: "Motivação" },
           { id: "s26b-complexes-hamiltonians", topic: "Hamiltonianas" },
           { id: "s26c-co-dimer-case", topic: "Caso: dímero de Co(II)" },
+          { id: "s26d-co-dimer-paper", topic: "Artigo de referência" },
           { id: "s27-complexes-result", topic: "Resultado representativo" },
           { id: "s28-cardamomo", topic: "Ferramenta computacional CARDAMOMO" }
         ] },

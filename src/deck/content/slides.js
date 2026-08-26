@@ -924,6 +924,8 @@ window.MemorialDeckSlides = [
     section: "Resultados",
     eyebrow: "Linha 3 | Complexos metálicos",
     title: "Hamiltonianas",
+    publicationsDialogId: "complexes-publications",
+    publicationsLabel: "18 publicações · abrir lista",
     equations: [
       equationAsset("heisenberg-hamiltonian", "Interação de troca de Heisenberg", "J > 0: ferro; J < 0: antiferromagnética"),
       equationAsset("dm-hamiltonian", "Interação de Dzyaloshinskii–Moriya", "acoplamento antissimétrico"),
@@ -958,9 +960,23 @@ window.MemorialDeckSlides = [
     ],
     metrics: [
       { value: "J = −8,6(8) K", label: "acoplamento antiferromagnético" },
-      { value: "D = 89(5) K · E = 23(2) K", label: "anisotropias axial e rômbica" },
-      { value: "gₓ = gᵧ = 2,5(1) · g_z = 2,4(1)", label: "plano xy de fácil magnetização" }
+      { value: "D = 89(5) K   E = 23(2) K", label: "anisotropias axial e rômbica" },
+      { value: "gₓ = gᵧ = 2,5(1)   g_z = 2,4(1)", label: "plano xy de fácil magnetização" }
     ],
+    footerRefs: "A. Almeida et al., ACS Physical Chemistry Au 6 (2026) 334–339",
+    sourceRefs: ["E020"]
+  },
+  {
+    id: "s26d-co-dimer-paper",
+    layout: "photo",
+    className: "co-dimer-paper-slide",
+    section: "Resultados",
+    title: "",
+    figure: {
+      src: "assets/figures/co2-dimer-article-title.png?v=20260826.01",
+      alt: "Título e autores do artigo Magnetic Anisotropy and Spin Coupling in a Cobalt II Dimer with Bioinspired Bridges",
+      caption: "ACS Physical Chemistry Au 6 (2026) 334–339"
+    },
     footerRefs: "A. Almeida et al., ACS Physical Chemistry Au 6 (2026) 334–339",
     sourceRefs: ["E020"]
   },
