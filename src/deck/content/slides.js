@@ -42,7 +42,7 @@ window.MemorialDeckSlides = [
         number: "3",
         href: "#section-3",
         label: "Linhas de pesquisa",
-        html: "<ul><li>Aplicação da Estatística de Tsallis ao Magnetismo</li><li>Efeito magnetocalórico e materiais magnéticos</li><li>Complexos Metálicos, Magnetismo e Modelagem Termodinâmica</li><li>Informação quântica em materiais magnéticos</li><li>Efeitos calóricos em materiais relativísticos</li><li>Termodinâmica quântica em materiais magnéticos</li></ul>"
+        html: "<ul><li>Aplicação da Estatística de Tsallis ao Magnetismo</li><li>Efeito magnetocalórico e materiais magnéticos</li><li>Complexos Metálicos, Magnetismo e Modelagem Termodinâmica</li><li>Efeitos calóricos em materiais relativísticos</li><li>Termodinâmica quântica em materiais magnéticos</li></ul>"
       },
       {
         number: "4",
@@ -572,8 +572,12 @@ window.MemorialDeckSlides = [
           <button class="publications-trigger research-line-publications-trigger" type="button" data-publications-open="complexes-publications">18 publicações · abrir lista</button>
         `
       },
-      { label: "3.4", text: "Informação quântica em materiais magnéticos" },
-      { label: "3.5", text: "Efeitos calóricos em materiais relativísticos" },
+      {
+        label: "3.5",
+        slideTarget: "s31-graphene-concept",
+        className: "research-line-card-relativistic",
+        text: "Efeitos calóricos em materiais relativísticos"
+      },
       {
         label: "3.6",
         slideTarget: "s33-quantum-thermo-batteries",
@@ -1049,50 +1053,6 @@ window.MemorialDeckSlides = [
     ],
     footerRefs: "MEM pp.25,99; refs. [26,27]",
     sourceRefs: ["E020", "E014"]
-  },
-  {
-    id: "s29-quantum-info-concept",
-    layout: "technical",
-    section: "Resultados",
-    eyebrow: "Linha 4 | Informação quântica",
-    title: "Susceptibilidade como testemunha de emaranhamento",
-    lead: "A linha conecta matéria condensada e informação quântica usando medidas magnéticas macroscópicas para inferir correlações quânticas.",
-    equations: [
-      equationAsset("entanglement-witness", "Testemunha de emaranhamento por suscetibilidade", "W(T) < 0 indica emaranhamento")
-    ],
-    figure: {
-      src: "assets/figures/entanglement-witness.png",
-      alt: "Testemunho de emaranhamento em função da temperatura",
-      caption: "Valores negativos do witness indicam emaranhamento em sistema magnético molecular."
-    },
-    items: [
-      "Clusters de spin e magnetos moleculares como sistemas reais.",
-      "Acesso experimental por técnicas tradicionais de caracterização magnética.",
-      "Ponte entre observáveis termodinâmicos e propriedades quânticas microscópicas."
-    ],
-    footerRefs: "MEM pp.27-28; refs. [37-42]",
-    sourceRefs: ["E021"]
-  },
-  {
-    id: "s30-quantum-info-result",
-    layout: "content",
-    section: "Resultados",
-    figure: {
-      src: "assets/figures/entanglement-witness.png",
-      alt: "Curva de witness de emaranhamento",
-      caption: "Figura 4.4 do memorial: emaranhamento térmico lido por observável magnético macroscópico."
-    },
-    eyebrow: "Linha 4 | Resultado",
-    title: "Correlações quânticas em temperaturas elevadas",
-    lead: "O memorial destaca resultados de emaranhamento térmico, violação de desigualdades de Bell e persistência de correlações quânticas em sistemas moleculares.",
-    items: [
-      "Demonstração experimental de emaranhamento térmico por suscetibilidade magnética.",
-      "Sistemas moleculares específicos com emaranhamento e violação de Bell acima da temperatura ambiente.",
-      "Dímeros de ferro com emaranhamento centenas de Kelvin acima da temperatura ambiente.",
-      "Aplicações em terras raras e carboxilatos metálicos."
-    ],
-    footerRefs: "MEM pp.28-29; refs. [37-42]",
-    sourceRefs: ["E021"]
   },
   {
     id: "s31-graphene-concept",

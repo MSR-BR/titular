@@ -85,10 +85,6 @@
           { id: "s27-complexes-result", topic: "Resultado representativo" },
           { id: "s28-cardamomo", topic: "Ferramenta computacional CARDAMOMO" }
         ] },
-        { number: "3.4", title: "Informação quântica em materiais magnéticos", slides: [
-          { id: "s29-quantum-info-concept", topic: "Testemunha de emaranhamento" },
-          { id: "s30-quantum-info-result", topic: "Correlações quânticas" }
-        ] },
         { number: "3.5", title: "Efeitos calóricos em materiais relativísticos", slides: [
           { id: "s31-graphene-concept", topic: "Grafeno e efeitos calóricos oscilatórios" },
           { id: "s32-graphene-result", topic: "Resposta calórica mensurável" }
