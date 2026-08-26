@@ -2977,7 +2977,7 @@
   grid-row: 2;
   min-height: 0;
   display: grid;
-  grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+  grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr);
   gap: .8rem;
 }
 
@@ -3001,6 +3001,10 @@
   border-radius: 0;
   background: transparent;
   box-shadow: none;
+}
+
+.deck-shell .co-dimer-case-slide .deck-figure:nth-child(2) img {
+  height: 19rem;
 }
 
 .deck-shell .co-dimer-case-slide .deck-figure figcaption {
