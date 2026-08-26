@@ -959,8 +959,7 @@ window.MemorialDeckSlides = [
     metrics: [
       { value: "J = −8,6(8) K", label: "acoplamento antiferromagnético" },
       { value: "D = 89(5) K · E = 23(2) K", label: "anisotropias axial e rômbica" },
-      { value: "gₓ = gᵧ = 2,5(1) · g_z = 2,4(1)", label: "plano xy de fácil magnetização" },
-      { value: "χ²_red = 0,09", label: "qualidade do ajuste" }
+      { value: "gₓ = gᵧ = 2,5(1) · g_z = 2,4(1)", label: "plano xy de fácil magnetização" }
     ],
     footerRefs: "A. Almeida et al., ACS Physical Chemistry Au 6 (2026) 334–339",
     sourceRefs: ["E020"]
