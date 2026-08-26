@@ -75,7 +75,7 @@
           { id: "s23c-mce-entropy-figure", topic: "Entropia e temperatura" },
           { id: "s23d-mce-equations", topic: "Variações de entropia e temperatura" },
           { id: "s24-mce-materials", topic: "Materiais" },
-          { id: "s25-mce-synthesis", topic: "Síntese" }
+          { id: "s25-mce-synthesis", topic: "Artigo de revisão" }
         ] },
         { number: "3.3", title: "Complexos Metálicos, Magnetismo e Modelagem Termodinâmica", slides: [
           { id: "s26-complexes-hamiltonian", topic: "Hamiltoniano e ajuste termodinâmico" },

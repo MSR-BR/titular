@@ -661,6 +661,8 @@ window.MemorialDeckSlides = [
     className: "tsallis-paper-slide",
     section: "Resultados",
     title: "",
+    publicationsDialogId: "tsallis-publications",
+    publicationsLabel: "12 publicações · abrir lista",
     figure: {
       src: "assets/figures/tsallis-prb-68-title.png?v=20260826.02",
       alt: "Cabeçalho do artigo Magnetic phase diagram for a nonextensive system: Experimental connection with manganites",
@@ -834,18 +836,18 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s25-mce-synthesis",
-    layout: "content",
+    layout: "photo",
+    className: "mce-review-paper-slide",
     section: "Resultados",
-    eyebrow: "Linha 2 | Síntese",
-    title: "Do mecanismo microscópico a refrigeração em estado sólido",
-    lead: "A linha magnetocalórica combina caracterização experimental detalhada e modelagem para otimizar capacidade refrigerante.",
-    items: [
-      "Estudo de efeitos diretos e inversos.",
-      "Uso de anisotropia e transições sucessivas para ampliar a região util.",
-      "Revisão abrangente sobre efeitos magnetocalóricos e barocalóricos em complexos metálicos.",
-      "Extensões para compósitos multiferroicos e materiais relativísticos."
-    ],
-    footerRefs: "MEM pp.24-25; refs. [16-23]",
+    title: "",
+    publicationsDialogId: "mce-publications",
+    publicationsLabel: "35 publicações · abrir lista",
+    figure: {
+      src: "assets/figures/mce-coordination-chemistry-reviews-title.png?v=20260826.04",
+      alt: "Cabeçalho do artigo Magnetocaloric and barocaloric effects of metal complexes for solid state cooling: Review, trends and perspectives",
+      caption: ""
+    },
+    footerRefs: "M.S. Reis, Coordination Chemistry Reviews 417 (2020) 213357",
     sourceRefs: ["E019"]
   },
   {

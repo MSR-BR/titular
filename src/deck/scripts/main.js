@@ -391,9 +391,13 @@
     }
 
     if (slide.layout === "photo") {
+      const publicationsButton = slide.publicationsDialogId
+        ? `<button class="publications-trigger photo-publications-trigger" type="button" data-publications-open="${escapeAttribute(slide.publicationsDialogId)}">${escapeHtml(slide.publicationsLabel || "Publicações · abrir lista")}</button>`
+        : "";
       return `
         <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           <div class="slide-body photo-stage">
+            ${publicationsButton}
             ${renderFigure(slide.figure)}
             ${renderFigureGallery(slide.figures)}
           </div>
