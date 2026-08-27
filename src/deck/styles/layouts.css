@@ -3643,6 +3643,48 @@
   font-size: .68rem;
 }
 
+.deck-shell .quantum-thermo-materials-slide .card-grid.count-4 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+
+.deck-shell .quantum-thermo-materials-slide .quantum-publications-action {
+  grid-column: 1 / -1;
+  min-height: 0;
+  padding: .18rem 0 0;
+  display: flex;
+  justify-content: flex-start;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  overflow: visible;
+}
+
+.deck-shell .quantum-thermo-materials-slide .quantum-publications-action::after {
+  display: none;
+}
+
+.deck-shell .quantum-thermo-materials-slide .quantum-publications-action:hover {
+  transform: none;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+
+.deck-shell .quantum-thermo-materials-slide .quantum-publications-action .info-card-text {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.deck-shell .quantum-thermo-materials-slide .quantum-publications-trigger {
+  align-self: auto;
+  padding: .62rem .92rem;
+  font-size: .74rem;
+}
+
 .publications-dialog {
   width: min(58rem, calc(100vw - 2rem));
   max-height: min(78vh, 46rem);

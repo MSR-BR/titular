@@ -1242,7 +1242,11 @@ window.MemorialDeckSlides = [
     cards: [
       { label: "Emaranhamento térmico", text: "Dímeros e clusters metálicos: correlações, teleportação e temperatura crítica." },
       { label: "Baterias quânticas", text: "Armazenamento e extração de energia usando ergotropia em complexos metálicos." },
-      { label: "Ciclos termodinâmicos quânticos", text: "Máquinas de Stirling e efeitos calóricos em sistemas dinucleares." }
+      { label: "Ciclos termodinâmicos quânticos", text: "Máquinas de Stirling e efeitos calóricos em sistemas dinucleares." },
+      {
+        className: "quantum-publications-action",
+        html: "<button class=\"publications-trigger quantum-publications-trigger\" type=\"button\" data-publications-open=\"quantum-thermo-publications\">16 publicações selecionadas · abrir lista</button>"
+      }
     ],
     footerRefs: "Temas desenvolvidos nas publicações da subseção 3.6",
     sourceRefs: ["E023"]
