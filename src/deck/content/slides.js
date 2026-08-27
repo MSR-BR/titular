@@ -889,7 +889,8 @@ window.MemorialDeckSlides = [
       { label: "Moscou · Rússia", text: "Lomonosov Moscow State University", logo: { src: "assets/logos/lomonosov-msu.jpeg", alt: "Lomonosov Moscow State University" } },
       { label: "Sevilha · Espanha", text: "Universidad de Sevilla", logo: { src: "assets/logos/sevilla-mark.svg", alt: "Universidad de Sevilla" } },
       { label: "Oak Ridge · EUA", text: "Oak Ridge National Laboratory", logo: { src: "assets/logos/oak-ridge-national-laboratory.png", alt: "Oak Ridge National Laboratory" } },
-      { label: "Rio de Janeiro · Brasil", text: "UFRJ · CBPF", logo: { src: "assets/logos/cbpf.png", alt: "Centro Brasileiro de Pesquisas Físicas" } }
+      { label: "Rio de Janeiro · Brasil", text: "Universidade Federal do Rio de Janeiro (UFRJ)", logo: { src: "assets/logos/ufrj.png", alt: "Universidade Federal do Rio de Janeiro" } },
+      { label: "Rio de Janeiro · Brasil", text: "Centro Brasileiro de Pesquisas Físicas (CBPF)", logo: { src: "assets/logos/cbpf.png", alt: "Centro Brasileiro de Pesquisas Físicas" } }
     ],
     footerRefs: "Colaborações identificadas nos artigos da subseção 3.2",
     sourceRefs: ["E019"]
@@ -1100,7 +1101,8 @@ window.MemorialDeckSlides = [
     cards: [
       { label: "Aveiro · Portugal", text: "Universidade de Aveiro · CICECO", logo: { src: "assets/logos/universidade-aveiro.png", alt: "Universidade de Aveiro" } },
       { label: "Oak Ridge · EUA", text: "Oak Ridge National Laboratory", logo: { src: "assets/logos/oak-ridge-national-laboratory.png", alt: "Oak Ridge National Laboratory" } },
-      { label: "Rio de Janeiro · Brasil", text: "UFRJ · CBPF", logo: { src: "assets/logos/cbpf.png", alt: "Centro Brasileiro de Pesquisas Físicas" } }
+      { label: "Rio de Janeiro · Brasil", text: "Universidade Federal do Rio de Janeiro (UFRJ)", logo: { src: "assets/logos/ufrj.png", alt: "Universidade Federal do Rio de Janeiro" } },
+      { label: "Rio de Janeiro · Brasil", text: "Centro Brasileiro de Pesquisas Físicas (CBPF)", logo: { src: "assets/logos/cbpf.png", alt: "Centro Brasileiro de Pesquisas Físicas" } }
     ],
     footerRefs: "Colaborações identificadas nos artigos da subseção 3.3",
     sourceRefs: ["E020"]
