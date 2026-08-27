@@ -3685,6 +3685,108 @@
   font-size: .74rem;
 }
 
+.story-meta,
+.story-profile-links {
+  display: flex;
+  align-items: center;
+}
+
+.story-meta {
+  justify-content: flex-end;
+  gap: clamp(.35rem, .8vw, .75rem);
+}
+
+.story-profile-links {
+  gap: .24rem;
+}
+
+.story-profile-link {
+  --profile-color: var(--section-accent, var(--accent));
+  width: 1.72rem;
+  height: 1.72rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(18, 23, 26, .1);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .66);
+  color: var(--muted-2);
+  text-decoration: none;
+  transition: transform 220ms ease, color 220ms ease, border-color 220ms ease, background-color 220ms ease;
+}
+
+.story-profile-link svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 1.55;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.story-profile-link-orcid {
+  --profile-color: #76a926;
+}
+
+.story-profile-link-orcid svg,
+.story-profile-link-linkedin svg {
+  stroke: none;
+}
+
+.story-profile-link-orcid .profile-icon-cutout {
+  fill: #fff;
+}
+
+.story-profile-link-linkedin {
+  --profile-color: #0a66c2;
+}
+
+.story-profile-link-lattes {
+  --profile-color: #315d85;
+}
+
+.story-profile-link-lattes svg,
+.story-profile-link-email svg {
+  fill: none;
+}
+
+.story-profile-link-email {
+  --profile-color: #8b3156;
+}
+
+.story-profile-link:hover,
+.story-profile-link:focus-visible {
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--profile-color) 48%, transparent);
+  background: color-mix(in srgb, var(--profile-color) 10%, white);
+  color: var(--profile-color);
+  outline: none;
+}
+
+@media (max-width: 980px) {
+  .story-meta {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 560px) {
+  .story-profile-link {
+    width: 1.55rem;
+    height: 1.55rem;
+  }
+
+  .story-profile-link svg {
+    width: .9rem;
+    height: .9rem;
+  }
+
+  .story-meta .slide-counter {
+    min-width: 3.6rem;
+    font-size: .68rem;
+  }
+}
+
 .publications-dialog {
   width: min(58rem, calc(100vw - 2rem));
   max-height: min(78vh, 46rem);
