@@ -1101,14 +1101,14 @@ window.MemorialDeckSlides = [
     section: "Resultados",
     figures: [
       {
-        src: "assets/figures/oscillating-mce-apl-title.png",
-        alt: "Título e autor do artigo Oscillating magnetocaloric effect",
-        caption: ""
-      },
-      {
         src: "assets/figures/graphene-delta-s-oscillation.png",
         alt: "Variação oscilante da entropia magnética em função do parâmetro n",
         caption: "M.S. Reis, Applied Physics Letters 99, 052511 (2011)."
+      },
+      {
+        src: "assets/figures/oscillating-mce-apl-title.png",
+        alt: "Título e autor do artigo Oscillating magnetocaloric effect",
+        caption: ""
       }
     ],
     eyebrow: "Linha 5 | Resultado",
@@ -1129,12 +1129,12 @@ window.MemorialDeckSlides = [
       {
         src: "assets/figures/gold-graphene-oscillating-entropy.png",
         alt: "Comparação da entropia magnética oscilante em ouro tridimensional e grafeno bidimensional",
-        caption: ""
+        caption: "M.S. Reis, Applied Physics Letters 101, 222405 (2012)."
       },
       {
         src: "assets/figures/graphene-mce-apl-2012-title.png",
         alt: "Abertura do artigo Oscillating magnetocaloric effect on graphenes",
-        caption: "M.S. Reis, Applied Physics Letters 101, 222405 (2012)."
+        caption: ""
       }
     ],
     items: [],
@@ -1147,14 +1147,11 @@ window.MemorialDeckSlides = [
     className: "graphene-collaboration-slide",
     section: "Resultados",
     eyebrow: "Linha 5 | Desdobramentos",
-    title: "Colaborações e novas frentes",
-    lead: "A proposta do MCE em diamagnetos abriu uma agenda internacional que avançou do grafeno para outros materiais e processos calóricos quânticos.",
+    title: "Colaborações e outros autores",
+    lead: "A proposta do MCE em diamagnetos abriu uma agenda internacional de estudos sobre grafeno e materiais quânticos.",
     cards: [
       { label: "Makhachkala · Rússia", html: "<strong>Z.Z. Alisultanov e colaboradores</strong><br>Grafeno multicamada e bicamada, nanofitas quânticas, campos elétricos, transporte, capacitância e calor específico." },
       { label: "Taiyuan · China", html: "<strong>Ning Ma</strong><br>Efeito barocalórico em grafeno, fônons acústicos anômalos, polarização de vale e efeitos calóricos em materiais quânticos." },
-      { label: "Valparaíso · Chile", html: "<strong>Patricio Vargas, Francisco J. Peña e colaboradores</strong><br>Efeitos calóricos quânticos, cruzamentos de níveis e máquinas térmicas baseadas em sistemas de spin." },
-      { label: "Irã", html: "<strong>Hamid-Reza Rastegar-Sedehi e colaboradores</strong><br>Ciclos de Stirling quânticos e complexos metálicos como substâncias de trabalho." },
-      { label: "Comunidade internacional", html: "A ideia passou a ser retomada em estudos de filmes quantizados, sistemas bidimensionais, nanofitas e outros materiais quânticos com resposta magnetocalórica." }
     ],
     footerRefs: "Artigos da linha 3.5 e trabalhos que citam o MCE oscilatório em diamagnetos",
     sourceRefs: ["E022"]

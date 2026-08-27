@@ -2878,6 +2878,10 @@
 }
 
 .deck-shell .graphene-first-article-slide .deck-figure:first-child img {
+  max-height: 58vh;
+}
+
+.deck-shell .graphene-first-article-slide .deck-figure:nth-child(2) img {
   max-height: 19vh;
 }
 
