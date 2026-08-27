@@ -1234,17 +1234,21 @@ window.MemorialDeckSlides = [
   {
     id: "s33-quantum-thermo-batteries",
     layout: "technical",
-    className: "quantum-discord-slide",
+    className: "quantum-discord-slide quantum-discord-explainer",
     section: "Resultados",
     eyebrow: "Linha 6 | Termodinâmica quântica",
     title: "Discórdia quântica em sistemas de dois níveis",
     lead: "A discórdia quantifica correlações quânticas que podem existir mesmo quando o estado não é emaranhado. Em um dímero de dois níveis, ela é acompanhada pela resposta magnética e decresce com a temperatura.",
-    equations: [equationAsset("quantum-discord-susceptibility", "Discórdia quântica e testemunha de suscetibilidade", "")],
+    equations: [
+      { html: "D(A:B) = S(ρ<sub>B</sub>) − S(ρ<sub>AB</sub>) + min<sub>Π<sub>B</sub></sub> S(ρ<sub>A</sub>|Π<sub>B</sub>)" },
+      { html: "C = max{0, 1 − 3 k<sub>B</sub>T χ / (N g² μ<sub>B</sub>²)}" }
+    ],
     figures: [{ src: "assets/figures/entanglement-witness.png", alt: "Concorrência em função da temperatura para um dímero de spin um meio", caption: "A correlação quântica desaparece acima da temperatura de emaranhamento." }],
     items: [
-      "Estados de dois níveis: |0,0⟩ = (|+−⟩ − |−+⟩)/√2 (singleto, emaranhado) e |1,m⟩ (tripletos).",
-      "A suscetibilidade magnética permite testemunhar correlações: χT abaixo do limite indica correlação quântica não clássica.",
-      "A discórdia permanece uma medida mais geral: pode ser não nula mesmo quando a concorrência é zero."
+      { label: "Singleto", html: "<span class=\"state-equation\">|0,0⟩ = (|+−⟩ − |−+⟩)/√2</span><br>Estado emaranhado e maximamente antissimétrico." },
+      { label: "Tripletos", html: "<span class=\"state-equation\">|1,m⟩</span><br>Estados simétricos do multiplete; a mistura térmica pode apagar a concorrência." },
+      { label: "Emaranhamento × discórdia", html: "A concorrência detecta emaranhamento. A discórdia também captura correlações quânticas em estados separáveis." },
+      { label: "Temperatura e testemunha", html: "Ao aquecer, χT e a correlação diminuem; a suscetibilidade magnética fornece uma testemunha experimental." }
     ],
     footerRefs: "M.S. Reis, Mecânica Quântica; correlações quânticas em dímeros",
     sourceRefs: ["E023"]

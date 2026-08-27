@@ -3723,6 +3723,42 @@
 .deck-shell .deck-figure img { border-radius: 1rem; box-shadow: 0 18px 50px rgba(18,25,29,.08); }
 .deck-shell .equation-asset { max-height: 8rem; }
 
+.deck-shell .quantum-discord-explainer .technical-summary .card-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .5rem;
+}
+
+.deck-shell .quantum-discord-explainer .technical-summary .info-card {
+  min-height: 5.2rem;
+  padding: .62rem .7rem;
+}
+
+.deck-shell .quantum-discord-explainer .state-equation {
+  display: inline-block;
+  margin: .18rem 0 .28rem;
+  color: var(--section-accent, var(--accent));
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 1.15em;
+  font-weight: 700;
+}
+
+.deck-shell .quantum-discord-explainer .technical-primary {
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: .75rem;
+}
+
+.deck-shell .quantum-discord-explainer .equation-line {
+  font-size: clamp(1.15rem, 2vw, 1.7rem);
+  padding: .7rem;
+}
+
+.deck-shell .quantum-discord-explainer .deck-figure {
+  padding: .55rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .72);
+}
+
 /* Impact dashboard: use the full reading width instead of nesting five metrics
    inside a half-width column. */
 .deck-shell .layout-dashboard .dashboard-body {
