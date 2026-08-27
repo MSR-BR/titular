@@ -1097,29 +1097,66 @@ window.MemorialDeckSlides = [
   {
     id: "s32-graphene-result",
     layout: "content",
-    className: "graphene-oscillation-slide",
+    className: "graphene-first-article-slide",
     section: "Resultados",
     figures: [
+      {
+        src: "assets/figures/oscillating-mce-apl-title.png",
+        alt: "Título e autor do artigo Oscillating magnetocaloric effect",
+        caption: ""
+      },
       {
         src: "assets/figures/graphene-delta-s-oscillation.png",
         alt: "Variação oscilante da entropia magnética em função do parâmetro n",
         caption: "M.S. Reis, Applied Physics Letters 99, 052511 (2011)."
-      },
-      {
-        src: "assets/figures/oscillating-mce-apl-title.png",
-        alt: "Título e autor do artigo Oscillating magnetocaloric effect",
-        caption: "Applied Physics Letters 99, 052511 (2011)."
       }
     ],
     eyebrow: "Linha 5 | Resultado",
-    title: "Entropia magnética oscilante",
-    lead: "A quantização de Landau gera uma variação de entropia oscilante, modulada por um envelope térmico.",
-    items: [
-      "Alternância entre regimes normal e inverso do efeito magnetocalórico.",
-      "A frequência das oscilações aumenta com o parâmetro associado ao campo magnético.",
-      "O formalismo abriu caminho para grafeno, nanofitas e sistemas multicamadas."
-    ],
+    title: "Primeiro artigo propondo MCE em diamagnetos",
+    lead: "",
+    items: [],
     footerRefs: "MEM pp.29-30; refs. [43-51]",
+    sourceRefs: ["E022"]
+  },
+  {
+    id: "s32a-gold-graphene",
+    layout: "content",
+    className: "graphene-gold-comparison-slide",
+    section: "Resultados",
+    eyebrow: "Linha 5 | Do ouro ao grafeno",
+    title: "MCE oscilatório em ouro e grafeno",
+    figures: [
+      {
+        src: "assets/figures/gold-graphene-oscillating-entropy.png",
+        alt: "Comparação da entropia magnética oscilante em ouro tridimensional e grafeno bidimensional",
+        caption: ""
+      },
+      {
+        src: "assets/figures/graphene-mce-apl-2012-title.png",
+        alt: "Abertura do artigo Oscillating magnetocaloric effect on graphenes",
+        caption: "M.S. Reis, Applied Physics Letters 101, 222405 (2012)."
+      }
+    ],
+    items: [],
+    footerRefs: "MEM pp.29-30; refs. [43-51]",
+    sourceRefs: ["E022"]
+  },
+  {
+    id: "s32c-graphene-collaborations",
+    layout: "cards",
+    className: "graphene-collaboration-slide",
+    section: "Resultados",
+    eyebrow: "Linha 5 | Desdobramentos",
+    title: "Colaborações e novas frentes",
+    lead: "A proposta do MCE em diamagnetos abriu uma agenda internacional que avançou do grafeno para outros materiais e processos calóricos quânticos.",
+    cards: [
+      { label: "Makhachkala · Rússia", html: "<strong>Z.Z. Alisultanov e colaboradores</strong><br>Grafeno multicamada e bicamada, nanofitas quânticas, campos elétricos, transporte, capacitância e calor específico." },
+      { label: "Taiyuan · China", html: "<strong>Ning Ma</strong><br>Efeito barocalórico em grafeno, fônons acústicos anômalos, polarização de vale e efeitos calóricos em materiais quânticos." },
+      { label: "Valparaíso · Chile", html: "<strong>Patricio Vargas, Francisco J. Peña e colaboradores</strong><br>Efeitos calóricos quânticos, cruzamentos de níveis e máquinas térmicas baseadas em sistemas de spin." },
+      { label: "Irã", html: "<strong>Hamid-Reza Rastegar-Sedehi e colaboradores</strong><br>Ciclos de Stirling quânticos e complexos metálicos como substâncias de trabalho." },
+      { label: "Comunidade internacional", html: "A ideia passou a ser retomada em estudos de filmes quantizados, sistemas bidimensionais, nanofitas e outros materiais quânticos com resposta magnetocalórica." }
+    ],
+    footerRefs: "Artigos da linha 3.5 e trabalhos que citam o MCE oscilatório em diamagnetos",
     sourceRefs: ["E022"]
   },
   {
@@ -1474,6 +1511,7 @@ window.MemorialDeckSlides = [
       { label: "Universidade do Porto", text: "Portugal", logo: { src: "assets/logos/uporto-mark.svg", alt: "Universidade do Porto" } },
       { label: "Universidad de Sevilla", text: "Espanha", logo: { src: "assets/logos/sevilla-mark.svg", alt: "Universidad de Sevilla" } },
       { label: "Taiyuan University of Technology", text: "China", logo: { src: "assets/logos/taiyuan-university-technology.png", alt: "Taiyuan University of Technology" } },
+      { label: "Dagestan State University", text: "Makhachkala, Rússia", logo: { src: "assets/logos/dagestan-state-university-mark.svg", alt: "Dagestan State University" } },
       { label: "Lomonosov Moscow State University", text: "Rússia", logo: { src: "assets/logos/lomonosov-msu.jpeg", alt: "Lomonosov Moscow State University" } },
       { label: "Universidad Técnica Federico Santa María", text: "Chile", logo: { src: "assets/logos/universidad-tecnica-federico-santa-maria.jpg", alt: "Universidad Técnica Federico Santa María" } }
     ],
