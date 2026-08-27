@@ -652,7 +652,7 @@ window.MemorialDeckSlides = [
     section: "Resultados",
     eyebrow: "Linha 1 | Landau e conexão experimental",
     title: "",
-    lead: "",
+    lead: "Colaborações internacionais que estruturaram a pesquisa em materiais quânticos e efeitos calóricos.",
     items: [
       "A expansão da energia livre fornece todos os coeficientes de Landau e conecta a ordem da transição às assinaturas experimentais de La₀.₆₀Y₀.₀₇Ca₀.₃₃MnO₃.",
       "B_q < 0 para q < 0,5: o Arrot plot adquire inclinação negativa e identifica uma transição de primeira ordem.",
@@ -1152,8 +1152,12 @@ window.MemorialDeckSlides = [
     publicationsDialogId: "graphene-caloric-publications",
     publicationsLabel: "22 publicações · abrir lista",
     cards: [
+      { label: "Oak Ridge · EUA", html: "<strong>Oak Ridge National Laboratory</strong><br>Caracterização e investigação de materiais magnéticos e quânticos." },
+      { label: "Aveiro · Portugal", html: "<strong>Universidade de Aveiro · CICECO</strong><br>Formação, magnetismo experimental, materiais funcionais e modelagem." },
+      { label: "Porto · Portugal", html: "<strong>Universidade do Porto · IFIMUP</strong><br>Materiais magnéticos, efeitos calóricos e coorientação internacional." },
+      { label: "Sevilha · Espanha", html: "<strong>Universidad de Sevilla</strong><br>Mobilidade María Zambrano e colaboração em termodinâmica quântica." },
       { label: "Makhachkala · Rússia", html: "<strong>Z.Z. Alisultanov e colaboradores</strong><br>Grafeno multicamada e bicamada, nanofitas quânticas, campos elétricos, transporte, capacitância e calor específico." },
-      { label: "Taiyuan · China", html: "<strong>Ning Ma</strong><br>Efeito barocalórico em grafeno, fônons acústicos anômalos, polarização de vale e efeitos calóricos em materiais quânticos." },
+      { label: "Taiyuan · China", html: "<strong>Ning Ma</strong><br>Efeito barocalórico em grafeno e fônons acústicos anômalos." },
     ],
     footerRefs: "Artigos da linha 3.5 e trabalhos que citam o MCE oscilatório em diamagnetos",
     sourceRefs: ["E022"]
@@ -1503,7 +1507,7 @@ window.MemorialDeckSlides = [
     className: "international-collaboration-slide",
     section: "Produção",
     eyebrow: "Internacionalização · Colaboração",
-    title: "Colaboração",
+    title: "Colaborações internacionais",
     cards: [
       { label: "Oak Ridge National Laboratory", text: "Estados Unidos", logo: { src: "assets/logos/oak-ridge-national-laboratory.png", alt: "Oak Ridge National Laboratory" } },
       { label: "Universidade de Aveiro", text: "Portugal", logo: { src: "assets/logos/universidade-aveiro.png", alt: "Universidade de Aveiro" } },
