@@ -90,7 +90,7 @@
           { id: "s31-graphene-concept", topic: "Motivação" },
           { id: "s32-graphene-result", topic: "Primeiro artigo propondo MCE em diamagnetos" },
           { id: "s32a-gold-graphene", topic: "MCE oscilatório em ouro e grafeno" },
-          { id: "s32c-graphene-collaborations", topic: "Colaborações e outros autores" }
+          { id: "s32c-graphene-collaborations", topic: "Colaborações" }
         ] },
         { number: "3.6", title: "Termodinâmica quântica em materiais magnéticos", slides: [
           { id: "s33-quantum-thermo-batteries", topic: "Energia, trabalho e calor" },

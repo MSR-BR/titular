@@ -1147,8 +1147,8 @@ window.MemorialDeckSlides = [
     className: "graphene-collaboration-slide",
     section: "Resultados",
     eyebrow: "Linha 5 | Desdobramentos",
-    title: "Colaborações e outros autores",
-    lead: "A proposta do MCE em diamagnetos abriu uma agenda internacional de estudos sobre grafeno e materiais quânticos.",
+    title: "Colaborações",
+    lead: "",
     cards: [
       { label: "Makhachkala · Rússia", html: "<strong>Z.Z. Alisultanov e colaboradores</strong><br>Grafeno multicamada e bicamada, nanofitas quânticas, campos elétricos, transporte, capacitância e calor específico." },
       { label: "Taiyuan · China", html: "<strong>Ning Ma</strong><br>Efeito barocalórico em grafeno, fônons acústicos anômalos, polarização de vale e efeitos calóricos em materiais quânticos." },
