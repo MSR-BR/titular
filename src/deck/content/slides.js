@@ -1187,8 +1187,8 @@ window.MemorialDeckSlides = [
     publicationsDialogId: "graphene-caloric-publications",
     publicationsLabel: "22 publicações · abrir lista",
     cards: [
-      { label: "Chile", html: "<strong>Universidad Técnica Federico Santa María</strong><br>Colaborações em materiais quânticos e efeitos calóricos.", logo: { src: "assets/logos/chile-collaboration-mark.svg", alt: "Universidad Técnica Federico Santa María" } },
-      { label: "Bahia · Brasil", html: "<strong>Universidade Federal do Oeste da Bahia (UFOB)</strong><br>Colaborações em materiais relativísticos e efeitos magnetocalóricos.", logo: { src: "assets/logos/ufob.png", alt: "Universidade Federal do Oeste da Bahia" } },
+      { label: "Makhachkala · Rússia", html: "<strong>Dagestan State University · Z.Z. Alisultanov e colaboradores</strong><br>Grafeno multicamada e bicamada, nanofitas quânticas, campos elétricos, transporte, capacitância e calor específico.", logo: { src: "assets/logos/dagestan-state-university-mark.svg", alt: "Dagestan State University" } },
+      { label: "Taiyuan · China", html: "<strong>Taiyuan University of Technology · Ning Ma</strong><br>Efeito barocalórico em grafeno e fônons acústicos anômalos.", logo: { src: "assets/logos/taiyuan-university-technology.png", alt: "Taiyuan University of Technology" } },
     ],
     footerRefs: "Artigos da linha 3.5 e trabalhos que citam o MCE oscilatório em diamagnetos",
     sourceRefs: ["E022"]
