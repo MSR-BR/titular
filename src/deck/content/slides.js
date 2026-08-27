@@ -1313,13 +1313,13 @@ window.MemorialDeckSlides = [
     ],
     figures: [
       {
-        src: "assets/figures/quantum-adiabatic-process.png?v=20260827.01",
+        src: "assets/figures/quantum-adiabatic-energy-levels.png",
         alt: "Esquema do processo adiabático quântico com trabalho, entropia constante e populações fixas",
         caption: "Processo adiabático: dQ = 0; pₙ permanece fixo enquanto Eₙ varia. Fonte: de Paula et al., arXiv:2411.12470, Fig. 1 · abrir artigo ↗",
         href: "https://arxiv.org/pdf/2411.12470"
       },
       {
-        src: "assets/figures/quantum-isochoric-process.png?v=20260827.01",
+        src: "assets/figures/quantum-isochoric-energy-levels.png",
         alt: "Esquema do processo isocórico quântico com troca de calor, níveis fixos e populações variáveis",
         caption: "Processo isocórico: dW = 0; Eₙ permanece fixo enquanto pₙ varia. Fonte: de Paula et al., arXiv:2411.12470, Fig. 2 · abrir artigo ↗",
         href: "https://arxiv.org/pdf/2411.12470"
