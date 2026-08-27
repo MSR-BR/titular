@@ -3761,6 +3761,35 @@
   background: linear-gradient(145deg, rgba(255,255,255,.98), rgba(243,250,250,.9));
 }
 
+.deck-shell .quantum-entanglement-explainer .technical-summary .info-card::after,
+.deck-shell .quantum-entanglement-explainer .technical-summary .info-card:hover::after {
+  opacity: 0;
+}
+
+.deck-shell .quantum-entanglement-explainer .technical-summary .info-card:hover {
+  transform: translateY(-.16rem);
+  border-color: rgba(18, 25, 29, .08);
+  border-left-color: #e78a54;
+  background: linear-gradient(145deg, rgba(255,255,255,.99), rgba(255,247,242,.96));
+  color: var(--ink);
+  box-shadow: 0 22px 48px rgba(38, 27, 20, .09);
+}
+
+.deck-shell .quantum-entanglement-explainer .technical-summary .info-card:nth-child(2):hover {
+  border-left-color: #0b6f74;
+  background: linear-gradient(145deg, rgba(255,255,255,.99), rgba(239,249,249,.96));
+}
+
+.deck-shell .quantum-entanglement-explainer .technical-summary .info-card:hover :is(
+  .info-card-label,
+  .info-card-text,
+  .quantum-main-equation,
+  .quantum-ket,
+  .quantum-energy-list
+) {
+  color: var(--ink);
+}
+
 .deck-shell .quantum-entanglement-explainer .info-card-label {
   margin-bottom: .46rem;
   color: var(--ink);
@@ -3802,8 +3831,8 @@
 
 .deck-shell .quantum-states-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: .34rem .75rem;
+  grid-template-columns: minmax(0, 1fr);
+  gap: .24rem;
 }
 
 .deck-shell .quantum-state-entry {
@@ -3812,7 +3841,11 @@
   align-items: center;
   justify-content: space-between;
   gap: .35rem;
+  padding-bottom: .18rem;
+  border-bottom: 1px solid rgba(11, 111, 116, .09);
 }
+
+.deck-shell .quantum-state-entry:last-child { border-bottom: 0; }
 
 .deck-shell .quantum-ket {
   min-width: 0;
@@ -4054,6 +4087,78 @@
   stroke-width: 3.5;
 }
 
+.deck-shell .metal-carboxylate-article-slide .slide-title {
+  max-width: none;
+  font-size: clamp(2.3rem, 3.7vw, 3.25rem);
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+
+.deck-shell .metal-carboxylate-article-slide .slide-lead {
+  max-width: 74rem;
+  font-size: clamp(.9rem, 1.25vw, 1.04rem);
+  line-height: 1.34;
+}
+
+.deck-shell .metal-carboxylate-article-slide .cards-with-figure.has-figure-gallery {
+  margin-top: clamp(1rem, 2.4vh, 1.45rem);
+  display: block;
+}
+
+.deck-shell .metal-carboxylate-article-slide .cards-panel { display: none; }
+
+.deck-shell .metal-carboxylate-article-slide .figure-gallery {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(14rem, .65fr);
+  grid-template-rows: minmax(0, auto) minmax(0, auto);
+  gap: .72rem;
+  align-items: stretch;
+}
+
+.deck-shell .metal-carboxylate-article-slide .deck-figure {
+  height: clamp(11rem, 24vh, 13.5rem);
+  padding: .58rem;
+  border: 1px solid rgba(18, 25, 29, .07);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, .94);
+  box-shadow: 0 16px 42px rgba(18, 25, 29, .055);
+}
+
+.deck-shell .metal-carboxylate-article-slide .deck-figure:nth-child(3) {
+  grid-column: 1 / -1;
+  height: clamp(12rem, 29vh, 16rem);
+}
+
+.deck-shell .metal-carboxylate-article-slide .deck-figure img {
+  border: 0;
+  border-radius: .72rem;
+  background: #fff;
+  box-shadow: none;
+}
+
+.deck-shell .metal-carboxylate-article-slide .figure-link {
+  min-width: 0;
+  min-height: 0;
+  display: block;
+}
+
+.deck-shell .metal-carboxylate-article-slide .figure-link img {
+  display: block;
+}
+
+.deck-shell .metal-carboxylate-article-slide .deck-figure figcaption {
+  padding-inline: .2rem;
+  font-size: clamp(.58rem, .75vw, .68rem);
+  line-height: 1.18;
+  text-align: center;
+}
+
+.deck-shell .metal-carboxylate-article-slide .deck-figure:nth-child(3) figcaption {
+  color: var(--section-accent, var(--accent));
+  font-weight: 780;
+}
+
 @media (max-width: 760px) {
   .deck-shell .quantum-entanglement-explainer .technical-summary .card-grid,
   .deck-shell .quantum-entanglement-explainer .equation-stack,
@@ -4067,6 +4172,14 @@
 
   .deck-shell .quantum-entanglement-explainer .equation-line {
     min-height: 16rem;
+  }
+
+  .deck-shell .metal-carboxylate-article-slide .figure-gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .deck-shell .metal-carboxylate-article-slide .deck-figure:nth-child(3) {
+    grid-column: auto;
   }
 }
 

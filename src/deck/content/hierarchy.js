@@ -96,7 +96,8 @@
         ] },
         { number: "3.6", title: "Termodinâmica quântica em materiais magnéticos", slides: [
           { id: "s33-quantum-thermo-batteries", topic: "Motivação" },
-          { id: "s33a-thermal-entanglement", topic: "Emaranhamento térmico e discórdia quântica" }
+          { id: "s33a-thermal-entanglement", topic: "Emaranhamento térmico e discórdia quântica" },
+          { id: "s33b-metal-carboxylate-article", topic: "Carboxilatos metálicos: artigo de referência" }
         ] }
       ]
     },
