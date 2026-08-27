@@ -1329,6 +1329,73 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E023"]
   },
   {
+    id: "s33d-quantum-caloric-framework",
+    layout: "content",
+    className: "quantum-caloric-framework-slide",
+    section: "Resultados",
+    eyebrow: "Linha 6 | Efeito calórico quântico",
+    title: "Entropia isotérmica: do clássico ao quântico",
+    lead: "A excitação externa λ define qual observável controla a resposta calórica do sistema.",
+    equations: [
+      {
+        html: `<math class="quantum-caloric-integral" display="block" aria-label="Delta S iso de delta lambda e T igual a menos a integral de lambda i até lambda f da derivada em relação à temperatura do valor esperado da derivada da Hamiltoniana em relação a lambda">
+          <mrow>
+            <msub><mi>ΔS</mi><mtext>iso</mtext></msub><mo>(</mo><mi>Δλ</mi><mo>,</mo><mi>T</mi><mo>)</mo><mo>=</mo><mo>−</mo>
+            <msubsup><mo>∫</mo><msub><mi>λ</mi><mi>i</mi></msub><msub><mi>λ</mi><mi>f</mi></msub></msubsup>
+            <mfrac><mo>∂</mo><mrow><mo>∂</mo><mi>T</mi></mrow></mfrac>
+            <msub>
+              <mrow><mo>⟨</mo><mfrac><mrow><mi>d</mi><mi>ℋ</mi><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><mrow><mi>d</mi><mi>λ</mi></mrow></mfrac><mo>⟩</mo></mrow>
+              <mi>λ</mi>
+            </msub>
+            <mi>dλ</mi>
+          </mrow>
+        </math>`
+      }
+    ],
+    cards: [
+      {
+        label: "Caso 1 · λ = B | campo magnético",
+        className: "quantum-caloric-case quantum-caloric-classical-case",
+        html: `<div class="quantum-case-equations">
+          <math display="block"><mrow><mi>ℋ</mi><mo>=</mo><msub><mi>ℋ</mi><mtext>int</mtext></msub><mo>−</mo><mi>B</mi><mi>M</mi></mrow></math>
+          <math display="block"><mrow><mo>⟨</mo><mfrac><mrow><mi>∂ℋ</mi></mrow><mrow><mi>∂B</mi></mrow></mfrac><mo>⟩</mo><mo>=</mo><mo>−</mo><mi>M</mi><mo>(</mo><mi>T</mi><mo>,</mo><mi>B</mi><mo>)</mo></mrow></math>
+          <p class="quantum-case-note">A relação quântica recupera a expressão clássica da variação de entropia magnética.</p>
+        </div>`
+      },
+      {
+        label: "Caso 2 · λ = J | acoplamento de troca",
+        className: "quantum-caloric-case quantum-caloric-discord-case",
+        html: `<div class="quantum-case-equations">
+          <math display="block"><mrow><msub><mi>ℋ</mi><mtext>int</mtext></msub><mo>=</mo><mi>J</mi><munder><mo>∑</mo><mrow><mi>i</mi><mo>≠</mo><mi>j</mi></mrow></munder><msub><mover><mi>S</mi><mo>→</mo></mover><mi>i</mi></msub><mo>·</mo><msub><mover><mi>S</mi><mo>→</mo></mover><mi>j</mi></msub></mrow></math>
+          <math display="block"><mrow><mo>|</mo><mo>⟨</mo><mfrac><mrow><mi>∂ℋ</mi></mrow><mrow><mi>∂J</mi></mrow></mfrac><mo>⟩</mo><mo>|</mo><mo>=</mo><mn>6</mn><mi>𝒟</mi><mo>(</mo><mi>J</mi><mo>,</mo><mi>T</mi><mo>)</mo></mrow></math>
+          <math class="quantum-discord-entropy" display="block"><mrow><mo>|</mo><msub><mi>ΔS</mi><mtext>iso</mtext></msub><mo>(</mo><mi>ΔJ</mi><mo>,</mo><mi>T</mi><mo>)</mo><mo>|</mo><mo>=</mo><mn>6</mn><msubsup><mo>∫</mo><msub><mi>J</mi><mi>A</mi></msub><msub><mi>J</mi><mi>B</mi></msub></msubsup><mfrac><mrow><mi>∂𝒟</mi><mo>(</mo><mi>J</mi><mo>,</mo><mi>T</mi><mo>)</mo></mrow><mrow><mi>∂T</mi></mrow></mfrac><mi>dJ</mi></mrow></math>
+          <p class="quantum-case-note">A resposta entrópica passa a medir diretamente a variação térmica da discórdia quântica 𝒟.</p>
+        </div>`
+      }
+    ],
+    footerRefs: "C. Cruz, J.S. Amaral e M. Reis, Quantum Sci. Technol. 10, 035015 (2025)",
+    sourceRefs: ["E023"]
+  },
+  {
+    id: "s33e-knacusi4o10-result",
+    layout: "cards",
+    className: "quantum-caloric-result-slide",
+    section: "Resultados",
+    eyebrow: "Linha 6 | Material protótipo",
+    title: "KNaCuSi₄O₁₀: discórdia e resposta calórica",
+    lead: "No dímero de Cu²⁺ da litidionita, a pressão hidrostática ajusta J; a redistribuição das correlações quânticas produz uma variação isotérmica de entropia mensurável.",
+    figures: [
+      {
+        src: "assets/figures/quantum-caloric-knacusi4o10-result.png",
+        alt: "Discórdia quântica e variação isotérmica de entropia em função da temperatura para KNaCuSi4O10",
+        caption: "Discórdia 𝒟(J,T) e |ΔSiso| para diferentes acoplamentos J induzidos por pressão · abrir artigo ↗",
+        href: "https://doi.org/10.1088/2058-9565/adcf47"
+      }
+    ],
+    footerRefs: "C. Cruz, J.S. Amaral e M. Reis, Quantum Sci. Technol. 10, 035015 (2025)",
+    sourceRefs: ["E023"]
+  },
+  {
     id: "s34b-quantum-thermo-publications",
     layout: "modal",
     cards: [

@@ -98,7 +98,9 @@
           { id: "s33-quantum-thermo-batteries", topic: "Motivação" },
           { id: "s33a-thermal-entanglement", topic: "Emaranhamento térmico e discórdia quântica" },
           { id: "s33b-metal-carboxylate-article", topic: "Carboxilatos metálicos: artigo de referência" },
-          { id: "s33c-quantum-first-law", topic: "Primeira lei: processos adiabático e isocórico" }
+          { id: "s33c-quantum-first-law", topic: "Primeira lei: processos adiabático e isocórico" },
+          { id: "s33d-quantum-caloric-framework", topic: "Entropia isotérmica: do clássico ao quântico" },
+          { id: "s33e-knacusi4o10-result", topic: "KNaCuSi₄O₁₀: discórdia e resposta calórica" }
         ] }
       ]
     },
