@@ -3723,18 +3723,57 @@
 .deck-shell .deck-figure img { border-radius: 1rem; box-shadow: 0 18px 50px rgba(18,25,29,.08); }
 .deck-shell .equation-asset { max-height: 8rem; }
 
+.deck-shell .quantum-entanglement-explainer .slide-title {
+  max-width: none;
+  font-size: clamp(2.35rem, 4vw, 2.85rem);
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+
+.deck-shell .quantum-entanglement-explainer .slide-lead {
+  max-width: 74rem;
+  font-size: clamp(.92rem, 1.3vw, 1.08rem);
+  line-height: 1.32;
+}
+
+.deck-shell .quantum-entanglement-explainer .technical-body {
+  gap: .72rem;
+}
+
 .deck-shell .quantum-entanglement-explainer .technical-summary .card-grid {
-  grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr);
-  gap: .55rem;
+  grid-template-columns: minmax(0, .62fr) minmax(0, 1.38fr);
+  gap: .7rem;
 }
 
 .deck-shell .quantum-entanglement-explainer .technical-summary .info-card {
-  min-height: 5.3rem;
-  padding: .62rem .75rem;
+  position: relative;
+  min-height: 6.1rem;
+  padding: .78rem .95rem .74rem 1.05rem;
+  border: 1px solid rgba(18, 25, 29, .07);
+  border-left: .22rem solid #e78a54;
+  border-radius: 1.2rem;
+  background: linear-gradient(145deg, rgba(255,255,255,.98), rgba(255,249,245,.9));
+  box-shadow: 0 16px 38px rgba(38, 27, 20, .055);
+}
+
+.deck-shell .quantum-entanglement-explainer .technical-summary .info-card:nth-child(2) {
+  border-left-color: #0b6f74;
+  background: linear-gradient(145deg, rgba(255,255,255,.98), rgba(243,250,250,.9));
+}
+
+.deck-shell .quantum-entanglement-explainer .info-card-label {
+  margin-bottom: .46rem;
+  color: var(--ink);
+  font-size: clamp(.98rem, 1.35vw, 1.14rem);
+  letter-spacing: -.025em;
+}
+
+.deck-shell .quantum-entanglement-explainer .info-card-text {
+  line-height: 1.3;
 }
 
 .deck-shell .quantum-main-equation,
-.deck-shell .quantum-state-list,
+.deck-shell .quantum-ket,
 .deck-shell .quantum-energy-list,
 .deck-shell .concurrence-equation {
   font-family: "Times New Roman", Georgia, serif;
@@ -3742,66 +3781,146 @@
 
 .deck-shell .quantum-main-equation {
   display: inline-block;
-  margin: .08rem 0 .25rem;
-  color: var(--section-accent, var(--accent));
-  font-size: clamp(1.35rem, 2.25vw, 2rem);
+  margin: 0 0 .35rem;
+  color: var(--ink);
+  font-size: clamp(1.8rem, 2.75vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.deck-shell .quantum-main-equation b { font-weight: 900; }
+
+.deck-shell .quantum-model-note {
+  display: inline-block;
+  padding: .18rem .52rem;
+  border-radius: 999px;
+  background: rgba(231, 138, 84, .12);
+  color: #9d4b22;
+  font-size: .78rem;
+  font-weight: 820;
+}
+
+.deck-shell .quantum-states-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .34rem .75rem;
+}
+
+.deck-shell .quantum-state-entry {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .35rem;
+}
+
+.deck-shell .quantum-ket {
+  min-width: 0;
+  color: var(--ink);
+  font-size: clamp(.72rem, 1.02vw, .88rem);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.deck-shell .quantum-state-entry em {
+  flex: 0 0 auto;
+  padding: .14rem .38rem;
+  border-radius: 999px;
+  background: rgba(80, 91, 98, .09);
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: .5rem;
+  font-style: normal;
+  font-weight: 820;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.deck-shell .quantum-state-entry em.is-entangled {
+  background: rgba(231, 138, 84, .14);
+  color: #a14e25;
+}
+
+.deck-shell .quantum-energy-list {
+  margin-top: .46rem;
+  padding-top: .42rem;
+  display: flex;
+  gap: 1.2rem;
+  border-top: 1px solid rgba(11, 111, 116, .13);
+  color: var(--ink);
+  font-size: clamp(.78rem, 1.08vw, .94rem);
   font-weight: 700;
 }
 
-.deck-shell .quantum-main-equation b {
-  font-weight: 900;
-}
-
-.deck-shell .quantum-model-note,
-.deck-shell .quantum-energy-list {
+.deck-shell .quantum-energy-list small {
+  margin-left: .2rem;
   color: var(--muted);
-  font-weight: 720;
-}
-
-.deck-shell .quantum-state-list {
-  font-size: clamp(.78rem, 1.12vw, .98rem);
-  line-height: 1.45;
-}
-
-.deck-shell .quantum-state-list em {
-  color: var(--section-accent, var(--accent));
   font-family: var(--font-body);
-  font-size: .72em;
-  font-style: normal;
-  font-weight: 820;
+  font-size: .66em;
+  font-weight: 760;
+  text-transform: uppercase;
 }
 
 .deck-shell .quantum-entanglement-explainer .technical-primary {
   grid-template-columns: minmax(0, 1fr);
-  gap: .75rem;
+  gap: .7rem;
 }
 
 .deck-shell .quantum-entanglement-explainer .equation-stack {
-  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  padding: 0;
+  grid-template-columns: minmax(0, .94fr) minmax(0, 1.06fr);
   grid-template-rows: minmax(0, 1fr);
+  gap: .7rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .deck-shell .quantum-entanglement-explainer .equation-line {
-  padding: .62rem;
+  min-height: clamp(15.5rem, 29vh, 18rem);
+  padding: .85rem;
+  border: 1px solid rgba(18, 25, 29, .075);
+  border-radius: 1.35rem;
+  background: rgba(255, 255, 255, .94);
+  box-shadow: 0 18px 45px rgba(28, 31, 33, .055);
+  overflow: hidden;
 }
 
-.deck-shell .quantum-entanglement-explainer .deck-figure {
-  padding: .5rem;
-  border: 1px solid var(--line);
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, .75);
+.deck-shell .quantum-panel {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  display: grid;
+  gap: .55rem;
+}
+
+.deck-shell .quantum-panel-label {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: .62rem;
+  font-weight: 850;
+  letter-spacing: .09em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.deck-shell .energy-spectrum-panel {
+  grid-template-rows: auto minmax(0, 1fr);
 }
 
 .deck-shell .energy-level-diagram {
   width: 100%;
   height: 100%;
-  min-height: 8.2rem;
+  min-height: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  border: 1px solid rgba(215, 104, 43, .45);
-  border-radius: .65rem;
+  border: 1px solid rgba(231, 138, 84, .24);
+  border-radius: .95rem;
   overflow: hidden;
-  background: #fff5ed;
+  background: linear-gradient(180deg, #fff8f3, #fffdfb);
 }
 
 .deck-shell .energy-regime {
@@ -3811,65 +3930,102 @@
 }
 
 .deck-shell .energy-regime + .energy-regime {
-  border-left: 1px solid rgba(215, 104, 43, .45);
+  border-left: 1px solid rgba(231, 138, 84, .2);
 }
 
 .deck-shell .energy-regime > strong {
   position: absolute;
   inset: 0 0 auto;
-  padding: .35rem;
-  background: #ed9b6d;
+  padding: .45rem;
+  background: linear-gradient(135deg, #e98f5b, #efaa7f);
   color: #fff;
   font-family: var(--font-body);
-  font-size: .88rem;
+  font-size: .82rem;
+  letter-spacing: .03em;
   text-align: center;
 }
 
 .deck-shell .energy-level {
   position: absolute;
-  right: 12%;
-  left: 12%;
+  right: 13%;
+  left: 13%;
   display: block;
-  padding-bottom: .12rem;
-  border-bottom: .14rem solid var(--ink);
-  font-size: .9rem;
+  padding-bottom: .18rem;
+  border-bottom: .13rem solid var(--ink);
+  color: var(--ink);
+  font-size: clamp(.78rem, 1.15vw, 1rem);
   text-align: center;
 }
 
-.deck-shell .energy-level.high { top: 42%; }
-.deck-shell .energy-level.low { bottom: 12%; }
+.deck-shell .energy-level.high { top: 41%; }
+.deck-shell .energy-level.low { bottom: 14%; }
 
 .deck-shell .energy-gap {
   position: absolute;
-  top: 55%;
-  right: 4%;
-  color: var(--section-accent, var(--accent));
+  top: 57%;
+  right: 5%;
+  color: #b75c2d;
   font-family: var(--font-body);
-  font-size: .82rem;
-  font-weight: 800;
+  font-size: .72rem;
+  font-weight: 850;
 }
 
-.deck-shell .concurrence-equation {
-  color: var(--ink);
-  font-size: clamp(1rem, 1.55vw, 1.35rem);
-  font-weight: 700;
+.deck-shell .energy-gap::before {
+  content: "";
+  position: absolute;
+  right: .17rem;
+  bottom: 1rem;
+  height: 2.2rem;
+  border-left: 1px dashed rgba(183, 92, 45, .75);
 }
 
 .deck-shell .concurrence-panel {
-  width: 100%;
-  height: 100%;
-  min-height: 0;
-  display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
-  gap: .25rem;
+  grid-template-rows: auto auto minmax(0, 1fr);
   place-items: center;
+}
+
+.deck-shell .concurrence-panel .quantum-panel-label {
+  justify-self: start;
+}
+
+.deck-shell .concurrence-equation {
+  display: inline-flex;
+  align-items: center;
+  gap: .22rem;
+  color: var(--ink);
+  font-size: clamp(1rem, 1.55vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.deck-shell .concurrence-brace {
+  font-size: 1.65em;
+  font-weight: 400;
+  line-height: .7;
+}
+
+.deck-shell .math-fraction {
+  display: inline-grid;
+  grid-template-rows: repeat(2, auto);
+  align-items: center;
+  text-align: center;
+}
+
+.deck-shell .math-fraction > span:first-child {
+  padding: 0 .4rem .08rem;
+  border-bottom: 1.5px solid currentColor;
+}
+
+.deck-shell .math-fraction > span:last-child {
+  padding-top: .08rem;
+  font-size: .82em;
 }
 
 .deck-shell .concurrence-chart {
   width: 100%;
   height: 100%;
-  min-height: 8.5rem;
-  max-height: 13rem;
+  min-height: 0;
+  max-height: 13.4rem;
   overflow: visible;
 }
 
@@ -3896,6 +4052,22 @@
   stroke: #f18412;
   stroke-linecap: round;
   stroke-width: 3.5;
+}
+
+@media (max-width: 760px) {
+  .deck-shell .quantum-entanglement-explainer .technical-summary .card-grid,
+  .deck-shell .quantum-entanglement-explainer .equation-stack,
+  .deck-shell .quantum-states-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .deck-shell .quantum-state-entry {
+    justify-content: flex-start;
+  }
+
+  .deck-shell .quantum-entanglement-explainer .equation-line {
+    min-height: 16rem;
+  }
 }
 
 /* Impact dashboard: use the full reading width instead of nesting five metrics
