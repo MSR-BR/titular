@@ -4118,7 +4118,7 @@
 
 .deck-shell .metal-carboxylate-article-slide .deck-figure {
   width: 100%;
-  height: clamp(9rem, 20vh, 11rem);
+  height: clamp(11rem, 24vh, 13rem);
   padding: .58rem;
   border: 1px solid rgba(18, 25, 29, .07);
   border-radius: 1.25rem;
@@ -4127,12 +4127,12 @@
 }
 
 .deck-shell .metal-carboxylate-article-slide .deck-figure:nth-child(2) {
-  width: min(100%, 42rem);
-  height: clamp(13rem, 30vh, 17rem);
+  width: min(100%, 52rem);
+  height: clamp(16rem, 38vh, 22rem);
 }
 
 .deck-shell .metal-carboxylate-article-slide .deck-figure:nth-child(3) {
-  width: min(100%, 64rem);
+  width: min(100%, 48rem);
   height: auto;
   padding: 0;
   border: 0;
@@ -4174,6 +4174,14 @@
   font-size: clamp(.58rem, .75vw, .68rem);
   line-height: 1.18;
   text-align: center;
+}
+
+.deck-shell .metal-carboxylate-article-slide .deck-figure:first-child figcaption {
+  max-width: 78rem;
+  margin-inline: auto;
+  color: var(--ink);
+  font-size: clamp(.62rem, .82vw, .74rem);
+  font-weight: 680;
 }
 
 .deck-shell .metal-carboxylate-article-slide .deck-figure:nth-child(3) figcaption {

@@ -1275,7 +1275,7 @@ window.MemorialDeckSlides = [
     title: "Emaranhamento térmico em carboxilatos",
     lead: "A.M. Souza et al., Physical Review B 79, 054408 (2009). Em carboxilatos metálicos, o emaranhamento persiste até Tₑ ≈ 630 K e a desigualdade de Bell é violada até ≈ 290 K.",
     figures: [
-      { src: "assets/figures/metal-carboxylate-material.png", alt: "Estruturas moleculares dos carboxilatos metálicos estudados", caption: "Material: unidades diméricas e cadeia de carboxilatos metálicos." },
+      { src: "assets/figures/metal-carboxylate-material.png", alt: "Estruturas moleculares do carboxilato metálico de cobre estudado", caption: "{Cu₂(O₂CH)₄}{Cu(O₂CH)₂(2-metilpiridina)₂} — Cu: cobre (azul); O: oxigênio (vermelho); C: carbono (marrom); N: nitrogênio (violeta); H: hidrogênio (rosa-claro)." },
       { src: "assets/figures/metal-carboxylate-concurrence.png", alt: "Concorrência em função da temperatura no carboxilato de cobre", caption: "Concorrência obtida a partir da suscetibilidade magnética; Tₑ ≈ 630 K." },
       { src: "assets/figures/metal-carboxylate-prb-2009.png", alt: "Cabeçalho e resumo do artigo publicado na Physical Review B em 2009", caption: "Souza et al., Physical Review B 79, 054408 (2009) · abrir artigo ↗", href: "https://doi.org/10.1103/PhysRevB.79.054408" }
     ],
