@@ -4620,21 +4620,32 @@
 }
 
 .deck-shell .quantum-caloric-result-slide .figure-gallery {
+  width: min(100%, 67rem);
   min-width: 0;
   min-height: 0;
   display: grid;
-  place-items: start center;
+  grid-template-columns: minmax(19rem, .82fr) minmax(27rem, 1.18fr);
+  gap: clamp(.8rem, 1.65vw, 1.25rem);
+  align-items: center;
+  margin-inline: auto;
 }
 
 .deck-shell .quantum-caloric-result-slide .deck-figure {
-  width: min(100%, 50rem);
-  height: clamp(27rem, 65vh, 33rem);
+  width: 100%;
+  height: clamp(22rem, 50vh, 27rem);
   margin: 0;
   padding: .42rem;
   border: 1px solid rgba(18, 25, 29, .07);
   border-radius: 1.25rem;
   background: rgba(255,255,255,.95);
   box-shadow: 0 18px 48px rgba(18, 25, 29, .06);
+}
+
+.deck-shell .quantum-caloric-result-slide .deck-figure:nth-child(2) {
+  width: 100%;
+  height: clamp(10.5rem, 24vh, 13rem);
+  padding: .32rem .42rem;
+  border-radius: 1rem;
 }
 
 .deck-shell .quantum-caloric-result-slide .figure-link {
@@ -4660,6 +4671,10 @@
   font-weight: 760;
   line-height: 1.16;
   text-align: center;
+}
+
+.deck-shell .quantum-caloric-result-slide .deck-figure:nth-child(2) figcaption {
+  font-size: clamp(.56rem, .7vw, .66rem);
 }
 
 @media (max-width: 760px) {
@@ -4695,6 +4710,21 @@
 
   .deck-shell .quantum-caloric-framework-slide .quantum-caloric-case {
     min-height: 0;
+  }
+
+  .deck-shell .quantum-caloric-result-slide .figure-gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .deck-shell .quantum-caloric-result-slide .deck-figure,
+  .deck-shell .quantum-caloric-result-slide .deck-figure:nth-child(2) {
+    width: min(100%, 34rem);
+    height: auto;
+  }
+
+  .deck-shell .quantum-caloric-result-slide .deck-figure img {
+    height: auto;
+    max-height: 72vh;
   }
 }
 

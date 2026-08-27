@@ -1383,12 +1383,18 @@ window.MemorialDeckSlides = [
     section: "Resultados",
     eyebrow: "Linha 6 | Material protótipo",
     title: "KNaCuSi₄O₁₀: discórdia e resposta calórica",
-    lead: "No dímero de Cu²⁺ da litidionita, a pressão hidrostática ajusta J; a redistribuição das correlações quânticas produz uma variação isotérmica de entropia mensurável.",
+    lead: "No KNaCuSi₄O₁₀, os íons Cu²⁺ formam dímeros magnéticos. A pressão hidrostática ajusta J, conectando a discórdia quântica à variação isotérmica de entropia.",
     figures: [
       {
-        src: "assets/figures/quantum-caloric-knacusi4o10-result.png",
+        src: "assets/figures/quantum-caloric-knacusi4o10-study.png",
         alt: "Discórdia quântica e variação isotérmica de entropia em função da temperatura para KNaCuSi4O10",
-        caption: "Discórdia 𝒟(J,T) e |ΔSiso| para diferentes acoplamentos J induzidos por pressão · abrir artigo ↗",
+        caption: "KNaCuSi₄O₁₀ · discórdia 𝒟(J,T) e |ΔSiso| para diferentes acoplamentos J induzidos por pressão",
+        href: "https://doi.org/10.1088/2058-9565/adcf47"
+      },
+      {
+        src: "assets/figures/quantum-caloric-article-reference.png",
+        alt: "Referência do artigo Quantum caloric effects, publicado na Quantum Science and Technology em 2025",
+        caption: "Estudo completo: C. Cruz, J. S. Amaral e M. Reis, Quantum Sci. Technol. 10, 035015 (2025) · abrir artigo ↗",
         href: "https://doi.org/10.1088/2058-9565/adcf47"
       }
     ],
