@@ -1379,11 +1379,10 @@ window.MemorialDeckSlides = [
   {
     id: "s33e-knacusi4o10-result",
     layout: "cards",
-    className: "quantum-caloric-result-slide",
+    className: "quantum-caloric-result-slide quantum-caloric-figure-continuation",
     section: "Resultados",
     eyebrow: "Linha 6 | Material protótipo",
     title: "KNaCuSi₄O₁₀: discórdia e resposta calórica",
-    lead: "No KNaCuSi₄O₁₀, os íons Cu²⁺ formam dímeros magnéticos. A pressão hidrostática ajusta J, conectando a discórdia quântica à variação isotérmica de entropia.",
     figures: [
       {
         src: "assets/figures/quantum-caloric-knacusi4o10-study.png",
@@ -1394,7 +1393,6 @@ window.MemorialDeckSlides = [
       {
         src: "assets/figures/quantum-caloric-article-reference.png",
         alt: "Referência do artigo Quantum caloric effects, publicado na Quantum Science and Technology em 2025",
-        caption: "Estudo completo: C. Cruz, J. S. Amaral e M. Reis, Quantum Sci. Technol. 10, 035015 (2025) · abrir artigo ↗",
         href: "https://doi.org/10.1088/2058-9565/adcf47"
       }
     ],
