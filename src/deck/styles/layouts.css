@@ -2799,6 +2799,92 @@
   text-align: center;
 }
 
+.deck-shell .graphene-motivation-slide .content-publications-trigger {
+  justify-self: start;
+  padding: .5rem .78rem;
+  font-size: .7rem;
+}
+
+.deck-shell .graphene-motivation-slide .content-with-figure {
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(.75rem, 1.6vh, 1.15rem);
+}
+
+.deck-shell .graphene-motivation-slide .content-panel {
+  gap: .55rem;
+}
+
+.deck-shell .graphene-motivation-slide .content-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .45rem 1.2rem;
+}
+
+.deck-shell .graphene-motivation-slide .deck-figure {
+  width: min(100%, 64rem);
+  justify-self: center;
+}
+
+.deck-shell .graphene-motivation-slide .deck-figure img {
+  width: 100%;
+  height: auto;
+  max-height: 54vh;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.deck-shell :is(.graphene-motivation-slide, .graphene-oscillation-slide) .deck-figure figcaption {
+  margin-top: .42rem;
+  font-size: clamp(.7rem, .9vw, .82rem);
+  text-align: center;
+}
+
+.deck-shell .graphene-oscillation-slide .content-with-gallery {
+  display: grid;
+  grid-template-columns: minmax(15rem, .62fr) minmax(0, 1.38fr);
+  gap: clamp(.8rem, 1.7vw, 1.35rem);
+  align-items: start;
+}
+
+.deck-shell .graphene-oscillation-slide .content-panel {
+  gap: .7rem;
+}
+
+.deck-shell .graphene-oscillation-slide .figure-gallery {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(.55rem, 1.05vh, .8rem);
+  align-items: start;
+}
+
+.deck-shell .graphene-oscillation-slide .deck-figure {
+  min-width: 0;
+  margin: 0;
+  align-self: start;
+}
+
+.deck-shell .graphene-oscillation-slide .deck-figure img {
+  width: 100%;
+  height: auto;
+  max-height: 33vh;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.deck-shell .graphene-oscillation-slide .deck-figure:nth-child(2) img {
+  max-height: 10vh;
+}
+
+.deck-shell .graphene-oscillation-slide .deck-figure:nth-child(2) figcaption {
+  display: none;
+}
+
 .deck-shell .tsallis-paper-slide .photo-stage {
   min-height: 0;
   place-items: start center;

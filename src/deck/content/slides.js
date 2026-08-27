@@ -1074,26 +1074,22 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s31-graphene-concept",
-    layout: "technical",
+    layout: "content",
+    className: "graphene-motivation-slide",
     section: "Resultados",
     eyebrow: "Linha 5 | Materiais relativísticos",
-    title: "Grafeno e efeitos calóricos oscilatórios",
+    title: "Motivação",
     publicationsDialogId: "graphene-caloric-publications",
     publicationsLabel: "22 publicações · abrir lista",
-    lead: "Em materiais relativísticos, a quantização de Landau e o espectro de Dirac alteram a resposta termodinâmica a campos externos.",
-    equations: [
-      equationAsset("graphene-landau", "Quantização de Landau em grafeno", "escala m e níveis relativísticos"),
-      equationAsset("graphene-caloric", "Entropia magnética oscilatória", "alternância normal/inverso")
-    ],
+    lead: "Em campos magnéticos intensos, a quantização em níveis de Landau faz o espectro atravessar sucessivamente o nível de Fermi, originando oscilações termodinâmicas.",
     figure: {
-      src: "assets/figures/graphene-entropy-oscillation.png",
-      alt: "Variação da entropia magnética em grafeno bidimensional",
-      caption: "Entropia magnética em grafeno bidimensional em função de m = N0 Phi0/B."
+      src: "assets/figures/landau-levels-de-haas-van-alphen.png",
+      alt: "Níveis de Landau sob campo magnético forte e efeito de Haas–van Alphen",
+      caption: "M.S. Reis, Fundamentals of Magnetism, Elsevier (2013), Fig. 7.3."
     },
     items: [
-      "Efeito magnetocalórico oscilatório em grafeno.",
-      "Temperaturas características da ordem de 100 K, superiores a materiais diamagnéticos 3D convencionais.",
-      "Extensões para efeitos eletrocalórico e barocalórico."
+      "As passagens sucessivas dos níveis pelo nível de Fermi produzem o efeito de Haas–van Alphen.",
+      "A mesma quantização modula a entropia e cria respostas magnetocalóricas oscilantes."
     ],
     footerRefs: "MEM pp.29-30; refs. [43-51]",
     sourceRefs: ["E022"]
@@ -1101,20 +1097,27 @@ window.MemorialDeckSlides = [
   {
     id: "s32-graphene-result",
     layout: "content",
+    className: "graphene-oscillation-slide",
     section: "Resultados",
-    figure: {
-      src: "assets/figures/graphene-entropy-oscillation.png",
-      alt: "Oscilações de entropia magnética em grafeno",
-      caption: "Oscilações por quantização de Landau conectam férmions de Dirac a resposta calórica."
-    },
+    figures: [
+      {
+        src: "assets/figures/graphene-delta-s-oscillation.png",
+        alt: "Variação oscilante da entropia magnética em função do parâmetro n",
+        caption: "M.S. Reis, Applied Physics Letters 99, 052511 (2011)."
+      },
+      {
+        src: "assets/figures/oscillating-mce-apl-title.png",
+        alt: "Título e autor do artigo Oscillating magnetocaloric effect",
+        caption: "Applied Physics Letters 99, 052511 (2011)."
+      }
+    ],
     eyebrow: "Linha 5 | Resultado",
-    title: "Da física de Dirac a uma resposta calórica mensurável",
-    lead: "A contribuição está em conectar os férmions de Dirac em sistemas bidimensionais a fenômenos termodinâmicos macroscópicos.",
+    title: "Entropia magnética oscilante",
+    lead: "A quantização de Landau gera uma variação de entropia oscilante, modulada por um envelope térmico.",
     items: [
-      "Oscilações da entropia magnética moduladas por uma função envelope dependente da temperatura.",
       "Alternância entre regimes normal e inverso do efeito magnetocalórico.",
-      "Perspectiva para sensores magnéticos e estudo termodinâmico de sistemas 2D.",
-      "Generalizações para nanofitas, sistemas multicamadas e pressões externas."
+      "A frequência das oscilações aumenta com o parâmetro associado ao campo magnético.",
+      "O formalismo abriu caminho para grafeno, nanofitas e sistemas multicamadas."
     ],
     footerRefs: "MEM pp.29-30; refs. [43-51]",
     sourceRefs: ["E022"]

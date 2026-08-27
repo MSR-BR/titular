@@ -87,8 +87,8 @@
           { id: "s28-cardamomo", topic: "Ferramenta computacional CARDAMOMO" }
         ] },
         { number: "3.5", title: "Efeitos calóricos em materiais relativísticos", slides: [
-          { id: "s31-graphene-concept", topic: "Grafeno e efeitos calóricos oscilatórios" },
-          { id: "s32-graphene-result", topic: "Resposta calórica mensurável" }
+          { id: "s31-graphene-concept", topic: "Motivação" },
+          { id: "s32-graphene-result", topic: "Entropia magnética oscilante" }
         ] },
         { number: "3.6", title: "Termodinâmica quântica em materiais magnéticos", slides: [
           { id: "s33-quantum-thermo-batteries", topic: "Energia, trabalho e calor" },

@@ -537,12 +537,16 @@
 
     if (slide.layout === "content") {
       const hasGallery = Array.isArray(slide.figures) && slide.figures.length > 0;
+      const publicationsButton = slide.publicationsDialogId
+        ? `<button class="publications-trigger photo-publications-trigger content-publications-trigger" type="button" data-publications-open="${escapeAttribute(slide.publicationsDialogId)}">${escapeHtml(slide.publicationsLabel || "Publicações · abrir lista")}</button>`
+        : "";
       const bodyClass = slide.figure
         ? "slide-body content-with-figure"
         : `slide-body${hasGallery ? " content-with-gallery" : ""}`;
       return `
         <section id="slide-${index + 1}" data-slide-index="${index}" class="${className}" aria-label="${title}">
           ${renderHeader(slide, title, { omitLead: true })}
+          ${publicationsButton}
           <div class="${bodyClass}">
             <div class="content-panel${slide.animateContentBlock ? " animate-content-block" : ""}">
               ${slide.lead ? `<p class="slide-lead">${escapeHtml(slide.lead)}</p>` : ""}
