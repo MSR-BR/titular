@@ -2865,6 +2865,8 @@
   min-width: 0;
   margin: 0;
   align-self: center;
+  justify-self: center;
+  width: 100%;
 }
 
 .deck-shell .graphene-first-article-slide .deck-figure img {
@@ -2886,6 +2888,11 @@
 .deck-shell .graphene-first-article-slide .deck-figure:nth-child(2) img {
   width: min(100%, 44rem);
   max-height: 15vh;
+}
+
+.deck-shell .graphene-first-article-slide .deck-figure:nth-child(2) {
+  display: grid;
+  justify-items: center;
 }
 
 .deck-shell .graphene-first-article-slide .deck-figure:nth-child(2) figcaption {

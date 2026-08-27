@@ -1149,6 +1149,8 @@ window.MemorialDeckSlides = [
     eyebrow: "Linha 5 | Desdobramentos",
     title: "Colaborações",
     lead: "",
+    publicationsDialogId: "graphene-caloric-publications",
+    publicationsLabel: "22 publicações · abrir lista",
     cards: [
       { label: "Makhachkala · Rússia", html: "<strong>Z.Z. Alisultanov e colaboradores</strong><br>Grafeno multicamada e bicamada, nanofitas quânticas, campos elétricos, transporte, capacitância e calor específico." },
       { label: "Taiyuan · China", html: "<strong>Ning Ma</strong><br>Efeito barocalórico em grafeno, fônons acústicos anômalos, polarização de vale e efeitos calóricos em materiais quânticos." },
