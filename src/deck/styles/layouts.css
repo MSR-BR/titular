@@ -2855,9 +2855,10 @@
 .deck-shell .graphene-first-article-slide .figure-gallery {
   min-width: 0;
   display: grid;
-  grid-template-columns: minmax(13rem, 1fr) minmax(0, 2fr);
-  gap: clamp(1rem, 2.2vw, 1.75rem);
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(.35rem, .8vh, .65rem);
+  justify-items: center;
+  align-items: start;
 }
 
 .deck-shell .graphene-first-article-slide .deck-figure {
@@ -2878,11 +2879,13 @@
 }
 
 .deck-shell .graphene-first-article-slide .deck-figure:first-child img {
-  max-height: 58vh;
+  max-width: min(100%, 64rem);
+  max-height: 49vh;
 }
 
 .deck-shell .graphene-first-article-slide .deck-figure:nth-child(2) img {
-  max-height: 19vh;
+  width: min(100%, 44rem);
+  max-height: 15vh;
 }
 
 .deck-shell .graphene-first-article-slide .deck-figure:nth-child(2) figcaption {
