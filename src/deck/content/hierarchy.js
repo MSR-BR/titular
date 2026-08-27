@@ -88,9 +88,6 @@
           { id: "s28-cardamomo", topic: "Ferramenta computacional CARDAMOMO" },
           { id: "s28-complexes-collaboration", topic: "Colaborações" }
         ] },
-        { number: "3.4", title: "Colaborações em termodinâmica quântica", slides: [
-          { id: "s30-quantum-collaboration", topic: "China e Makhachkala" }
-        ] },
         { number: "3.5", title: "Efeitos calóricos em materiais relativísticos", slides: [
           { id: "s31-graphene-concept", topic: "Motivação" },
           { id: "s32-graphene-result", topic: "Primeiro artigo propondo MCE em diamagnetos" },

@@ -1108,20 +1108,6 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E020"]
   },
   {
-    id: "s30-quantum-collaboration",
-    layout: "cards",
-    className: "international-collaboration-slide",
-    section: "Resultados",
-    eyebrow: "Linha 4 | Colaborações",
-    title: "Colaborações",
-    cards: [
-      { label: "Taiyuan · China", text: "Taiyuan University of Technology · Ning Ma", logo: { src: "assets/logos/taiyuan-university-technology.png", alt: "Taiyuan University of Technology" } },
-      { label: "Makhachkala · Rússia", text: "Dagestan State University · Z.Z. Alisultanov", logo: { src: "assets/logos/dagestan-state-university-mark.svg", alt: "Dagestan State University" } }
-    ],
-    footerRefs: "Colaborações identificadas nos artigos da subseção 3.4",
-    sourceRefs: ["E022"]
-  },
-  {
     id: "s31-graphene-concept",
     layout: "content",
     className: "graphene-motivation-slide",
