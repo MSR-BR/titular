@@ -877,6 +877,24 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E019"]
   },
   {
+    id: "s25-mce-collaboration",
+    layout: "cards",
+    className: "international-collaboration-slide",
+    section: "Resultados",
+    eyebrow: "Linha 2 | Colaborações",
+    title: "Colaborações",
+    cards: [
+      { label: "Aveiro · Portugal", text: "Universidade de Aveiro · CICECO", logo: { src: "assets/logos/universidade-aveiro.png", alt: "Universidade de Aveiro" } },
+      { label: "Porto · Portugal", text: "Universidade do Porto · IFIMUP", logo: { src: "assets/logos/uporto-mark.svg", alt: "Universidade do Porto" } },
+      { label: "Moscou · Rússia", text: "Lomonosov Moscow State University", logo: { src: "assets/logos/lomonosov-msu.jpeg", alt: "Lomonosov Moscow State University" } },
+      { label: "Sevilha · Espanha", text: "Universidad de Sevilla", logo: { src: "assets/logos/sevilla-mark.svg", alt: "Universidad de Sevilla" } },
+      { label: "Oak Ridge · EUA", text: "Oak Ridge National Laboratory", logo: { src: "assets/logos/oak-ridge-national-laboratory.png", alt: "Oak Ridge National Laboratory" } },
+      { label: "Rio de Janeiro · Brasil", text: "UFRJ · CBPF", logo: { src: "assets/logos/cbpf.png", alt: "Centro Brasileiro de Pesquisas Físicas" } }
+    ],
+    footerRefs: "Colaborações identificadas nos artigos da subseção 3.2",
+    sourceRefs: ["E019"]
+  },
+  {
     id: "s25b-complexes-publications",
     layout: "modal",
     cards: [
@@ -1073,6 +1091,35 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E020", "E014"]
   },
   {
+    id: "s28-complexes-collaboration",
+    layout: "cards",
+    className: "international-collaboration-slide",
+    section: "Resultados",
+    eyebrow: "Linha 3 | Colaborações",
+    title: "Colaborações",
+    cards: [
+      { label: "Aveiro · Portugal", text: "Universidade de Aveiro · CICECO", logo: { src: "assets/logos/universidade-aveiro.png", alt: "Universidade de Aveiro" } },
+      { label: "Oak Ridge · EUA", text: "Oak Ridge National Laboratory", logo: { src: "assets/logos/oak-ridge-national-laboratory.png", alt: "Oak Ridge National Laboratory" } },
+      { label: "Rio de Janeiro · Brasil", text: "UFRJ · CBPF", logo: { src: "assets/logos/cbpf.png", alt: "Centro Brasileiro de Pesquisas Físicas" } }
+    ],
+    footerRefs: "Colaborações identificadas nos artigos da subseção 3.3",
+    sourceRefs: ["E020"]
+  },
+  {
+    id: "s30-quantum-collaboration",
+    layout: "cards",
+    className: "international-collaboration-slide",
+    section: "Resultados",
+    eyebrow: "Linha 4 | Colaborações",
+    title: "Colaborações",
+    cards: [
+      { label: "Taiyuan · China", text: "Taiyuan University of Technology · Ning Ma", logo: { src: "assets/logos/taiyuan-university-technology.png", alt: "Taiyuan University of Technology" } },
+      { label: "Makhachkala · Rússia", text: "Dagestan State University · Z.Z. Alisultanov", logo: { src: "assets/logos/dagestan-state-university-mark.svg", alt: "Dagestan State University" } }
+    ],
+    footerRefs: "Colaborações identificadas nos artigos da subseção 3.4",
+    sourceRefs: ["E022"]
+  },
+  {
     id: "s31-graphene-concept",
     layout: "content",
     className: "graphene-motivation-slide",
@@ -1152,12 +1199,8 @@ window.MemorialDeckSlides = [
     publicationsDialogId: "graphene-caloric-publications",
     publicationsLabel: "22 publicações · abrir lista",
     cards: [
-      { label: "Oak Ridge · EUA", html: "<strong>Oak Ridge National Laboratory</strong><br>Caracterização e investigação de materiais magnéticos e quânticos." },
-      { label: "Aveiro · Portugal", html: "<strong>Universidade de Aveiro · CICECO</strong><br>Formação, magnetismo experimental, materiais funcionais e modelagem." },
-      { label: "Porto · Portugal", html: "<strong>Universidade do Porto · IFIMUP</strong><br>Materiais magnéticos, efeitos calóricos e coorientação internacional." },
-      { label: "Sevilha · Espanha", html: "<strong>Universidad de Sevilla</strong><br>Mobilidade María Zambrano e colaboração em termodinâmica quântica." },
-      { label: "Makhachkala · Rússia", html: "<strong>Z.Z. Alisultanov e colaboradores</strong><br>Grafeno multicamada e bicamada, nanofitas quânticas, campos elétricos, transporte, capacitância e calor específico." },
-      { label: "Taiyuan · China", html: "<strong>Ning Ma</strong><br>Efeito barocalórico em grafeno e fônons acústicos anômalos." },
+      { label: "Chile", html: "<strong>Universidad Técnica Federico Santa María</strong><br>Colaborações em materiais quânticos e efeitos calóricos." },
+      { label: "Bahia · Brasil", html: "<strong>Universidade Federal do Oeste da Bahia (UFOB)</strong><br>Colaborações em materiais relativísticos e efeitos magnetocalóricos." },
     ],
     footerRefs: "Artigos da linha 3.5 e trabalhos que citam o MCE oscilatório em diamagnetos",
     sourceRefs: ["E022"]

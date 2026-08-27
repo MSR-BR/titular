@@ -75,7 +75,8 @@
           { id: "s23c-mce-entropy-figure", topic: "Entropia e temperatura" },
           { id: "s23d-mce-equations", topic: "Variações de entropia e temperatura" },
           { id: "s24-mce-materials", topic: "Materiais" },
-          { id: "s25-mce-synthesis", topic: "Artigo de revisão" }
+          { id: "s25-mce-synthesis", topic: "Artigo de revisão" },
+          { id: "s25-mce-collaboration", topic: "Colaborações" }
         ] },
         { number: "3.3", title: "Complexos Metálicos, Magnetismo e Modelagem Termodinâmica", slides: [
           { id: "s26-complexes-hamiltonian", topic: "Motivação" },
@@ -84,7 +85,11 @@
           { id: "s26d-co-dimer-paper", topic: "Artigo de referência" },
           { id: "s27-complexes-result", topic: "Resultado representativo" },
           { id: "s27b-cu5-paper", topic: "Artigo de referência" },
-          { id: "s28-cardamomo", topic: "Ferramenta computacional CARDAMOMO" }
+          { id: "s28-cardamomo", topic: "Ferramenta computacional CARDAMOMO" },
+          { id: "s28-complexes-collaboration", topic: "Colaborações" }
+        ] },
+        { number: "3.4", title: "Colaborações em termodinâmica quântica", slides: [
+          { id: "s30-quantum-collaboration", topic: "China e Makhachkala" }
         ] },
         { number: "3.5", title: "Efeitos calóricos em materiais relativísticos", slides: [
           { id: "s31-graphene-concept", topic: "Motivação" },
