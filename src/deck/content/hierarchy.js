@@ -95,9 +95,7 @@
           { id: "s32c-graphene-collaborations", topic: "Colaborações" }
         ] },
         { number: "3.6", title: "Termodinâmica quântica em materiais magnéticos", slides: [
-          { id: "s33-quantum-thermo-batteries", topic: "Energia, trabalho e calor" },
-          { id: "s34-quantum-thermo-caloric", topic: "Máquinas e potenciais calóricos" },
-          { id: "s35-synthesis", topic: "Um programa, várias interfaces" }
+          { id: "s33-quantum-thermo-batteries", topic: "Motivação" }
         ] }
       ]
     },

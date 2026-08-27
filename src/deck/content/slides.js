@@ -1233,40 +1233,22 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s33-quantum-thermo-batteries",
-    layout: "technical",
+    layout: "cards",
+    className: "quantum-thermo-motivation-slide",
     section: "Resultados",
     eyebrow: "Linha 6 | Termodinâmica quântica",
-    title: "Energia, trabalho e calor em materiais quânticos",
-    publicationsDialogId: "quantum-thermo-publications",
-    publicationsLabel: "16 publicações · abrir lista",
-    lead: "Materiais moleculares e sistemas de spin permitem estudar armazenamento e conversão de energia em plataformas físicas reais.",
-    equations: [
-      equationAsset("quantum-battery", "Trabalho extraível em bateria quântica", "ergotropia / energia extraível")
+    title: "Motivação",
+    lead: "Materiais magnéticos e complexos moleculares oferecem plataformas reais para investigar informação, energia e transformações quânticas.",
+    cards: [
+      { label: "Emaranhamento térmico", text: "Emaranhamento, teleportação e testemunhas de suscetibilidade em dímeros, clusters e complexos metálicos." },
+      { label: "Discórdia quântica", text: "Correlações quânticas robustas em materiais moleculares, inclusive em temperaturas próximas à ambiente." },
+      { label: "Baterias quânticas", text: "Armazenamento e extração de energia usando discórdia quântica e sistemas de spin." },
+      { label: "Ciclos termodinâmicos quânticos", text: "Máquinas de Stirling e efeitos calóricos quânticos baseados em complexos dinucleares e potenciais efetivos." }
     ],
     items: [
-      "Bateria quântica baseada em correlações em complexos metálicos.",
-      "Caracterização experimental possível por suscetibilidade magnética.",
-      "Conexão entre materiais magnéticos e tecnologias quânticas emergentes."
+      "Da caracterização magnética à termodinâmica quântica de sistemas materiais."
     ],
-    footerRefs: "MEM pp.30-31; ref. [52]",
-    sourceRefs: ["E023"]
-  },
-  {
-    id: "s34-quantum-thermo-caloric",
-    layout: "technical",
-    section: "Resultados",
-    eyebrow: "Linha 6 | Máquinas e potenciais calóricos",
-    title: "Ciclos quânticos e respostas calóricas gerais",
-    lead: "A formulação recente expressa potenciais calóricos diretamente em termos do Hamiltoniano do sistema.",
-    equations: [
-      equationAsset("quantum-caloric-potentials", "Potenciais calóricos quânticos", "Delta S_iso e Delta T_ad a partir do Hamiltoniano")
-    ],
-    items: [
-      "Ciclo de Stirling quântico em complexos metálicos dinucleares.",
-      "Meios de trabalho baseados em sistemas magnéticos moleculares e potenciais efetivos.",
-      "Contribuições quânticas para respostas calóricas em equilíbrio térmico."
-    ],
-    footerRefs: "MEM pp.31-32; refs. [53-56]",
+    footerRefs: "Temas desenvolvidos nas publicações da subseção 3.6",
     sourceRefs: ["E023"]
   },
   {
@@ -1303,7 +1285,7 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s35-synthesis",
-    layout: "cards",
+    layout: "modal",
     section: "Resultados",
     eyebrow: "Síntese científica",
     title: "Um programa, várias interfaces",
