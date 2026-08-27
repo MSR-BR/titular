@@ -1233,40 +1233,37 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s33-quantum-thermo-batteries",
-    layout: "technical",
-    className: "quantum-discord-slide quantum-discord-explainer",
-    section: "Resultados",
-    eyebrow: "Linha 6 | Termodinâmica quântica",
-    title: "Discórdia quântica em sistemas de dois níveis",
-    lead: "A discórdia quantifica correlações quânticas que podem existir mesmo quando o estado não é emaranhado. Em um dímero de dois níveis, ela é acompanhada pela resposta magnética e decresce com a temperatura.",
-    equations: [
-      { html: "D(A:B) = S(ρ<sub>B</sub>) − S(ρ<sub>AB</sub>) + min<sub>Π<sub>B</sub></sub> S(ρ<sub>A</sub>|Π<sub>B</sub>)" },
-      { html: "C = max{0, 1 − 3 k<sub>B</sub>T χ / (N g² μ<sub>B</sub>²)}" }
-    ],
-    figures: [{ src: "assets/figures/entanglement-witness.png", alt: "Concorrência em função da temperatura para um dímero de spin um meio", caption: "A correlação quântica desaparece acima da temperatura de emaranhamento." }],
-    items: [
-      { label: "Singleto", html: "<span class=\"state-equation\">|0,0⟩ = (|+−⟩ − |−+⟩)/√2</span><br>Estado emaranhado e maximamente antissimétrico." },
-      { label: "Tripletos", html: "<span class=\"state-equation\">|1,m⟩</span><br>Estados simétricos do multiplete; a mistura térmica pode apagar a concorrência." },
-      { label: "Emaranhamento × discórdia", html: "A concorrência detecta emaranhamento. A discórdia também captura correlações quânticas em estados separáveis." },
-      { label: "Temperatura e testemunha", html: "Ao aquecer, χT e a correlação diminuem; a suscetibilidade magnética fornece uma testemunha experimental." }
-    ],
-    footerRefs: "M.S. Reis, Mecânica Quântica; correlações quânticas em dímeros",
-    sourceRefs: ["E023"]
-  },
-  {
-    id: "s33a-thermal-entanglement",
     layout: "cards",
     className: "quantum-thermo-materials-slide",
     section: "Resultados",
-    eyebrow: "Linha 6 | Correlações quânticas",
+    eyebrow: "Linha 6 | Termodinâmica quântica",
     title: "Materiais e plataformas quânticas",
-    lead: "A agenda combina complexos metálicos, baterias quânticas e ciclos termodinâmicos para explorar correlações, energia e informação.",
+    lead: "Motivação: explorar correlações, energia e informação em materiais magnéticos controlados pela temperatura.",
     cards: [
       { label: "Emaranhamento térmico", text: "Dímeros e clusters metálicos: correlações, teleportação e temperatura crítica." },
       { label: "Baterias quânticas", text: "Armazenamento e extração de energia usando ergotropia em complexos metálicos." },
       { label: "Ciclos termodinâmicos quânticos", text: "Máquinas de Stirling e efeitos calóricos em sistemas dinucleares." }
     ],
     footerRefs: "Temas desenvolvidos nas publicações da subseção 3.6",
+    sourceRefs: ["E023"]
+  },
+  {
+    id: "s33a-thermal-entanglement",
+    layout: "technical",
+    className: "quantum-discord-slide quantum-entanglement-explainer",
+    section: "Resultados",
+    eyebrow: "Linha 6 | Correlações quânticas",
+    title: "Discórdia quântica e emaranhamento térmico",
+    lead: "Para um dímero de spins s₁ = s₂ = 1/2, a interação de Heisenberg separa um singleto emaranhado de um tripleto e permite acompanhar o emaranhamento com a temperatura.",
+    items: [
+      { label: "Hamiltoniana", html: "<span class=\"quantum-main-equation\">H = −J <b>S</b><sub>1</sub> · <b>S</b><sub>2</sub></span><br><span class=\"quantum-model-note\">s₁ = s₂ = 1/2</span>" },
+      { label: "Autoestados e energias", html: "<span class=\"quantum-state-list\">|1,1⟩ = |++⟩ <em>não emaranhado</em> &nbsp;·&nbsp; |1,0⟩ = (|+−⟩ + |−+⟩)/√2 <em>emaranhado</em><br>|1,−1⟩ = |−−⟩ <em>não emaranhado</em> &nbsp;·&nbsp; |0,0⟩ = (|+−⟩ − |−+⟩)/√2 <em>emaranhado</em></span><br><span class=\"quantum-energy-list\">E(1,m) = 0 (tripleto) &nbsp;·&nbsp; E(0,0) = J (singleto)</span>" }
+    ],
+    equations: [
+      { html: "<div class=\"energy-level-diagram\" aria-label=\"Diagrama dos níveis de energia para J menor e maior que zero\"><div class=\"energy-regime\"><strong>J &lt; 0</strong><span class=\"energy-level high\">|1,m⟩</span><span class=\"energy-gap\">J</span><span class=\"energy-level low\">|0,0⟩</span></div><div class=\"energy-regime\"><strong>J &gt; 0</strong><span class=\"energy-level high\">|0,0⟩</span><span class=\"energy-gap\">J</span><span class=\"energy-level low\">|1,m⟩</span></div></div>" },
+      { html: "<div class=\"concurrence-panel\"><span class=\"concurrence-equation\">𝒞 = max{0, 1 − 6/(e<sup>−Jβ</sup> + 3)}</span><svg class=\"concurrence-chart\" viewBox=\"0 0 430 285\" role=\"img\" aria-label=\"Concorrência em função da temperatura reduzida\"><line x1=\"62\" y1=\"22\" x2=\"62\" y2=\"244\"/><line x1=\"62\" y1=\"244\" x2=\"406\" y2=\"244\"/><g class=\"chart-ticks\"><line x1=\"62\" y1=\"244\" x2=\"62\" y2=\"251\"/><line x1=\"131\" y1=\"244\" x2=\"131\" y2=\"251\"/><line x1=\"200\" y1=\"244\" x2=\"200\" y2=\"251\"/><line x1=\"268\" y1=\"244\" x2=\"268\" y2=\"251\"/><line x1=\"337\" y1=\"244\" x2=\"337\" y2=\"251\"/><line x1=\"406\" y1=\"244\" x2=\"406\" y2=\"251\"/></g><g class=\"chart-labels\"><text x=\"62\" y=\"268\">0</text><text x=\"131\" y=\"268\">0,2</text><text x=\"200\" y=\"268\">0,4</text><text x=\"268\" y=\"268\">0,6</text><text x=\"337\" y=\"268\">0,8</text><text x=\"406\" y=\"268\">1</text><text x=\"48\" y=\"247\">0</text><text x=\"48\" y=\"202\">0,2</text><text x=\"48\" y=\"157\">0,4</text><text x=\"48\" y=\"112\">0,6</text><text x=\"48\" y=\"67\">0,8</text><text x=\"48\" y=\"27\">1</text><text class=\"axis-title\" x=\"235\" y=\"283\">k<tspan dy=\"3\" font-size=\"8\">B</tspan><tspan dy=\"-3\">T / |J|</tspan></text><text class=\"axis-title\" transform=\"translate(16 166) rotate(-90)\">Concorrência</text></g><path class=\"concurrence-curve\" d=\"M62 23 C102 23 116 28 139 51 C174 85 202 130 237 166 C275 205 326 234 368 244 L406 244\"/></svg></div>" }
+    ],
+    footerRefs: "M.S. Reis, Mecânica Quântica; emaranhamento térmico em dímeros de spin 1/2",
     sourceRefs: ["E023"]
   },
   {
