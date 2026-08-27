@@ -1240,15 +1240,39 @@ window.MemorialDeckSlides = [
     title: "Motivação",
     lead: "Materiais magnéticos e complexos moleculares oferecem plataformas reais para investigar informação, energia e transformações quânticas.",
     cards: [
-      { label: "Emaranhamento térmico", text: "Emaranhamento, teleportação e testemunhas de suscetibilidade em dímeros, clusters e complexos metálicos." },
-      { label: "Discórdia quântica", text: "Correlações quânticas robustas em materiais moleculares, inclusive em temperaturas próximas à ambiente." },
-      { label: "Baterias quânticas", text: "Armazenamento e extração de energia usando discórdia quântica e sistemas de spin." },
+      { label: "Emaranhamento térmico e discórdia quântica", text: "Estudo das correlações quânticas em complexos metálicos e influência da temperatura." },
+      { label: "Baterias quânticas", text: "Armazenamento e extração de energia usando ergotropia em complexos metálicos." },
       { label: "Ciclos termodinâmicos quânticos", text: "Máquinas de Stirling e efeitos calóricos quânticos baseados em complexos dinucleares e potenciais efetivos." }
     ],
     items: [
       "Da caracterização magnética à termodinâmica quântica de sistemas materiais."
     ],
     footerRefs: "Temas desenvolvidos nas publicações da subseção 3.6",
+    sourceRefs: ["E023"]
+  },
+  {
+    id: "s33a-thermal-entanglement",
+    layout: "technical",
+    className: "quantum-thermal-entanglement-slide",
+    section: "Resultados",
+    eyebrow: "Linha 6 | Correlações quânticas",
+    title: "Emaranhamento térmico e discórdia quântica",
+    lead: "Em um dímero de spins, o estado fundamental singleto é emaranhado. Ao aquecer, os estados tripleto ganham peso estatístico e a correlação quântica diminui até uma temperatura crítica.",
+    equations: [
+      equationAsset("entanglement-witness", "Concorrência e temperatura de emaranhamento", "")
+    ],
+    figures: [
+      {
+        src: "assets/figures/entanglement-witness.png",
+        alt: "Concorrência em função da temperatura para um dímero de spin um meio",
+        caption: "Condição C = 0 define a temperatura de emaranhamento Te."
+      }
+    ],
+    items: [
+      "O emaranhamento é uma correlação não clássica entre os spins; a discórdia quantifica correlações quânticas mais gerais, mesmo quando não há emaranhamento.",
+      "Para o dímero de Heisenberg antiferromagnético, Te = |J|/(kB ln 3) ≈ 0,91 |J|/kB."
+    ],
+    footerRefs: "M.S. Reis, Mecânica Quântica; aplicação a dímeros de spin",
     sourceRefs: ["E023"]
   },
   {
