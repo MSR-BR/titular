@@ -2763,6 +2763,42 @@
   padding-top: 0;
 }
 
+.deck-shell .cu5-paper-slide {
+  margin-top: clamp(-4.5rem, -6vh, -2.5rem);
+  padding-top: clamp(.35rem, 1vh, .7rem);
+  padding-bottom: clamp(2rem, 4vh, 3rem);
+}
+
+.deck-shell .cu5-paper-slide .photo-stage {
+  min-height: 0;
+  place-items: start stretch;
+}
+
+.deck-shell .cu5-paper-slide .deck-figure {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.deck-shell .cu5-paper-slide .deck-figure img {
+  width: 100%;
+  height: auto;
+  max-height: 58vh;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.deck-shell .cu5-paper-slide .deck-figure figcaption {
+  margin-top: .42rem;
+  font-size: .78rem;
+  text-align: center;
+}
+
 .deck-shell .tsallis-paper-slide .photo-stage {
   min-height: 0;
   place-items: start center;

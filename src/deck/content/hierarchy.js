@@ -83,6 +83,7 @@
           { id: "s26c-co-dimer-case", topic: "Caso: dímero de Co(II)" },
           { id: "s26d-co-dimer-paper", topic: "Artigo de referência" },
           { id: "s27-complexes-result", topic: "Resultado representativo" },
+          { id: "s27b-cu5-paper", topic: "Artigo de referência" },
           { id: "s28-cardamomo", topic: "Ferramenta computacional CARDAMOMO" }
         ] },
         { number: "3.5", title: "Efeitos calóricos em materiais relativísticos", slides: [

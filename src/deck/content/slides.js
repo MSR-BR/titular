@@ -1029,6 +1029,20 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E020"]
   },
   {
+    id: "s27b-cu5-paper",
+    layout: "photo",
+    className: "cu5-paper-slide",
+    section: "Resultados",
+    title: "",
+    figure: {
+      src: "assets/figures/na2cu5si4o14-prb-title.png",
+      alt: "Título e autores do artigo Homometallic ferrimagnetism in the zig-zag chain compound Na₂Cu₅Si₄O₁₄",
+      caption: "Physical Review B 73, 214415 (2006)"
+    },
+    footerRefs: "M.S. Reis et al., Physical Review B 73, 214415 (2006)",
+    sourceRefs: ["E020"]
+  },
+  {
     id: "s28-cardamomo",
     layout: "content",
     className: "cardamomo-slide",
