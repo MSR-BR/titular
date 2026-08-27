@@ -1201,8 +1201,8 @@ window.MemorialDeckSlides = [
     publicationsDialogId: "graphene-caloric-publications",
     publicationsLabel: "22 publicações · abrir lista",
     cards: [
-      { label: "Chile", html: "<strong>Universidad Técnica Federico Santa María</strong><br>Colaborações em materiais quânticos e efeitos calóricos." },
-      { label: "Bahia · Brasil", html: "<strong>Universidade Federal do Oeste da Bahia (UFOB)</strong><br>Colaborações em materiais relativísticos e efeitos magnetocalóricos." },
+      { label: "Chile", html: "<strong>Universidad Técnica Federico Santa María</strong><br>Colaborações em materiais quânticos e efeitos calóricos.", logo: { src: "assets/logos/chile-collaboration-mark.svg", alt: "Universidad Técnica Federico Santa María" } },
+      { label: "Bahia · Brasil", html: "<strong>Universidade Federal do Oeste da Bahia (UFOB)</strong><br>Colaborações em materiais relativísticos e efeitos magnetocalóricos.", logo: { src: "assets/logos/ufob.png", alt: "Universidade Federal do Oeste da Bahia" } },
     ],
     footerRefs: "Artigos da linha 3.5 e trabalhos que citam o MCE oscilatório em diamagnetos",
     sourceRefs: ["E022"]
