@@ -1233,46 +1233,36 @@ window.MemorialDeckSlides = [
   },
   {
     id: "s33-quantum-thermo-batteries",
-    layout: "cards",
-    className: "quantum-thermo-motivation-slide",
+    layout: "technical",
+    className: "quantum-discord-slide",
     section: "Resultados",
     eyebrow: "Linha 6 | Termodinâmica quântica",
-    title: "Motivação",
-    lead: "Materiais magnéticos e complexos moleculares oferecem plataformas reais para investigar informação, energia e transformações quânticas.",
-    cards: [
-      { label: "Emaranhamento térmico e discórdia quântica", text: "Estudo das correlações quânticas em complexos metálicos e influência da temperatura." },
-      { label: "Baterias quânticas", text: "Armazenamento e extração de energia usando ergotropia em complexos metálicos." },
-      { label: "Ciclos termodinâmicos quânticos", text: "Máquinas de Stirling e efeitos calóricos quânticos baseados em complexos dinucleares e potenciais efetivos." }
-    ],
+    title: "Discórdia quântica em sistemas de dois níveis",
+    lead: "A discórdia quantifica correlações quânticas que podem existir mesmo quando o estado não é emaranhado. Em um dímero de dois níveis, ela é acompanhada pela resposta magnética e decresce com a temperatura.",
+    equations: [equationAsset("quantum-discord-susceptibility", "Discórdia quântica e testemunha de suscetibilidade", "")],
+    figures: [{ src: "assets/figures/entanglement-witness.png", alt: "Concorrência em função da temperatura para um dímero de spin um meio", caption: "A correlação quântica desaparece acima da temperatura de emaranhamento." }],
     items: [
-      "Da caracterização magnética à termodinâmica quântica de sistemas materiais."
+      "Estados de dois níveis: |0,0⟩ = (|+−⟩ − |−+⟩)/√2 (singleto, emaranhado) e |1,m⟩ (tripletos).",
+      "A suscetibilidade magnética permite testemunhar correlações: χT abaixo do limite indica correlação quântica não clássica.",
+      "A discórdia permanece uma medida mais geral: pode ser não nula mesmo quando a concorrência é zero."
     ],
-    footerRefs: "Temas desenvolvidos nas publicações da subseção 3.6",
+    footerRefs: "M.S. Reis, Mecânica Quântica; correlações quânticas em dímeros",
     sourceRefs: ["E023"]
   },
   {
     id: "s33a-thermal-entanglement",
-    layout: "technical",
-    className: "quantum-thermal-entanglement-slide",
+    layout: "cards",
+    className: "quantum-thermo-materials-slide",
     section: "Resultados",
     eyebrow: "Linha 6 | Correlações quânticas",
-    title: "Emaranhamento térmico e discórdia quântica",
-    lead: "Em um dímero de spins, o estado fundamental singleto é emaranhado. Ao aquecer, os estados tripleto ganham peso estatístico e a correlação quântica diminui até uma temperatura crítica.",
-    equations: [
-      equationAsset("entanglement-witness", "Concorrência e temperatura de emaranhamento", "")
+    title: "Materiais e plataformas quânticas",
+    lead: "A agenda combina complexos metálicos, baterias quânticas e ciclos termodinâmicos para explorar correlações, energia e informação.",
+    cards: [
+      { label: "Emaranhamento térmico", text: "Dímeros e clusters metálicos: correlações, teleportação e temperatura crítica." },
+      { label: "Baterias quânticas", text: "Armazenamento e extração de energia usando ergotropia em complexos metálicos." },
+      { label: "Ciclos termodinâmicos quânticos", text: "Máquinas de Stirling e efeitos calóricos em sistemas dinucleares." }
     ],
-    figures: [
-      {
-        src: "assets/figures/entanglement-witness.png",
-        alt: "Concorrência em função da temperatura para um dímero de spin um meio",
-        caption: "Condição C = 0 define a temperatura de emaranhamento Te."
-      }
-    ],
-    items: [
-      "O emaranhamento é uma correlação não clássica entre os spins; a discórdia quantifica correlações quânticas mais gerais, mesmo quando não há emaranhamento.",
-      "Para o dímero de Heisenberg antiferromagnético, Te = |J|/(kB ln 3) ≈ 0,91 |J|/kB."
-    ],
-    footerRefs: "M.S. Reis, Mecânica Quântica; aplicação a dímeros de spin",
+    footerRefs: "Temas desenvolvidos nas publicações da subseção 3.6",
     sourceRefs: ["E023"]
   },
   {
