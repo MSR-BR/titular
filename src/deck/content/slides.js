@@ -1287,6 +1287,48 @@ window.MemorialDeckSlides = [
     sourceRefs: ["E023"]
   },
   {
+    id: "s33c-quantum-first-law",
+    layout: "content",
+    className: "quantum-first-law-slide",
+    section: "Resultados",
+    eyebrow: "Linha 6 | Processos termodinâmicos quânticos",
+    title: "Primeira lei da termodinâmica quântica",
+    equations: [
+      {
+        html: `<div class="quantum-first-law-equation">
+          <math class="quantum-first-law-main" display="block" aria-label="d U igual a d W mais d Q igual ao somatório de p n d E n mais o somatório de E n d p n">
+            <mrow>
+              <mi>dU</mi><mo>=</mo><mi>dW</mi><mo>+</mo><mi>dQ</mi><mo>=</mo>
+              <munder><mo>∑</mo><mi>n</mi></munder><msub><mi>p</mi><mi>n</mi></msub><mi>d</mi><msub><mi>E</mi><mi>n</mi></msub>
+              <mo>+</mo>
+              <munder><mo>∑</mo><mi>n</mi></munder><msub><mi>E</mi><mi>n</mi></msub><mi>d</mi><msub><mi>p</mi><mi>n</mi></msub>
+            </mrow>
+          </math>
+          <div class="quantum-first-law-keys">
+            <span class="quantum-work-key"><strong>Trabalho</strong> altera os níveis de energia <i>E<sub>n</sub></i>.</span>
+            <span class="quantum-heat-key"><strong>Calor</strong> altera as populações <i>p<sub>n</sub></i>.</span>
+          </div>
+        </div>`
+      }
+    ],
+    figures: [
+      {
+        src: "assets/figures/quantum-adiabatic-process.png",
+        alt: "Esquema do processo adiabático quântico com trabalho, entropia constante e populações fixas",
+        caption: "Processo adiabático: dQ = 0; pₙ permanece fixo enquanto Eₙ varia. Fonte: de Paula et al., arXiv:2411.12470, Fig. 1 · abrir artigo ↗",
+        href: "https://arxiv.org/pdf/2411.12470"
+      },
+      {
+        src: "assets/figures/quantum-isochoric-process.png",
+        alt: "Esquema do processo isocórico quântico com troca de calor, níveis fixos e populações variáveis",
+        caption: "Processo isocórico: dW = 0; Eₙ permanece fixo enquanto pₙ varia. Fonte: de Paula et al., arXiv:2411.12470, Fig. 2 · abrir artigo ↗",
+        href: "https://arxiv.org/pdf/2411.12470"
+      }
+    ],
+    footerRefs: "V.G. de Paula, W.S. Santana, C. Cruz e M. Reis, arXiv:2411.12470 (2024)",
+    sourceRefs: ["E023"]
+  },
+  {
     id: "s34b-quantum-thermo-publications",
     layout: "modal",
     cards: [

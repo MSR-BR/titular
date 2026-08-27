@@ -4333,6 +4333,141 @@
   font-weight: 780;
 }
 
+.deck-shell .quantum-first-law-slide .slide-title {
+  max-width: none;
+  font-size: clamp(2.35rem, 3.8vw, 3.35rem);
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+
+.deck-shell .quantum-first-law-slide .content-with-gallery {
+  min-height: 0;
+  margin-top: clamp(.7rem, 1.6vh, 1.05rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: clamp(.55rem, 1.2vh, .82rem);
+  align-items: stretch;
+}
+
+.deck-shell .quantum-first-law-slide .content-panel {
+  min-height: 0;
+}
+
+.deck-shell .quantum-first-law-slide .equation-stack {
+  width: min(100%, 68rem);
+  height: auto;
+  margin-inline: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.deck-shell .quantum-first-law-slide .equation-line {
+  padding: .58rem clamp(.9rem, 2vw, 1.4rem);
+  border: 1px solid rgba(18, 25, 29, .07);
+  border-left: .24rem solid #e87936;
+  border-radius: 1.1rem;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,248,242,.94));
+  box-shadow: 0 14px 36px rgba(38, 27, 20, .055);
+}
+
+.deck-shell .quantum-first-law-equation {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(19rem, 1fr);
+  gap: clamp(.8rem, 2vw, 1.5rem);
+  align-items: center;
+}
+
+.deck-shell .quantum-first-law-main {
+  width: 100%;
+  color: var(--ink);
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: clamp(1.5rem, 2.35vw, 2.08rem);
+}
+
+.deck-shell .quantum-first-law-keys {
+  min-width: 0;
+  display: grid;
+  gap: .34rem;
+  font-family: var(--font-body);
+  font-size: clamp(.68rem, .88vw, .78rem);
+  line-height: 1.2;
+}
+
+.deck-shell .quantum-first-law-keys span {
+  padding: .38rem .58rem;
+  border-radius: .65rem;
+}
+
+.deck-shell .quantum-work-key {
+  background: rgba(43, 112, 170, .09);
+  color: #235f91;
+}
+
+.deck-shell .quantum-heat-key {
+  background: rgba(222, 105, 71, .1);
+  color: #a44930;
+}
+
+.deck-shell .quantum-first-law-slide .figure-gallery {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: clamp(.45rem, 1vh, .7rem);
+  justify-items: center;
+  align-items: stretch;
+}
+
+.deck-shell .quantum-first-law-slide .deck-figure {
+  width: min(100%, 69rem);
+  min-height: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: .18rem;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.deck-shell .quantum-first-law-slide .figure-link {
+  min-width: 0;
+  min-height: 0;
+  display: block;
+}
+
+.deck-shell .quantum-first-law-slide .deck-figure img {
+  width: 100%;
+  height: 100%;
+  max-height: clamp(8.8rem, 20vh, 11.5rem);
+  display: block;
+  object-fit: contain;
+  border: 0;
+  border-radius: .55rem;
+  background: #fff;
+  box-shadow: none;
+}
+
+.deck-shell .quantum-first-law-slide .deck-figure figcaption {
+  max-width: 68rem;
+  margin-inline: auto;
+  color: var(--muted);
+  font-size: clamp(.56rem, .68vw, .64rem);
+  font-weight: 650;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.deck-shell .quantum-first-law-slide .deck-figure figcaption::first-letter {
+  color: var(--section-accent, var(--accent));
+}
+
 @media (max-width: 760px) {
   .deck-shell .quantum-entanglement-explainer .technical-summary .card-grid,
   .deck-shell .quantum-entanglement-explainer .equation-stack,
@@ -4350,6 +4485,14 @@
 
   .deck-shell .metal-carboxylate-article-slide .deck-figure:nth-child(2) {
     width: 100%;
+  }
+
+  .deck-shell .quantum-first-law-equation {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .deck-shell .quantum-first-law-keys {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
