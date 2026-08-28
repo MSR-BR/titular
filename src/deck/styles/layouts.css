@@ -4717,11 +4717,6 @@
   box-shadow: none;
 }
 
-.deck-shell .quantum-caloric-result-slide .deck-figure:nth-child(2) {
-  width: min(100%, 58rem);
-  height: clamp(10rem, 21vh, 11.5rem);
-}
-
 .deck-shell .quantum-caloric-result-slide .figure-link {
   min-width: 0;
   min-height: 0;
@@ -4745,6 +4740,45 @@
   font-weight: 760;
   line-height: 1.16;
   text-align: center;
+}
+
+.deck-shell > .quantum-caloric-reference-slide {
+  padding-top: clamp(.8rem, 1.8vh, 1.2rem);
+  padding-bottom: clamp(.8rem, 1.8vh, 1.2rem);
+}
+
+.deck-shell .quantum-caloric-reference-slide .photo-stage {
+  width: min(100%, 74rem);
+  min-height: 72vh;
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+}
+
+.deck-shell .quantum-caloric-reference-slide .deck-figure {
+  width: min(100%, 72rem);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.deck-shell .quantum-caloric-reference-slide .figure-link {
+  display: block;
+}
+
+.deck-shell .quantum-caloric-reference-slide .deck-figure img {
+  width: 100%;
+  height: auto;
+  max-height: 72vh;
+  display: block;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .deck-shell .quantum-thermo-collaboration-slide .card-grid {
@@ -4820,8 +4854,7 @@
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .deck-shell .quantum-caloric-result-slide .deck-figure,
-  .deck-shell .quantum-caloric-result-slide .deck-figure:nth-child(2) {
+  .deck-shell .quantum-caloric-result-slide .deck-figure {
     width: min(100%, 34rem);
     height: auto;
   }
@@ -4829,6 +4862,10 @@
   .deck-shell .quantum-caloric-result-slide .deck-figure img {
     height: auto;
     max-height: 72vh;
+  }
+
+  .deck-shell .quantum-caloric-reference-slide .photo-stage {
+    min-height: 66vh;
   }
 
   .deck-shell .quantum-thermo-collaboration-slide .card-grid {

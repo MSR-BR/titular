@@ -1405,14 +1405,22 @@ window.MemorialDeckSlides = [
         alt: "Discórdia quântica e variação isotérmica de entropia em função da temperatura para KNaCuSi4O10",
         caption: "KNaCuSi₄O₁₀ · discórdia 𝒟(J,T) e |ΔSiso| para diferentes acoplamentos J induzidos por pressão",
         href: "https://doi.org/10.1088/2058-9565/adcf47"
-      },
-      {
-        src: "assets/figures/quantum-caloric-article-reference.png",
-        alt: "Referência do artigo Quantum caloric effects, publicado na Quantum Science and Technology em 2025",
-        href: "https://doi.org/10.1088/2058-9565/adcf47"
       }
     ],
     footerRefs: "C. Cruz, J.S. Amaral e M. Reis, Quantum Sci. Technol. 10, 035015 (2025)",
+    sourceRefs: ["E023"]
+  },
+  {
+    id: "s33ea-quantum-caloric-article",
+    layout: "photo",
+    className: "quantum-caloric-reference-slide quantum-caloric-figure-continuation",
+    section: "Resultados",
+    title: "",
+    figure: {
+      src: "assets/figures/quantum-caloric-article-reference.png",
+      alt: "Cabeçalho do artigo Quantum caloric effects, publicado na Quantum Science and Technology em 2025",
+      href: "https://doi.org/10.1088/2058-9565/adcf47"
+    },
     sourceRefs: ["E023"]
   },
   {

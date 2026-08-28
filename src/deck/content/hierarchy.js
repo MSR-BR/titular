@@ -101,6 +101,7 @@
           { id: "s33c-quantum-first-law", topic: "Primeira lei: processos adiabático e isocórico" },
           { id: "s33d-quantum-caloric-framework", topic: "Entropia isotérmica: do clássico ao quântico" },
           { id: "s33e-knacusi4o10-result", topic: "KNaCuSi₄O₁₀: discórdia e resposta calórica" },
+          { id: "s33ea-quantum-caloric-article", topic: "Artigo de referência: Quantum caloric effects" },
           { id: "s33f-quantum-collaborations", topic: "Colaborações: Chile e UFOB" }
         ] }
       ]
