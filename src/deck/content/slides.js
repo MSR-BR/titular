@@ -1576,7 +1576,7 @@ window.MemorialDeckSlides = [
       },
       {
         label: "Quantum Mechanics: Theory and Applications",
-        html: "<p><em>Mario Reis</em></p><ul><li>Elsevier · 2025</li><li>Inglês</li><li>ISBN 9780443328268</li></ul>"
+        html: "<p><em>Mario Reis</em></p><ul><li>Elsevier · 2025</li><li>Inglês</li><li>ISBN 9780443328268</li><li>10 anos</li></ul>"
       }
     ],
     figures: [
