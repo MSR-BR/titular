@@ -1841,7 +1841,7 @@ window.MemorialDeckSlides = [
       { label: "Colegas e funcionários", text: "Colegas de departamento e profissionais que sustentam o cotidiano institucional." },
       { label: "Alunos", text: "Estudantes de graduação e pós-graduação." },
       { label: "Família", text: "Pelo apoio e presença em toda a caminhada." },
-      { label: "Processo de Promoção", html: "<ul><li>Banca</li><li>Diretor</li></ul>" }
+      { label: "Processo de Promoção", html: "<ul><li>Banca</li><li>Direção IF</li></ul>" }
     ],
     footerRefs: "Memorial · Agradecimentos",
     sourceRefs: ["E001"]
