@@ -4788,37 +4788,32 @@
 }
 
 .deck-shell .quantum-thermo-collaboration-slide .card-grid {
-  width: min(100%, 52rem);
-  margin-inline: auto;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1rem, 2vw, 1.6rem);
+  gap: clamp(.7rem, 1.35vw, 1rem);
 }
 
 .deck-shell .quantum-thermo-collaboration-slide .info-card {
-  min-height: clamp(15rem, 38vh, 20rem);
-  padding: clamp(1.5rem, 3vw, 2.35rem);
+  min-height: clamp(9rem, 22vh, 12rem);
+  padding: clamp(1rem, 1.5vw, 1.3rem);
+  padding-right: clamp(5.2rem, 8vw, 6.5rem);
 }
 
 .deck-shell .quantum-thermo-collaboration-slide .institutional-logo {
-  right: 1.5rem;
-  width: clamp(5.5rem, 9vw, 8rem);
-  height: clamp(4.5rem, 7vw, 6.4rem);
-}
-
-.deck-shell .quantum-thermo-collaboration-slide .info-card-label {
-  font-size: clamp(1.15rem, 1.8vw, 1.5rem);
+  top: 50%;
+  right: clamp(1rem, 1.5vw, 1.3rem);
+  width: clamp(3.2rem, 5.5vw, 4.8rem);
+  height: clamp(3.2rem, 5.5vw, 4.8rem);
+  transform: translateY(-50%);
 }
 
 .deck-shell .quantum-thermo-collaboration-slide .info-card-meta {
-  max-width: 68%;
-  font-size: clamp(.72rem, .9vw, .84rem);
+  max-width: 76%;
+  font-size: clamp(.66rem, .78vw, .76rem);
+  line-height: 1.16;
 }
 
-.deck-shell .quantum-thermo-collaboration-slide .info-card-text {
-  max-width: 68%;
-  margin-top: .65rem;
-  font-size: clamp(.84rem, 1.08vw, 1rem);
-  line-height: 1.32;
+.deck-shell .quantum-thermo-collaboration-slide .info-card-text:empty {
+  display: none;
 }
 
 @media (max-width: 760px) {
@@ -4875,13 +4870,13 @@
   }
 
   .deck-shell .quantum-thermo-collaboration-slide .card-grid {
-    width: min(100%, 34rem);
     grid-template-columns: minmax(0, 1fr);
   }
 
   .deck-shell .quantum-thermo-collaboration-slide .info-card {
-    min-height: 0;
+    min-height: 8rem;
   }
+
 }
 
 /* Impact dashboard: use the full reading width instead of nesting five metrics

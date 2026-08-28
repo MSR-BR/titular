@@ -1426,22 +1426,20 @@ window.MemorialDeckSlides = [
   {
     id: "s33f-quantum-collaborations",
     layout: "cards",
-    className: "international-collaboration-slide quantum-thermo-collaboration-slide",
+    className: "graphene-collaboration-slide quantum-thermo-collaboration-slide",
     section: "Resultados",
     eyebrow: "Linha 6 | Rede de colaboração",
     title: "Colaborações",
-    lead: "A termodinâmica quântica articula cooperação internacional e formação de uma nova geração de pesquisadores no Brasil.",
+    lead: "",
     cards: [
       {
         label: "Chile",
         meta: "Universidad Técnica Federico Santa María",
-        text: "Colaboração internacional em termodinâmica quântica, materiais magnéticos e efeitos calóricos.",
         logo: { src: "assets/logos/universidad-tecnica-federico-santa-maria.jpg", alt: "Universidad Técnica Federico Santa María" }
       },
       {
         label: "UFOB",
         meta: "Universidade Federal do Oeste da Bahia",
-        text: "Colaboração com Clebson dos Santos Cruz em correlações quânticas e efeitos calóricos.",
         logo: { src: "assets/logos/ufob.png", alt: "UFOB" }
       }
     ],
