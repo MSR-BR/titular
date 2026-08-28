@@ -4707,8 +4707,8 @@
 }
 
 .deck-shell .quantum-caloric-result-slide .deck-figure {
-  width: min(100%, 42rem);
-  height: clamp(26rem, 62vh, 29rem);
+  width: min(100%, 50rem);
+  height: clamp(30rem, 72vh, 34rem);
   margin: 0;
   padding: 0;
   border: 0;
