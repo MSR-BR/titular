@@ -3492,6 +3492,29 @@
   line-height: 1.24;
 }
 
+.deck-shell .future-priorities-slide .info-card:hover {
+  border-color: #9fbd93;
+  background-color: #edf5ea;
+  color: var(--ink);
+  box-shadow: 0 24px 62px rgba(63, 96, 70, .16);
+}
+
+.deck-shell .future-priorities-slide .info-card:hover::after {
+  opacity: 0;
+}
+
+.deck-shell .future-priorities-slide .info-card:hover :is(.info-card-meta, .info-card-text, p, li) {
+  color: var(--ink);
+}
+
+.deck-shell .future-priorities-slide .info-card:hover .info-card-label {
+  color: #3f6046;
+}
+
+.deck-shell .future-priorities-slide .info-card:hover .info-card-text li::before {
+  background: #587a5f;
+}
+
 .deck-shell .acknowledgements-cards-slide .slide-header {
   display: none;
 }

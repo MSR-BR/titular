@@ -1656,6 +1656,7 @@ window.MemorialDeckSlides = [
     cards: [
       {
         label: "Obra literária · 2025",
+        className: "literary-bullets-rise early-product-rise",
         html: "<p><em>As Viagens de ibn Hakim</em> é uma autobiografia heterônima narrada por um personagem fictício (ibn Hakim) situado no mundo islâmico medieval.</p><ul><li>Romance</li><li>Autor: ibn Hakim</li><li>Idioma: Português</li><li>ISBN: 978-65-01-31806-6</li></ul><p><a href=\"https://ibnhakim.wordpress.com\" target=\"_blank\" rel=\"noopener\">Conhecer o projeto ↗</a></p>"
       }
     ],
@@ -1791,7 +1792,7 @@ window.MemorialDeckSlides = [
     cards: [
       {
         label: "Ensino · Curso Automação para Físicos",
-        html: "<ul><li>Ampliar a formação experimental.</li><li>Integrar a disciplina ao currículo.</li></ul>"
+        html: "<ul><li>Ampliar e aprofundar curso</li><li>Integrar a disciplina ao currículo.</li></ul>"
       },
       {
         label: "Ensino · Produção de material didático",
@@ -1807,7 +1808,7 @@ window.MemorialDeckSlides = [
       },
       {
         label: "Inovação · Aplicativos para pesquisa e educacionais",
-        html: "<ul><li>Retomar o Sample for Science (SfS).</li><li>Desenvolver o App Termo.</li><li>Criar para o livro de Mecânica Quântica um aplicativo similar ao Termo.</li></ul>"
+        html: "<ul><li>Retomar o Sample for Science (SfS).</li><li>Desenvolver o App Termo.</li><li>Desenvolver o App Mecânica Quântica</li></ul>"
       },
       {
         label: "Rede · Integração Sul Global",
@@ -1834,13 +1835,13 @@ window.MemorialDeckSlides = [
     eyebrow: "Agradecimentos",
     title: "Agradecimentos",
     cards: [
-      { label: "Instituições", text: "Brasil, Portugal e Espanha." },
-      { label: "Instituições de fomento", text: "Brasil, Portugal e Espanha." },
+      { label: "Instituições e Instituições de Fomento", text: "Brasil, Portugal e Espanha." },
       { label: "Orientadores", text: "Pela formação, confiança e exemplo ao longo da trajetória." },
       { label: "Colaboradores", text: "Parceiros científicos no Brasil e no exterior." },
       { label: "Colegas e funcionários", text: "Colegas de departamento e profissionais que sustentam o cotidiano institucional." },
       { label: "Alunos", text: "Estudantes de graduação e pós-graduação." },
-      { label: "Família", text: "Pelo apoio e presença em toda a caminhada." }
+      { label: "Família", text: "Pelo apoio e presença em toda a caminhada." },
+      { label: "Processo de Promoção", html: "<ul><li>Banca</li><li>Diretor</li></ul>" }
     ],
     footerRefs: "Memorial · Agradecimentos",
     sourceRefs: ["E001"]

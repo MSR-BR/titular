@@ -862,6 +862,10 @@
       });
     }, { rootMargin: "0px 0px -30% 0px", threshold: 0.1 });
 
+    deck.querySelectorAll(".textbook-books-slide .deck-figure").forEach((figure) => {
+      figure.classList.add("book-turn-reveal");
+    });
+
     const scrollRevealGroups = [];
     deck.querySelectorAll(".slide").forEach((slide) => {
       const animatedElements = slide.querySelectorAll(
