@@ -88,7 +88,7 @@
           { id: "s28-cardamomo", topic: "Ferramenta computacional CARDAMOMO" },
           { id: "s28-complexes-collaboration", topic: "Colaborações" }
         ] },
-        { number: "3.5", title: "Efeitos calóricos em materiais relativísticos", slides: [
+        { number: "3.5", title: "Efeitos calóricos em grafeno", slides: [
           { id: "s31-graphene-concept", topic: "Motivação" },
           { id: "s32-graphene-result", topic: "Primeiro artigo propondo MCE em diamagnetos" },
           { id: "s32a-gold-graphene", topic: "MCE oscilatório em ouro e grafeno" },

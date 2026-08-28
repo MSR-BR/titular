@@ -583,7 +583,7 @@ window.MemorialDeckSlides = [
         slideTarget: "s31-graphene-concept",
         className: "research-line-card-relativistic",
         html: `
-          <p>Efeitos calóricos em materiais relativísticos</p>
+          <p>Efeitos calóricos em grafeno</p>
           <p class="research-line-period">2011–2020</p>
           <button class="publications-trigger research-line-publications-trigger" type="button" data-publications-open="graphene-caloric-publications">22 publicações · abrir lista</button>
         `
@@ -1246,7 +1246,7 @@ window.MemorialDeckSlides = [
     title: "Materiais e plataformas quânticas",
     lead: "Motivação: explorar correlações, energia e informação em materiais magnéticos controlados pela temperatura.",
     cards: [
-      { label: "Emaranhamento térmico", text: "Dímeros e clusters metálicos: correlações, teleportação e temperatura crítica." },
+      { label: "Emaranhamento térmico", text: "Dímeros e clusters metálicos: correlações quânticas e temperatura de emaranhamento." },
       { label: "Baterias quânticas", text: "Armazenamento e extração de energia usando ergotropia em complexos metálicos." },
       { label: "Ciclos termodinâmicos quânticos", text: "Máquinas de Stirling e efeitos calóricos em sistemas dinucleares." },
       {

@@ -750,6 +750,10 @@
     const sampleGallerySlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s16ba-sample-gallery") + 1}`);
     sampleGallerySlide?.classList.add("student-photo-slide", "sample-gallery-slide");
     sampleGallerySlide?.querySelectorAll(".deck-figure").forEach((figure) => figure.classList.add("apple-product-rise", "early-product-rise"));
+    const complexesMotivationSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s26-complexes-hamiltonian") + 1}`);
+    complexesMotivationSlide?.querySelectorAll(".section-kicker, .eyebrow, .slide-title, .slide-lead, .deck-figure").forEach((element) => element.classList.add("early-product-rise", "sharp-product-rise"));
+    const coDimerCaseSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s26c-co-dimer-case") + 1}`);
+    coDimerCaseSlide?.querySelectorAll(".section-kicker, .eyebrow, .slide-title, .equation-line, .deck-figure, .metric-item").forEach((element) => element.classList.add("early-product-rise", "sharp-product-rise"));
     const termoAppGallerySlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s37-termo-app-examples") + 1}`);
     termoAppGallerySlide?.querySelectorAll(".deck-figure").forEach((figure) => figure.classList.add("apple-product-rise", "early-product-rise"));
     const researchProjectsSlide = deck.querySelector(`#slide-${slides.findIndex((slide) => slide.id === "s16c-research-projects") + 1}`);
@@ -928,7 +932,7 @@
           const isEarlyRise = element.classList.contains("early-product-rise");
           const riseDistance = isEarlyRise ? 88 : isProductRise ? 112 : 42;
           element.style.setProperty("--scrub-y", `${((1 - progress) * riseDistance).toFixed(2)}px`);
-          const blurDistance = isProductRise ? 7 : 5;
+          const blurDistance = element.classList.contains("sharp-product-rise") ? 0 : isProductRise ? 7 : 5;
           element.style.setProperty("--scrub-blur", `${((1 - progress) * blurDistance).toFixed(2)}px`);
           element.style.setProperty("--star-rise", `${((1 - progress) * 20).toFixed(2)}px`);
           element.style.setProperty("--star-turn", `${((1 - progress) * -150).toFixed(2)}deg`);
