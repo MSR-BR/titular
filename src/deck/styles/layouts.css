@@ -3817,9 +3817,14 @@
 }
 
 .story-profile-link-lattes svg,
+.story-profile-link-website svg,
 .story-profile-link-pdf svg,
 .story-profile-link-email svg {
   fill: none;
+}
+
+.story-profile-link-website {
+  --profile-color: #21759b;
 }
 
 .story-profile-link-pdf {
