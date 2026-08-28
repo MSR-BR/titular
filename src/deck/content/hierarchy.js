@@ -49,7 +49,7 @@
         { number: "2.4", title: "Projetos de inovação e pesquisa", slides: [
           { id: "s16b-innovation", topic: "Sample for Science" },
           { id: "s16ba-sample-gallery", topic: "Aplicativo Sample for Science" },
-          { id: "s16c-research-projects", topic: "Projetos que sustentam pesquisa e formação" }
+          { id: "s16c-research-projects", topic: "Projetos de pesquisa e formação" }
         ] },
         { number: "2.5", title: "Administração", slides: [
           { id: "s16d-administration", topic: "Administração acadêmica e científica" }

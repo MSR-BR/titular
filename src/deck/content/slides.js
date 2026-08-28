@@ -315,7 +315,7 @@ window.MemorialDeckSlides = [
     section: "UFF",
     eyebrow: "UFF | Atividades docentes",
     title: "Atividades docentes",
-    lead: "Atuação contínua e abrangente, distribuída por praticamente todo o curso de Física e articulando graduação, pós-graduação, teoria, experimento e aplicações.",
+    lead: "Atuação contínua e abrangente, distribuída por vários níveis do curso de Física; articulando graduação, pós-graduação, teoria, experimento e aplicações.",
     cards: [
       { label: "Graduação", html: "<ul><li>Física Experimental I e IV</li><li>Física Moderna</li><li>Introdução à Mecânica Quântica</li><li>Mecânica Quântica II</li><li>Termodinâmica</li></ul>" },
       { label: "Pós-graduação", html: "<ul><li>Mecânica Quântica I</li><li>Introdução ao magnetismo</li><li>Magnetismo Molecular</li></ul>" },
@@ -421,17 +421,7 @@ window.MemorialDeckSlides = [
       { label: "Equipamentos adquiridos", html: "<ul><li>Arduinos e placas de controle</li><li>Sensores</li><li>Impressoras 3D</li><li>Outros itens para instrumentação</li></ul>" },
       { label: "Curso", html: `
         <p>Robótica aplicada à Física para graduação e pós-graduação, com aprendizagem orientada por projetos.</p>
-        <button class="publications-trigger" type="button" data-publications-open="automation-course-pdf">Visualizar material do curso</button>
-        <dialog class="publications-dialog course-pdf-dialog" id="automation-course-pdf" aria-labelledby="automation-course-pdf-title">
-          <div class="publications-dialog-head">
-            <div><p class="publications-kicker">L3D · Material didático</p><h2 id="automation-course-pdf-title">Automação para Físicos</h2></div>
-            <button class="publications-close" type="button" aria-label="Fechar material do curso">×</button>
-          </div>
-          <div class="course-pdf-viewer">
-            <iframe src="assets/docs/automacao-para-fisicos.pdf#page=1&zoom=page-width&view=FitH" title="Material do curso Automação para Físicos"></iframe>
-          </div>
-          <p class="course-pdf-fallback"><a href="assets/docs/automacao-para-fisicos.pdf" target="_blank" rel="noopener noreferrer">Abrir PDF em uma nova aba ↗</a></p>
-        </dialog>` },
+        <a class="publications-trigger" href="assets/docs/automacao-para-fisicos.pdf" target="_blank" rel="noopener noreferrer" type="application/pdf">Visualizar material do curso ↗</a>` },
       { label: "Atividades de Extensão", html: `
         <p>Oficinas com o Coluni, cooperação educacional e desdobramentos com escolas em Portugal.</p>
         <button class="publications-trigger" type="button" data-publications-open="l3d-products">2 produtos · abrir lista</button>
@@ -475,7 +465,7 @@ window.MemorialDeckSlides = [
     cards: [
       { label: "Problema", text: "Amostras produzidas com alto custo permanecem armazenadas após os estudos iniciais, enquanto outros grupos repetem esforços de síntese." },
       { label: "Solução", text: "Aplicativo mobile-first para cadastro, busca e solicitação de amostras, com DOI, riscos, visibilidade e comunicação entre pesquisadores." },
-      { label: "Equipe", text: "Projeto multidisciplinar reunindo Física, Matemática, Computação, Marketing e Comunicação Audiovisual." },
+      { label: "Equipe", text: "Projeto multidisciplinar reunindo Física, Matemática, Computação, Marketing e Comunicação Audiovisual. Parte técnica coordenada pelo STI." },
       { label: "Alcance", html: `<p>Aplicativo publicado nas lojas Apple e Google; proposta madura para retomada quando houver financiamento dedicado.</p>
         <div class="store-links" aria-label="Baixar Sample for Science">
           <a class="store-link" href="https://apps.apple.com/br/app/sample-for-science/id6470819452?l=en-GB" target="_blank" rel="noopener noreferrer"><span class="store-symbol store-symbol-apple" aria-hidden="true"></span><span><small>Disponível na</small>App Store</span></a>
@@ -504,7 +494,7 @@ window.MemorialDeckSlides = [
     layout: "cards",
     section: "UFF",
     eyebrow: "UFF | Projetos de inovação e pesquisa",
-    title: "Projetos que sustentam pesquisa e formação",
+    title: "Projetos de pesquisa e formação",
     lead: "Projetos financiados por CNPq, FAPERJ, CAPES, FCT e parceiros institucionais sustentam infraestrutura, recursos humanos, redes e a gestão continuada da pesquisa.",
     cards: [
       { label: "Infraestrutura", text: "Projetos destinados à implantação e à consolidação do Laboratório de Magnetismo e do L3D, incluindo equipamentos, manutenção, adequação de espaços e condições experimentais." },
@@ -528,8 +518,25 @@ window.MemorialDeckSlides = [
       { label: "Colegiados", text: "Colegiado da Pós-Graduação em Física (2012-2016), Núcleo Docente Estruturante (2011) e comissão departamental (2013)." },
       { label: "Laboratórios", text: "Participação na coordenação do Laboratório de Magnetismo e concepção, montagem e coordenação do L3D." },
       { label: "Projetos", text: "Gestão financeira e administrativa contínua: recursos, compras, bolsas, equipamentos, missões científicas, relatórios e prestações de contas." },
-      { label: "Editoração", text: "Editor-chefe da Physica B: gestão de submissões, editores, revisores e política editorial." },
-      { label: "Comunidade científica", text: "Organização de conferências e eventos para circulação do conhecimento e fortalecimento das redes de colaboração." }
+      { label: "Editoração", text: "Editor-chefe da Physica B: gestão da revista, política editorial e grupo de editores." },
+      { label: "Comunidade científica › Organização de conferências", html: `
+        <p>Organização de conferências e eventos para circulação do conhecimento e fortalecimento das redes de colaboração.</p>
+        <button class="publications-trigger" type="button" data-publications-open="organized-conferences">Conferências organizadas · abrir lista</button>
+        <dialog class="publications-dialog conferences-dialog" id="organized-conferences" aria-labelledby="organized-conferences-title">
+          <div class="publications-dialog-head">
+            <div><p class="publications-kicker">Comunidade científica</p><h2 id="organized-conferences-title">Organização de conferências e eventos</h2></div>
+            <button class="publications-close" type="button" aria-label="Fechar lista de conferências">×</button>
+          </div>
+          <ol class="publications-list conferences-list">
+            <li><span>REDE INTERNACIONAL</span><strong>Latin American Network of Condensed Matter (LAFMAT)</strong><small>Comitê organizador.</small><em>Ano e local em definição.</em></li>
+            <li><span>2023 · RIO DE JANEIRO</span><strong>III Workshop de Magnetismo do Estado do Rio de Janeiro (iiiWorkMagRJ)</strong><em>Rio de Janeiro, Brasil.</em></li>
+            <li><span>2019 · SANTA CATARINA</span><strong>Symposium K: <i>i-Caloric Materials and Applications</i> (SBPMat)</strong><em>Santa Catarina, Brasil.</em></li>
+            <li><span>2018 · AVEIRO</span><strong>Workshop <i>How to write a scientific manuscript</i></strong><em>Aveiro, Portugal.</em></li>
+            <li><span>2016 · RIO DE JANEIRO</span><strong>II Workshop de Magnetismo do Estado do Rio de Janeiro (iiWorkMagRJ)</strong><em>Rio de Janeiro, Brasil.</em></li>
+            <li><span>2015 · RIO DE JANEIRO</span><strong>I Workshop de Magnetismo do Estado do Rio de Janeiro (iWorkMagRJ)</strong><em>Rio de Janeiro, Brasil.</em></li>
+            <li><span>2009 · AVEIRO</span><strong>VI Jornadas CICECO</strong><em>Aveiro, Portugal.</em></li>
+          </ol>
+        </dialog>` }
     ],
     footerRefs: "MEM pp.20-21",
     sourceRefs: ["E016"]
