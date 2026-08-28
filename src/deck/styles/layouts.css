@@ -3794,8 +3794,22 @@
 }
 
 .story-profile-link-lattes svg,
+.story-profile-link-pdf svg,
 .story-profile-link-email svg {
   fill: none;
+}
+
+.story-profile-link-pdf {
+  --profile-color: #b3262e;
+}
+
+.story-profile-link-pdf .profile-pdf-label {
+  fill: currentColor;
+  stroke: none;
+  font-family: var(--font-sans);
+  font-size: 5.2px;
+  font-weight: 850;
+  letter-spacing: -.18px;
 }
 
 .story-profile-link-email {
