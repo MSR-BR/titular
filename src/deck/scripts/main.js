@@ -866,28 +866,18 @@
       const usesScrollTemplate =
         slide.classList.contains("subsection-slide") ||
         slide.classList.contains("section-scroll-card");
-      const subsectionNumber = Number.parseFloat(slide.dataset.subsectionNumber || "0");
-      const animateResearchCards =
-        slide.dataset.sectionNumber === "3" &&
-        subsectionNumber >= 3.3;
       const scrubElements = [];
       animatedElements.forEach((element, order) => {
         const isIndexCard = slide.classList.contains("index-cover") && element.classList.contains("index-section-card");
-        const isBookTurn = slide.classList.contains("textbook-books-slide") && element.classList.contains("deck-figure");
-        const isTraditionalFigure =
-          (slide.classList.contains("textbook-progress-slide") ||
-            slide.classList.contains("termo-app-slide")) &&
-          (element.classList.contains("deck-figure") || element.classList.contains("standalone-figure-link"));
+        const isContentReveal = element.matches(
+          ".info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure, .standalone-figure-link, .photo-publications-trigger"
+        );
         element.classList.add("story-reveal");
-        if (element.matches(".info-card, .metric-item, .timeline-item, .flow-step, .comparison-column, .equation-line, .deck-figure, .standalone-figure-link, .photo-publications-trigger")) {
+        if (isContentReveal) {
           element.classList.add("content-scroll-card");
         }
         element.style.setProperty("--reveal-order", Math.min(order, 10));
-        if (isBookTurn) element.classList.add("book-turn-reveal");
-        const isResearchCard =
-          animateResearchCards &&
-          element.matches(".info-card, .metric-item");
-        if (usesScrollTemplate || isIndexCard || isBookTurn || isTraditionalFigure || isResearchCard) {
+        if (usesScrollTemplate || isIndexCard || isContentReveal) {
           element.classList.add("scroll-scrub-reveal");
           scrubElements.push(element);
         } else {

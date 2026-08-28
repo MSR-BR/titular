@@ -29,36 +29,42 @@ window.MemorialDeckSlides = [
       {
         number: "1",
         href: "#slide-3",
+        className: "index-section-formacao",
         label: "Formação acadêmica e inserção internacional",
         html: "<ul><li>UFRJ</li><li>CBPF: mestrado e doutorado</li><li>Universidade de Aveiro: doutorado sanduíche, pós-doc e pesquisador auxiliar</li></ul>"
       },
       {
         number: "2",
         href: "#section-2",
+        className: "index-section-uff",
         label: "Desenvolvimento acadêmico e consolidação na UFF",
         html: "<ul><li>Atividades docentes</li><li>Formação de alunos</li><li>Montagem de laboratórios</li><li>Projetos de inovação e pesquisa</li><li>Administração</li></ul>"
       },
       {
         number: "3",
         href: "#section-3",
+        className: "index-section-pesquisa",
         label: "Linhas de pesquisa",
         html: "<ul><li>Aplicação da Estatística de Tsallis ao Magnetismo</li><li>Efeito magnetocalórico e materiais magnéticos</li><li>Complexos Metálicos, Magnetismo e Modelagem Termodinâmica</li><li>Efeitos calóricos em materiais relativísticos</li><li>Termodinâmica quântica em materiais magnéticos</li></ul>"
       },
       {
         number: "4",
         href: "#section-4",
+        className: "index-section-impacto",
         label: "Impacto acadêmico",
         html: "<ul><li>Produção Científica</li><li>Livro-texto</li><li>Obra literária não-acadêmica</li><li>Atividades editoriais</li><li>Internacionalização</li></ul>"
       },
       {
         number: "5",
         href: "#section-5",
+        className: "index-section-futuro",
         label: "Perspectivas futuras",
         html: "<ul><li>Ensino</li><li>Extensão</li><li>Pesquisa</li><li>Inovação</li><li>Rede</li></ul>"
       },
       {
         number: "6",
         href: "#section-6",
+        className: "index-section-agradecimentos",
         label: "Agradecimentos",
         html: "<ul><li>Instituições e agências de fomento</li><li>Mentores, colaboradores e colegas</li><li>Alunos</li><li>Família</li></ul>"
       }
@@ -1398,6 +1404,31 @@ window.MemorialDeckSlides = [
     ],
     footerRefs: "C. Cruz, J.S. Amaral e M. Reis, Quantum Sci. Technol. 10, 035015 (2025)",
     sourceRefs: ["E023"]
+  },
+  {
+    id: "s33f-quantum-collaborations",
+    layout: "cards",
+    className: "international-collaboration-slide quantum-thermo-collaboration-slide",
+    section: "Resultados",
+    eyebrow: "Linha 6 | Rede de colaboração",
+    title: "Colaborações",
+    lead: "A termodinâmica quântica articula cooperação internacional e formação de uma nova geração de pesquisadores no Brasil.",
+    cards: [
+      {
+        label: "Chile",
+        meta: "Universidad Técnica Federico Santa María",
+        text: "Colaboração internacional em termodinâmica quântica, materiais magnéticos e efeitos calóricos.",
+        logo: { src: "assets/logos/universidad-tecnica-federico-santa-maria.jpg", alt: "Universidad Técnica Federico Santa María" }
+      },
+      {
+        label: "UFOB",
+        meta: "Universidade Federal do Oeste da Bahia",
+        text: "Colaboração com Clebson dos Santos Cruz em correlações quânticas e efeitos calóricos.",
+        logo: { src: "assets/logos/ufob.png", alt: "UFOB" }
+      }
+    ],
+    footerRefs: "Colaborações associadas à linha de termodinâmica quântica em materiais magnéticos",
+    sourceRefs: ["E023", "E026"]
   },
   {
     id: "s34b-quantum-thermo-publications",

@@ -2171,6 +2171,34 @@
 .deck-shell .index-cover .index-section-card:hover {
   transform: none;
 }
+
+.deck-shell .index-cover .index-section-formacao {
+  --section-accent: #0b6f74;
+}
+
+.deck-shell .index-cover .index-section-uff {
+  --section-accent: #3f6046;
+}
+
+.deck-shell .index-cover .index-section-pesquisa {
+  --section-accent: #315d85;
+}
+
+.deck-shell .index-cover .index-section-impacto {
+  --section-accent: #8a681d;
+}
+
+.deck-shell .index-cover .index-section-futuro {
+  --section-accent: #52663a;
+}
+
+.deck-shell .index-cover .index-section-agradecimentos {
+  --section-accent: #8b2448;
+}
+
+.deck-shell .index-cover .index-section-card:hover {
+  box-shadow: 0 30px 78px color-mix(in srgb, var(--section-accent) 28%, transparent);
+}
 .deck-shell .info-card,
 .deck-shell .metric-item,
 .deck-shell .flow-step,
@@ -3626,6 +3654,26 @@
   --section-accent: #5d438c;
 }
 
+.deck-shell .slide[data-subsection-number="3.1"] {
+  --section-accent: #315d85;
+}
+
+.deck-shell .slide[data-subsection-number="3.2"] {
+  --section-accent: #8b3156;
+}
+
+.deck-shell .slide[data-subsection-number="3.3"] {
+  --section-accent: #0b6f74;
+}
+
+.deck-shell .slide[data-subsection-number="3.5"] {
+  --section-accent: #8a4c20;
+}
+
+.deck-shell .slide[data-subsection-number="3.6"] {
+  --section-accent: #5d438c;
+}
+
 .deck-shell :is(.research-line-card-tsallis, .research-line-card-mce, .research-line-card-complexes, .research-line-card-relativistic, .research-line-card-quantum-thermo) .research-line-period {
   color: var(--section-accent);
   font-size: .72rem;
@@ -4640,8 +4688,8 @@
 }
 
 .deck-shell .quantum-caloric-result-slide .deck-figure {
-  width: min(100%, 38rem);
-  height: clamp(23rem, 55vh, 26rem);
+  width: min(100%, 42rem);
+  height: clamp(26rem, 62vh, 29rem);
   margin: 0;
   padding: 0;
   border: 0;
@@ -4651,8 +4699,8 @@
 }
 
 .deck-shell .quantum-caloric-result-slide .deck-figure:nth-child(2) {
-  width: min(100%, 52rem);
-  height: clamp(8.5rem, 18vh, 9.5rem);
+  width: min(100%, 58rem);
+  height: clamp(10rem, 21vh, 11.5rem);
 }
 
 .deck-shell .quantum-caloric-result-slide .figure-link {
@@ -4680,12 +4728,38 @@
   text-align: center;
 }
 
-.deck-shell .quantum-caloric-figure-continuation .deck-figure.story-reveal.scroll-scrub-reveal,
-.deck-shell .quantum-caloric-figure-continuation .deck-figure.story-reveal.scroll-scrub-reveal.is-visible {
-  opacity: 1;
-  transform: none;
-  filter: none;
-  transition: opacity 720ms ease, transform 820ms cubic-bezier(.2,.7,.2,1);
+.deck-shell .quantum-thermo-collaboration-slide .card-grid {
+  width: min(100%, 52rem);
+  margin-inline: auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.6rem);
+}
+
+.deck-shell .quantum-thermo-collaboration-slide .info-card {
+  min-height: clamp(15rem, 38vh, 20rem);
+  padding: clamp(1.5rem, 3vw, 2.35rem);
+}
+
+.deck-shell .quantum-thermo-collaboration-slide .institutional-logo {
+  right: 1.5rem;
+  width: clamp(5.5rem, 9vw, 8rem);
+  height: clamp(4.5rem, 7vw, 6.4rem);
+}
+
+.deck-shell .quantum-thermo-collaboration-slide .info-card-label {
+  font-size: clamp(1.15rem, 1.8vw, 1.5rem);
+}
+
+.deck-shell .quantum-thermo-collaboration-slide .info-card-meta {
+  max-width: 68%;
+  font-size: clamp(.72rem, .9vw, .84rem);
+}
+
+.deck-shell .quantum-thermo-collaboration-slide .info-card-text {
+  max-width: 68%;
+  margin-top: .65rem;
+  font-size: clamp(.84rem, 1.08vw, 1rem);
+  line-height: 1.32;
 }
 
 @media (max-width: 760px) {
@@ -4736,6 +4810,15 @@
   .deck-shell .quantum-caloric-result-slide .deck-figure img {
     height: auto;
     max-height: 72vh;
+  }
+
+  .deck-shell .quantum-thermo-collaboration-slide .card-grid {
+    width: min(100%, 34rem);
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .deck-shell .quantum-thermo-collaboration-slide .info-card {
+    min-height: 0;
   }
 }
 
