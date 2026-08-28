@@ -60,13 +60,6 @@ window.MemorialDeckSlides = [
         className: "index-section-futuro",
         label: "Perspectivas futuras",
         html: "<ul><li>Ensino</li><li>Extensão</li><li>Pesquisa</li><li>Inovação</li><li>Rede</li></ul>"
-      },
-      {
-        number: "6",
-        href: "#section-6",
-        className: "index-section-agradecimentos",
-        label: "Agradecimentos",
-        html: "<ul><li>Instituições e agências de fomento</li><li>Mentores, colaboradores e colegas</li><li>Alunos</li><li>Família</li></ul>"
       }
     ],
     footerRefs: "Estrutura alinhada aos capítulos do memorial",
