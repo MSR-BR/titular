@@ -4578,8 +4578,10 @@
 .deck-shell .quantum-caloric-integral {
   width: 100%;
   color: var(--ink);
-  font-family: "Times New Roman", Georgia, serif;
-  font-size: clamp(1.28rem, 2.05vw, 1.82rem);
+  font-family: "STIX Two Math", "Latin Modern Math", "Cambria Math", "STIXGeneral", serif;
+  font-size: clamp(1.36rem, 2.15vw, 1.92rem);
+  font-kerning: normal;
+  letter-spacing: 0;
 }
 
 .deck-shell .quantum-caloric-framework-slide .card-grid.count-2 {
@@ -4641,17 +4643,20 @@
 .deck-shell .quantum-case-equations math {
   width: 100%;
   color: var(--ink);
-  font-family: "Times New Roman", Georgia, serif;
-  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  font-family: "STIX Two Math", "Latin Modern Math", "Cambria Math", "STIXGeneral", serif;
+  font-size: clamp(1.08rem, 1.55vw, 1.38rem);
+  font-kerning: normal;
+  letter-spacing: 0;
 }
 
 .deck-shell .quantum-caloric-discord-case .quantum-case-equations math {
-  font-size: clamp(.9rem, 1.25vw, 1.12rem);
+  font-size: clamp(.96rem, 1.34vw, 1.18rem);
 }
 
 .deck-shell .quantum-caloric-discord-case .quantum-discord-entropy {
   padding-top: .38rem;
   border-top: 1px solid rgba(139, 49, 86, .12);
+  font-size: clamp(.88rem, 1.12vw, 1.02rem);
 }
 
 .deck-shell .quantum-case-note {

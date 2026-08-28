@@ -1344,17 +1344,27 @@ window.MemorialDeckSlides = [
     lead: "A excitação externa λ define qual observável controla a resposta calórica do sistema.",
     equations: [
       {
-        html: `<math class="quantum-caloric-integral" display="block" aria-label="Delta S iso de delta lambda e T igual a menos a integral de lambda i até lambda f da derivada em relação à temperatura do valor esperado da derivada da Hamiltoniana em relação a lambda">
-          <mrow>
-            <msub><mi>ΔS</mi><mtext>iso</mtext></msub><mo>(</mo><mi>Δλ</mi><mo>,</mo><mi>T</mi><mo>)</mo><mo>=</mo><mo>−</mo>
-            <msubsup><mo>∫</mo><msub><mi>λ</mi><mi>i</mi></msub><msub><mi>λ</mi><mi>f</mi></msub></msubsup>
-            <mfrac><mo>∂</mo><mrow><mo>∂</mo><mi>T</mi></mrow></mfrac>
-            <msub>
-              <mrow><mo>⟨</mo><mfrac><mrow><mi>d</mi><mi>ℋ</mi><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><mrow><mi>d</mi><mi>λ</mi></mrow></mfrac><mo>⟩</mo></mrow>
-              <mi>λ</mi>
-            </msub>
-            <mi>dλ</mi>
-          </mrow>
+        html: `<math class="latex-math quantum-caloric-integral" display="block" aria-label="Delta S iso de delta lambda e T igual a menos a integral de lambda i até lambda f da derivada em relação à temperatura do valor esperado da derivada da Hamiltoniana em relação a lambda">
+          <mstyle displaystyle="true" scriptlevel="0">
+            <mrow>
+              <mi mathvariant="normal">Δ</mi><msub><mi>S</mi><mtext>iso</mtext></msub>
+              <mo stretchy="false">(</mo><mi mathvariant="normal">Δ</mi><mi>λ</mi><mo>,</mo><mi>T</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo>
+              <munderover><mo>∫</mo><msub><mi>λ</mi><mi>i</mi></msub><msub><mi>λ</mi><mi>f</mi></msub></munderover>
+              <mfrac><mo>∂</mo><mrow><mo>∂</mo><mi>T</mi></mrow></mfrac>
+              <msub>
+                <mrow>
+                  <mo stretchy="true">⟨</mo>
+                  <mfrac>
+                    <mrow><mi mathvariant="normal">d</mi><mi>ℋ</mi><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow>
+                    <mrow><mi mathvariant="normal">d</mi><mi>λ</mi></mrow>
+                  </mfrac>
+                  <mo stretchy="true">⟩</mo>
+                </mrow>
+                <mi>λ</mi>
+              </msub>
+              <mspace width=".16em"></mspace><mi mathvariant="normal">d</mi><mi>λ</mi>
+            </mrow>
+          </mstyle>
         </math>`
       }
     ],
@@ -1363,8 +1373,8 @@ window.MemorialDeckSlides = [
         label: "Caso 1 · λ = B | campo magnético",
         className: "quantum-caloric-case quantum-caloric-classical-case",
         html: `<div class="quantum-case-equations">
-          <math display="block"><mrow><mi>ℋ</mi><mo>=</mo><msub><mi>ℋ</mi><mtext>int</mtext></msub><mo>−</mo><mi>B</mi><mi>M</mi></mrow></math>
-          <math display="block"><mrow><mo>⟨</mo><mfrac><mrow><mi>∂ℋ</mi></mrow><mrow><mi>∂B</mi></mrow></mfrac><mo>⟩</mo><mo>=</mo><mo>−</mo><mi>M</mi><mo>(</mo><mi>T</mi><mo>,</mo><mi>B</mi><mo>)</mo></mrow></math>
+          <math class="latex-math" display="block" aria-label="Hamiltoniana igual à Hamiltoniana de interação menos B M"><mstyle displaystyle="true" scriptlevel="0"><mrow><mi>ℋ</mi><mo>=</mo><msub><mi>ℋ</mi><mtext>int</mtext></msub><mo>−</mo><mi>B</mi><mi>M</mi></mrow></mstyle></math>
+          <math class="latex-math" display="block" aria-label="Valor esperado da derivada da Hamiltoniana em relação ao campo B igual a menos M de T e B"><mstyle displaystyle="true" scriptlevel="0"><mrow><mo stretchy="true">⟨</mo><mfrac><mrow><mo>∂</mo><mi>ℋ</mi></mrow><mrow><mo>∂</mo><mi>B</mi></mrow></mfrac><mo stretchy="true">⟩</mo><mo>=</mo><mo>−</mo><mi>M</mi><mo stretchy="false">(</mo><mi>T</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mstyle></math>
           <p class="quantum-case-note">A relação quântica recupera a expressão clássica da variação de entropia magnética.</p>
         </div>`
       },
@@ -1372,9 +1382,9 @@ window.MemorialDeckSlides = [
         label: "Caso 2 · λ = J | acoplamento de troca",
         className: "quantum-caloric-case quantum-caloric-discord-case",
         html: `<div class="quantum-case-equations">
-          <math display="block"><mrow><msub><mi>ℋ</mi><mtext>int</mtext></msub><mo>=</mo><mi>J</mi><munder><mo>∑</mo><mrow><mi>i</mi><mo>≠</mo><mi>j</mi></mrow></munder><msub><mover><mi>S</mi><mo>→</mo></mover><mi>i</mi></msub><mo>·</mo><msub><mover><mi>S</mi><mo>→</mo></mover><mi>j</mi></msub></mrow></math>
-          <math display="block"><mrow><mo>|</mo><mo>⟨</mo><mfrac><mrow><mi>∂ℋ</mi></mrow><mrow><mi>∂J</mi></mrow></mfrac><mo>⟩</mo><mo>|</mo><mo>=</mo><mn>6</mn><mi>𝒟</mi><mo>(</mo><mi>J</mi><mo>,</mo><mi>T</mi><mo>)</mo></mrow></math>
-          <math class="quantum-discord-entropy" display="block"><mrow><mo>|</mo><msub><mi>ΔS</mi><mtext>iso</mtext></msub><mo>(</mo><mi>ΔJ</mi><mo>,</mo><mi>T</mi><mo>)</mo><mo>|</mo><mo>=</mo><mn>6</mn><msubsup><mo>∫</mo><msub><mi>J</mi><mi>A</mi></msub><msub><mi>J</mi><mi>B</mi></msub></msubsup><mfrac><mrow><mi>∂𝒟</mi><mo>(</mo><mi>J</mi><mo>,</mo><mi>T</mi><mo>)</mo></mrow><mrow><mi>∂T</mi></mrow></mfrac><mi>dJ</mi></mrow></math>
+          <math class="latex-math" display="block" aria-label="Hamiltoniana de interação igual a J vezes o somatório dos produtos escalares dos spins"><mstyle displaystyle="true" scriptlevel="0"><mrow><msub><mi>ℋ</mi><mtext>int</mtext></msub><mo>=</mo><mi>J</mi><munder><mo>∑</mo><mrow><mi>i</mi><mo>≠</mo><mi>j</mi></mrow></munder><msub><mover accent="true"><mi>S</mi><mo>→</mo></mover><mi>i</mi></msub><mo>·</mo><msub><mover accent="true"><mi>S</mi><mo>→</mo></mover><mi>j</mi></msub></mrow></mstyle></math>
+          <math class="latex-math" display="block" aria-label="Módulo do valor esperado da derivada da Hamiltoniana em relação a J igual a seis vezes a discórdia"><mstyle displaystyle="true" scriptlevel="0"><mrow><mo stretchy="true">|</mo><mo stretchy="true">⟨</mo><mfrac><mrow><mo>∂</mo><mi>ℋ</mi></mrow><mrow><mo>∂</mo><mi>J</mi></mrow></mfrac><mo stretchy="true">⟩</mo><mo stretchy="true">|</mo><mo>=</mo><mn>6</mn><mi>𝒟</mi><mo stretchy="false">(</mo><mi>J</mi><mo>,</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mstyle></math>
+          <math class="latex-math quantum-discord-entropy" display="block" aria-label="Módulo de Delta S iso de Delta J e T igual a seis vezes a integral de J A até J B da derivada da discórdia em relação à temperatura"><mstyle displaystyle="true" scriptlevel="0"><mrow><mo stretchy="true">|</mo><mi mathvariant="normal">Δ</mi><msub><mi>S</mi><mtext>iso</mtext></msub><mo stretchy="false">(</mo><mi mathvariant="normal">Δ</mi><mi>J</mi><mo>,</mo><mi>T</mi><mo stretchy="false">)</mo><mo stretchy="true">|</mo><mo>=</mo><mn>6</mn><munderover><mo>∫</mo><msub><mi>J</mi><mi>A</mi></msub><msub><mi>J</mi><mi>B</mi></msub></munderover><mfrac><mrow><mo>∂</mo><mi>𝒟</mi><mo stretchy="false">(</mo><mi>J</mi><mo>,</mo><mi>T</mi><mo stretchy="false">)</mo></mrow><mrow><mo>∂</mo><mi>T</mi></mrow></mfrac><mspace width=".12em"></mspace><mi mathvariant="normal">d</mi><mi>J</mi></mrow></mstyle></math>
           <p class="quantum-case-note">A resposta entrópica passa a medir diretamente a variação térmica da discórdia quântica 𝒟.</p>
         </div>`
       }
