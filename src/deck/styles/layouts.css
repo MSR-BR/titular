@@ -4691,12 +4691,18 @@
   padding-bottom: clamp(.8rem, 1.8vh, 1.2rem);
 }
 
+.deck-shell > .quantum-caloric-result-slide {
+  padding-top: .25rem;
+  padding-bottom: .45rem;
+  scroll-margin-top: 0;
+}
+
 .deck-shell .quantum-caloric-result-slide .cards-panel {
   display: none;
 }
 
 .deck-shell .quantum-caloric-result-slide .figure-gallery {
-  width: min(100%, 60rem);
+  width: min(100%, 64rem);
   min-width: 0;
   min-height: 0;
   display: grid;
@@ -4707,8 +4713,8 @@
 }
 
 .deck-shell .quantum-caloric-result-slide .deck-figure {
-  width: min(100%, 50rem);
-  height: clamp(30rem, 72vh, 34rem);
+  width: min(100%, 62rem);
+  height: clamp(36rem, calc(100vh - 5.25rem), 46rem);
   margin: 0;
   padding: 0;
   border: 0;
