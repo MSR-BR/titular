@@ -160,7 +160,7 @@ window.MemorialDeckSlides = [
       src: "assets/figures/laboratorio-magnetismo-cbpf.png",
       alt: "Laboratório de Magnetismo do CBPF em reportagem sobre cientistas brasileiros",
       caption: "Laboratório de Magnetismo · CBPF — abrir vídeo",
-      href: "https://youtu.be/DB3PzzIrRTc?si=z8BTqBDIqXuWWz3O"
+      href: "https://www.youtube.com/watch?v=DB3PzzIrRTc&t=2927s"
     },
     footerRefs: "Cientistas Brasileiros: César Lattes e José Leite Lopes",
     sourceRefs: ["E004"]

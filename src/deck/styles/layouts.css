@@ -630,6 +630,7 @@
 }
 
 .deck-shell .cbpf-magnetism-video-slide .deck-figure {
+  position: relative;
   width: 100%;
   padding: clamp(.45rem, .9vw, .7rem);
   border-radius: 1.25rem;
@@ -641,6 +642,14 @@
 .deck-shell .cbpf-magnetism-video-slide .figure-link {
   display: block;
   min-height: 0;
+}
+
+.deck-shell .cbpf-magnetism-video-slide .figure-link::after {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  border-radius: 1.25rem;
+  content: "";
 }
 
 .deck-shell .cbpf-magnetism-video-slide .deck-figure img {
