@@ -11,7 +11,8 @@
           { id: "s05-master", topic: "Ensino médio, bacharelado e iniciação científica" }
         ] },
         { number: "1.2", title: "Mestrado", slides: [
-          { id: "s06-doctorate", topic: "Magnetismo itinerante em sistemas RCo3" }
+          { id: "s06-doctorate", topic: "Magnetismo itinerante em sistemas RCo3" },
+          { id: "s06a-cbpf-magnetism-lab", topic: "Laboratório de Magnetismo do CBPF" }
         ] },
         { number: "1.3", title: "Doutorado e inserção internacional", slides: [
           { id: "s06b-doctorate", topic: "Doutorado no CBPF e na Universidade de Aveiro" },
