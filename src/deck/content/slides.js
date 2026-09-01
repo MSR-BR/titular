@@ -1279,7 +1279,7 @@ window.MemorialDeckSlides = [
     className: "quantum-discord-slide quantum-entanglement-explainer",
     section: "Resultados",
     eyebrow: "Linha 6 | Correlações quânticas",
-    title: "Discórdia quântica e emaranhamento térmico",
+    title: "Concorrência e emaranhamento térmico",
     lead: "Para um dímero de spins s₁ = s₂ = 1/2, a interação de Heisenberg separa um singleto emaranhado de um tripleto e permite acompanhar o emaranhamento com a temperatura.",
     items: [
       { label: "Hamiltoniana", html: "<span class=\"quantum-main-equation\">H = −J <b>S</b><sub>1</sub> · <b>S</b><sub>2</sub></span><br><span class=\"quantum-model-note\">s₁ = s₂ = 1/2</span>" },
