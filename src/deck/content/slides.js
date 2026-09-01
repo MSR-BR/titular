@@ -911,7 +911,8 @@ window.MemorialDeckSlides = [
       { label: "Sevilha · Espanha", text: "Universidad de Sevilla", logo: { src: "assets/logos/sevilla-mark.svg", alt: "Universidad de Sevilla" } },
       { label: "Oak Ridge · EUA", text: "Oak Ridge National Laboratory", logo: { src: "assets/logos/oak-ridge-national-laboratory.png", alt: "Oak Ridge National Laboratory" } },
       { label: "Rio de Janeiro · Brasil", text: "Universidade Federal do Rio de Janeiro (UFRJ)", logo: { src: "assets/logos/ufrj.png", alt: "Universidade Federal do Rio de Janeiro" } },
-      { label: "Rio de Janeiro · Brasil", text: "Centro Brasileiro de Pesquisas Físicas (CBPF)", logo: { src: "assets/logos/cbpf.png", alt: "Centro Brasileiro de Pesquisas Físicas" } }
+      { label: "Rio de Janeiro · Brasil", text: "Centro Brasileiro de Pesquisas Físicas (CBPF)", logo: { src: "assets/logos/cbpf.png", alt: "Centro Brasileiro de Pesquisas Físicas" } },
+      { label: "Rio de Janeiro · Brasil", text: "Universidade do Estado do Rio de Janeiro · Instituto de Física (UERJ)", logo: { src: "assets/logos/uerj.svg", alt: "Universidade do Estado do Rio de Janeiro" } }
     ],
     footerRefs: "Colaborações identificadas nos artigos da subseção 3.2",
     sourceRefs: ["E019"]
