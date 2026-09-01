@@ -1259,8 +1259,8 @@ window.MemorialDeckSlides = [
     className: "quantum-thermo-materials-slide",
     section: "Resultados",
     eyebrow: "Linha 6 | Termodinâmica quântica",
-    title: "Materiais e plataformas quânticas",
-    lead: "Motivação: explorar correlações, energia e informação em materiais magnéticos controlados pela temperatura.",
+    title: "Motivação",
+    lead: "Explorar correlações, energia e informação em materiais magnéticos controlados pela temperatura.",
     cards: [
       { label: "Emaranhamento térmico", text: "Dímeros e clusters metálicos: correlações quânticas e temperatura de emaranhamento." },
       { label: "Baterias quânticas", text: "Armazenamento e extração de energia usando ergotropia em complexos metálicos." },
