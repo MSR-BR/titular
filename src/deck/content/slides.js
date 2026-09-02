@@ -1718,7 +1718,7 @@ window.MemorialDeckSlides = [
     figure: {
       src: "assets/figures/physica-b-editors-amsterdam.jpg",
       alt: "Reunião de editores da Physica B em Amsterdam",
-      caption: "Reunião de editores, Amsterdam. Mario Reis; Karine van Wetering (Publisher); Luis Carlos Dias (Editor); Jurgen Buschow (Editor); Frank de Boer (Editor)."
+      caption: "Reunião de editores, Amsterdam. Mario Reis (Editor); Karine van Wetering (Publisher); Luis Carlos Dias (Editor); Jurgen Buschow (Editor); Frank de Boer (Editor)."
     },
     footerRefs: "Physica B · Reunião de editores",
     sourceRefs: ["E025"]
