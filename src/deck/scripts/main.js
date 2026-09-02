@@ -946,7 +946,8 @@
             : 1;
           element.style.setProperty("--scrub-scale", scale.toFixed(4));
           if (isBookTurn) {
-            element.style.setProperty("--book-turn", `${((1 - progress) * 180).toFixed(2)}deg`);
+            const bookTurnProgress = Math.min(1, progress * 1.75);
+            element.style.setProperty("--book-turn", `${((1 - bookTurnProgress) * 180).toFixed(2)}deg`);
           }
         });
       });
