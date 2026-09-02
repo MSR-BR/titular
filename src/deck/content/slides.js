@@ -1419,7 +1419,7 @@ window.MemorialDeckSlides = [
       {
         src: "assets/figures/quantum-caloric-knacusi4o10-study.png",
         alt: "Discórdia quântica e variação isotérmica de entropia em função da temperatura para KNaCuSi4O10",
-        caption: "KNaCuSi₄O₁₀ · discórdia 𝒟(J,T) e |ΔSiso| para diferentes acoplamentos J induzidos por pressão",
+        caption: "Material: KNaCuSi₄O₁₀ · Referência: EPL, 117 (2017) 20004",
         href: "https://doi.org/10.1088/2058-9565/adcf47"
       }
     ],
