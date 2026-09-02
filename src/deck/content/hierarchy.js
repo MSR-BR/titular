@@ -127,7 +127,8 @@
           { id: "s37-literary-work", topic: "As viagens de ibn Hakim" }
         ] },
         { number: "4.4", title: "Atividades editoriais", slides: [
-          { id: "s38-editorial", topic: "Physica B" }
+          { id: "s38-editorial", topic: "Physica B" },
+          { id: "s38b-editorial-meeting", topic: "Reunião de editores em Amsterdam" }
         ] },
         { number: "4.5", title: "Internacionalização", slides: [
           { id: "s39-internationalization", topic: "Mobilidade" },
